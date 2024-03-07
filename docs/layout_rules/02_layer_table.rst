@@ -1,3 +1,5 @@
+.. _layers:
+
 2.0 Layer Table
 ===============
 

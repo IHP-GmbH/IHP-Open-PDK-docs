@@ -6,6 +6,8 @@
 
 This document describes the design rules for IHPs SG13G2 SiGe BiCMOS technology.
 
+.. _list_of_abbreviations:
+
 1.2 List of abbreviations
 -------------------------
 
