@@ -1,0 +1,35 @@
+Device Category,Device Name
+MOS Transistors,
+,nmos
+,nmosHV
+,pmos
+,pmosHV
+RF MOS Transistors,
+,rfnmos
+,rfnmosHV
+,rfpmos
+,rfpmosHV
+BJT,
+,npn13G2
+,npn13G2L
+,npn13G2V
+Diodes,
+,dantenna
+,dpantenna
+Resistors,
+,rhigh
+,rppd
+,rsil
+Capacitors,
+,cmim
+,Svaricap
+ESD,
+,diodevdd_2k
+,diodevdd_4k
+,diodevss_2k
+,diodevss_4k
+,nmoscl_2
+,nmoscl_4
+Taps,
+,ptap1
+,ntap1
