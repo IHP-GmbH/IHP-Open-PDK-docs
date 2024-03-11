@@ -1,5 +1,5 @@
-3.0 Truth Table for SG13G2 SiGe BiCMOS Process
-==============================================
+Truth Table for SG13G2 SiGe BiCMOS Process
+==========================================
 
 The Topological Truth Table is a design aid that helps establish the relationship between:
 

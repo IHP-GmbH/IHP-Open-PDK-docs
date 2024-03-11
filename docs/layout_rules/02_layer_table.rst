@@ -1,7 +1,7 @@
 .. _layers:
 
-2.0 Layer Table
-===============
+Layer Table
+===========
 
 This chapter is a documentation of IHP layers definition which is valid in all technologies.
 

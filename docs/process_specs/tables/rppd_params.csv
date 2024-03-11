@@ -1,0 +1,14 @@
+Parameter,Name,Unit,Min,Target,Max,"Meas.
+Cond.",Comment
+Sheet Resistance,RSRPPD,W,235,260,285,A.i,
+Line Width Delta,DWRPPD,nm,-24,6,36,A.i,
+Temperature Coefficients,"TC1NRPPD
+TC2NRPPD","ppm/K
+ppm/K2",,"170
+0.4",,A.af,
+Matching Coefficient,MATRPPD,nm,,15,,A.ac,
+"Metal-to-Body-Resis-
+tance",RCRPPD,W*µm,,35,,A.ae,
+"Temperature Coefficient
+Metal-toBody-Resistance",TC3NRPPD,ppm/K,,-950,,,
+Max. Current Density,IMRPPD,mA/μm,,,1.2,,11 years @105°C

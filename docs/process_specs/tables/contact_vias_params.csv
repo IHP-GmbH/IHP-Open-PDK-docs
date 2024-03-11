@@ -1,0 +1,18 @@
+Parameter,Name,Unit,Min,"Tar-
+get",Max,"Meas.
+Cond.",Comment
+"Metal1 to Silicide
+on nSD-Activ",RCM1NSD,W/CNT,8,17,22,V = 1 V,93740 contact chain
+"Metal1 to Silicide
+on pSD-Activ",RCM1PSD,W/CNT,8,17,22,V = 1 V,93740 contact chain
+"Metal1 to Silicide
+on GatPoly (n+)",RCM1NPLY,W/CNT,8,15,20,V = 1 V,98566 contact chain
+"Metal1 to Silicide
+on GatPoly (p+)",RCM1PPLY,W/CNT,8,15,20,V = 1 V,98566 contact chain
+Metal2 – Metal1,RVIA1,W/VIA,5,9,20,V = 1 V,103840 contact chain
+Metal3 – Metal2,RVIA2,W/VIA,5,9,20,V = 1 V,103840 contact chain
+Metal4 – Metal3,RVIA3,W/VIA,5,9,20,V = 1 V,103840 contact chain
+Metal5 – Metal4,RVIA4,W/VIA,5,9,20,V = 1 V,103840 contact chain
+TopMetal1 – Metal5,RTV1,W/VIA,1,2.2,4,V = 1 V,3276 contact chain
+"TopMetal2 – TopMe-
+tal1",RTV2,W/VIA,0.5,1.1,2.2,V = 1 V,1140 contact chain

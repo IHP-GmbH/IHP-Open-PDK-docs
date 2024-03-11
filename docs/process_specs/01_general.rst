@@ -1,5 +1,5 @@
-1.0 General Information
-=======================
+General Information
+===================
 
 .. note::
     - SG13S is a high performance BiCMOS technology with a 0.13 µm CMOS process. It contains bipolar devices based on SiGe:C npn-HBT's with up to 250 GHz transit frequency (fT) and 300 GHz maximum oscillation frequency. 
@@ -12,7 +12,6 @@
 
 .. toctree::
     :name: General Information
-    :glob:
 
     01_01_main_process_cross_sec
     01_02_process_control

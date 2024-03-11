@@ -53,3 +53,22 @@ span.layer {
 	background-color: #fff;
 	box-shadow: 0 1px 1px -1px rgba(0, 0, 0, 0.4);
 } */
+
+.red-text {
+    color: red;
+	font-weight: bold;
+}
+
+.blue-text {
+    color: blue;
+	font-weight: bold;
+}
+
+.blue-text2 {
+    color: blue;
+    font-style: italic;
+}
+
+.center {
+	text-align: center;
+}

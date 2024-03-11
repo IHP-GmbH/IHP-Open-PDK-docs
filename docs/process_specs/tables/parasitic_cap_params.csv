@@ -1,0 +1,19 @@
+Parameter,Name,Unit,Min,"Tar-
+get",Max,"Meas.
+Cond.",Comment
+"Metal1 - Activ
+Area Capacitance",CAMET1ACT,aF/µm²,49,59,69,A.aq,A = 250·1200 µm²
+"Metal1 - Substrate
+Area Capacitance",CAMET1SUB,aF/µm²,31,37,43,A.aq,A = 250·1200 µm²
+"Metal1 - Metal2
+Area Capacitance",CAMET1/2,aF/µm²,54,68,82,A.aq,A = 250·1200 µm²
+"Metal2 - Metal3
+Area Capacitance",CAMET2/3,aF/µm²,54,68,82,A.aq,A = 250·1200 µm²
+"Metal3 - Metal4
+Area Capacitance",CAMET3/4,aF/µm²,54,68,82,A.aq,A = 250·1200 µm²
+"Metal4 - Metal5
+Area Capacitance",CAMET4/5,aF/µm²,54,68,82,A.aq,A = 250·1200 µm²
+"TopMetal1 - Metal5
+Area Capacitance",CATOPMET1,aF/µm²,36,42.5,49,A.aq,A = 250·1200 µm²
+"TopMetal2 - TopMetal1
+Area Capacitance",CATOPMET2,aF/µm²,10,13,16,A.aq,A = 250·1200 µm²

@@ -1,0 +1,14 @@
+Parameter,Name,Unit,Min,Target,Max,"Meas.
+Cond.",Comment
+Capacitance -3,SVAR_m3,fF/µm²,20.5,23,25.5,,"10x(3.74x0.3)µm²
+@15.8GHz"
+Capacitance 0,SCVAR_0,fF/µm²,32,35.3,37.5,,"10x(3.74x0.3)µm²
+@15.8GHz"
+Capacitance +3,SCVAR_3,fF/µm²,37.5,39.5,41.5,,"10x(3.74x0.3)µm²
+@15.8GHz"
+Q Factor -3,QFACTOR_m3,,50,62,75,,"10x(3.74x0.3)µm²
+@15.8GHz"
+Q Factor 0,QFACTOR_0,,35,43,50,,"10x(3.74x0.3)µm²
+@15.8GHz"
+Q Factor 3,QFACTOR_3,,35,43,50,,"10x(3.74x0.3)µm²
+@15.8GHz"

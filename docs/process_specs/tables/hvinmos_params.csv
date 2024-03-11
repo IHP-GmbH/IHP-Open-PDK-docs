@@ -1,0 +1,13 @@
+Parameter,Name,Unit,Min,Target,Max,"Meas.
+Cond.",Comment
+"Threshold Voltage
+Short Channel Device",VTNIHV10x045,V,0.63,0.70,0.77,A.a2,WxL = 10 x 0.45 µm²
+"Saturation Current
+Short Channel Device",IDSNIHV045,µA/µm,480,560,640,A.b2,WxL = 10 x 0.45 µm²
+"Off-Current
+Short Channel Device",IOFFNIHV045,"LOG10
+(A/µm)",,-12.5,-11.0,A.c2,WxL = 10 x 0.45 µm²
+"Drain Induced Barrier
+Lowering 0.1/1.8V",DIBLNIHV045,mV/V,0,15,30,A.d2,WxL = 10 x 0.45 µm²
+Sub Threshold Slope,SSNIHV045,mV/dec,72,84,96,A.e,WxL = 10 x 0.45 µm²
+Breakdown Voltage,BVDSSNIHV045,V,5.2,6.1,,A.f2,WxL = 10 x 0.45 µm²

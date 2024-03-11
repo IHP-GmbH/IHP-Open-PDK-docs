@@ -1,5 +1,5 @@
-4.1 LVS Devices
-===============
+LVS Devices
+===========
 
 .. note::
     This list details all devices used in the LVS verification process. Refer to it to ensure your layout design aligns with the LVS decks.

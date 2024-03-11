@@ -1,5 +1,5 @@
-4.0 LVS Devices
-===============
+LVS Devices
+===========
 
 This section details the LVS devices supported by IHPs SG13G2 SiGe BiCMOS technology. It presents an overview of the available LVS devices and their corresponding measured parameters.
 

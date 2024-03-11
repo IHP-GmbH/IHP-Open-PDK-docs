@@ -150,8 +150,8 @@ html_theme_options = {
     "github_url": "https://github.com/IHP-GmbH/IHP-Open-PDK-docs",
     "repo_name": " IHP-Open-PDK-docs",
     "repo_type": "github",
-    "globaltoc_depth": 4,
-    "globaltoc_collapse": False,
+    "globaltoc_depth": 0,
+    "globaltoc_collapse": True,
     # Hide the symbiflow links
     "hide_symbiflow_links": True,
     "license_url": "https://www.apache.org/licenses/LICENSE-2.0",
