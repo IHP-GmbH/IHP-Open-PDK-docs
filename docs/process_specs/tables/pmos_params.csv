@@ -1,6 +1,3 @@
-Parameter,Name,Unit,Min,"Tar-
-get",Max,"Meas.
-Cond.",Comment
 Threshold Voltage Short Channel Device,VTP10x013,V,:red:`-0.53`,:blue:`-0.47`,:red:`-0.41`,A.a1,WxL = 10 x 0.13 µm²
 Threshold Voltage Long Channel Device,VTP10x10,V,:blue:`-0.41`,:blue:`-0.36`,:blue:`-0.31`,A.a1,WxL = 10 x 10 µm²
 Threshold Voltage Small Channel Device,VTP015x013,V,:blue:`-0.58`,:blue:`-0.48`,:blue:`-0.38`,A.a1,WxL = 0.15 x 0.13 µm²

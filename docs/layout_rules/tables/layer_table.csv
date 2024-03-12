@@ -1,0 +1,378 @@
+L0,drawing,0,0,Reserved for internal use
+Activ,drawing,1,0,"Defines active regions in substrate, where
+transistors, diodes and/or capacitors will be
+fabricated"
+Activ,label,1,1,Lable in activ layer
+Activ,pin,1,2,Pin in active layer
+Activ,net,1,3,
+Activ,boundary,1,4,
+Activ,lvs,1,19,
+Activ,mask,1,20,added to Active: drawing at mask generation
+Activ,filler,1,22,Activ filler layer
+Activ,nofill,1,23,Filler exclusion definition layer
+Activ,OPC,1,26,Activ outer OPC definition layer
+Activ,iOPC,1,27,Activ inner OPC definition layer
+Activ,noqrc,1,28,No parasitics extraction
+L2,drawing,2,0,Reserved for internal use
+BiWind,drawing,3,0,Defines active npn collector region
+BiWind,OPC,3,26,BiWind OPC definition layer
+GatPoly,drawing,5,0,"Defines polysilicon gates and interconnect, GatPoly= GatPoly OR PolyRes"
+GatPoly,label,5,1,
+GatPoly,pin,5,2,"Defines polysilicon gates and interconnect, GatPoly= GatPoly OR PolyRes"
+GatPoly,net,5,3,
+GatPoly,boundary,5,4,
+GatPoly,filler,5,22,Gatfiller layer
+GatPoly,nofill,5,23,Filler exclusion definition layer
+GatPoly,OPC,5,26,GatPoly outer OPC definition layer
+GatPoly,iOPC,5,27,GatPoly inner OPC definition layer
+GatPoly,noqrc,5,28,No parasitics extraction
+Cont,drawing,6,0,"Defines 1-st metal contacts to Activ, GatPoly"
+Cont,net,6,3,
+Cont,boundary,6,4,
+Cont,OPC,6,26,Cont OPC definition layer
+nSD,drawing,7,0,"nSD= NOT (pSD OR nSDBlock), or nSD= pSD is recognized as Rhigh"
+nSD,block,7,21,"Defines areas which do not receive S/D implants"
+Metal1,drawing,8,0,Defines 1-st metal interconnect
+Metal1,label,8,1,
+Metal1,pin,8,2,
+Metal1,net,8,3,
+Metal1,boundary,8,4,
+Metal1,mask,8,20,added to Metal1: drawing at mask generation
+Metal1,filler,8,22,Metal1 filler layer
+Metal1,nofill,8,23,Filler exclusion definition layer
+Metal1,slit,8,24,Metal Slit definition layer
+Metal1,text,8,25,"Text layer for Metal1, used for LVS"
+Metal1,OPC,8,26,Metal1 OPC definition layer
+Metal1,noqrc,8,28,No parasitics extraction
+Metal1,res,8,29,Wire resistor
+Metal1,iprobe,8,33,Current probe (capable for QRC)
+Metal1,diffprb,8,34,Differential current probe (capable for QRC)
+Passiv,drawing,9,0,"Defines regions where passivation coating is removed"
+Passiv,label,9,1,
+Passiv,pin,9,2,
+Passiv,net,9,3,
+Passiv,boundary,9,4,
+Passiv,pdl,9,40,Plasma dicing line
+Passiv,sbump,9,36,
+Passiv,pillar,9,35,
+Metal2,drawing,10,0,Defines 2-nd metal interconnect
+Metal2,label,10,1,
+Metal2,pin,10,2,
+Metal2,net,10,3,
+Metal2,boundary,10,4,
+Metal2,mask,10,20,added to Metal2: drawing at mask generation
+Metal2,filler,10,22,Metal2 filler layer
+Metal2,nofill,10,23,Filler exclusion definition layer
+Metal2,slit,10,24,Metal Slit definition layer
+Metal2,text,10,25,"Text layer for Metal2, used for LVS"
+Metal2,OPC,10,26,Metal2 OPC definition layer
+Metal2,noqrc,10,28,No parasitics extraction
+Metal2,res,10,29,Wire resistor
+Metal2,iprobe,10,33,Current probe(capable for QRC)
+Metal2,diffprb,10,34,Differential current probe (capable for QRC)
+BasPoly,drawing,13,0,Defines npn base poly region
+BasPoly,label,13,1,
+BasPoly,pin,13,2,
+BasPoly,net,13,3,
+BasPoly,boundary,13,4,
+pSD,drawing,14,0,"Defines areas to receive P+source/drain implant"
+NLDB,drawing,15,0,Reserved for internal LDMOS development
+DigiBnd,drawing,16,0,surrounds areas were digital DRC is valid
+DigiBnd,drawing0,16,10,"Used to exclude recommended rules in digital blocks, for instance for SG25_dcell library"
+Via1,drawing,19,0,Defines 1-st metal to 2-nd metal contact
+Via1,net,19,3,
+Via1,boundary,19,4,
+BackMetal1,drawing,20,0,Defines 1-st back-side metal interconnect
+BackMetal1,label,20,1,
+BackMetal1,pin,20,2,
+BackMetal1,net,20,3,
+BackMetal1,boundary,20,4,
+BackMetal1,mask,20,20,"added to Back Metal1: drawing at mask generation"
+BackMetal1,filler,20,22,Back Metal1 filler layer
+BackMetal1,nofill,20,23,Filler exclusion definition layer
+BackMetal1,slit,20,24,Metal Slit definition layer
+BackMetal1,text,20,25,"Text layer for Back Metal1, used for LVS"
+BackMetal1,OPC,20,26,Back Metal1 OPC definition layer
+BackMetal1,noqrc,20,28,No parasitics extraction
+BackMetal1,res,20,29,Wire resistor
+BackMetal1,iprobe,20,33,Current probe (capable for QRC)
+BackMetal1,diffprb,20,34,Differential current probe (capable for QRC)
+BackPassiv,drawing,23,0,"Defines regions where passivation coating is removed"
+RES,drawing,24,0,Identifies resistor areas
+RES,label,24,1,
+SRAM,drawing,25,0,Identifies memory areas
+SRAM,label,25,1,
+SRAM,boundary,25,4,
+TRANS,drawing,26,0,Identifies bipolar transistor areas
+IND,drawing,27,0,Identifies inductor areas
+IND,pin,27,2,
+IND,boundary,27,4,
+IND,text,27,25,
+SalBlock,drawing,28,0,"Defines non salicided Activ and GatPoly, BasPoly areas"
+Via2,drawing,29,0,"Defines 2-nd metal to 3-rd metal contact, Via2= Via2 OR Vmim"
+Via2,net,29,3,
+Via2,boundary,29,4,
+Metal3,drawing,30,0,Defines 3-rd metal interconnect
+Metal3,label,30,1,
+Metal3,pin,30,2,
+Metal3,net,30,3,
+Metal3,boundary,30,4,
+Metal3,mask,30,20,added to Metal3: drawing at mask generation
+Metal3,filler,30,22,Metal3 filler layer
+Metal3,nofill,30,23,Filler exclusion definition layer
+Metal3,slit,30,24,Metal Slit definition layer
+Metal3,text,30,25,"Text layer for Metal3, used for LVS"
+Metal3,OPC,30,26,Metal3 OPC definition layer
+Metal3,noqrc,30,28,No parasitics extraction
+Metal3,res,30,29,Wire resistor
+Metal3,iprobe,30,33,Current probe (capable for QRC)
+Metal3,diffprb,30,34,Differential current probe (capable for QRC)
+NWell,drawing,31,0,"Defines the regions that receive P-Channel VT adjust, P-Channel Punch-Through and N-Well implants"
+NWell,label,31,1,
+NWell,pin,31,2,
+NWell,net,31,3,
+NWell,boundary,31,4,
+nBuLay,drawing,32,0,"Defines bipolar sub collector and isolated NMOS devices"
+nBuLay,label,32,1,
+nBuLay,pin,32,2,
+nBuLay,net,32,3,
+nBuLay,boundary,32,4,
+nBuLay,block,32,21,"Defines areas where no nBuLay implant is allowed"
+EmWind,drawing,33,0,Defines npn emitter window
+EmWind,OPC,33,26,EmWind OPC definition layer
+DeepCo,drawing,35,0,Defines deep collector regions
+MIM,drawing,36,0,Defines Metal-Insulator-Metal capacitor area
+MIM,net,36,3,
+MIM,boundary,36,4,
+EdgeSeal,drawing,39,0,"EdgeSeal definition layer, reserved for internal use only"
+EdgeSeal,boundary,39,4,Defines the outer extends of the sealring
+Substrate,drawing,40,0,Substrate recognition layer for LVS
+Substrate,text,40,25,Substrate recognition text for LVS
+dfpad,drawing,41,0,Pad recognition layer
+dfpad,pillar,41,35,Copper pillar pad recognition layer
+dfpad,sbump,41,36,Solder bump pad recognition layer
+ThickGateOx,drawing,44,0,Thick Gate Oxide
+PLDB,drawing,45,0,Reserved for internal LDMOS development
+PWell,drawing,46,0,Reserved for internal use
+PWell,label,46,1,
+PWell,pin,46,2,
+PWell,net,46,3,
+PWell,boundary,46,4,
+PWell,block,46,21,"Defines areas where no well implants are allowed, PWL= NOT(NWell OR PWellBlock)"
+Via3,drawing,49,0,Defines 3-rd metal to 4-th metal contact
+Via3,net,49,3,
+Via3,boundary,49,4,
+Metal4,drawing,50,0,Defines 4-th metal interconnect
+Metal4,label,50,1,
+Metal4,pin,50,2,Defines 4-th metal interconnect
+Metal4,net,50,3,
+Metal4,boundary,50,4,
+Metal4,mask,50,20,added to Metal4: drawing at mask generation
+Metal4,filler,50,22,"Metal4filler layer,only for thick and thin metal5 option"
+Metal4,nofill,50,23,"Filler exclusion definition layer,only for thick and thin metal5 option"
+Metal4,slit,50,24,Metal Slit definition layer
+Metal4,text,50,25,"Text layer for Metal4,used for LVS"
+Metal4,OPC,50,26,Metal4 OPC definition layer
+Metal4,noqrc,50,28,No parasitics extraction
+Metal4,res,50,29,Wire resistor
+Metal4,iprobe,50,33,Current probe (capable for QRC)
+Metal4,diffprb,50,34,Differential current probe (capable for QRC)
+HeatTrans,drawing,51,0,Defines heat source for transistors
+HeatRes,drawing,52,0,Defines heat source for resistors
+FBE,drawing,54,0,Fluidic back side etch
+EmPoly,drawing,55,0,"Defines npn emitter poly region and pnp base poly region"
+DigiSub,drawing,60,0,Substrate recognition layer for LVS
+NoDRC,drawing,62,0,"Excludes areas from design rule checking"
+TEXT,drawing,63,0,"Macro cell name, element text layer"
+Via4,drawing,66,0,Defines 4-th metal to 5-th metal contact
+Via4,net,66,3,
+Via4,boundary,66,4,
+Metal5,drawing,67,0,"Defines 5-th metal interconnect, only for thick metal5 option"
+Metal5,label,67,1,
+Metal5,pin,67,2,"Defines 5-th metal interconnect, only for thick metal5 option"
+Metal5,net,67,3,
+Metal5,boundary,67,4,
+Metal5,mask,67,20,added to Metal5: drawing at mask generation
+Metal5,filler,67,22,"Metal5 filler layer, Reserved for internal use"
+Metal5,nofill,67,23,"Filler exclusion definition layer, reserved for internal use"
+Metal5,slit,67,24,"Metal Slit definition layer,only for thick metal5 option"
+Metal5,text,67,25,Text layer for Metal5
+Metal5,OPC,67,26,Metal5 OPC definition layer
+Metal5,noqrc,67,28,No parasitics extraction
+Metal5,res,67,29,Wire resistor
+Metal5,iprobe,67,33,Current probe (capable for QRC)
+Metal5,diffprb,67,34,Differential current probe (capable for QRC)
+RadHard,drawing,68,0,"Layer used in special technologies to define regions were special radiation hard design rules should apply"
+MemCap,drawing,69,0,Defines position of RFMEMS cap
+Varicap,drawing,70,0,Well implant for varicap devices
+IntBondVia,drawing,72,0,Via on top of interposer's TopMetal2
+IntBondMet,drawing,73,0,Metal connected to IntBondVia
+DevBondVia,drawing,74,0,Via on top of device's TopMetal2
+DevBondMet,drawing,75,0,Metal connected to DevBondVia
+DevTrench,drawing,76,0,"Deep trench from front side for plasma dicing approach"
+Redist,drawing,77,0,"Redistribution layer for metal wiring after chip IO"
+GraphBot,drawing,78,0,1st graphene layer
+GraphTop,drawing,79,0,2nd graphene layer
+AntVia1,drawing,83,0,Deep via between TopMetal2 and AntMetal1
+AntMetal2,drawing,84,0,"Extra second-metal layer for antenna and passive integration"
+GraphCont,drawing,85,0,"GraphBot, GraphTop and GraphGat to GraphMetal1 or GraphMet1L contact"
+SiWG,drawing,86,0,Backend integrated Siwaveguide
+SiWG,filler,86,22,Si waveguide filler layer
+SiWG,nofill,86,23,Si waveguide filler exclusion layer
+SiGrating,drawing,87,0,Si waveguide etching layer
+SiNGrating,drawing,88,0,SiN waveguide etching layer
+GraphPas,drawing,89,0,"Additional passivation for graphene structures"
+EmWind3,drawing,90,0,Defines G3 npn emitter window
+EmWiHV3,drawing,91,0,Defines G3 HVnpn emitter window
+RedBuLay,drawing,92,0,"Burried Layer with reduced dose for isolated NLDMOS"
+SMOS,drawing,93,0,"Extraction recognition layer for special CMOSdevices"
+GraphPad,drawing,97,0,Passivation opening
+Polimide,drawing,98,0,Reserved for future use
+Polimide,label,98,1,
+Polimide,pin,98,2,
+Polimide,net,98,3,
+Recog,drawing,99,0,"general device recognition shape for device extraction"
+Recog,pin,99,2,general device pin
+Recog,esd,99,30,ESD device recognition layer
+Recog,diode,99,31,Active diode recognition layer
+Recog,tsv,99,32,TSV device recognition layer
+Recog,iprobe,99,33,Current probe (capable for QRC)
+Recog,diffprb,99,34,Differential current probe (capable for QRC)
+Recog,pillar,99,35,Copper pillar pad recognition layer
+Recog,sbump,99,36,Solder bumppad recognition layer
+Recog,otp,99,37,OTP device recognition layer
+Recog,pdiode,99,38,Enables extraction of parasitic diodes
+Recog,mom,99,39,"Metal-on-metal (MOM) capacitor recognition layer"
+Recog,pcm,99,100,Process control structure recognition layer
+ColOpen,drawing,101,0,"Defines additional collector opening in SG13 HBTs"
+GraphMetal1,drawing,109,0,Graphene-metal standard interconnect
+GraphMetal1,filler,109,22,Graphene-metal filler layer
+GraphMetal1,nofill,109,23,Graphene-metal filler exclusion layer
+GraphMetal1,slit,109,24,Graphene-metal slitting layer
+GraphMetal1,OPC,109,26,Graphene-metal opc
+GraphMet1L,drawing,110,0,Graphene-metal lift-off interconnect
+GraphMet1L,filler,110,22,Graphene-metal lift-off filler layer
+GraphMet1L,nofill,110,23,Graphene-metal lift-off filler exclusion layer
+GraphMet1L,slit,110,24,Graphene-metal lift-off slitting layer
+GraphMet1L,OPC,110,26,Graphene-metal lift-off opc
+EXTBlock,drawing,111,0,Block tip and halo implants
+NLDD,drawing,112,0,Dedicated pwell body for NLDMOS
+PLDD,drawing,113,0,Dedicated nwell body for PLDMOS
+NExt,drawing,114,0,Reserved for internal LDMOS development
+PExt,drawing,115,0,Reserved for internal use
+NExtHV,drawing,116,0,Reserved for internal use
+PExtHV,drawing,117,0,Reserved for internal use
+GraphGate,drawing,118,0,Graphene GFET gate
+SiNWG,drawing,119,0,Backend integrated SiN waveguide
+SiNWG,filler,119,22,SiN waveguide filler layer
+SiNWG,nofill,119,23,SiN waveguide filler exclusion layer
+MEMPAD,drawing,124,0,"Dedicated to open Pads in RF-MEMS module"
+TopVia1,drawing,125,0,"Defines 3-rd (or 5-th) metal to TopMetal1 contact"
+TopVia1,net,125,3,
+TopVia1,boundary,125,4,
+TopMetal1,drawing,126,0,Defines 1-st thick TopMetal layer
+TopMetal1,label,126,1,
+TopMetal1,pin,126,2,Defines 1-st thick TopMetal layer
+TopMetal1,net,126,3,
+TopMetal1,boundary,126,4,
+TopMetal1,mask,126,20,"added to TopMetal1: drawing at mask generation"
+TopMetal1,filler,126,22,TopMetal1 filler layer
+TopMetal1,nofill,126,23,TopMet1Flr exclusion layer
+TopMetal1,slit,126,24,TopMet1 Slit definition layer
+TopMetal1,text,126,25,"Text layer for TopMetal1, used for LVS"
+TopMetal1,noqrc,126,28,No parasitics extraction
+TopMetal1,res,126,29,Wire resistor
+TopMetal1,iprobe,126,33,Current probe (capable for QRC)
+TopMetal1,diffprb,126,34,Differential current probe (capable for QRC)
+INLDPWL,drawing,127,0,Dedicated PWell body for isolated NLDMOS
+PolyRes,drawing,128,0,"used for mark net resistors,see GatPoly= GatPoly OR PolyRes"
+PolyRes,label,128,1,
+PolyRes,pin,128,2,"Defines polysilicon gates and interconnect, GatPoly= GatPoly OR PolyRes"
+PolyRes,net,128,3,
+PolyRes,boundary,128,4,
+Vmim,drawing,129,0,"used for mark net mim capacitors, see Via2= Via2 OR Vmim"
+nBuLayCut,drawing,131,0,P-separation implatINLDMOS(internaluse)
+AntMetal1,drawing,132,0,"Extra first-metal layer for antenna and passive integration"
+TopVia2,drawing,133,0,"Defines via between TopMetal1 and TopMetal2"
+TopVia2,net,133,3,
+TopVia2,boundary,133,4,
+TopMetal2,drawing,134,0,Defines 2-nd thick TopMetal layer
+TopMetal2,label,134,1,
+TopMetal2,pin,134,2,Defines 2-nd thick TopMetal layer
+TopMetal2,net,134,3,
+TopMetal2,boundary,134,4,
+TopMetal2,mask,134,20,"added to TopMetal2: drawing at mask generation"
+TopMetal2,filler,134,22,Filler exclusion layer for TopMetal2
+TopMetal2,nofill,134,23,Filler exclusion layer for TopMetal2
+TopMetal2,slit,134,24,TopMetal2 Slit definition layer
+TopMetal2,text,134,25,Text layer for TopMetal2
+TopMetal2,noqrc,134,28,No parasitics extraction
+TopMetal2,res,134,29,Wire resistor
+TopMetal2,iprobe,134,33,Current probe (capable for QRC)
+TopMetal2,diffprb,134,34,Differential current probe (capable for QRC)
+SNSRing,drawing,135,0,Sensor package ring
+Sensor,drawing,136,0,
+SNSArms,drawing,137,0,Arms of the Sensor
+SNSCMOSVia,drawing,138,0,"Defines via between BiCMOS wafer and sensor"
+ColWind,drawing,139,0,Defines enclosed active transistor region
+FLM,drawing,142,0,Defines fluidic channel
+HafniumOx,drawing,143,0,RRAM-reduced MIM layer
+MEMVia,drawing,145,0,Local Vias within RFM area
+ThinFilmRes,drawing,146,0,"ThinFilmRes(V) and recognition layer for RFMEMS"
+RFMEM,drawing,147,0,Areas for integrated RFMEMS devices
+NoRCX,drawing,148,0,No parasitics extraction
+NoRCX,m2m3,148,41,No parasitics extraction in Metal2 and Metal3
+NoRCX,m2m4,148,42,No parasitics extraction in Metal2 and Metal4
+NoRCX,m2m5,148,43,No parasitics extraction in Metal2 and Metal5
+NoRCX,m2tm1,148,44,"No parasitics extraction in Metal2 and TopMetal1"
+NoRCX,m2tm2,148,45,"No parasitics extraction in Metal2 and TopMetal2"
+NoRCX,m3m4,148,46,No parasitics extraction in Metal3 and Metal4
+NoRCX,m3m5,148,47,No parasitics extraction in Metal3 and Metal5
+NoRCX,m3tm1,148,48,"No parasitics extraction in Metal3 and TopMetal1"
+NoRCX,m3tm2,148,49,"No parasitics extraction in Metal3 and TopMetal2"
+NoRCX,m4m5,148,50,No parasitics extraction in Metal4 and Metal5
+NoRCX,m4tm1,148,51,"No parasitics extraction in Metal4 and TopMetal1"
+NoRCX,m4tm2,148,52,"No parasitics extraction in Metal4 and TopMetal2"
+NoRCX,m5tm1,148,53,"No parasitics extraction in Metal5 and TopMetal1"
+NoRCX,m5tm2,148,54,"No parasitics extraction in Metal5 and TopMetal2"
+NoRCX,tm1tm2,148,55,"No parasitics extraction in TopMetal1 and TopMetal2"
+NoRCX,m1sub,148,123,"No parasitics extraction in Metal1 and Substrate"
+NoRCX,m2sub,148,124,"No parasitics extraction in Metal2 and Substrate"
+NoRCX,m3sub,148,125,"No parasitics extraction in Metal3 and Substrate"
+NoRCX,m4sub,148,126,"No parasitics extraction in Metal4 and Substrate"
+NoRCX,m5sub,148,127,"No parasitics extraction in Metal5 and Substrate"
+NoRCX,tm1sub,148,300,"No parasitics extraction in TopMetal1 and Substrate"
+NoRCX,tm2sub,148,301,"No parasitics extraction in TopMetal2 and Substrate"
+SNSBotVia,drawing,149,0,Sensor bottom via
+SNSTopVia,drawing,151,0,Sensor top via
+DeepVia,drawing,152,0,Through Silicon Via
+FGEtch,drawing,153,0,"At this place the 1-st poly-Silayer (floating-gate) is etched before the 2-nd poly-Si layer(control-gate) is deposited"
+CtrGat,drawing,154,0,"This layer patterns the 2-nd poly-Silayer (control-gate)"
+FGImp,drawing,155,0,"Defines areas where the Floating-gate is doped and the p-well of the flash-cells is formed"
+EmWiHV,drawing,156,0,EmWind layer for high voltage HBT
+LBE,drawing,157,0,For localized back side etch
+AlCuStop,drawing,159,0,Reserved for internal use
+NoMetFiller,drawing,160,0,Exclude all metall filler
+prBoundary,drawing,189,0,
+prBoundary,label,189,1,
+prBoundary,boundary,189,4,
+Exchange0,drawing,190,0,
+Exchange0,label,190,1,
+Exchange0,pin,190,2,
+Exchange0,text,190,25,
+Exchange1,drawing,191,0,
+Exchange1,label,191,1,
+Exchange1,pin,191,2,
+Exchange1,text,191,25,
+Exchange2,drawing,192,0,
+Exchange2,label,192,1,
+Exchange2,pin,192,2,
+Exchange2,text,192,25,
+Exchange3,drawing,193,0,
+Exchange3,label,193,1,
+Exchange3,pin,193,2,
+Exchange3,text,193,25,
+Exchange4,drawing,194,0,
+Exchange4,label,194,1,
+Exchange4,pin,194,2,
+Exchange4,text,194,25,

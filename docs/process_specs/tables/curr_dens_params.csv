@@ -1,22 +1,19 @@
-Parameter,Name,Unit,Min,"Tar-
-get",Max,"Meas.
-Cond.",Comment
-Metal1,IMAXM1,mA,,,0.36,A.v,w = 0.16 ... 0.36 µm
-Metal1,JMAXM1,mA/µm,,,1,A.v,w > 0.36 µm
-Metal2,IMAXM2,mA,,,0.6,A.v,w = 0.2 … 0.3 µm
-Metal2,JMAXM2,mA/µm,,,2,A.v,w > 0.3 µm
-Metal3,IMAXM3,mA,,,0.6,A.v,w = 0.2 … 0.3 µm
-Metal3,JMAXM3,mA/µm,,,2,A.v,w > 0.3 µm
-Metal4,IMAXM4,mA,,,0.6,A.v,w = 0.2 … 0.3 µm
-Metal4,JMAXM4,mA/µm,,,2,A.v,w > 0.3 µm
-Metal5,IMAXM5,mA,,,0.6,A.v,w = 0.2 … 0.3 µm
-Metal5,JMAXM5,mA/µm,,,2,A.v,w > 0.3 µm
-TopMetal1,JMAXM6,mA/µm,,,15,A.v,
-TopMetal2,JMAXM7,mA/µm,,,16,A.v,
-Contact,JMAXCNT,mA/Cnt,,,0.3,A.v,
-Via1,JMAXVIA1,mA/Via,,,0.4,A.v,
-Via2,JMAXVIA2,mA/Via,,,0.4,A.v,
-Via3,JMAXVIA3,mA/Via,,,0.4,A.v,
-Via4,JMAXVIA4,mA/Via,,,0.4,A.v,
-TopVia1,JMAXTVIA1,mA/Via,,,1.4,A.v,
-TopVia2,JMAXTVIA2,mA/Via,,,10,A.v,
+Metal1,IMAXM1,mA,,,:ital:`0.36`,A.v,w = 0.16 ... 0.36 µm
+Metal1,JMAXM1,mA/µm,,,:ital:`1`,A.v,w > 0.36 µm
+Metal2,IMAXM2,mA,,,:ital:`0.6`,A.v,w = 0.2 … 0.3 µm
+Metal2,JMAXM2,mA/µm,,,:ital:`2`,A.v,w > 0.3 µm
+Metal3,IMAXM3,mA,,,:ital:`0.6`,A.v,w = 0.2 … 0.3 µm
+Metal3,JMAXM3,mA/µm,,,:ital:`2`,A.v,w > 0.3 µm
+Metal4,IMAXM4,mA,,,:ital:`0.6`,A.v,w = 0.2 … 0.3 µm
+Metal4,JMAXM4,mA/µm,,,:ital:`2`,A.v,w > 0.3 µm
+Metal5,IMAXM5,mA,,,:ital:`0.6`,A.v,w = 0.2 … 0.3 µm
+Metal5,JMAXM5,mA/µm,,,:ital:`2`,A.v,w > 0.3 µm
+TopMetal1,JMAXM6,mA/µm,,,:ital:`15`,A.v,
+TopMetal2,JMAXM7,mA/µm,,,:ital:`16`,A.v,
+Contact,JMAXCNT,mA/Cnt,,,:ital:`0.3`,A.v,
+Via1,JMAXVIA1,mA/Via,,,:ital:`0.4`,A.v,
+Via2,JMAXVIA2,mA/Via,,,:ital:`0.4`,A.v,
+Via3,JMAXVIA3,mA/Via,,,:ital:`0.4`,A.v,
+Via4,JMAXVIA4,mA/Via,,,:ital:`0.4`,A.v,
+TopVia1,JMAXTVIA1,mA/Via,,,:ital:`1.4`,A.v,
+TopVia2,JMAXTVIA2,mA/Via,,,:ital:`10`,A.v,

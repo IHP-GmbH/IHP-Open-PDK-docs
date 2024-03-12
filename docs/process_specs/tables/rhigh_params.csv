@@ -1,13 +1,8 @@
-Parameter,Name,Unit,Min,"Tar-
-get",Max,"Meas.
-Cond.",Comment
-Sheet Resistance,RSRHIGH,W,1160,1360,1560,A.i,
-Line Width Delta,DWRHIGH,nm,-80,-40,0,A.i,
-Temperature Coefficients,"TC1NRHIGH
-TC2NRHIGH","ppm/K
-ppm/K2",,"-2300
-2.1",,A.af,
-Matching Coefficient,MATRHIGH,nm,,48,,A.ac,
-"Metal-to-Body-Resis-
-tance",RCRHIGH,W*µm,,80,,A.ae,
-Max. Current Density,IMRHIGH,mA/μm,,,0.6,,11 years @105°C
+Sheet Resistance,RSRHIGH,Ω,:red:`1160`,:blue:`1360`,:red:`1560`,A.i,
+Line Width Delta,DWRHIGH,nm,:blue:`-80`,:blue:`-40`,:blue:`0`,A.i,
+Temperature Coefficients,TC1NRHIGH,ppm/K,,:ital:`-2300`,,A.af,
+Temperature Coefficients,TC2NRHIGH,ppm/K²,,:ital:`2.1`,,A.af,
+Matching Coefficient,MATRHIGH,nm,,:ital:`48`,,A.ac,
+"Metal-to-Body-
+Resistance",RCRHIGH,Ω*µm,,:ital:`80`,,A.ae,
+Max. Current Density,IMRHIGH,mA/μm,,,:ital:`0.6`,,11 years @105°C

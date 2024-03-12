@@ -1,25 +1,23 @@
-Parameter,Name,Unit,Min,Target,Max,"Meas.
-Cond.",Comment
 "Threshold Voltage
-Short Channel Device",VTNHV10x045,V,0.63,0.70,0.77,A.a2,WxL = 10 x 0.45 µm²
+Short Channel Device",VTNHV10x045,V,:red:`0.63`,:blue:`0.70`,:red:`0.77`,A.a2,WxL = 10 x 0.45 µm²
 "Threshold Voltage
-Long Channel Device",VTNHV10x10,V,0.65,0.69,0.73,A.a2,WxL = 10 x 10 µm²
+Long Channel Device",VTNHV10x10,V,:blue:`0.65`,:blue:`0.69`,:blue:`0.73`,A.a2,WxL = 10 x 10 µm²
 "Threshold Voltage
-Small Channel Device",VTNHV030x045,V,0.59,0.67,0.75,A.a2,WxL = 0.30 x 0.45 µm²
+Small Channel Device",VTNHV030x045,V,:blue:`0.59`,:blue:`0.67`,:blue:`0.75`,A.a2,WxL = 0.30 x 0.45 µm²
 "Saturation Current
-Short Channel Device",IDSNHV045,µA/µm,480,560,640,A.b2,WxL = 10 x 0.45 µm²
+Short Channel Device",IDSNHV045,µA/µm,:red:`480`,:blue:`560`,:red:`640`,A.b2,WxL = 10 x 0.45 µm²
 "Off-Current
 Short Channel Device",IOFFNHV045,"LOG10
-(A/µm)",,-12.5,-11.0,A.c2,WxL = 10 x 0.45 µm²
+(A/µm)",,:blue:`-12.5`,:red:`-11.0`,A.c2,WxL = 10 x 0.45 µm²
 "Drain Induced Barrier
-Lowering 0.1/1.8V",DIBLNHV045,mV/V,0,15,30,A.d2,WxL = 10 x 0.45 µm²
-Sub Threshold Slope,SSNHV045,mV/dec,72,84,96,A.e,WxL = 10 x 0.45 µm²
-Breakdown Voltage,BVDSSNHV045,V,"5,3",6.1,,A.f2,WxL = 10 x 0.45 µm²
+Lowering 0.1/1.8V",DIBLNHV045,mV/V,:blue:`0`,:blue:`15`,:blue:`30`,A.d2,WxL = 10 x 0.45 µm²
+Sub Threshold Slope,SSNHV045,mV/dec,:blue:`72`,:blue:`84`,:blue:`96`,A.e,WxL = 10 x 0.45 µm²
+Breakdown Voltage,BVDSSNHV045,V,:red:`5.3`,:blue:`6.1`,,A.f2,WxL = 10 x 0.45 µm²
 "Effective Channel
-Length",LEFFNHV045,µm,0.26,0.31,0.36,A.g2,WxL = 10 x 0.45 µm²
+Length",LEFFNHV045,µm,:blue:`0.26`,:blue:`0.31`,:blue:`0.36`,A.g2,WxL = 10 x 0.45 µm²
 "Effective Channel
-Width",WEFFNHV030,µm,0.23,0.28,0.33,A.h2,WxL = 0.30 x 0.45 µm²
-Miller Capacitance,CMILLERNHV,fF/µm,"0,42",0.45,"0,48",A.k1,
+Width",WEFFNHV030,µm,:blue:`0.23`,:blue:`0.28`,:blue:`0.33`,A.h2,WxL = 0.30 x 0.45 µm²
+Miller Capacitance,CMILLERNHV,fF/µm,:blue:`0.42`,:blue:`0.45`,:blue:`0.48`,A.k1,
 Junction Capacitance,"CJUNC-
-TIONNHV",fF/µm²,"0,74","0,80","0,86",A.k,
-Junction Breakdown,BVNPWhv,V,,12,,A.f3,
+TIONNHV",fF/µm²,:blue:`0.74`,:blue:`0.80`,:blue:`0.86`,A.k,
+Junction Breakdown,BVNPWhv,V,,:ital:`12`,,A.f3,
