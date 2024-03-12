@@ -1,17 +1,19 @@
-1.0 General
-===========
+General
+=======
 
-1.1 Scope
----------
+Scope
+-----
 
 This document describes the design rules for IHPs SG13G2 SiGe BiCMOS technology.
 
-1.2 List of abbreviations
--------------------------
+.. _list_of_abbreviations:
+
+List of abbreviations
+---------------------
 
 
-1.3 Layout Information
-----------------------
+Layout Information
+------------------
 
 .. note::
 
@@ -23,5 +25,6 @@ This document describes the design rules for IHPs SG13G2 SiGe BiCMOS technology.
 
     1.4 Unless specified otherwise, all dimensions provided herein are considered to be minimum requirements.
 
-1.4 Reference documents
------------------------
+Reference documents
+-------------------
+

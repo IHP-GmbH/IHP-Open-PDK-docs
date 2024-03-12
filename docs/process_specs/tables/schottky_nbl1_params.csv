@@ -1,0 +1,7 @@
+Parameter,Name,Unit,Min,"Tar-
+get",Max,"Meas.
+Cond.",Comment
+Reverse current density,IRNBL1,µA/µm²,-1,-0.1,0,,"0.3 x 1.0 µm²
+@ -2.5 V"
+Diode Voltage,VFNBL1,V,0.34,0.39,0.44,,"0.3 x 1.0 µm²
+@ 100 µA/µm²"

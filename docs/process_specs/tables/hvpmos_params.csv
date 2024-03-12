@@ -1,0 +1,26 @@
+Parameter,Name,Unit,Min,"Tar-
+get",Max,"Meas.
+Cond.",Comment
+"Threshold Voltage
+Short Channel Device",VTPHV10x04,V,-0.71,-0.65,-0.59,A.a2,WxL = 10 x 0.4 µm²
+"Threshold Voltage
+Long Channel Device",VTPHV10x10,V,-0.78,-0.70,-0.64,A.a2,WxL = 10 x 10 µm²
+"Threshold Voltage
+Small Channel Device",VTPHV03x04,V,-0.71,-0.64,-0.57,A.a2,WxL = 0.3 x 0.4 µm²
+"Saturation Current
+Short Channel Device",IDSPHV04,µA/µm,-290,-240,-190,A.b2,WxL = 10 x 0.4 µm²
+"Off-Current
+Short Channel Device",IOFFPHV04,"LOG10
+(A/µm)",,-12.5,-11.5,A.c2,WxL = 10 x 0.4 µm²
+"Drain Induced Barrier
+Lowering 0.1/3.3V",DIBLPHV04,mV/V,0,5,15,A.d2,WxL = 10 x 0.4 µm²
+Sub Threshold Slope,SSPHV04,mV/dec,-102,-92,-82,A.e,WxL = 10 x 0.4 µm²
+Breakdown Voltage,BVDSSPHV04,V,,-6.3,-5.3,A.f2,WxL = 10 x 0.4 µm²
+"Effective Channel
+Length",LEFFPHV04,µm,0.24,0.30,0.36,A.g2,WxL = 10 x 0.4 µm²
+"Effective Channel
+Width",WEFFPHV03,µm,0.26,0.33,0.40,A.h2,WxL = 0.3 x 0.4 µm²
+Miller Capacitance,CMILLERPHV,fF/µm,0.32,0.35,0.38,A.k1,
+Junction Capacitance,"CJUNCTION-
+PHV",fF/µm²,0.74,0.80,0.86,A.k,
+Junction Breakdown,BVPNWhv,V,,-12,,A.f3,

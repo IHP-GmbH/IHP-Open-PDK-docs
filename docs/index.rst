@@ -10,6 +10,7 @@ Welcome to 130nm BiCMOS Open Source PDK documentation!
 
     layout_rules/rules_man
     lvs/lvs_man
+    process_specs/process_specs
 
 .. warning::
     This documentation is currently a **work in progress**.

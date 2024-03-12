@@ -1,0 +1,16 @@
+Parameter,Name,Unit,Min,"Tar-
+get",Max,"Meas.
+Cond.",Comment
+Threshold Voltage Short Channel Device,VTP10x013,V,:red:`-0.53`,:blue:`-0.47`,:red:`-0.41`,A.a1,WxL = 10 x 0.13 µm²
+Threshold Voltage Long Channel Device,VTP10x10,V,:blue:`-0.41`,:blue:`-0.36`,:blue:`-0.31`,A.a1,WxL = 10 x 10 µm²
+Threshold Voltage Small Channel Device,VTP015x013,V,:blue:`-0.58`,:blue:`-0.48`,:blue:`-0.38`,A.a1,WxL = 0.15 x 0.13 µm²
+Saturation Current Short Channel Device,IDSP013,µA/µm,:red:`-270`,:blue:`-215`,:red:`-170`,A.b1,WxL = 10 x 0.13 µm²
+Off-Current Short Channel Device,IOFFP013, LOG10 (A/µm),,:blue:`-10.3`,:red:`-9.3`,A.c1,WxL = 10 x 0.13 µm²
+Drain Induced Barrier Lowering 0.1/1.2V,DIBLP013,mV/V,:blue:`25`,:blue:`50`,:blue:`75`,A.d1,WxL = 10 x 0.13 µm²
+Sub Threshold Slope,SSP013,mV/dec,:blue:`-87`,:blue:`-81`,:blue:`-75`,A.e,WxL = 10 x 0.13 µm²
+Breakdown Voltage,BVDSSP013,V,,:blue:`-2.9`,:red:`-2.2`,A.f1,WxL = 10 x 0.13 µm²
+Effective Channel Length,LEFFP013,µm,:blue:`0.07`,:blue:`0.10`,:blue:`0.13`,A.g1,WxL = 10 x 0.13 µm²
+Effective Channel Width,WEFFP015,µm,:blue:`0.17`,:blue:`0.24`,:blue:`0.31`,A.h1,WxL = 0.15 x 0.13 µm²
+Miller Capacitance,CMILLERP,fF/µm,:blue:`0.31`,:blue:`0.35`,:blue:`0.39`,A.k1,
+Junction Capacitance,CJUNCTIONP,fF/µm²,:blue:`0.8`,:blue:`0.85`,:blue:`0.9`,A.k,
+Junction Breakdown,BVPNW,V,,:ital:`-12`,,A.f3,

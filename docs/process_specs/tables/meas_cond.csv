@@ -1,0 +1,131 @@
+A.a1, Threshold Voltage, "- VDS = +0.05 V / -0.05 V (n-channel / p-channel device); VBS = 0 V;
+- VT is extrapolated from the maximum slope of the active transfer characteristic region. 
+- A linear regression is performed to find this slope. VT = Vo - VDS/2; 
+- Vo is the gate voltage intercept of the slope.
+- Isolated NMOS: VnWell = 0 V"
+A.a2, Threshold Voltage, "- VDS = +0.1 V / -0.1 V (n-channel / p-channel device); VBS = 0V;
+- VT is extrapolated from the maximum slope of the active transfer characteristic region. 
+- A linear regression is performed to find this slope. VT = Vo - VDS/2; 
+- Vo is the gate voltage intercept of the slope.
+- Isolated NMOS: VnWell = 0 V"
+A.b1, Saturation Current, "- VDS = VGS= +1.2 V / -1.2 V (n-channel / p-channel device); 
+- VBS = 0 V; Isolated NMOS; VnWell = 0 V"
+A.b2, Saturation Current, "- VDS = VGS= +3.3 V / -3.3 V (n-channel / p-channel device); 
+- VBS = 0 V; Isolated NMOS; VnWell = 0 V"
+A.c1, Off-Current, "- VDS=+1.2V / -1.2V (n-channel device / p-channel device); 
+- VGS=VBS=0 V; ID measured"
+A.c2, Off-Current, "- VDS=+3.3V / -3.3V (n-channel device / p-channel device); 
+- VGS=VBS=0 V; ID measured"
+A.d1, Drain Induced Barrier Lowering, "- DIBL = [VGS(VDS1) - VGS(VDS2)]/(VDS1-VDS2) at ID = JSS*W/L
+- VDS1 = +0.1 V; VDS2 = +1.2 V; VBS = 0 V; JSS = 0.5 nA (n-channel device)
+- VDS1 = -0.1 V; VDS2 = -1.2 V; VBS= 0 V; JSS = 0.1 nA (p-channel device)"
+A.d2, Drain Induced Barrier Lowering, "- DIBL = [VGS(VDS1) – VGS(VDS2)]/(VDS1-VDS2) at ID = ISS*W/L
+- VDS1 = +0.1 V; VDS2 = +3.3 V; VBS = 0 V; ISS = 1 nA (n-channel device)
+- VDS1 = -0.1 V; VDS2 = -3.3 V; VBS= 0 V; ISS = 0.4 nA (p-channel device)"
+A.e, Sub Threshold Slope, "- VDS = +0.1 V / -0.1 V (n-channel / p-channel device); VBS = 0 V
+- The slope is estimated from the two drain currents ID1 = JSS1*W/L and ID2 = JSS2*W/L
+- JSS1 = 0.5 nA, ISS2 = 5 nA (n-channel device);
+- JSS1 = 0.1 nA, ISS2 = 1 nA (p-channel device);"
+A.f1, Breakdown Voltage, "VGS=VBS=0 V; ID=IDo=+10 nA/µm / -10 nA/µm (n-channel / p-channel device)"
+A.f2, Breakdown Voltage, "VGS = VBS = 0V; ID = +100 pA/µm / -100 pA/µm (n-channel / p-channel device)"
+A.f3, Breakdown Voltage, "j = 1 mA / cm² for S/D to body diode surrounded by STI"
+A.g1, Effective Channel Length, "Extrapolated from linear regions of transistors with gate length's of 0.13 µm, 0.18 µm;
+VDS=+0.05 V / -0.05 V (n-channel / p-channel device)
+Method (P. Suciu et.al., e.g. IEEE Tr. ED-27(1980)9,p.1846):
+- Basic equations:
+(1) ID =  (VGSeff – VDS/2) VDS
+(2) VGSeff = VGS– Vt
+(3) µ = µo / (1 + Uo VGSeff)
+(4) 1/(VGSeff) = (L – L) / (W µ Cox) = (L – L) (1 + Uo VGSeff) / (W µo Cox)
+(5) 1/o(L) = (L - L) / (W µo Cox)
+First step: according to equ.(4), linear extrapolation of 1/o = 1/(VGSeff = 0) from two working points
+VGSeff1 = +0.9V / -0.9V; V GSeff2 = +1.5V / -1.5V (n-channel / p-channel device) for all transistors with different
+gate length
+Second step: linear regression of L from all 1/o(L) numbers according to equ.(5)"
+A.g2, Effective Channel Length,"Extrapolated from linear regions of transistors with gate length’s of 0.33 µm (only SG13S), 0.45 µm, 10
+µm / 0.33 µm (only SG13S) 0,4 µm, 10 µm; VDS=+0.1 V / -0.1 V (n-channel / p-channel device)
+Method (P. Suciu et.al., e.g. IEEE Tr. ED-27(1980)9,p.1846):
+Basic equations:
+(1) ID =  (VGSeff – VDS/2) VDS
+(2) VGSeff = VGS– Vt
+(3) µ = µo / (1 + Uo VGSeff)
+(4) 1/(VGSeff) = (L – L) / (W µ Cox) = (L – L) (1 + Uo VGSeff) / (W µo Cox)
+(5) 1/o(L) = (L - L) / (W µo Cox)
+First step: according to equ.(4), linear extrapolation of 1/o = 1/(VGSeff = 0) from two working points VGSeff1
+= +1V / -1V; VGSeff2 = +1.5V / -1.5V (n-channel / p-channel device) for all transistors with different gate
+length
+Second step: linear regression of L from all 1/o(L) numbers according to equ.(5)"
+A.h1, Effective Channel Width,"Extrapolated from linear regions of transistors with gate width’s of 0.15µm, 10.0 µm (not isolated NMOS),
+VDS = +0.05 V / -0.05 V (n-channel / p-channel device)
+Basic equations:
+(1) ID =  (VGSeff – VDS/2) VDS
+(2) VGSeff = VGS– VT
+(3) µ = µo / (1 + Uo VGSeff)
+1. 1/(VGSeff) = L / [(W - W) µ Cox] = [L ( 1 + Uo VGSeff)] / [(W - W) µo Cox]
+2. o(W) = (W - W) µo Cox / L
+First step: according to equ.(4), linear extrapolation of 1/o = 1/(VGSeff = 0) from two working points VGSeff1
+= +1V / -1V; VGSeff2 = +1.5V / -1.5V (n-channel / p-channel device) for all transistors with different gate
+width
+Second step: linear regression of W from all o(W) numbers according to equ.(5)"
+A.h2, Effective Channel Width, "Extrapolated from linear regions of transistors with gate width’s of 0.3 µm, 10.0 µm ,
+VDS = +0.1 V / -0.1 V (n-channel / p-channel device)
+Basic equations:
+(1) ID =  (VGSeff – VDS/2) VDS
+(2) VGSeff = VGS– VT
+(3) µ = µo / (1 + Uo VGSeff)
+3. 1/(VGSeff) = L / [(W - W) µ Cox] = [L ( 1 + Uo VGSeff)] / [(W - W) µo Cox]
+4. o(W) = (W - W) µo Cox / L
+First step: according to equ.(4), linear extrapolation of 1/o = 1/(VGSeff = 0) from two working points VGSeff1
+= +1V / -1V; VGSeff2 = +1.5V / -1.5V (n-channel / p-channel device) for all transistors with different gate
+width
+Second step: linear regression of W from all o(W) numbers according to equ.(5)"
+A.i, "Sheet Resistance, Line Width Delta", "The sheet resistance R s and the line width delta (= W) values are calculated from the resistances of two
+resistors R1 and RN:
+- R1: one single stripe with the dimension W x L
+- RN: N stripes in parallel with dimensions (W/N) x L each
+Formulas: R1 = Rs L / (W + W) and RN = Rs (L / N) / (W/N + W)
+Voltage across both resistors in series: 0.5V"
+A.k, "Capacitance Measurements, Area Capacitances", "V=0V; f=100kHz; Area Capacitance = Cmeasure / Area"
+A.k1, "Capacitance Measurements MIM, Area Capacitances", "V=2V applied to top plate; f=100kHz"
+A.l, "Capacitance Measurements, Perimeter Capacitance", "- V=0V; f=100kHz
+- Perimeter capacitance = Cmeasure / Perimeter"
+A.n, Current Gain, "BETA = IC / IB; VBE=0.7V; VCB=0V"
+A.o, Early Voltage, "VCE = 0.9  0.2 V; IB = const = IB(VBE = 0.70 V; VCB = 0 V)"
+A.p, Breakdown Voltage BVCE0, "Extrapolation from the J C=(0.3 – 0.75)mA/µm² part of the V CE(IC) characteristic, JC related to the emitter area AE"
+A.q, Breakdown Voltage BVCB0, "IE=0; ICB=0.1µA"
+A.r, Breakdown Voltage BVEB0, "IC=0; IEB=1µA"
+A.s, "HBT Maximum Transit Frequency (fT), HBT Maximum Oscillation Frequency (fmax)", "U and h21 are measured as a function of V BE @ VCE = 1.2 V and 40 GHz. f T and fmax are extrapolated, with
+20dB decay per f-decade, from the 40 GHz h21 and sqrt(U) values, respectively. De-embedding is applied."
+A.v, "Maximum Current Density of Metal Lines, Contacts and Vias", "The maximum current density is determined via electromigration measurements as part of the process
+qualification procedure. The current density values given were estimated to reach less than 0.01% failure
+in 11years of operation at 105°C (for SG13RH: 20 years at 125°C)"
+A.x, Gateoxide thickness measurement using Cox extrapolation, "Measured capacitance corrected for Offset and Miller Capacitance. Tox = 3.9*Eps0*Area/Cox"
+A.w, Optical Layer Thickness, "The thickness of the layer is measured by means of optical interferometry / ellipsometry"
+A.y, MIM Breakdown Voltage, "- VBOTTOM=0V; JBVMIM=1 pA/µm²
+- BVMIM : Current forced into the top plate and corresponding voltage is measured."
+A.ac, Resistor Matching Coefficient k, "Measuring the matching behavior of resistor pairs, differing in the resistor area, are investigated. The
+least square fit s(dR/R) vs. inverse square root of area is estimated: s(dR/R) = k*A-0.5"
+A.ad, MIM Capacitor Temperature Coefficient, "Measurement of capacitance (at VMIM = 0V, f = 1MHz) as a function of temperature in the range -40°C to
+125°C.
+Temperature coefficients TCMIM1 and TCMIM2; T0 = 300K
+C(T) = C(T0) * [1 + TCMIM1 * (T - T0) + TCMIM2 * (T – T0)2]"
+A.ae, Salicide to GatPoly Contact Resistance, "RRES = (2* RCONT / # of contacts) + (2* RC2POLY / resistor width) + RPOLY
+Note that this formula is only valid for resistors with same width of unsalicided and salicided regions
+RRES: Total resistance of a resistor; RCONT: Contribution of a single W-plug (typically < 1W)
+RC2POLY: Salicide to GatPoly contact resistance
+RPOLY: Contribution of the unsalicided polysilicon stripe (= RS* L / W)"
+A.af, Resistor Temperature Coefficients, "Measurement of R as a function of temperature in the range -40°C to 125°C.
+Temperature coefficients TC1 and TC2; T0 = 300K
+R(T) = R(T0) * [1 + TC1 * (T - T0) + TC2 * (T – T0)2]"
+A.ag, SEM Cross Section Analysis,
+A.ah, MIM Capacitor Voltage Coefficients, "Measurement of capacitance (at T = 300K, f = 1MHz) as a function of the applied voltage (V MIM) in the
+range -10V to +10V. VMIM is applied at the lower electrode, while the top electrode is grounded.
+C(VMIM) = C(VMIM =0V) * [1 + VCMIM1 * (VMIM) + VCMIM2 * (VMIM)2]"
+A.ai, Collector Current, "VBE=0.7V; VCB=0V"
+A.al, HBT Transistor Matching Coefficient k, "Measuring the matching behavior of transistor pairs, differing in the emitter area, are investigated. The
+least square fit s(dVBE) vs. inverse square root of area is estimated: s(dVBE) = k*A-0.5
+VBE=0.7V; VCB=0V"
+A.am, MOS Transistor Matching Coefficient k, "Measuring transistor pairs, differing in the gate area. The least square fit s(dVT) vs. inverse square root
+of area is estimated: s(dVT) = k*A-0.5
+VDS=0.1 V; ID=2µA W/L"
+A.aq, Capacitance of metal layer to Active or Substrate, "V=0V; f=100kHz"

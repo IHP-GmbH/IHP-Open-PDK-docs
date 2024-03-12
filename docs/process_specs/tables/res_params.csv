@@ -1,0 +1,60 @@
+Parameter,Name,Unit,Min,"Tar-
+get",Max,"Meas.
+Cond.",Comment
+Substrate Resistivity,RSBLK,Wcm,37.5,50,62.5,,"Specification:
+WAFPR3763"
+Salicided GatPoly (n+),refer section 2.13,,,,,,
+Unsalicized GatPoly (n+),refer section 2.14,,,,,,
+Unsalicided GatPoly (p+),refer section 2.15,,,,,,
+"Metal1 Snake
+Sheet Resistance",SNAKEM1,mW,90,115,145,,width = 0.16 µm
+"Unsalicided nSD-Activ
+Sheet Resistance",RSNSD0,W,55,67,79,,
+"Unsalicided pSD-Activ
+Sheet Resistance",RSPSD0,W,69,79,89,,
+"Metal2 Snake
+Sheet Resistance",SNAKEM2,mW,70,88,110,,width = 0.20 µm
+"Metal3 Snake
+Sheet Resistance",SNAKEM3,mW,70,88,110,,width = 0.20 µm
+"Metal4 Snake
+Sheet Resistance",SNAKEM4,mW,70,88,110,,width = 0.20 µm
+"Metal5 Snake
+Sheet Resistance",SNAKEM5,mW,70,88,110,,width = 0.20 µm
+"TopMetal1 Snake
+Sheet Resistance",SNAKETM1,mW,14,18,22,,width = 1.5 µm
+"TopMetal2 Snake
+Sheet Resistance",SNAKETM2,mW,7.5,11,14.5,,width = 2.0 µm
+Metal1 Sheet Resistance,RSMET1,mW,85,110,135,A.i,
+Metal2 Sheet Resistance,RSMET2,mW,73,88,103,A.i,
+Metal3 Sheet Resistance,RSMET3,mW,73,88,103,A.i,
+Metal4 Sheet Resistance,RSMET4,mW,73,88,103,A.i,
+Metal5 Sheet Resistance,RSMET5,mW,73,88,103,A.i,
+"TopMetal1
+Sheet Resistance",RSTM1,mW,15,18,21,A.i,
+"TopMetal2
+Sheet Resistance",RSTM2,mW,7.5,11,14.5,A.i,
+Metal1 Line Width Delta,DWMET1,nm,-64,-24,16,A.i,
+Metal2 Line Width Delta,DWMET2,nm,-56,-16,24,A.i,
+Metal3 Line Width Delta,DWMET3,nm,-56,-16,24,A.i,
+Metal4 Line Width Delta,DWMET4,nm,-56,-16,24,A.i,
+Metal5 Line Width Delta,DWMET5,nm,-50,-20,34,A.i,
+"TopMetal1
+Line Width Delta",DWTM1,nm,-300,-100,100,A.i,
+"TopMetal2
+Line Width Delta",DWTM2,nm,-340,-140,140,A.i,
+"Metal1 Sheet Resistance
+Temperature Coefficient",TC1RSMET1,ppm/K,,3400,,A.af,
+Metal2 Sheet Resistance,TC1RSMET2,ppm/K,,3500,,A.af,
+Temperature Coefficient,,,,,,,
+"Metal3 Sheet Resistance
+Temperature Coefficient",TC1RSMET3,ppm/K,,3500,,A.af,
+"Metal4 Sheet Resistance
+Temperature Coefficient",TC1RSMET4,ppm/K,,3500,,A.af,
+"Metal5 Sheet Resistance
+Temperature Coefficient",TC1RSMET5,ppm/K,,3500,,A.af,
+"TopMetal1 Sheet Resis-
+tance Temperature Coef-
+ficient",TC1RSTM1,ppm/K,,3700,,A.af,
+"TopMetal2 Sheet Resis-
+tance Temperature Coef-
+ficient",TC1RSTM2,ppm/K,,3800,,A.af,

@@ -1,18 +1,22 @@
-***********
-LVS Devices
-***********
+**************
+Layout Devices
+**************
 
 .. rst-class:: center
 
-.. centered::
     **IHP Open Source PDK**
-.. centered::
+
     **130nm BiCMOS Technology**
-.. centered::
+
     **IHP-SG13G2**
-.. centered::
-    **LVS Devices**
+
+    **Layout Devices**
 
 .. toctree::
-    :name: LVS Devices
-    :glob:
+    :numbered:
+    :caption: Contents
+
+    01_general
+    02_layers
+    03_truth_table
+    04_lvs_devices

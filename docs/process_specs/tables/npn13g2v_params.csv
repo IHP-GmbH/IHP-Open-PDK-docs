@@ -1,0 +1,18 @@
+Parameter,Name,Unit,Min,"Tar-
+get",Max,"Meas.
+Cond.",Comment
+Current Gain,NPN13G2V_BETA,-,300,650,1200,A.n,"Aₑ =0.12x1 µm²"
+Early Voltage,NPN13G2V_VA,V,,150,,A.o,"Aₑ =0.12x1 µm²"
+"Breakdown Voltage
+Emitter - Collector",NPN13G2V_BVCEO,V,2.2,2.5,,A.p,"Aₑ =0.12x1 µm²"
+"Breakdown Voltage
+Collector - Base",NPN13G2V_BVCBO,V,7,8.5,,A.q,"Aₑ =0.12x1 µm²"
+"Breakdown Voltage
+Emitter - Base",NPN13G2V_BVEBO,V,1.0,1.8,,A.r,"Aₑ =0.12x1 µm²"
+Collector Current,NPN13G2V_IC07,µA,3.4,4.7,6.2,A.ai,"Aₑ =0.12x1 µm²"
+"Max. Collector Cur-
+rent",NPN13G2V_ICMAX,mA,,,0.5,,"Aₑ =0.12x1 µm²"
+"Max. Transit
+Frequency",NPN13G2V_FT,GHz,90,120,,A.s,"Aₑ =4x(0.12x1 µm²)"
+"Max. Oszillation
+Frequency",NPN13G2V_FMAX,GHz,280,330,,A.s,"Aₑ =4x(0.12x1 µm²)"
