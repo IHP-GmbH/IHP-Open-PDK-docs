@@ -1,14 +1,10 @@
-Parameter,Name,Unit,Min,Target,Max,"Meas.
-Cond.",Comment
-Sheet Resistance,RSRPPD,W,235,260,285,A.i,
-Line Width Delta,DWRPPD,nm,-24,6,36,A.i,
-Temperature Coefficients,"TC1NRPPD
-TC2NRPPD","ppm/K
-ppm/K2",,"170
-0.4",,A.af,
-Matching Coefficient,MATRPPD,nm,,15,,A.ac,
-"Metal-to-Body-Resis-
-tance",RCRPPD,W*µm,,35,,A.ae,
+Sheet Resistance,RSRPPD,Ω,:red:`235`,:blue:`260`,:red:`285`,A.i,
+Line Width Delta,DWRPPD,nm,:blue:`-24`,:blue:`6`,:blue:`36`,A.i,
+Temperature Coefficients,TC1NRPPD,ppm/K,,:ital:`170`,,A.af,
+Temperature Coefficients,TC2NRPPD,ppm/K²,,:ital:`0.4`,,A.af,
+Matching Coefficient,MATRPPD,nm,,:ital:`15`,,A.ac,
+"Metal-to-Body-
+Resistance",RCRPPD,Ω*µm,,:ital:`35`,,A.ae,
 "Temperature Coefficient
-Metal-toBody-Resistance",TC3NRPPD,ppm/K,,-950,,,
-Max. Current Density,IMRPPD,mA/μm,,,1.2,,11 years @105°C
+Metal-toBody-Resistance",TC3NRPPD,ppm/K,,:ital:`-950`,,,
+Max. Current Density,IMRPPD,mA/μm,,,:ital:`1.2`,,11 years @105°C

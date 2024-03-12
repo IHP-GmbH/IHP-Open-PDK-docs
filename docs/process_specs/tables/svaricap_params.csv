@@ -1,14 +1,12 @@
-Parameter,Name,Unit,Min,Target,Max,"Meas.
-Cond.",Comment
-Capacitance -3,SVAR_m3,fF/µm²,20.5,23,25.5,,"10x(3.74x0.3)µm²
+Capacitance -3,SVAR_m3,fF/µm²,:blue:`20.5`,:blue:`23`,:blue:`25.5`,,"10x(3.74x0.3)µm²
 @15.8GHz"
-Capacitance 0,SCVAR_0,fF/µm²,32,35.3,37.5,,"10x(3.74x0.3)µm²
+Capacitance 0,SCVAR_0,fF/µm²,:blue:`32`,:blue:`35.3`,:blue:`37.5`,,"10x(3.74x0.3)µm²
 @15.8GHz"
-Capacitance +3,SCVAR_3,fF/µm²,37.5,39.5,41.5,,"10x(3.74x0.3)µm²
+Capacitance +3,SCVAR_3,fF/µm²,:blue:`37.5`,:blue:`39.5`,:blue:`41.5`,,"10x(3.74x0.3)µm²
 @15.8GHz"
-Q Factor -3,QFACTOR_m3,,50,62,75,,"10x(3.74x0.3)µm²
+Q Factor -3,QFACTOR_m3,,:blue:`50`,:blue:`62`,:blue:`75`,,"10x(3.74x0.3)µm²
 @15.8GHz"
-Q Factor 0,QFACTOR_0,,35,43,50,,"10x(3.74x0.3)µm²
+Q Factor 0,QFACTOR_0,,:blue:`35`,:blue:`43`,:blue:`50`,,"10x(3.74x0.3)µm²
 @15.8GHz"
-Q Factor 3,QFACTOR_3,,35,43,50,,"10x(3.74x0.3)µm²
+Q Factor 3,QFACTOR_3,,:blue:`35`,:blue:`43`,:blue:`50`,,"10x(3.74x0.3)µm²
 @15.8GHz"

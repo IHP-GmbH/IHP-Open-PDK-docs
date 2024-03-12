@@ -1,14 +1,9 @@
-Parameter,Name,Unit,Min,Target,Max,"Meas.
-Cond.",Comment
-Sheet Resistance,RSNRSIL,W,6.2,7.0,7.8,A.i,
-Line Width Delta,DWRSIL,nm,-20,10,40,A.i,
-Temperature Coefficients,"TC1NRSIL
-TC2NRSIL","ppm/K
-ppm/K2",,"3100
-0.3",,A.af,
-Matching Coefficient,"MATRSIL1
-MATRSIL2",nm,,"6
-1.4",,A.ac,
-"Metal-to-Body-Resis-
-tance",RCRSIL,,,4.5,,A.ae,
-Max. Current Density,"is limited by contacts, please refer chapter 2.9",,,,,,
+Sheet Resistance,RSNRSIL,Ω,:red:`6.2`,:blue:`7.0`,:red:`7.8`,A.i,
+Line Width Delta,DWRSIL,nm,:blue:`-20`,:blue:`10`,:blue:`40`,A.i,
+Temperature Coefficients,TC1NRSIL,ppm/K,,:ital:`3100`,,A.af,
+Temperature Coefficients,TC2NRSIL,ppm/K²,,:ital:`0.3`,,A.af,
+Matching Coefficient,MATRSIL1,nm,,:ital:`6`,,A.ac,
+Matching Coefficient,MATRSIL2,nm,,:ital:`1.4`,,A.ac,
+"Metal-to-Body-
+Resistance",RCRSIL,,,:ital:`4.5`,,A.ae,
+Max. Current Density,,,,,,,"Is limited by contacts, please refer chapter 2.9"

@@ -1,18 +1,15 @@
-Parameter,Name,Unit,Min,"Tar-
-get",Max,"Meas.
-Cond.",Comment
-Current Gain,NPN13G2L_BETA,-,300,650,1200,A.n,"Aₑ =0.07x1 µm²"
-Early Voltage,NPN13G2L_VA,V,,150,,A.o,"Aₑ =0.07x1 µm²"
+Current Gain,NPN13G2L_BETA,-,:blue:`300`,:blue:`650`,:blue:`1200`,A.n,"Aₑ =0.07x1 µm²"
+Early Voltage,NPN13G2L_VA,V,,:ital:`150`,,A.o,"Aₑ =0.07x1 µm²"
 "Breakdown Voltage
-Emitter - Collector",NPN13G2L_BVCEO,V,1.4,1.6,,A.p,"Aₑ =0.07x1 µm²"
+Emitter - Collector",NPN13G2L_BVCEO,V,:blue:`1.4`,:blue:`1.6`,,A.p,"Aₑ =0.07x1 µm²"
 "Breakdown Voltage
-Collector - Base",NPN13G2L_BVCBO,V,3.8,4.8,,A.q,"Aₑ =0.07x1 µm²"
+Collector - Base",NPN13G2L_BVCBO,V,:blue:`3.8`,:blue:`4.8`,,A.q,"Aₑ =0.07x1 µm²"
 "Breakdown Voltage
-Emitter - Base",NPN13G2L_BVEBO,V,1.0,1.6,,A.r,"Aₑ =0.07x2 µm²"
-Collector Current,NPN13G2L_IC07,µA,2.6,3.8,5.2,A.ai,"Aₑ =0.07x1 µm²"
+Emitter - Base",NPN13G2L_BVEBO,V,:blue:`1.0`,:blue:`1.6`,,A.r,"Aₑ =0.07x2 µm²"
+Collector Current,NPN13G2L_IC07,µA,:blue:`2.6`,:blue:`3.8`,:blue:`5.2`,A.ai,"Aₑ =0.07x1 µm²"
 "Max. Collector Cur-
-rent",NPN13G2L_ICMAX,mA,,,3.0,,"Aₑ =0.07x1 µm²"
+rent",NPN13G2L_ICMAX,mA,,,:ital:`3.0`,,"Aₑ =0.07x1 µm²"
 "Max. Transit
-Frequency",NPN13G2L_FT,GHz,280,330,,A.s,"Aₑ =4x(0.07x1 µm²)"
+Frequency",NPN13G2L_FT,GHz,:blue:`280`,:blue:`330`,,A.s,"Aₑ =4x(0.07x1 µm²)"
 "Max. Oszillation
-Frequency",NPN13G2L_FMAX,GHz,380,430,,A.s,
+Frequency",NPN13G2L_FMAX,GHz,:blue:`380`,:blue:`430`,,A.s,

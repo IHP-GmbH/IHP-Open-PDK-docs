@@ -1,18 +1,9 @@
-Parameter,Name,Unit,"Min
-1.35","Target
-1.5","Max
-1.65","Meas.
-Cond.",Comment
-Specific Area Capacitance,CMIMA,fF/µm²,,,,A.k,
+Specific Area Capacitance,CMIMA,fF/µm²,:red:`1.35`,:blue:`1.5`,:red:`1.65`,A.k,
 "Specific Capacitance
-MIM Perimeter",CMIMP,aF/µm,,40,,A.l,
-Breakdown Voltage,BVMIM,V,15,23,,A.y,
-Voltage Coefficients,"VCMIM1
-VCMIM2","ppm/V
-ppm/V2",,"-26
-5",,A.ah,
-Temperature Coefficient,"TCMIM1
-TCMIM2","ppm/K
-ppm/K²",,"3.6
-0.002",,A.ad,
+MIM Perimeter",CMIMP,aF/µm,,:ital:`40`,,A.l,
+Breakdown Voltage,BVMIM,V,:red:`15`,:blue:`23`,,A.y,
+Voltage Coefficients,VCMIM1,ppm/V,,:ital:`-26`,,A.ah,
+Voltage Coefficients,VCMIM2,ppm/V²,,:ital:`5`,,A.ah,
+Temperature Coefficient,TCMIM1,ppm/K,,:ital:`3.6`,,A.ad,
+Temperature Coefficient,TCMIM2,ppm/K²,,:ital:`0.002`,,A.ad,
 Matching Coefficient,KCMIM,nm,,,,,

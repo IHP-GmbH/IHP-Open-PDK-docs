@@ -1,6 +1,3 @@
-Parameter,Name,Unit,Min,"Tar-
-get",Max,"Meas.
-Cond.",Comment
 "Threshold Voltage
 Short Channel Device",VTN10x013,V,:red:`0.43`,:blue:`0.50`,:red:`0.55`,A.a1,WxL = 10 x 0.13 µm²
 "Threshold Voltage

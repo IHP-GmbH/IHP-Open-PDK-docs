@@ -1,14 +1,11 @@
-Parameter,Name,Unit,Min,"Tar-
-get",Max,"Meas.
-Cond.",Comment
 "Threshold Voltage
-Short Channel Device",VTNI10x013,V,0.43,0.50,0.55,A.a1,WxL = 10 x 0.13 µm²
+Short Channel Device",VTNI10x013,V,:red:`0.43`,:blue:`0.50`,:red:`0.55`,A.a1,WxL = 10 x 0.13 µm²
 "Saturation Current
-Short Channel Device",IDSNI013,µA/µm,380,480,600,A.b1,WxL = 10 x 0.13 µm²
+Short Channel Device",IDSNI013,µA/µm,:blue:`380`,:blue:`480`,:blue:`600`,A.b1,WxL = 10 x 0.13 µm²
 "Off-Current
 Short Channel Device",IOFFNI013,"LOG10
-(A/µm)",,-10,-9,A.c1,WxL = 10 x 0.13 µm²
+(A/µm)",,:blue:`-10`,:blue:`-9`,A.c1,WxL = 10 x 0.13 µm²
 "Drain Induced Barrier
-Lowering 0.1/1.2V",DIBLNI013,mV/V,20,50,80,A.d1,WxL = 10 x 0.13 µm²
-Sub Threshold Slope,SSNI013,mV/dec,76,82,88,A.e,WxL = 10 x 0.13 µm²
-Breakdown Voltage,BVDSSNI013,V,2.0,2.7,,A.f1,WxL = 10 x 0.13 µm²
+Lowering 0.1/1.2V",DIBLNI013,mV/V,:blue:`20`,:blue:`50`,:blue:`80`,A.d1,WxL = 10 x 0.13 µm²
+Sub Threshold Slope,SSNI013,mV/dec,:blue:`76`,:blue:`82`,:blue:`88`,A.e,WxL = 10 x 0.13 µm²
+Breakdown Voltage,BVDSSNI013,V,:blue:`2.0`,:blue:`2.7`,,A.f1,WxL = 10 x 0.13 µm²

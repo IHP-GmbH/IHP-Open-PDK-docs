@@ -1,51 +1,35 @@
-Parameter,Name,Unit,Min,Target,Max,"Meas.
-Cond.",Comment
 "Shallow Trench
-Isolator Thickness",TSTI,nm,,400,,A.ag,
-Gate Polysilicon Thickness,TGATPOLY,nm,150,160,170,A.w,
-Thickness of Gate Oxide,TGOXNW,nm,2.25,2.45,2.65,A.x,
+Isolator Thickness",TSTI,nm,,:ital:`400`,,A.ag,
+Gate Polysilicon Thickness,TGATPOLY,nm,:ital:`150`,:ital:`160`,:ital:`170`,A.w,
+Thickness of Gate Oxide,TGOXNW,nm,:red:`2.25`,:blue:`2.45`,:red:`2.65`,A.x,
 "Thickness of Gate Oxide
-HV-MOS",TGOX1NW,nm,6.8,7.3,7.8,A.x,
-Thickness of Gate Oxide,TGOXPW,nm,2.45,2.65,2.85,A.x,
-"Thickness of Gate Oxide
-HV-MOS",TGOX1PW,nm,7.0,7.5,8.0,A.x,
-Metal1 Layer Thickness,TMET1,nm,,420,,A.ag,
-Metal2 Layer Thickness,TMET2,nm,,490,,A.ag,
-Metal3 Layer Thickness,TMET3,nm,,490,,A.ag,
-Metal4 Layer Thickness,TMET4,nm,,490,,A.ag,
-Metal5 Layer Thickness,TMET5,nm,,490,,A.ag,
-"TopMetal1
-Layer Thickness",TTM1,nm,,2000,,A.ag,
+HV-MOS",TGOX1NW,nm,:red:`6.8`,:blue:`7.3`,:red:`7.8`,A.x,
+Thickness of Gate Oxide,TGOXPW,nm,:red:`2.45`,:blue:`2.65`,:red:`2.85`,A.x,
+Thickness of Gate Oxide HV-MOS,TGOX1PW,nm,:red:`7.0`,:blue:`7.5`,:red:`8.0`,A.x,
+Metal1 Layer Thickness,TMET1,nm,,:ital:`420`,,A.ag,
+Metal2 Layer Thickness,TMET2,nm,,:ital:`490`,,A.ag,
+Metal3 Layer Thickness,TMET3,nm,,:ital:`490`,,A.ag,
+Metal4 Layer Thickness,TMET4,nm,,:ital:`490`,,A.ag,
+Metal5 Layer Thickness,TMET5,nm,,:ital:`490`,,A.ag,
+TopMetal1 Layer Thickness,TTM1,nm,,:ital:`2000`,,A.ag,
 "Isolator Thickness
-between Metal1 and Activ",TILD0,nm,,640,,"A.w,
-A.ag",
+between Metal1 and Activ",TILD0,nm,,:ital:`640`,,"A.w,A.ag",
 "Isolator Thickness
-between Metal2 and Metal1",TILD1,nm,,540,,"A.w,
-A.ag",
+between Metal2 and Metal1",TILD1,nm,,:ital:`540`,,"A.w,A.ag",
 "Isolator Thickness
-between Metal3 and Metal2",TILD2,nm,,540,,"A.w,
-A.ag",
+between Metal3 and Metal2",TILD2,nm,,:ital:`540`,,"A.w,A.ag",
 "Isolator Thickness
-between Metal4 and Metal3",TILD3,nm,,540,,"A.w,
-A.ag",
+between Metal4 and Metal3",TILD3,nm,,:ital:`540`,,"A.w,A.ag",
 "Isolator Thickness
-between Metal5 and Metal4",TILD4,nm,,540,,"A.w,
-A.ag",
+between Metal5 and Metal4",TILD4,nm,,:ital:`540`,,"A.w,A.ag",
 "Isolator Thickness between
-TopMetal1 and Metal5",TILDTM1,nm,,850,,"A.w,
-A.ag",
+TopMetal1 and Metal5",TILDTM1,nm,,:ital:`850`,,"A.w,A.ag",
 "MIM Capacitor Dielectric
-Thickness",TISMIM,nm,,40,,A.w,
+Thickness",TISMIM,nm,,:ital:`40`,,A.w,
 "MIM Capacitor Top Plate
-Thickness",TMIMTOP,nm,,150,,A.ag,
-"Thickness Values of
-Passivation Layers","TPASS1
-TPASS2",nm,,"1500
-400",,A.ag,"Oxide layer
-SiN layer"
-"TopMetal2
-Layer Thickness",TTM2,nm,,3000,,A.ag,
-"Isolator Thickness
-between TopMetal2 and
-TopMetal1",TILTM2,nm,,2800,,"A.w,
-A.ag",
+Thickness",TMIMTOP,nm,,:ital:`150`,,A.ag,
+Thickness Values of Passivation Layers,TPASS1,nm,,:ital:`1500`,,A.ag,Oxide layer SiN layer
+Thickness Values of Passivation Layers,TPASS2,nm,,:ital:`400`,,A.ag,Oxide layer SiN layer
+TopMetal2 Layer Thickness,TTM2,nm,,:ital:`3000`,,A.ag,
+"Isolator Thickness between 
+TopMetal2 and TopMetal1",TILTM2,nm,,:ital:`2800`,,"A.w,A.ag",
