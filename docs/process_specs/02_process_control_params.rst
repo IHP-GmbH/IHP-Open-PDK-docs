@@ -16,23 +16,9 @@ NMOS
 .. tip::
     `VGS ≤ 1.65 V @ 125°C`
 
- =========================================== ============ ================ ============= ============= ============= ============== ======================= 
-  Parameter                                   Name         Unit             Min            Target       Max            Meas.Cond.    Comment                
- =========================================== ============ ================ ============= ============= ============= ============== ======================= 
-  Threshold Voltage Short Channel Device      VTN10x013    V                :red:`0.43`   :blue:`0.50`  :red:`0.55`   A.a1           WxL = 10 x 0.13 µm²    
-  Threshold Voltage Long Channel Device       VTN10x10     V                :blue:`0.16`  :blue:`0.20`  :blue:`0.24`  A.a1           WxL = 10 x 10 µm²      
-  Threshold Voltage Small Channel Device      VTN015x013   V                :blue:`0.4`   :blue:`0.54`  :blue:`0.68`  A.a1           WxL = 0.15 x 0.13 µm²  
-  Saturation Current Short Channel Device     IDSN013      µA/µm            :red:`380`    :blue:`480`   :red:`600`    A.b1           WxL = 10 x 0.13 µm²    
-  Off-Current Short Channel Device            IOFFN013     LOG10 (A/µm)                   :blue:`-10`   :red:`-9`     A.c1           WxL = 10 x 0.13 µm²    
-  Drain Induced Barrier Lowering 0.1/1.2V     DIBLN013     mV/V             :blue:`20`    :blue:`50`    :blue:`80`    A.d1           WxL = 10 x 0.13 µm²    
-  Sub Threshold Slope                         SSN013       mV/dec           :blue:`76`    :blue:`82`    :blue:`88`    A.e            WxL = 10 x 0.13 µm²    
-  Breakdown Voltage                           BVDSSN013    V                :red:`2.0`    :blue:`2.7`                 A.f1           WxL = 10 x 0.13 µm²    
-  Effective Channel Length                    LEFFN013     µm               :blue:`0.10`  :blue:`0.14`  :blue:`0.19`  A.g1           WxL = 10 x 0.13 µm²    
-  Effective Channel Width                     WEFFN015     µm               :blue:`0.09`  :blue:`0.15`  :blue:`0.22`  A.h1           WxL = 0.15 x 0.13 µm²  
-  Miller Capacitance NMOS                     CMILLERN     fF/µm            :blue:`0.32`  :blue:`0.36`  :blue:`0.40`  A.k1                                  
-  Junction Capacitance NMOS                   CJUNCTIONN   fF/µm²           :blue:`0.9`   :blue:`0.95`  :blue:`1.0`   A.k                                   
-  Junction Breakdown                          BVNPW                                       :ital:`12`                  A.f3                                  
- =========================================== ============ ================ ============= ============= ============= ============== ======================= 
+.. csv-table:: NMOS - Process Control Parameters
+    :file: tables/pmos_params.csv
+    :widths: 200, 150, 100, 100, 100, 100, 100, 300
 
 PMOS
 ----
