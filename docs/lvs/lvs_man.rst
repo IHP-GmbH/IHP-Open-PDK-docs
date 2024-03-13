@@ -1,6 +1,6 @@
-**************
-Layout Devices
-**************
+***********
+LVS Devices
+***********
 
 .. rst-class:: center
 
@@ -10,7 +10,7 @@ Layout Devices
 
     **IHP-SG13G2**
 
-    **Layout Devices**
+    **LVS Devices**
 
 .. toctree::
     :numbered:

@@ -21,8 +21,6 @@ The Topological Truth Table is a design aid that helps establish the relationshi
 
         **X**: The layer has no electrical impact on the structure.
 
-        **Op**: The layer is optional and may or may not be present.
-
     By effectively utilizing the Topological Truth Table, designers can ensure accurate and efficient layout creation within the integrated circuit design process.
 
 

@@ -53,7 +53,7 @@ nmos
      - ✅
 
 
-**Layout Information**
+**Layout Information** (Refer to :ref:`layout layers`)
 
 .. image:: images/nmos_layout.png
     :width: 700
@@ -116,7 +116,7 @@ nmosHV
      - ✅
      - ✅
 
-**Layout Information**
+**Layout Information** (Refer to :ref:`layout layers`)
 
 .. image:: images/nmoshv_layout.png
     :width: 700
@@ -179,7 +179,7 @@ pmos
      - ✅
 
 
-**Layout Information**
+**Layout Information** (Refer to :ref:`layout layers`)
 
 .. image:: images/pmos_layout.png
     :width: 700
@@ -240,7 +240,7 @@ pmosHV
      - ✅
      - ✅
 
-**Layout Information**
+**Layout Information** (Refer to :ref:`layout layers`)
 
 .. image:: images/pmoshv_layout.png
     :width: 700

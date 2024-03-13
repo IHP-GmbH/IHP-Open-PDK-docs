@@ -4,55 +4,132 @@ Tap-Devices
 ptap1
 -----
 
-+---------------------+------------------------------------------------------------------------+
-|Property             |Value                                                                   |
-+---------------------+------------------------------------------------------------------------+
-| Description         | Substrate contact which keeps the substrate a separate net.            |
-+---------------------+------------------------------------------------------------------------+
-| Device Recognition  | Activ + pSD + Substrate                                                |
-+---------------------+------------------------------------------------------------------------+
-| Model Name          | ptap1                                                                  |
-+---------------------+------------------------------------------------------------------------+
-| Layout Cell Name    | sg13g2_pr - ptap1                                                      |
-+---------------------+------------------------------------------------------------------------+
-| Netlist Syntax      | `XR0 TIE SUB ptap1 R=262.847 A=608.4f Perim=3.12u w=780.00n l=780.00n` |
-+---------------------+------------------------------------------------------------------------+
-| Measured Parameters | A, P, R                                                                |
-+---------------------+------------------------------------------------------------------------+
-| Additional Notes    | -  The resistance value is not accurate.                               |
-+---------------------+------------------------------------------------------------------------+
+**Device Information**
 
-.. figure:: images/ptap1_layout.png
-    :width: 850
+.. list-table:: P-well (substrate) diffusion contact.
+   :header-rows: 1
+   :stub-columns: 1
+
+   * - Property
+     - Value
+   * - Description
+     - Substrate contact which keeps the substrate a separate net.
+   * - Device Recognition
+     - Activ + pSD + Substrate
+   * - Model Name
+     - ptap1
+   * - Layout Cell Name
+     - sg13g2_pr - ptap1
+   * - Parameters
+     - W, L, A, Perim, R
+   * - Additional Notes
+     - The resistance value is not accurate (~  262 Ω)
+
+**Parameters Information**
+
+.. list-table:: Xschem and LVS views Compatibility for ptap1 Parameters
+   :header-rows: 1
+   :stub-columns: 1
+
+   * - Parameter
+     - Description
+     - Xschem-View
+     - LVS-View
+   * - W
+     - ptab1 device active width
+     - ❌
+     - ✅
+   * - L
+     - ptab1 device active length
+     - ❌
+     - ✅
+   * - A
+     - ptab1 device active area
+     - ❌
+     - ✅
+   * - Perim
+     - ptab1 device active perimeter
+     - ❌
+     - ✅
+   * - R
+     - Resistance Value
+     - ❌
+     - ✅
+
+**Layout Information** (Refer to :ref:`layout layers`)
+
+.. image:: images/ptap1_layout.png
+    :width: 500
     :align: center
     :alt: ptap1 device - layout
 
-    Figure 4.7.1 Layout for ptap1 device
+.. rst-class:: center
+
+    Figure 4.8.1 Layout for ptap1 device
+
 
 ntap1
 -----
 
-+---------------------+-------------------------------------------------------------------------+
-|Property             |Value                                                                    |
-+---------------------+-------------------------------------------------------------------------+
-| Description         | Nwell contact which keeps the nwell a separate net.                     |
-+---------------------+-------------------------------------------------------------------------+
-| Device Recognition  | Activ + Nwell + nBuLay                                                  |
-+---------------------+-------------------------------------------------------------------------+
-| Model Name          | ntap1                                                                   |
-+---------------------+-------------------------------------------------------------------------+
-| Layout Cell Name    | sg13g2_pr - ntap1                                                       |
-+---------------------+-------------------------------------------------------------------------+
-| Netlist Syntax      | `XI0 TIE WELL ntap1 R=262.847 A=608.4f Perim=3.12u w=780.00n l=780.00n` |
-+---------------------+-------------------------------------------------------------------------+
-| Measured Parameters | A, P, R                                                                 |
-+---------------------+-------------------------------------------------------------------------+
-| Additional Notes    | -  The resistance value is not accurate.                                |
-+---------------------+-------------------------------------------------------------------------+
+**Device Information**
 
-.. figure:: images/ntap1_layout.png
-    :width: 850
+.. list-table:: N-well diffusion contact.
+   :header-rows: 1
+   :stub-columns: 1
+
+   * - Property
+     - Value
+   * - Description
+     - Nwell contact which keeps the nwell a separate net.
+   * - Device Recognition
+     - Activ + Nwell + nBuLay
+   * - Model Name
+     - ntap1
+   * - Layout Cell Name
+     - sg13g2_pr - ntap1
+   * - Parameters
+     - W, L, A, Perim, R
+   * - Additional Notes
+     - The resistance value is not accurate (~  262 Ω)
+
+**Parameters Information**
+
+.. list-table:: Xschem and LVS views Compatibility for ntap1 Parameters
+   :header-rows: 1
+   :stub-columns: 1
+
+   * - Parameter
+     - Description
+     - Xschem-View
+     - LVS-View
+   * - W
+     - ptab1 device active width
+     - ❌
+     - ✅
+   * - L
+     - ptab1 device active length
+     - ❌
+     - ✅
+   * - A
+     - ptab1 device active area
+     - ❌
+     - ✅
+   * - Perim
+     - ptab1 device active perimeter
+     - ❌
+     - ✅
+   * - R
+     - Resistance Value
+     - ❌
+     - ✅
+
+**Layout Information** (Refer to :ref:`layout layers`)
+
+.. image:: images/ntap1_layout.png
+    :width: 500
     :align: center
     :alt: ntap1 device - layout
 
-    Figure 4.7.2 Layout for ntap1 device
+.. rst-class:: center
+
+    Figure 4.8.2 Layout for ntap1 device
