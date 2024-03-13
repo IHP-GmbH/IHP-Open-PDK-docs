@@ -4,55 +4,126 @@ Capacitor-Devices
 cmim
 ----
 
-+---------------------+-------------------------------------------------------------------------+
-|Property             |Value                                                                    |
-+---------------------+-------------------------------------------------------------------------+
-| Description         | Metal5 - insulator - TopMetal1 capacitor, scalable rectangular shape.   |
-+---------------------+-------------------------------------------------------------------------+
-| Device Recognition  | MIM + VMIM + Metal5 + TopMetal1                                         |
-+---------------------+-------------------------------------------------------------------------+
-| Model Name          | cap_cmim                                                                |
-+---------------------+-------------------------------------------------------------------------+
-| Layout Cell Name    | sg13g2_pr - cmim                                                        |
-+---------------------+-------------------------------------------------------------------------+
-| Netlist Syntax      | `CC0 PLUS MINUS cap_cmim m=1 w=6.99u l=6.99u c=74.62f`                  |
-+---------------------+-------------------------------------------------------------------------+
-| Measured Parameters | A, P, c, m                                                              |
-+---------------------+-------------------------------------------------------------------------+
-| Additional Notes    | - Capacitor body is defined by MIM drawing. Not available with Cu BEOL. |
-+---------------------+-------------------------------------------------------------------------+
+**Device Information**
 
-.. figure:: images/cmim_layout.png
-    :width: 850
+.. list-table:: Metal-Insulator-Metal capacitor
+   :header-rows: 1
+   :stub-columns: 1
+
+   * - Property
+     - Value
+   * - Description
+     - Metal5 - insulator - TopMetal1 capacitor, scalable rectangular shape.
+   * - Device Recognition
+     - MIM + VMIM + Metal5 + TopMetal1
+   * - Model Name
+     - cap_cmim
+   * - Layout Cell Name
+     - sg13g2_pr - cap_cmim
+   * - Parameters
+     - w, l, c, m
+   * - Additional Notes
+     - Capacitor body is defined by MIM drawing. Not available with Cu BEOL. 
+   * -
+     - Within MIM capacitor layer Vmim can be used instead of TopVia1.
+
+**Parameters Information**
+
+.. list-table:: Xschem and LVS views Compatibility for cmim Parameters
+   :header-rows: 1
+   :stub-columns: 1
+
+   * - Parameter
+     - Description
+     - Xschem-View
+     - LVS-View
+   * - W
+     - Capacitor Width
+     - ✅
+     - ✅
+   * - L
+     - Capacitor Length
+     - ✅
+     - ✅
+   * - C
+     - Capacitance Value
+     - ❌
+     - ✅
+   * - m
+     - Number of capacitors (multiplicity)
+     - ❌
+     - ✅
+   * - MF
+     - Number of capacitors (multiplicity)
+     - ✅
+     - ❌
+
+**Layout Information** (Refer to :ref:`layout layers`)
+
+.. image:: images/cmim_layout.png
+    :width: 600
     :align: center
     :alt: cmim device - layout
 
-    Figure 4.7.1 Layout for cmim device
+.. rst-class:: center
+
+    Figure 4.6.1 Layout for cmim capacitor device
+
 
 SVaricap
 --------
 
-+---------------------+----------------------------------------------------------+
-|Property             |Value                                                     |
-+---------------------+----------------------------------------------------------+
-| Description         | Available only with thick oxide.                         |
-+---------------------+----------------------------------------------------------+
-| Device Recognition  | Activ + GatPoly + pSD + Nwell + nBuLay + ThickGateOx     |
-+---------------------+----------------------------------------------------------+
-| Model Name          | SVaricap                                                 |
-+---------------------+----------------------------------------------------------+
-| Layout Cell Name    | sg13g2_pr - SVaricap                                     |
-+---------------------+----------------------------------------------------------+
-| Netlist Syntax      | `XD2 G1 W G2 sub! SVaricap l=0.3u w=3.74u Nx=1`          |
-+---------------------+----------------------------------------------------------+
-| Measured Parameters | w, l, Nx                                                 |
-+---------------------+----------------------------------------------------------+
-| Additional Notes    | - Only two combinations of width and length are allowed. |
-+---------------------+----------------------------------------------------------+
+**Device Information**
 
-.. figure:: images/SVaricap_layout.png
-    :width: 850
+.. list-table:: variable capacitor - MOSFET
+   :header-rows: 1
+   :stub-columns: 1
+
+   * - Property
+     - Value
+   * - Description
+     -  Variable capacitor, available only with thick oxide.
+   * - Device Recognition
+     - Activ + GatPoly + pSD + Nwell + nBuLay + ThickGateOx
+   * - Model Name
+     - SVaricap
+   * - Layout Cell Name
+     - sg13g2_pr - SVaricap
+   * - Parameters
+     - w, l, Nx
+   * - Additional Notes
+     - Only two combinations of width and length are allowed. 
+
+**Parameters Information**
+
+.. list-table:: Xschem and LVS views Compatibility for SVaricap Parameters
+   :header-rows: 1
+   :stub-columns: 1
+
+   * - Parameter
+     - Description
+     - Xschem-View
+     - LVS-View
+   * - W
+     - Capacitor Width
+     - ❌
+     - ✅
+   * - L
+     - Capacitor Length
+     - ❌
+     - ✅
+   * - Nx
+     - Capacitance Value
+     - ❌
+     - ✅
+
+**Layout Information** (Refer to :ref:`layout layers`)
+
+.. image:: images/SVaricap_layout.png
+    :width: 300
     :align: center
     :alt: SVaricap device - layout
 
-    Figure 4.7.2 Layout for SVaricap device
+.. rst-class:: center
+
+    Figure 4.6.2 Layout for SVaricap capacitor device

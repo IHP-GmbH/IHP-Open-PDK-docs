@@ -4,111 +4,254 @@ RF-MOSFET-Devices
 rfnmos
 ------
 
-+---------------------+--------------------------------------------------------------------------------------+
-|Property             |Value                                                                                 |
-+---------------------+--------------------------------------------------------------------------------------+
-| Description         | nmos device with ptap surrounding and special RF model.                              |
-+---------------------+--------------------------------------------------------------------------------------+
-| Device Recognition  | Activ + GatPoly + psD (For ptap-Gaurd-Ring)                                          |
-+---------------------+--------------------------------------------------------------------------------------+
-| Model Name          | rfnmos                                                                               |
-+---------------------+--------------------------------------------------------------------------------------+
-| Layout Cell Name    | sg13g2_pr - rfnmos                                                                   |
-+---------------------+--------------------------------------------------------------------------------------+
-| Netlist Syntax      | `MN2 D G S TIE rfnmos m=1 w=1u l=720.00n ng=1`                                       |
-+---------------------+--------------------------------------------------------------------------------------+
-| Measured Parameters | w, l, number of gates (ng), m                                                        |
-+---------------------+--------------------------------------------------------------------------------------+
-| Additional Notes    | - For RF purposes, you should use l = [0.13:1.0]um and w = [1:6]um (per single gate) |
-+---------------------+--------------------------------------------------------------------------------------+
+**Device Information**
 
-.. figure:: images/rfnmos_layout.png
-    :width: 850
+.. list-table:: RF nMOS Transistor (LV) Specifications
+   :header-rows: 1
+   :stub-columns: 1
+
+   * - Property
+     - Value
+   * - Description
+     - nMOS device with ptap surrounding and special RF model.
+   * - Device Recognition
+     - Activ + GatPoly + psD (For ptap-Gaurd-Ring)
+   * - Model Name
+     - rfnmos
+   * - Layout Cell Name
+     - sg13g2_pr - rfnmos
+   * - Parameters
+     - w, l, ng, m
+   * - Additional Notes
+     - For RF purposes, you should use l = [0.13:1.0]um and w = [1:6]um (per single gate).
+
+**Parameters Information**
+
+.. list-table:: Xschem and LVS views Compatibility for RF nMOS Transistor Parameters
+   :header-rows: 1
+   :stub-columns: 1
+
+   * - Parameter
+     - Description
+     - Xschem-View
+     - LVS-View
+   * - w
+     - Transistor width
+     - ✅
+     - ✅
+   * - l
+     - Transistor channel length
+     - ✅
+     - ✅
+   * - m
+     - Number of transistors (multiplicity)
+     - ✅
+     - ✅
+   * - ng
+     - Number of transistor gates
+     - ✅
+     - ✅
+
+
+**Layout Information** (Refer to :ref:`layout layers`)
+
+.. image:: images/rfnmos_layout.png
+    :width: 700
     :align: center
-    :alt: RF nmos device - layout
+    :alt: RF nMOS Transistor - layout
 
-    Figure 4.3.1 Layout for RF nmos device
+.. rst-class:: center
+
+    Figure 4.2.1 Layout for RF nMOS Transistor (LV)
+
 
 rfnmosHV
 --------
 
-+---------------------+--------------------------------------------------------------------------------------+
-|Property             |Value                                                                                 |
-+---------------------+--------------------------------------------------------------------------------------+
-| Description         | nmosHV device with ptap surrounding and special RF model.                            |
-+---------------------+--------------------------------------------------------------------------------------+
-| Device Recognition  | Activ + GatPoly + ThickGateOx + psD (For ptap-Gaurd-Ring)                            |
-+---------------------+--------------------------------------------------------------------------------------+
-| Model Name          | rfnmosHV                                                                             |
-+---------------------+--------------------------------------------------------------------------------------+
-| Layout Cell Name    | sg13g2_pr - rfnmosHV                                                                 |
-+---------------------+--------------------------------------------------------------------------------------+
-| Netlist Syntax      | `MN3 D G S TIE rfnmosHV m=1 w=1u l=720.00n ng=1`                                     |
-+---------------------+--------------------------------------------------------------------------------------+
-| Measured Parameters | w, l, number of gates (ng), m                                                        |
-+---------------------+--------------------------------------------------------------------------------------+
-| Additional Notes    | - For RF purposes you should use l = [0.45:1.0]um and w = [1:6]um (per single gate)  |
-+---------------------+--------------------------------------------------------------------------------------+
+**Device Information**
 
-.. figure:: images/rfnmoshv_layout.png
-    :width: 850
+.. list-table:: RF nMOS Transistor (HV) Specifications
+   :header-rows: 1
+   :stub-columns: 1
+
+   * - Property
+     - Value
+   * - Description
+     - nmosHV device with ptap surrounding and special RF model.
+   * - Device Recognition
+     - Activ + GatPoly + ThickGateOx + psD (For ptap-Gaurd-Ring)
+   * - Model Name
+     - rfnmosHV
+   * - Layout Cell Name
+     - sg13g2_pr - rfnmosHV
+   * - Parameters
+     - w, l, ng, m
+   * - Additional Notes
+     - For RF purposes you should use l = [0.45:1.0]um and w = [1:6]um (per single gate).
+
+**Parameters Information**
+
+.. list-table:: Xschem and LVS views Compatibility for RF nMOS HV Transistor Parameters
+   :header-rows: 1
+   :stub-columns: 1
+
+   * - Parameter
+     - Description
+     - Xschem-View
+     - LVS-View
+   * - w
+     - Transistor width
+     - ✅
+     - ✅
+   * - l
+     - Transistor channel length
+     - ✅
+     - ✅
+   * - m
+     - Number of transistors (multiplicity)
+     - ✅
+     - ✅
+   * - ng
+     - Number of transistor gates
+     - ✅
+     - ✅
+
+
+**Layout Information** (Refer to :ref:`layout layers`)
+
+.. image:: images/rfnmoshv_layout.png
+    :width: 700
     :align: center
-    :alt: RF nmos HV device - layout
+    :alt: RF nMOS HV Transistor - layout
 
-    Figure 4.3.2 Layout for RF nmos HV device
+.. rst-class:: center
+
+    Figure 4.2.2 Layout for RF nMOS Transistor (HV)
+
 
 rfpmos
 ------
 
-+---------------------+--------------------------------------------------------------------------------------+
-|Property             |Value                                                                                 |
-+---------------------+--------------------------------------------------------------------------------------+
-| Description         | pmos device with ntap surrounding and special RF model.                              |
-+---------------------+--------------------------------------------------------------------------------------+
-| Device Recognition  | Activ + GatPoly + pSD + Nwell                                                        |
-+---------------------+--------------------------------------------------------------------------------------+
-| Model Name          | rfpmos                                                                               |
-+---------------------+--------------------------------------------------------------------------------------+
-| Layout Cell Name    | sg13g2_pr - rfpmos                                                                   |
-+---------------------+--------------------------------------------------------------------------------------+
-| Netlist Syntax      | `MP2 D G S TIE rfpmos m=1 w=1u l=720.00n ng=1`                                       |
-+---------------------+--------------------------------------------------------------------------------------+
-| Measured Parameters | w, l, number of gates (ng), m                                                        |
-+---------------------+--------------------------------------------------------------------------------------+
-| Additional Notes    | - For RF purposes you should use l = [0.13:1.0]um and w = [1:6]um (per single gate)  |
-+---------------------+--------------------------------------------------------------------------------------+
+**Device Information**
 
-.. figure:: images/rfpmos_layout.png
-    :width: 850
+.. list-table:: RF pMOS Transistor (LV) Specifications
+   :header-rows: 1
+   :stub-columns: 1
+
+   * - Property
+     - Value
+   * - Description
+     - pMOS device with ntap surrounding and special RF model.
+   * - Device Recognition
+     - Activ + GatPoly + pSD + Nwell 
+   * - Model Name
+     - rfpmos
+   * - Layout Cell Name
+     - sg13g2_pr - rfpmos
+   * - Parameters
+     - w, l, ng, m
+   * - Additional Notes
+     - For RF purposes you should use l = [0.13:1.0]um and w = [1:6]um (per single gate).
+
+**Parameters Information**
+
+.. list-table:: Xschem and LVS views Compatibility for RF pMOS Transistor Parameters
+   :header-rows: 1
+   :stub-columns: 1
+
+   * - Parameter
+     - Description
+     - Xschem-View
+     - LVS-View
+   * - w
+     - Transistor width
+     - ✅
+     - ✅
+   * - l
+     - Transistor channel length
+     - ✅
+     - ✅
+   * - m
+     - Number of transistors (multiplicity)
+     - ✅
+     - ✅
+   * - ng
+     - Number of transistor gates
+     - ✅
+     - ✅
+
+
+**Layout Information** (Refer to :ref:`layout layers`)
+
+.. image:: images/rfpmos_layout.png
+    :width: 700
     :align: center
-    :alt: RF pmos device - layout
+    :alt: RF pMOS Transistor - layout
 
-    Figure 4.3.3 Layout for RF pmos device
+.. rst-class:: center
+
+    Figure 4.2.3 Layout for RF pMOS Transistor (LV)
+
 
 rfpmosHV
 --------
 
-+---------------------+--------------------------------------------------------------------------------------+
-|Property             |Value                                                                                 |
-+---------------------+--------------------------------------------------------------------------------------+
-| Description         | pmosHV device with ntap surrounding and special RF model.                            |
-+---------------------+--------------------------------------------------------------------------------------+
-| Device Recognition  | Activ + GatPoly + pSD + Nwell + ThickGateOx                                          |
-+---------------------+--------------------------------------------------------------------------------------+
-| Model Name          | rfpmosHV                                                                             |
-+---------------------+--------------------------------------------------------------------------------------+
-| Layout Cell Name    | sg13g2_pr - rfpmosHV                                                                 |
-+---------------------+--------------------------------------------------------------------------------------+
-| Netlist Syntax      | `MP3 D G S TIE rfpmosHV m=1 w=1u l=720.00n ng=1`                                     |
-+---------------------+--------------------------------------------------------------------------------------+
-| Measured Parameters | w, l, number of gates (ng), m                                                        |
-+---------------------+--------------------------------------------------------------------------------------+
-| Additional Notes    | - For RF purposes you should use l = [0.40:1.0]um and w = [1:6]um (per single gate)  |
-+---------------------+--------------------------------------------------------------------------------------+
+**Device Information**
 
-.. figure:: images/rfpmoshv_layout.png
-    :width: 850
+.. list-table:: RF pMOS Transistor (HV) Specifications
+   :header-rows: 1
+   :stub-columns: 1
+
+   * - Property
+     - Value
+   * - Description
+     - pmosHV device with ntap surrounding and special RF model.
+   * - Device Recognition
+     - Activ + GatPoly + pSD + Nwell + ThickGateOx
+   * - Model Name
+     - rfpmosHV
+   * - Layout Cell Name
+     - sg13g2_pr - rfpmosHV
+   * - Parameters
+     - w, l, ng, m
+   * - Additional Notes
+     - For RF purposes you should use l = [0.40:1.0]um and w = [1:6]um (per single gate).
+
+**Parameters Information**
+
+.. list-table:: Xschem and LVS views Compatibility for RF nMOS HV Transistor Parameters
+   :header-rows: 1
+   :stub-columns: 1
+
+   * - Parameter
+     - Description
+     - Xschem-View
+     - LVS-View
+   * - w
+     - Transistor width
+     - ✅
+     - ✅
+   * - l
+     - Transistor channel length
+     - ✅
+     - ✅
+   * - m
+     - Number of transistors (multiplicity)
+     - ✅
+     - ✅
+   * - ng
+     - Number of transistor gates
+     - ✅
+     - ✅
+
+
+**Layout Information** (Refer to :ref:`layout layers`)
+
+.. image:: images/rfpmoshv_layout.png
+    :width: 600
     :align: center
-    :alt: RF pmos HV device - layout
+    :alt: RF pMOS HV Transistor - layout
 
-    Figure 4.3.4 Layout for RF pmos HV device
+.. rst-class:: center
+
+    Figure 4.2.4 Layout for RF pMOS Transistor (HV)

@@ -1,5 +1,5 @@
-LVS Devices
-===========
+Devices
+=======
 
 .. tip::
     - This section details devices used in the LVS verification process supported by IHPs SG13G2 SiGe BiCMOS technology. 

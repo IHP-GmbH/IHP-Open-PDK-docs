@@ -4,78 +4,194 @@ BJT-Devices
 npn13G2
 -------
 
-+---------------------+------------------------------------------------------------------------------+
-|Property             |Value                                                                         |
-+---------------------+------------------------------------------------------------------------------+
-| Description         | npn SiGe:C HBT high performance device, 300 GHz fT. Layout configuration BEC |
-+---------------------+------------------------------------------------------------------------------+
-| Device Recognition  | Activ + nSD.blk + HeatTrans + TRANS + EmWind + ptab (pSD + Activ.mask)       |
-+---------------------+------------------------------------------------------------------------------+
-| Model Name          | npn13G2                                                                      |
-+---------------------+------------------------------------------------------------------------------+
-| Layout Cell Name    | sg13g2_pr - npn13G2                                                          |
-+---------------------+------------------------------------------------------------------------------+
-| Netlist Syntax      | `QQ0 C B E sub! npn13G2 m=1 le=900.0n we=70.00n Nx=1 Ny=1`                   |
-+---------------------+------------------------------------------------------------------------------+
-| Measured Parameters | we, le, m, Nx, Ny                                                            |
-+---------------------+------------------------------------------------------------------------------+
+**Device Information**
 
-.. figure:: images/npn13G2_layout.png
-    :width: 850
+.. list-table:: HBT NPN13G2 Bipolar Transistor Specifications
+   :header-rows: 1
+   :stub-columns: 1
+
+   * - Property
+     - Value
+   * - Description
+     - npn SiGe:C HBT high performance device, 300 GHz fT. Layout configuration BEC
+   * - Device Recognition
+     - Activ + nSD.blk + HeatTrans + TRANS + EmWind + ptab (pSD + Activ.mask)
+   * - Model Name
+     - npn13G2
+   * - Layout Cell Name
+     - sg13g2_pr - npn13G2
+   * - Parameters
+     - we, le, m, Nx, Ny
+
+**Parameters Information**
+
+.. list-table:: Xschem and LVS views Compatibility for npn13G2 Transistor Parameters
+   :header-rows: 1
+   :stub-columns: 1
+
+   * - Parameter
+     - Description
+     - Xschem-View
+     - LVS-View
+   * - we
+     - Bipolar Transistor emitter width
+     - ❌
+     - ✅
+   * - le
+     - Bipolar Transistor emitter length
+     - ❌
+     - ✅
+   * - m
+     - Number of BJT transistors (multiplicity)
+     - ❌
+     - ✅
+   * - Nx
+     - Number of BJT transistors in x-axis
+     - ✅
+     - ✅
+   * - Ny
+     - Number of BJT transistors in y-axis
+     - ❌
+     - ✅
+
+
+**Layout Information** (Refer to :ref:`layout layers`)
+
+.. image:: images/npn13G2_layout.png
+    :width: 600
     :align: center
     :alt: npn13G2 device - layout
 
-    Figure 4.4.1 Layout for npn13G2 device
+.. rst-class:: center
+
+    Figure 4.3.1 Layout for NPN13G2 Bipolar Transistor
+
 
 npn13G2L
 --------
 
-+---------------------+---------------------------------------------------------------------------------------+
-|Property             |Value                                                                                  |
-+---------------------+---------------------------------------------------------------------------------------+
-| Description         | npn SiGe:C scalable HBT high performance device, 280 GHz fT. Layout configuration BEC |
-+---------------------+---------------------------------------------------------------------------------------+
-| Device Recognition  | Activ + HeatTrans + TRANS + EmWind + ptab (pSD + Activ.mask)                          |
-+---------------------+---------------------------------------------------------------------------------------+
-| Model Name          | npn13G2l                                                                              |
-+---------------------+---------------------------------------------------------------------------------------+
-| Layout Cell Name    | sg13g2_pr - npn13G2L                                                                  |
-+---------------------+---------------------------------------------------------------------------------------+
-| Netlist Syntax      | `QQ1 C B E sub! npn13G2l m=1 le=1.0u we=70.00n Nx=1 Ny=1`                             |
-+---------------------+---------------------------------------------------------------------------------------+
-| Measured Parameters | we, le, m, Nx, Ny                                                                     |
-+---------------------+---------------------------------------------------------------------------------------+
+**Device Information**
 
-.. figure:: images/npn13G2L_layout.png
-    :width: 850
+.. list-table:: HBT NPN13G2L Bipolar Transistor Specifications
+   :header-rows: 1
+   :stub-columns: 1
+
+   * - Property
+     - Value
+   * - Description
+     - npn SiGe:C scalable HBT high performance device, 280 GHz fT. Layout configuration BEC
+   * - Device Recognition
+     - Activ + HeatTrans + TRANS + EmWind + ptab (pSD + Activ.mask)
+   * - Model Name
+     - npn13G2l
+   * - Layout Cell Name
+     - sg13g2_pr - npn13G2L
+   * - Parameters
+     - we, le, m, Nx, Ny
+
+**Parameters Information**
+
+.. list-table:: Xschem and LVS views Compatibility for npn13G2L Transistor Parameters
+   :header-rows: 1
+   :stub-columns: 1
+
+   * - Parameter
+     - Description
+     - Xschem-View
+     - LVS-View
+   * - we
+     - Bipolar Transistor emitter width
+     - ❌
+     - ✅
+   * - le
+     - Bipolar Transistor emitter length
+     - ❌
+     - ✅
+   * - m
+     - Number of BJT transistors (multiplicity)
+     - ❌
+     - ✅
+   * - Nx
+     - Number of BJT transistors in x-axis
+     - ✅
+     - ✅
+   * - Ny
+     - Number of BJT transistors in y-axis
+     - ❌
+     - ✅
+
+
+**Layout Information** (Refer to :ref:`layout layers`)
+
+.. image:: images/npn13G2L_layout.png
+    :width: 600
     :align: center
     :alt: npn13G2L device - layout
 
-    Figure 4.4.2 Layout for npn13G2L device
+.. rst-class:: center
+
+    Figure 4.3.2 Layout for NPN13G2L Bipolar Transistor
 
 
 npn13G2V
 --------
 
-+---------------------+----------------------------------------------------------------------------------+
-|Property             |Value                                                                             |
-+---------------------+----------------------------------------------------------------------------------+
-| Description         | npn SiGe:C scalable HBT high voltage device, 90 GHz fT. Layout configuration BEC |
-+---------------------+----------------------------------------------------------------------------------+
-| Device Recognition  | Activ + HeatTrans + TRANS + EmWiHV + ptab (pSD + Activ.mask)                     |
-+---------------------+----------------------------------------------------------------------------------+
-| Model Name          | npn13G2v                                                                         |
-+---------------------+----------------------------------------------------------------------------------+
-| Layout Cell Name    | sg13g2_pr - npn13G2V                                                             |
-+---------------------+----------------------------------------------------------------------------------+
-| Netlist Syntax      | `QQ2 C B E sub! npn13G2v m=1 le=1.0u we=120.00n Nx=1 Ny=1`                       |
-+---------------------+----------------------------------------------------------------------------------+
-| Measured Parameters | we, le, m, Nx, Ny                                                                |
-+---------------------+----------------------------------------------------------------------------------+
+.. list-table:: HBT NPN13G2V Bipolar Transistor Specifications
+   :header-rows: 1
+   :stub-columns: 1
 
-.. figure:: images/npn13G2V_layout.png
-    :width: 850
+   * - Property
+     - Value
+   * - Description
+     - npn SiGe:C scalable HBT high voltage device, 90 GHz fT. Layout configuration BEC
+   * - Device Recognition
+     - Activ + HeatTrans + TRANS + EmWiHV + ptab (pSD + Activ.mask)
+   * - Model Name
+     - npn13G2v
+   * - Layout Cell Name
+     - sg13g2_pr - npn13G2V
+   * - Parameters
+     - we, le, m, Nx, Ny
+
+**Parameters Information**
+
+.. list-table:: Xschem and LVS views Compatibility for npn13G2V Transistor Parameters
+   :header-rows: 1
+   :stub-columns: 1
+
+   * - Parameter
+     - Description
+     - Xschem-View
+     - LVS-View
+   * - we
+     - Bipolar Transistor emitter width
+     - ❌
+     - ✅
+   * - le
+     - Bipolar Transistor emitter length
+     - ❌
+     - ✅
+   * - m
+     - Number of BJT transistors (multiplicity)
+     - ❌
+     - ✅
+   * - Nx
+     - Number of BJT transistors in x-axis
+     - ✅
+     - ✅
+   * - Ny
+     - Number of BJT transistors in y-axis
+     - ❌
+     - ✅
+
+
+**Layout Information** (Refer to :ref:`layout layers`)
+
+.. image:: images/npn13G2V_layout.png
+    :width: 700
     :align: center
     :alt: npn13G2V device - layout
 
-    Figure 4.4.3 Layout for npn13G2V device
+.. rst-class:: center
+
+    Figure 4.3.3 Layout for NPN13G2V Bipolar Transistor

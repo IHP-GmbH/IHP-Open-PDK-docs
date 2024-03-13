@@ -1,61 +1,138 @@
-4.5 Diode-Devices
-=================
+Diode-Devices
+=============
 
-4.5.1 dantenna
---------------
+dantenna
+--------
 
-+---------------------+------------------------------------------------------------------------------+
-|Property             |Value                                                                         |
-+---------------------+------------------------------------------------------------------------------+
-| Description         | Protection diode for MOS gates. Substrate is anode, metal is cathode.        |
-+---------------------+------------------------------------------------------------------------------+
-| Device Recognition  | Activ + Recog.diode                                                          |
-+---------------------+------------------------------------------------------------------------------+
-| Model Name          | dantenna                                                                     |
-+---------------------+------------------------------------------------------------------------------+
-| Layout Cell Name    | sg13g2_pr - dantenna                                                         |
-+---------------------+------------------------------------------------------------------------------+
-| Netlist Syntax      | `DD0 sub! MINUS dantenna m=1 w=780.00n l=780.00n a=608.400f p=3.12u`         |
-+---------------------+------------------------------------------------------------------------------+
-| Measured Parameters | Area (a), Perimeter (p)                                                      |
-+---------------------+------------------------------------------------------------------------------+
-| Additional Notes    | - This diode is used to protect against low voltage.                         |
-|                     | - The anode of the diode should be connected to the ptap1 resistor.          |
-+---------------------+------------------------------------------------------------------------------+
+**Device Information**
+
+.. list-table:: Antenna diode used to protect against low voltage.
+   :header-rows: 1
+   :stub-columns: 1
+
+   * - Property
+     - Value
+   * - Description
+     - Protection diode for MOS gates. Substrate is anode, metal is cathode.
+   * - Device Recognition
+     - Activ + Recog.diode
+   * - Model Name
+     - dantenna
+   * - Layout Cell Name
+     - sg13g2_pr - dantenna
+   * - Parameters
+     - w, l, a, p, m
+   * - Additional Notes
+     - The anode of the diode should be connected to the ptap1 resistor.
+
+**Parameters Information**
+
+.. list-table:: Xschem and LVS views Compatibility for dantenna Parameters
+   :header-rows: 1
+   :stub-columns: 1
+
+   * - Parameter
+     - Description
+     - Xschem-View
+     - LVS-View
+   * - W
+     - Diode device active width
+     - ✅
+     - ✅
+   * - L
+     - Diode device active length
+     - ✅
+     - ✅
+   * - A
+     - Diode device active area
+     - ❌
+     - ✅
+   * - P
+     - Diode device active perimeter
+     - ❌
+     - ✅
+   * - m
+     - Number of diodes (multiplicity)
+     - ❌
+     - ✅
 
 
-.. figure:: images/dantenna_layout.png
-    :width: 850
+**Layout Information** (Refer to :ref:`layout layers`)
+
+.. image:: images/dantenna_layout.png
+    :width: 600
     :align: center
     :alt: dantenna device - layout
 
-    Figure 4.5.1 Layout for dantenna device
+.. rst-class:: center
 
-4.5.2 dpantenna
----------------
+    Figure 4.4.1 Layout for dantenna diode device
 
-+---------------------+------------------------------------------------------------------------------+
-|Property             |Value                                                                         |
-+---------------------+------------------------------------------------------------------------------+
-| Description         | Protection diode for MOS gates. Substrate is cathode, metal is anode.        |
-+---------------------+------------------------------------------------------------------------------+
-| Device Recognition  | Activ + Recog.diode + pSD                                                    |
-+---------------------+------------------------------------------------------------------------------+
-| Model Name          | dpantenna                                                                    |
-+---------------------+------------------------------------------------------------------------------+
-| Layout Cell Name    | sg13g2_pr - dpantenna                                                        |
-+---------------------+------------------------------------------------------------------------------+
-| Netlist Syntax      | `DD1 PLUS MINUS dpantenna m=1 w=780.00n l=780.00n a=608.400f p=3.12u`        |
-+---------------------+------------------------------------------------------------------------------+
-| Measured Parameters | Area (a), Perimeter (p)                                                      |
-+---------------------+------------------------------------------------------------------------------+
-| Additional Notes    | - This diode is used to protect against high voltage.                        |
-|                     | - The cathode of the diode should be connected to the ntap1 resistor.        |
-+---------------------+------------------------------------------------------------------------------+
 
-.. figure:: images/dpantenna_layout.png
-    :width: 850
+dpantenna
+---------
+
+
+**Device Information**
+
+.. list-table:: Antenna diode used to protect against high voltage.
+   :header-rows: 1
+   :stub-columns: 1
+
+   * - Property
+     - Value
+   * - Description
+     - Protection diode for MOS gates. Substrate is cathode, metal is anode.
+   * - Device Recognition
+     - Activ + Recog.diode + pSD
+   * - Model Name
+     - dpantenna
+   * - Layout Cell Name
+     - sg13g2_pr - dpantenna
+   * - Parameters
+     - w, l, a, p, m
+   * - Additional Notes
+     - The cathode of the diode should be connected to the ntap1 resistor.
+
+**Parameters Information**
+
+.. list-table:: Xschem and LVS views Compatibility for dpantenna Parameters
+   :header-rows: 1
+   :stub-columns: 1
+
+   * - Parameter
+     - Description
+     - Xschem-View
+     - LVS-View
+   * - W
+     - Diode device active width
+     - ✅
+     - ✅
+   * - L
+     - Diode device active length
+     - ✅
+     - ✅
+   * - A
+     - Diode device active area
+     - ❌
+     - ✅
+   * - P
+     - Diode device active perimeter
+     - ❌
+     - ✅
+   * - m
+     - Number of diodes (multiplicity)
+     - ❌
+     - ✅
+
+
+**Layout Information** (Refer to :ref:`layout layers`)
+
+.. image:: images/dpantenna_layout.png
+    :width: 600
     :align: center
     :alt: dpantenna device - layout
 
-    Figure 4.5.2 Layout for dpantenna device
+.. rst-class:: center
+
+    Figure 4.4.2 Layout for dpantenna diode device
