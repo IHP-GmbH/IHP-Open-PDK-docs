@@ -6,7 +6,7 @@ nmos
 
 **Device Information**
 
-.. list-table:: n-Channel Enhancement MOS Transistor (LV) Specifications
+.. list-table:: nMOS-LV Transistor Specifications
    :header-rows: 1
    :stub-columns: 1
 
@@ -62,7 +62,7 @@ nmos
 
 .. rst-class:: center
 
-    Figure 4.1.1 Layout for n-Channel Enhancement MOS Transistor (LV)
+    Figure 4.1.1 Layout for nMOS-LV transistor
 
 
 nmosHV
@@ -70,7 +70,7 @@ nmosHV
 
 **Device Information**
 
-.. list-table:: n-Channel Enhancement MOS Transistor (HV) Specifications
+.. list-table:: nMOS-HV Transistor Specifications
    :header-rows: 1
    :stub-columns: 1
 
@@ -125,16 +125,15 @@ nmosHV
 
 .. rst-class:: center
 
-    Figure 4.1.2 Layout for n-Channel Enhancement MOS Transistor (HV)
+    Figure 4.1.2 Layout for nMOS-HV transistor
 
 
 pmos
 ----
 
-
 **Device Information**
 
-.. list-table:: p-Channel Enhancement MOS Transistor (LV) Specifications
+.. list-table:: pMOS-LV Transistor Specifications
    :header-rows: 1
    :stub-columns: 1
 
@@ -188,7 +187,7 @@ pmos
 
 .. rst-class:: center
 
-    Figure 4.1.3 Layout for p-Channel Enhancement MOS Transistor (LV)
+    Figure 4.1.3 Layout for pMOS-LV transistor
 
 
 pmosHV
@@ -196,7 +195,7 @@ pmosHV
 
 **Device Information**
 
-.. list-table:: p-Channel Enhancement MOS Transistor (HV) Specifications
+.. list-table:: pMOS-HV Transistor Specifications
    :header-rows: 1
    :stub-columns: 1
 
@@ -249,4 +248,4 @@ pmosHV
 
 .. rst-class:: center
 
-    Figure 4.1.4 Layout for p-Channel Enhancement MOS Transistor (HV)
+    Figure 4.1.4 Layout for pMOS-HV transistor

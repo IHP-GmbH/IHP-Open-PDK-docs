@@ -65,7 +65,7 @@ ptap1
 
 .. rst-class:: center
 
-    Figure 4.8.1 Layout for ptap1 device
+    Figure 4.9.1 Layout for ptap1 device
 
 
 ntap1
@@ -132,4 +132,4 @@ ntap1
 
 .. rst-class:: center
 
-    Figure 4.8.2 Layout for ntap1 device
+    Figure 4.9.2 Layout for ntap1 device

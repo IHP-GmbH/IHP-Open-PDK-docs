@@ -6,7 +6,7 @@ dantenna
 
 **Device Information**
 
-.. list-table:: Antenna diode used to protect against low voltage.
+.. list-table:: Antenna diode - Low voltage protection
    :header-rows: 1
    :stub-columns: 1
 
@@ -72,10 +72,9 @@ dantenna
 dpantenna
 ---------
 
-
 **Device Information**
 
-.. list-table:: Antenna diode used to protect against high voltage.
+.. list-table:: Antenna diode - High voltage protection
    :header-rows: 1
    :stub-columns: 1
 
@@ -136,3 +135,70 @@ dpantenna
 .. rst-class:: center
 
     Figure 4.4.2 Layout for dpantenna diode device
+
+
+schottky_nbl1
+-------------
+
+**Device Information**
+
+.. list-table:: schottky diode.
+   :header-rows: 1
+   :stub-columns: 1
+
+   * - Property
+     - Value
+   * - Description
+     - Schottky Diode.
+   * - Device Recognition
+     - Activ + Recog.diode + NWell + ThickGateOx+ SalBlock + nBuLay + pSD + nSD.blk + PWell.blk
+   * - Model Name
+     - schottky_nbl1
+   * - Layout Cell Name
+     - sg13g2_pr - schottky_nbl1
+   * - Parameters
+     - l, w, Nx, Ny, m
+   * - Additional Notes
+     - Anode is the activ & metal under SalBlock, cathode is the activ & metal inside Nwell.
+
+**Parameters Information**
+
+.. list-table:: Xschem and LVS views Compatibility for schottky_nbl1 Parameters
+   :header-rows: 1
+   :stub-columns: 1
+
+   * - Parameter
+     - Description
+     - Xschem-View
+     - LVS-View
+   * - W
+     - Diode device active width
+     - ❌
+     - ✅
+   * - L
+     - Diode device active length
+     - ❌
+     - ✅
+   * - Nx
+     - Diode device active area
+     - ❌
+     - ✅
+   * - Ny
+     - Diode device active perimeter
+     - ❌
+     - ✅
+   * - m
+     - Number of diodes (multiplicity)
+     - ❌
+     - ✅
+
+**Layout Information** (Refer to :ref:`layout layers`)
+
+.. image:: images/schottky_nbl1_layout.png
+    :width: 600
+    :align: center
+    :alt: schottky_nbl1 device - layout
+
+.. rst-class:: center
+
+    Figure 4.4.3 Layout for schottky_nbl1 diode device

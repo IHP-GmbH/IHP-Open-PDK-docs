@@ -220,3 +220,60 @@ rsil
 .. rst-class:: center
 
     Figure 4.5.3 Layout for rsil resistor device
+
+
+lvsres
+------
+
+**Device Information**
+
+.. list-table:: Metal Resistor
+   :header-rows: 1
+   :stub-columns: 1
+
+   * - Property
+     - Value
+   * - Description
+     - Metal resistor used for LVS purpose.
+   * - Device Recognition
+     - Metal1 + Metal1.res
+   * - Model Name
+     - lvsres
+   * - Layout Cell Name
+     - sg13g2_pr - lvsres
+   * - Parameters
+     - w, l, R
+
+**Parameters Information**
+
+.. list-table:: Xschem and LVS views Compatibility for lvsres Parameters
+   :header-rows: 1
+   :stub-columns: 1
+
+   * - Parameter
+     - Description
+     - Xschem-View
+     - LVS-View
+   * - W
+     - RES Width
+     - ❌
+     - ✅
+   * - L
+     - RES Length
+     - ❌
+     - ✅
+   * - R
+     - Resistance Value
+     - ❌
+     - ✅
+
+**Layout Information** (Refer to :ref:`layout layers`)
+
+.. image:: images/lvsres_layout.png
+    :width: 300
+    :align: center
+    :alt: lvsres device - layout
+
+.. rst-class:: center
+
+    Figure 4.5.4 Layout for lvsres resistor device

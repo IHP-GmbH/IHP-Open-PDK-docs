@@ -64,7 +64,7 @@ npn13G2
 
 .. rst-class:: center
 
-    Figure 4.3.1 Layout for NPN13G2 Bipolar Transistor
+    Figure 4.3.1 Layout for NPN13G2 bipolar transistor
 
 
 npn13G2L
@@ -130,7 +130,7 @@ npn13G2L
 
 .. rst-class:: center
 
-    Figure 4.3.2 Layout for NPN13G2L Bipolar Transistor
+    Figure 4.3.2 Layout for NPN13G2L bipolar transistor
 
 
 npn13G2V
@@ -194,4 +194,70 @@ npn13G2V
 
 .. rst-class:: center
 
-    Figure 4.3.3 Layout for NPN13G2V Bipolar Transistor
+    Figure 4.3.3 Layout for NPN13G2V bipolar transistor
+
+
+pnpMPA
+------
+
+**Device Information**
+
+.. list-table:: HBT PNP Bipolar Transistor Specifications
+   :header-rows: 1
+   :stub-columns: 1
+
+   * - Property
+     - Value
+   * - Description
+     - HBT pnp used for BandGap Reference (BGR) circuit
+   * - Device Recognition
+     - Activ + NWell + nBuLay + pSD
+   * - Model Name
+     - pnpMPA
+   * - Layout Cell Name
+     - sg13g2_pr - pnpMPA
+   * - Parameters
+     - l, w, a, p, m
+
+**Parameters Information**
+
+.. list-table:: Xschem and LVS views Compatibility for pnpMPA Transistor Parameters
+   :header-rows: 1
+   :stub-columns: 1
+
+   * - Parameter
+     - Description
+     - Xschem-View
+     - LVS-View
+   * - W
+     - PNP emitter width
+     - ✅
+     - ✅
+   * - L
+     - PNP emitter length 
+     - ✅
+     - ✅
+   * - A
+     - PNP emitter area 
+     - ❌
+     - ✅
+   * - P
+     - PNP emitter perimeter
+     - ❌
+     - ✅
+   * - m
+     - Number of PNP transistors (multiplicity)
+     - ❌
+     - ✅
+
+
+**Layout Information** (Refer to :ref:`layout layers`)
+
+.. image:: images/pnpMPA_layout.png
+    :width: 600
+    :align: center
+    :alt: pnpMPA device - layout
+
+.. rst-class:: center
+
+    Figure 4.3.4 Layout for pnpMPA bipolar transistor

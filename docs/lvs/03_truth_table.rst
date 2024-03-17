@@ -26,4 +26,6 @@ The Topological Truth Table is a design aid that helps establish the relationshi
 
 .. csv-table:: Truth Table for SG13G2 SiGe BiCMOS Process
     :file: tables/truth_table_lvs.csv
-    :widths: 500, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30
+    :widths: 500, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30
+
+
