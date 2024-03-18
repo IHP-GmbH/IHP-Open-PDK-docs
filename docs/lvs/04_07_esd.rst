@@ -15,7 +15,7 @@ diodevdd_2k
    * - Description
      - VDD diode. One p+ stripe in n-well.
    * - Device Recognition
-     - Activ + pSD + Nwell + Recog.esd
+     - Activ, pSD, Nwell, Recog.esd
    * - Model Name
      - diodevdd_2kv
    * - Layout Cell Name
@@ -117,7 +117,7 @@ idiodevdd_2k
    * - Description
      - Isolated VDD diode. One p+ stripe in n-well.
    * - Device Recognition
-     - Activ + pSD + Nwell + Recog.esd + nBuLay + PWell.blk
+     - Activ, pSD, Nwell, Recog.esd, nBuLay, PWell.blk
    * - Model Name
      - idiodevdd_2kv
    * - Layout Cell Name
@@ -168,7 +168,7 @@ idiodevdd_4k
    * - Description
      - Isolated VDD diode. Two p+ stripe in n-well.
    * - Device Recognition
-     - Activ + pSD + Nwell + Recog.esd
+     - Activ, pSD, Nwell, Recog.esd
    * - Model Name
      - idiodevdd_4kv
    * - Layout Cell Name
@@ -218,7 +218,7 @@ diodevss_2k
    * - Description
      - VSS diode. One n+ stripe in p-well (Nwell hole).
    * - Device Recognition
-     - Activ + pSD + Nwell + Recog.esd
+     - Activ, pSD, Nwell, Recog.esd
    * - Model Name
      - diodevss_2kv
    * - Layout Cell Name
@@ -269,7 +269,7 @@ diodevss_4k
    * - Description
      - VSS diode. Two n+ stripe in p-well (Nwell hole).
    * - Device Recognition
-     - Activ + pSD + Nwell + Recog.esd
+     - Activ, pSD, Nwell, Recog.esd
    * - Model Name
      - diodevss_4kv
    * - Layout Cell Name
@@ -319,7 +319,7 @@ idiodevss_2k
    * - Description
      - Isolated VSS diode. One n+ stripe in p-well (Nwell hole).
    * - Device Recognition
-     - Activ + pSD + Nwell + Recog.esd
+     - Activ, pSD, Nwell, Recog.esd
    * - Model Name
      - idiodevss_2kv
    * - Layout Cell Name
@@ -370,7 +370,7 @@ idiodevss_4k
    * - Description
      - Isolated VSS diode. Two n+ stripe in p-well (Nwell hole).
    * - Device Recognition
-     - Activ + pSD + Nwell + Recog.esd
+     - Activ, pSD, Nwell, Recog.esd
    * - Model Name
      - idiodevss_4kv
    * - Layout Cell Name
@@ -420,7 +420,7 @@ nmoscl_2
    * - Description
      - Isolated NMOS with the silicidation protection mask for the drain region
    * - Device Recognition
-     - Activ + GatPoly + pSD + SalBlock + Nwell + nBuLay + Substrate + ThickGateOx + Recog + Recog.esd
+     - Activ, GatPoly, pSD, SalBlock, Nwell, nBuLay, Substrate, ThickGateOx, Recog, Recog.esd
    * - Model Name
      - nmoscl_2
    * - Layout Cell Name
@@ -475,7 +475,7 @@ nmoscl_4
    * - Description
      - Isolated NMOS with the silicidation protection mask for the drain region
    * - Device Recognition
-     - Activ + GatPoly + pSD + SalBlock + Nwell + nBuLay + Substrate + ThickGateOx + Recog + Recog.esd
+     - Activ, GatPoly, pSD, SalBlock, Nwell, nBuLay, Substrate, ThickGateOx, Recog, Recog.esd
    * - Model Name
      - nmoscl_4
    * - Layout Cell Name
@@ -530,7 +530,7 @@ scr1
    * - Description
      - Silicon Control Rectifier (Thyristor)
    * - Device Recognition
-     - Activ + GatPoly + pSD + SalBlock + Nwell + nBuLay + Substrate + ThickGateOx + nSD.blk + Recog.esd
+     - Activ, GatPoly, pSD, SalBlock, Nwell, nBuLay, Substrate, ThickGateOx, nSD.blk, Recog.esd
    * - Model Name
      - scr1
    * - Layout Cell Name

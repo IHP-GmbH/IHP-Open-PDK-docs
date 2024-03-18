@@ -15,7 +15,7 @@ ptap1
    * - Description
      - Substrate contact which keeps the substrate a separate net.
    * - Device Recognition
-     - Activ + pSD + Substrate
+     - Activ, pSD, Substrate
    * - Model Name
      - ptap1
    * - Layout Cell Name
@@ -82,7 +82,7 @@ ntap1
    * - Description
      - Nwell contact which keeps the nwell a separate net.
    * - Device Recognition
-     - Activ + Nwell + nBuLay
+     - Activ, Nwell, nBuLay
    * - Model Name
      - ntap1
    * - Layout Cell Name

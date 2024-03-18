@@ -6,7 +6,7 @@ npn13G2
 
 **Device Information**
 
-.. list-table:: HBT NPN13G2 Bipolar Transistor Specifications
+.. list-table:: HBT NPN13G2 Bipolar Specifications
    :header-rows: 1
    :stub-columns: 1
 
@@ -15,7 +15,7 @@ npn13G2
    * - Description
      - npn SiGe:C HBT high performance device, 300 GHz fT. Layout configuration BEC
    * - Device Recognition
-     - Activ + nSD.blk + HeatTrans + TRANS + EmWind + ptab (pSD + Activ.mask)
+     - Activ, nSD.blk, HeatTrans, TRANS, EmWind, ptab (pSD + Activ.mask)
    * - Model Name
      - npn13G2
    * - Layout Cell Name
@@ -25,7 +25,7 @@ npn13G2
 
 **Parameters Information**
 
-.. list-table:: Xschem and LVS views Compatibility for npn13G2 Transistor Parameters
+.. list-table:: Xschem and LVS views Compatibility for npn13G2 Parameters
    :header-rows: 1
    :stub-columns: 1
 
@@ -34,23 +34,23 @@ npn13G2
      - Xschem-View
      - LVS-View
    * - we
-     - Bipolar Transistor emitter width
+     - Emitter width
      - ❌
      - ✅
    * - le
-     - Bipolar Transistor emitter length
+     - Emitter length
      - ❌
      - ✅
    * - m
-     - Number of BJT transistors (multiplicity)
+     - Number of BJTs (multiplicity)
      - ❌
      - ✅
    * - Nx
-     - Number of BJT transistors in x-axis
+     - Number of BJTs in x-axis
      - ✅
      - ✅
    * - Ny
-     - Number of BJT transistors in y-axis
+     - Number of BJTs in y-axis
      - ❌
      - ✅
 
@@ -81,7 +81,7 @@ npn13G2L
    * - Description
      - npn SiGe:C scalable HBT high performance device, 280 GHz fT. Layout configuration BEC
    * - Device Recognition
-     - Activ + HeatTrans + TRANS + EmWind + ptab (pSD + Activ.mask)
+     - Activ, HeatTrans, TRANS, EmWind, ptab (pSD + Activ.mask)
    * - Model Name
      - npn13G2l
    * - Layout Cell Name
@@ -91,7 +91,7 @@ npn13G2L
 
 **Parameters Information**
 
-.. list-table:: Xschem and LVS views Compatibility for npn13G2L Transistor Parameters
+.. list-table:: Xschem and LVS views Compatibility for npn13G2L Parameters
    :header-rows: 1
    :stub-columns: 1
 
@@ -100,23 +100,23 @@ npn13G2L
      - Xschem-View
      - LVS-View
    * - we
-     - Bipolar Transistor emitter width
+     - Emitter width
      - ❌
      - ✅
    * - le
-     - Bipolar Transistor emitter length
+     - Emitter length
      - ❌
      - ✅
    * - m
-     - Number of BJT transistors (multiplicity)
+     - Number of BJTs (multiplicity)
      - ❌
      - ✅
    * - Nx
-     - Number of BJT transistors in x-axis
+     - Number of BJTs in x-axis
      - ✅
      - ✅
    * - Ny
-     - Number of BJT transistors in y-axis
+     - Number of BJTs in y-axis
      - ❌
      - ✅
 
@@ -145,7 +145,7 @@ npn13G2V
    * - Description
      - npn SiGe:C scalable HBT high voltage device, 90 GHz fT. Layout configuration BEC
    * - Device Recognition
-     - Activ + HeatTrans + TRANS + EmWiHV + ptab (pSD + Activ.mask)
+     - Activ, HeatTrans, TRANS, EmWiHV, ptab (pSD + Activ.mask)
    * - Model Name
      - npn13G2v
    * - Layout Cell Name
@@ -155,7 +155,7 @@ npn13G2V
 
 **Parameters Information**
 
-.. list-table:: Xschem and LVS views Compatibility for npn13G2V Transistor Parameters
+.. list-table:: Xschem and LVS views Compatibility for npn13G2V Parameters
    :header-rows: 1
    :stub-columns: 1
 
@@ -164,23 +164,23 @@ npn13G2V
      - Xschem-View
      - LVS-View
    * - we
-     - Bipolar Transistor emitter width
+     - Emitter width
      - ❌
      - ✅
    * - le
-     - Bipolar Transistor emitter length
+     - Emitter length
      - ❌
      - ✅
    * - m
-     - Number of BJT transistors (multiplicity)
+     - Number of BJTs (multiplicity)
      - ❌
      - ✅
    * - Nx
-     - Number of BJT transistors in x-axis
+     - Number of BJTs in x-axis
      - ✅
      - ✅
    * - Ny
-     - Number of BJT transistors in y-axis
+     - Number of BJTs in y-axis
      - ❌
      - ✅
 
@@ -211,7 +211,7 @@ pnpMPA
    * - Description
      - HBT pnp used for BandGap Reference (BGR) circuit
    * - Device Recognition
-     - Activ + NWell + nBuLay + pSD
+     - Activ, NWell, nBuLay, pSD
    * - Model Name
      - pnpMPA
    * - Layout Cell Name
@@ -221,7 +221,7 @@ pnpMPA
 
 **Parameters Information**
 
-.. list-table:: Xschem and LVS views Compatibility for pnpMPA Transistor Parameters
+.. list-table:: Xschem and LVS views Compatibility for pnpMPA Parameters
    :header-rows: 1
    :stub-columns: 1
 
@@ -230,23 +230,23 @@ pnpMPA
      - Xschem-View
      - LVS-View
    * - W
-     - PNP emitter width
+     - Emitter width
      - ✅
      - ✅
    * - L
-     - PNP emitter length 
+     - Emitter length 
      - ✅
      - ✅
    * - A
-     - PNP emitter area 
+     - Emitter area 
      - ❌
      - ✅
    * - P
-     - PNP emitter perimeter
+     - Emitter perimeter
      - ❌
      - ✅
    * - m
-     - Number of PNP transistors (multiplicity)
+     - Number of BJTs (multiplicity)
      - ❌
      - ✅
 

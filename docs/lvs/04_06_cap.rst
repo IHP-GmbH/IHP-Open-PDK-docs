@@ -15,7 +15,7 @@ cmim
    * - Description
      - Metal5 - insulator - TopMetal1 capacitor, scalable rectangular shape.
    * - Device Recognition
-     - MIM + VMIM + Metal5 + TopMetal1
+     - MIM, VMIM, Metal5, TopMetal1
    * - Model Name
      - cap_cmim
    * - Layout Cell Name
@@ -84,7 +84,7 @@ rfcmim
    * - Description
      - Metal5 - insulator - TopMetal1 capacitor with ptap surrounding and special RF model.
    * - Device Recognition
-     - MIM + VMIM + Metal5 + TopMetal1 + PWell.blk + ptap (Activ + pSD)
+     - MIM, VMIM, Metal5, TopMetal1, PWell.blk, ptap (Activ + pSD)
    * - Model Name
      - rfcmim
    * - Layout Cell Name
@@ -146,7 +146,7 @@ SVaricap
    * - Description
      -  Variable capacitor, available only with thick oxide.
    * - Device Recognition
-     - Activ + GatPoly + pSD + Nwell + nBuLay + ThickGateOx
+     - Activ, GatPoly, pSD, Nwell, nBuLay, ThickGateOx
    * - Model Name
      - SVaricap
    * - Layout Cell Name

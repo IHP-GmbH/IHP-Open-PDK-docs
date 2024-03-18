@@ -151,7 +151,7 @@ schottky_nbl1
    * - Description
      - Schottky Diode.
    * - Device Recognition
-     - Activ + Recog.diode + NWell + ThickGateOx+ SalBlock + nBuLay + pSD + nSD.blk + PWell.blk
+     - Activ, metal1, NWell, ThickGateOx, SalBlock, nBuLay, pSD, nSD.blk, PWell.blk, Recog.diode
    * - Model Name
      - schottky_nbl1
    * - Layout Cell Name
@@ -172,23 +172,23 @@ schottky_nbl1
      - Xschem-View
      - LVS-View
    * - W
-     - Diode device active width
+     - ContBar width
      - ❌
      - ✅
    * - L
-     - Diode device active length
+     - ContBar length
      - ❌
      - ✅
    * - Nx
-     - Diode device active area
+     - Number of schottky diodes in x-axis
      - ❌
      - ✅
    * - Ny
-     - Diode device active perimeter
+     - Number of schottky diodes in y-axis
      - ❌
      - ✅
    * - m
-     - Number of diodes (multiplicity)
+     - Number of schottky diodes (multiplicity)
      - ❌
      - ✅
 

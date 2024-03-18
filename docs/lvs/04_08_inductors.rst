@@ -13,15 +13,17 @@ inductor2
    * - Property
      - Value
    * - Description
-     - **To be added**
+     - 2-Terminal inductor (Single output)
    * - Device Recognition
-     - IND + TopMetal2 + PWell.blk
+     - IND, TopMetal2, PWell.blk, nfl
    * - Model Name
      - inductor2
    * - Layout Cell Name
      - sg13g2_pr - inductor2
    * - Parameters
      - w s d nr_r
+   * - Additional Notes
+     - Sounded by filler exclusion layer for all metals, activ and GatPoly layers.
 
 **Parameters Information**
 
@@ -74,15 +76,17 @@ inductor3
    * - Property
      - Value
    * - Description
-     - **To be added**
+     - 3-Terminal inductor (Differential output)
    * - Device Recognition
-     - IND + TopMetal2 + PWell.blk
+     - IND, TopMetal2, PWell.blk
    * - Model Name
      - inductor3
    * - Layout Cell Name
      - sg13g2_pr - inductor3
    * - Parameters
      - w s d nr_r
+   * - Additional Notes
+     - Sounded by filler exclusion layer for all metals, activ and GatPoly layers.
 
 **Parameters Information**
 

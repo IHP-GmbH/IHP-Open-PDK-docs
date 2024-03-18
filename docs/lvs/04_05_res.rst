@@ -15,7 +15,7 @@ rhigh
    * - Description
      - High-ohmic poly-Si resistor. It represents an unsalicided partial compensated low n-doped GatPoly resistor.
    * - Device Recognition
-     - GatPoly + nSD + pSD + SalBlock + HeatRes + ExtBlock + PolyRes
+     - GatPoly, nSD, pSD, SalBlock, HeatRes, ExtBlock, PolyRes
    * - Model Name
      - rhigh
    * - Layout Cell Name
@@ -90,7 +90,7 @@ rppd
    * - Description
      - Medium resistance poly-Si resistor. It represents the unsalicided p+ doped GatPoly resistor.
    * - Device Recognition
-     - GatPoly + pSD + SalBlock + HeatRes + ExtBlock + PolyRes
+     - GatPoly, pSD, SalBlock, HeatRes, ExtBlock, PolyRes
    * - Model Name
      - rppd
    * - Layout Cell Name
@@ -163,7 +163,7 @@ rsil
    * - Description
      - Salicided poly-Si resistor (low-ohmic). It represents the salicided n+ doped GatPoly resistor.
    * - Device Recognition
-     - GGatPoly + RES + HeatRes + ExtBlock + PolyRes
+     - GGatPoly, RES, HeatRes, ExtBlock, PolyRes
    * - Model Name
      - rsil
    * - Layout Cell Name
@@ -236,7 +236,7 @@ lvsres
    * - Description
      - Metal resistor used for LVS purpose.
    * - Device Recognition
-     - Metal1 + Metal1.res
+     - Metal1, Metal1.res
    * - Model Name
      - lvsres
    * - Layout Cell Name
