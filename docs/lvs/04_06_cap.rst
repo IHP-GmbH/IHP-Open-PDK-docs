@@ -15,11 +15,11 @@ cmim
    * - Description
      - Metal5 - insulator - TopMetal1 capacitor, scalable rectangular shape.
    * - Device Recognition
-     - MIM + VMIM + Metal5 + TopMetal1
+     - MIM, VMIM, Metal5, TopMetal1
    * - Model Name
      - cap_cmim
    * - Layout Cell Name
-     - sg13g2_pr - cap_cmim
+     - sg13g2_pr - cmim
    * - Parameters
      - w, l, c, m
    * - Additional Notes
@@ -70,6 +70,68 @@ cmim
     Figure 4.6.1 Layout for cmim capacitor device
 
 
+rfcmim
+------
+
+**Device Information**
+
+.. list-table:: Metal-Insulator-Metal RF capacitor
+   :header-rows: 1
+   :stub-columns: 1
+
+   * - Property
+     - Value
+   * - Description
+     - Metal5 - insulator - TopMetal1 capacitor with ptap surrounding and special RF model.
+   * - Device Recognition
+     - MIM, VMIM, Metal5, TopMetal1, PWell.blk, ptap (Activ + pSD)
+   * - Model Name
+     - rfcmim
+   * - Layout Cell Name
+     - sg13g2_pr - rfcmim
+   * - Parameters
+     - w, l, wfeed, C
+
+**Parameters Information**
+
+.. list-table:: Xschem and LVS views Compatibility for rfcmim Parameters
+   :header-rows: 1
+   :stub-columns: 1
+
+   * - Parameter
+     - Description
+     - Xschem-View
+     - LVS-View
+   * - W
+     - Capacitor Width
+     - ❌
+     - ✅
+   * - L
+     - Capacitor Length
+     - ❌
+     - ✅
+   * - wfeed
+     - Capacitor feed width
+     - ❌
+     - ✅
+   * - C
+     - Capacitance Value
+     - ❌
+     - ✅
+
+
+**Layout Information** (Refer to :ref:`layout layers`)
+
+.. image:: images/rfcmim_layout.png
+    :width: 600
+    :align: center
+    :alt: rfcmim device - layout
+
+.. rst-class:: center
+
+    Figure 4.6.2 Layout for rfcmim capacitor device
+
+
 SVaricap
 --------
 
@@ -84,7 +146,7 @@ SVaricap
    * - Description
      -  Variable capacitor, available only with thick oxide.
    * - Device Recognition
-     - Activ + GatPoly + pSD + Nwell + nBuLay + ThickGateOx
+     - Activ, GatPoly, pSD, Nwell, nBuLay, ThickGateOx
    * - Model Name
      - SVaricap
    * - Layout Cell Name
@@ -126,4 +188,4 @@ SVaricap
 
 .. rst-class:: center
 
-    Figure 4.6.2 Layout for SVaricap capacitor device
+    Figure 4.6.3 Layout for SVaricap capacitor device

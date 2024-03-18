@@ -16,4 +16,5 @@ Devices
     04_05_res
     04_06_cap
     04_07_esd
-    04_08_taps
+    04_08_inductors
+    04_09_taps

@@ -6,7 +6,7 @@ rfnmos
 
 **Device Information**
 
-.. list-table:: RF nMOS Transistor (LV) Specifications
+.. list-table:: RF nMOS-LV Transistor Specifications
    :header-rows: 1
    :stub-columns: 1
 
@@ -15,7 +15,7 @@ rfnmos
    * - Description
      - nMOS device with ptap surrounding and special RF model.
    * - Device Recognition
-     - Activ + GatPoly + psD (For ptap-Gaurd-Ring)
+     - Activ, GatPoly, psD (For ptap)
    * - Model Name
      - rfnmos
    * - Layout Cell Name
@@ -62,7 +62,7 @@ rfnmos
 
 .. rst-class:: center
 
-    Figure 4.2.1 Layout for RF nMOS Transistor (LV)
+    Figure 4.2.1 Layout for RF nMOS-LV transistor
 
 
 rfnmosHV
@@ -70,7 +70,7 @@ rfnmosHV
 
 **Device Information**
 
-.. list-table:: RF nMOS Transistor (HV) Specifications
+.. list-table:: RF nMOS-HV Transistor Specifications
    :header-rows: 1
    :stub-columns: 1
 
@@ -79,7 +79,7 @@ rfnmosHV
    * - Description
      - nmosHV device with ptap surrounding and special RF model.
    * - Device Recognition
-     - Activ + GatPoly + ThickGateOx + psD (For ptap-Gaurd-Ring)
+     - Activ, GatPoly, ThickGateOx, psD (For ptap)
    * - Model Name
      - rfnmosHV
    * - Layout Cell Name
@@ -126,7 +126,7 @@ rfnmosHV
 
 .. rst-class:: center
 
-    Figure 4.2.2 Layout for RF nMOS Transistor (HV)
+    Figure 4.2.2 Layout for RF nMOS-HV Transistor
 
 
 rfpmos
@@ -134,7 +134,7 @@ rfpmos
 
 **Device Information**
 
-.. list-table:: RF pMOS Transistor (LV) Specifications
+.. list-table:: RF pMOS-LV Transistor Specifications
    :header-rows: 1
    :stub-columns: 1
 
@@ -143,7 +143,7 @@ rfpmos
    * - Description
      - pMOS device with ntap surrounding and special RF model.
    * - Device Recognition
-     - Activ + GatPoly + pSD + Nwell 
+     - Activ, GatPoly, pSD, Nwell 
    * - Model Name
      - rfpmos
    * - Layout Cell Name
@@ -190,7 +190,7 @@ rfpmos
 
 .. rst-class:: center
 
-    Figure 4.2.3 Layout for RF pMOS Transistor (LV)
+    Figure 4.2.3 Layout for RF pMOS-LV Transistor
 
 
 rfpmosHV
@@ -198,7 +198,7 @@ rfpmosHV
 
 **Device Information**
 
-.. list-table:: RF pMOS Transistor (HV) Specifications
+.. list-table:: RF pMOS-HV Transistor Specifications
    :header-rows: 1
    :stub-columns: 1
 
@@ -207,7 +207,7 @@ rfpmosHV
    * - Description
      - pmosHV device with ntap surrounding and special RF model.
    * - Device Recognition
-     - Activ + GatPoly + pSD + Nwell + ThickGateOx
+     - Activ, GatPoly, pSD, Nwell, ThickGateOx
    * - Model Name
      - rfpmosHV
    * - Layout Cell Name
@@ -219,7 +219,7 @@ rfpmosHV
 
 **Parameters Information**
 
-.. list-table:: Xschem and LVS views Compatibility for RF nMOS HV Transistor Parameters
+.. list-table:: Xschem and LVS views Compatibility for RF pMOS HV Transistor Parameters
    :header-rows: 1
    :stub-columns: 1
 
@@ -254,4 +254,4 @@ rfpmosHV
 
 .. rst-class:: center
 
-    Figure 4.2.4 Layout for RF pMOS Transistor (HV)
+    Figure 4.2.4 Layout for RF pMOS-HV transistor
