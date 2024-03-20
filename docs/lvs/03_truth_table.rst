@@ -24,8 +24,30 @@ The Topological Truth Table is a design aid that helps establish the relationshi
     By effectively utilizing the Topological Truth Table, designers can ensure accurate and efficient layout creation within the integrated circuit design process.
 
 
-.. csv-table:: Truth Table for SG13G2 SiGe BiCMOS Process
-    :file: tables/truth_table_lvs.csv
-    :widths: 500, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30
+.. only:: html
 
+   .. csv-table:: Truth Table for SG13G2 SiGe BiCMOS Process
+      :file: tables/truth_table_lvs.csv
+      :header-rows: 1
+      :stub-columns: 1
+      :widths: auto
 
+.. only:: latex
+
+   .. csv-table:: Truth Table for SG13G2 SiGe BiCMOS Process - Part 1
+      :file: tables/truth_table_lvs_1.csv
+      :header-rows: 1
+      :stub-columns: 1
+      :widths: auto
+
+   .. csv-table:: Truth Table for SG13G2 SiGe BiCMOS Process - Part 2
+      :file: tables/truth_table_lvs_2.csv
+      :header-rows: 1
+      :stub-columns: 1
+      :widths: auto
+
+   .. csv-table:: Truth Table for SG13G2 SiGe BiCMOS Process - Part 3
+      :file: tables/truth_table_lvs_3.csv
+      :header-rows: 1
+      :stub-columns: 1
+      :widths: auto

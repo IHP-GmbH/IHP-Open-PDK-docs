@@ -1,0 +1,47 @@
+Device/Layer,HeatRes,SalBlock,PolyRes,MIM,Vmim,Metal5,TopMetal1,TopMetal2,nBuLay
+1- MOS:,,,,,,,,,
+nmos,0,0,0,x,x,x,x,x,x
+nmosHV,0,0,0,x,x,x,x,x,x
+pmos,0,0,0,x,x,x,x,x,0
+pmosHV,0,0,0,x,x,x,x,x,0
+2- RF-MOS:,,,,,,,,,
+rfnmos,0,0,0,x,x,x,x,x,x
+rfnmosHV,0,0,0,x,x,x,x,x,x
+rfpmos,0,0,0,x,x,x,x,x,0
+rfpmosHV,0,0,0,x,x,x,x,x,0
+3- BJT:,,,,,,,,,
+npn13G2,x,0,0,x,x,x,x,x,0
+npn13G2L,x,0,0,x,x,x,x,x,0
+npn13G2V,x,0,0,x,x,x,x,x,0
+pnpMPA,x,0,0,x,x,x,x,x,1
+4- Diodes:,,,,,,,,,
+dantenna,x,0,0,x,x,x,x,x,0
+dpantenna,x,0,0,x,x,x,x,x,0
+schottky_nbl1,x,1,0,x,x,x,x,x,1
+5- Resistors:,,,,,,,,,
+rhigh,1,1,1,x,x,x,x,x,0
+rppd,1,1,1,x,x,x,x,x,0
+rsil,1,0,1,x,x,x,x,x,0
+lvsres,x,x,x,x,x,x,x,x,x
+6- Capacitors:,,,,,,,,,
+cmim,x,x,x,1,1,1,1,x,x
+rfcmim,x,x,x,1,1,1,1,x,x
+Svaricap,0,0,0,0,0,x,x,x,1
+7- ESD,,,,,,,,,
+diodevdd_2k,x,0,0,x,x,x,x,x,0
+diodevdd_4k,x,0,0,x,x,x,x,x,0
+idiodevdd_2kv,x,0,0,x,x,x,x,x,1
+idiodevdd_4kv,x,0,0,x,x,x,x,x,1
+diodevss_2k,x,0,0,x,x,x,x,x,0
+diodevss_4k,x,0,0,x,x,x,x,x,0
+idiodevss_2kv,x,0,0,x,x,x,x,x,1
+idiodevss_4kv,x,0,0,x,x,x,x,x,1
+nmoscl_2,x,1,0,x,x,x,x,x,1
+nmoscl_4,x,1,0,x,x,x,x,x,1
+scr1,0,1,0,x,x,x,x,x,1
+8- Inductors,,,,,,,,,
+inductor2,x,x,x,x,x,x,x,1,x
+inductor3,x,x,x,x,x,x,x,1,x
+9- Taps,,,,,,,,,
+ptap1,0,0,0,0,0,x,x,x,0
+ntap1,0,0,0,0,0,x,x,x,1

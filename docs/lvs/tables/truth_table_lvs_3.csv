@@ -1,0 +1,47 @@
+Device/Layer,EXTBlock,IND,Activ.mask,nsD.blk,Pwell.blk,Recog.diode,Recog.esd,Metal1.res
+1- MOS:,,,,,,,,
+nmos,0,x,0,0,0,0,0,x
+nmosHV,0,x,0,0,0,0,0,x
+pmos,0,x,0,x,x,0,0,x
+pmosHV,0,x,0,x,x,0,0,x
+2- RF-MOS:,,,,,,,,
+rfnmos,0,x,0,0,0,0,0,x
+rfnmosHV,0,x,0,0,0,0,0,x
+rfpmos,0,x,0,0,x,0,0,x
+rfpmosHV,0,x,0,0,x,0,0,x
+3- BJT:,,,,,,,,
+npn13G2,0,x,1,1,0,0,0,x
+npn13G2L,0,x,1,0,0,0,0,x
+npn13G2V,0,x,1,0,0,0,0,x
+pnpMPA,0,x,0,0,x,0,0,x
+4- Diodes:,,,,,,,,
+dantenna,0,x,0,x,0,1,0,x
+dpantenna,0,x,0,x,0,1,0,x
+schottky_nbl1,0,x,0,1,1,1,0,x
+5- Resistors:,,,,,,,,
+rhigh,1,x,0,x,0,0,0,x
+rppd,1,x,0,x,0,0,0,x
+rsil,1,x,0,0,0,0,0,x
+lvsres,x,x,x,x,x,x,x,1
+6- Capacitors:,,,,,,,,
+cmim,x,x,x,x,x,x,x,x
+rfcmim,x,x,x,x,1,x,x,x
+Svaricap,0,x,0,x,x,0,0,x
+7- ESD,,,,,,,,
+diodevdd_2k,0,x,0,x,x,0,1,x
+diodevdd_4k,0,x,0,x,x,0,1,x
+idiodevdd_2kv,0,x,0,x,1,0,1,x
+idiodevdd_4kv,0,x,0,x,1,0,1,x
+diodevss_2k,0,x,0,x,x,0,1,x
+diodevss_4k,0,x,0,x,x,0,1,x
+idiodevss_2kv,0,x,0,x,0,0,1,x
+idiodevss_4kv,0,x,0,x,0,0,1,x
+nmoscl_2,0,x,0,x,x,0,1,x
+nmoscl_4,0,x,0,x,x,0,1,x
+scr1,0,x,0,1,x,0,1,x
+8- Inductors,,,,,,,,
+inductor2,x,1,x,x,1,x,x,x
+inductor3,x,1,x,x,1,x,x,x
+9- Taps,,,,,,,,
+ptap1,0,x,0,x,0,0,0,x
+ntap1,0,x,0,0,0,0,0,x

@@ -182,8 +182,11 @@ latex_elements = {
     + r"\DeclareUnicodeCharacter{25A1}{\ensuremath{\Box}}"
     + r"\DeclareUnicodeCharacter{F06D}{\ensuremath{\Box}}"
     + r"\DeclareUnicodeCharacter{F057}{\ensuremath{\otimes}}"
+    # + r'''
+    #     \usepackage{graphicx}  % Required for rotating text
+    #     \usepackage{'''+ os.path.abspath('_static/custom-style.sty') + r'''}  % Include custom LaTeX style file
+    # '''
 }
-
 
 def setup(app):
     app.add_css_file("IHP_theme.css")
