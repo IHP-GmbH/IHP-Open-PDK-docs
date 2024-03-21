@@ -27,35 +27,40 @@ dantenna
 
 **Parameters Information**
 
-.. list-table:: Xschem and LVS views Compatibility for dantenna Parameters
+.. list-table:: Schematic and LVS views Compatibility for dantenna Parameters
    :header-rows: 1
    :stub-columns: 1
 
    * - Parameter
      - Description
-     - Xschem-View
+     - Schematic-View
      - LVS-View
+     - LVS-Comparison
    * - W
-     - Diode device active width
+     - Active width
      - ✅
      - ✅
-   * - L
-     - Diode device active length
-     - ✅
-     - ✅
-   * - A
-     - Diode device active area
      - ❌
+   * - L
+     - Active length
+     - ✅
+     - ✅
+     - ❌
+   * - A
+     - Active area
+     - ❌
+     - ✅
      - ✅
    * - P
-     - Diode device active perimeter
+     - Active perimeter
      - ❌
+     - ✅
      - ✅
    * - m
      - Number of diodes (multiplicity)
      - ❌
      - ✅
-
+     - ✅
 
 **Layout Information** (Refer to :ref:`layout layers`)
 
@@ -95,33 +100,39 @@ dpantenna
 
 **Parameters Information**
 
-.. list-table:: Xschem and LVS views Compatibility for dpantenna Parameters
+.. list-table:: Schematic and LVS views Compatibility for dpantenna Parameters
    :header-rows: 1
    :stub-columns: 1
 
    * - Parameter
      - Description
-     - Xschem-View
+     - Schematic-View
      - LVS-View
+     - LVS-Comparison
    * - W
-     - Diode device active width
+     - Active width
      - ✅
      - ✅
-   * - L
-     - Diode device active length
-     - ✅
-     - ✅
-   * - A
-     - Diode device active area
      - ❌
+   * - L
+     - Active length
+     - ✅
+     - ✅
+     - ❌
+   * - A
+     - Active area
+     - ❌
+     - ✅
      - ✅
    * - P
-     - Diode device active perimeter
+     - Active perimeter
      - ❌
+     - ✅
      - ✅
    * - m
      - Number of diodes (multiplicity)
      - ❌
+     - ✅
      - ✅
 
 
@@ -163,33 +174,39 @@ schottky_nbl1
 
 **Parameters Information**
 
-.. list-table:: Xschem and LVS views Compatibility for schottky_nbl1 Parameters
+.. list-table:: Schematic and LVS views Compatibility for schottky_nbl1 Parameters
    :header-rows: 1
    :stub-columns: 1
 
    * - Parameter
      - Description
-     - Xschem-View
+     - Schematic-View
      - LVS-View
+     - LVS-Comparison
    * - W
-     - ContBar width
+     - ContBar width (Fixed)
      - ❌
      - ✅
+     - ❌
    * - L
-     - ContBar length
+     - ContBar length (Fixed)
      - ❌
      - ✅
+     - ❌
    * - Nx
      - Number of schottky diodes in x-axis
      - ❌
      - ✅
+     - ❌
    * - Ny
      - Number of schottky diodes in y-axis
      - ❌
      - ✅
+     - ❌
    * - m
      - Number of schottky diodes (multiplicity)
      - ❌
+     - ✅
      - ✅
 
 **Layout Information** (Refer to :ref:`layout layers`)

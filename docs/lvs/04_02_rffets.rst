@@ -27,28 +27,33 @@ rfnmos
 
 **Parameters Information**
 
-.. list-table:: Xschem and LVS views Compatibility for RF nMOS Transistor Parameters
+.. list-table:: Schematic and LVS views Compatibility for RF nMOS Transistor Parameters
    :header-rows: 1
    :stub-columns: 1
 
    * - Parameter
      - Description
-     - Xschem-View
+     - Schematic-View
      - LVS-View
+     - LVS-Comparison
    * - w
      - Transistor width
+     - ✅
      - ✅
      - ✅
    * - l
      - Transistor channel length
      - ✅
      - ✅
+     - ✅
    * - m
      - Number of transistors (multiplicity)
      - ✅
      - ✅
+     - ✅
    * - ng
-     - Number of transistor gates
+     - Number of gates
+     - ✅
      - ✅
      - ✅
 
@@ -56,7 +61,7 @@ rfnmos
 **Layout Information** (Refer to :ref:`layout layers`)
 
 .. image:: images/rfnmos_layout.png
-    :width: 700
+    :width: 500
     :align: center
     :alt: RF nMOS Transistor - layout
 
@@ -91,28 +96,33 @@ rfnmosHV
 
 **Parameters Information**
 
-.. list-table:: Xschem and LVS views Compatibility for RF nMOS HV Transistor Parameters
+.. list-table:: Schematic and LVS views Compatibility for RF nMOS HV Transistor Parameters
    :header-rows: 1
    :stub-columns: 1
 
    * - Parameter
      - Description
-     - Xschem-View
+     - Schematic-View
      - LVS-View
+     - LVS-Comparison
    * - w
      - Transistor width
+     - ✅
      - ✅
      - ✅
    * - l
      - Transistor channel length
      - ✅
      - ✅
+     - ✅
    * - m
      - Number of transistors (multiplicity)
      - ✅
      - ✅
+     - ✅
    * - ng
-     - Number of transistor gates
+     - Number of gates
+     - ✅
      - ✅
      - ✅
 
@@ -120,7 +130,7 @@ rfnmosHV
 **Layout Information** (Refer to :ref:`layout layers`)
 
 .. image:: images/rfnmoshv_layout.png
-    :width: 700
+    :width: 500
     :align: center
     :alt: RF nMOS HV Transistor - layout
 
@@ -155,28 +165,33 @@ rfpmos
 
 **Parameters Information**
 
-.. list-table:: Xschem and LVS views Compatibility for RF pMOS Transistor Parameters
+.. list-table:: Schematic and LVS views Compatibility for RF pMOS Transistor Parameters
    :header-rows: 1
    :stub-columns: 1
 
    * - Parameter
      - Description
-     - Xschem-View
+     - Schematic-View
      - LVS-View
+     - LVS-Comparison
    * - w
      - Transistor width
+     - ✅
      - ✅
      - ✅
    * - l
      - Transistor channel length
      - ✅
      - ✅
+     - ✅
    * - m
      - Number of transistors (multiplicity)
      - ✅
      - ✅
+     - ✅
    * - ng
-     - Number of transistor gates
+     - Number of gates
+     - ✅
      - ✅
      - ✅
 
@@ -184,7 +199,7 @@ rfpmos
 **Layout Information** (Refer to :ref:`layout layers`)
 
 .. image:: images/rfpmos_layout.png
-    :width: 700
+    :width: 500
     :align: center
     :alt: RF pMOS Transistor - layout
 
@@ -219,28 +234,33 @@ rfpmosHV
 
 **Parameters Information**
 
-.. list-table:: Xschem and LVS views Compatibility for RF pMOS HV Transistor Parameters
+.. list-table:: Schematic and LVS views Compatibility for RF pMOS HV Transistor Parameters
    :header-rows: 1
    :stub-columns: 1
 
    * - Parameter
      - Description
-     - Xschem-View
+     - Schematic-View
      - LVS-View
+     - LVS-Comparison
    * - w
      - Transistor width
+     - ✅
      - ✅
      - ✅
    * - l
      - Transistor channel length
      - ✅
      - ✅
+     - ✅
    * - m
      - Number of transistors (multiplicity)
      - ✅
      - ✅
+     - ✅
    * - ng
-     - Number of transistor gates
+     - Number of gates
+     - ✅
      - ✅
      - ✅
 
@@ -248,7 +268,7 @@ rfpmosHV
 **Layout Information** (Refer to :ref:`layout layers`)
 
 .. image:: images/rfpmoshv_layout.png
-    :width: 600
+    :width: 500
     :align: center
     :alt: RF pMOS HV Transistor - layout
 

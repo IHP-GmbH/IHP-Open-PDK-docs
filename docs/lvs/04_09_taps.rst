@@ -27,33 +27,39 @@ ptap1
 
 **Parameters Information**
 
-.. list-table:: Xschem and LVS views Compatibility for ptap1 Parameters
+.. list-table:: Schematic and LVS views Compatibility for ptap1 Parameters
    :header-rows: 1
    :stub-columns: 1
 
    * - Parameter
      - Description
-     - Xschem-View
+     - Schematic-View
      - LVS-View
+     - LVS-Comparison
    * - W
-     - ptab1 device active width
+     - Active width
      - ❌
+     - ✅
      - ✅
    * - L
-     - ptab1 device active length
+     - Active length
      - ❌
+     - ✅
      - ✅
    * - A
-     - ptab1 device active area
+     - Active area
      - ❌
      - ✅
+     - ❌
    * - Perim
-     - ptab1 device active perimeter
+     - Active perimeter
      - ❌
      - ✅
+     - ❌
    * - R
      - Resistance Value
      - ❌
+     - ✅
      - ✅
 
 **Layout Information** (Refer to :ref:`layout layers`)
@@ -94,33 +100,39 @@ ntap1
 
 **Parameters Information**
 
-.. list-table:: Xschem and LVS views Compatibility for ntap1 Parameters
+.. list-table:: Schematic and LVS views Compatibility for ntap1 Parameters
    :header-rows: 1
    :stub-columns: 1
 
    * - Parameter
      - Description
-     - Xschem-View
+     - Schematic-View
      - LVS-View
+     - LVS-Comparison
    * - W
-     - ptab1 device active width
+     - Active width
      - ❌
+     - ✅
      - ✅
    * - L
-     - ptab1 device active length
+     - Active length
      - ❌
+     - ✅
      - ✅
    * - A
-     - ptab1 device active area
+     - Active area
      - ❌
      - ✅
+     - ❌
    * - Perim
-     - ptab1 device active perimeter
+     - Active perimeter
      - ❌
      - ✅
+     - ❌
    * - R
      - Resistance Value
      - ❌
+     - ✅
      - ✅
 
 **Layout Information** (Refer to :ref:`layout layers`)

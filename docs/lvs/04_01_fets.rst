@@ -27,28 +27,33 @@ nmos
 
 **Parameters Information**
 
-.. list-table:: Xschem and LVS views Compatibility for nMOS Transistor Parameters
+.. list-table:: Schematic and LVS views Compatibility for nMOS Transistor Parameters
    :header-rows: 1
    :stub-columns: 1
 
    * - Parameter
      - Description
-     - Xschem-View
+     - Schematic-View
      - LVS-View
+     - LVS-Comparison
    * - w
      - Transistor width
+     - ✅
      - ✅
      - ✅
    * - l
      - Transistor channel length
      - ✅
      - ✅
+     - ✅
    * - m
      - Number of transistors (multiplicity)
      - ✅
      - ✅
+     - ✅
    * - ng
-     - Number of transistor gates
+     - Number of gates
+     - ✅
      - ✅
      - ✅
 
@@ -91,28 +96,33 @@ nmosHV
 
 **Parameters Information**
 
-.. list-table:: Xschem and LVS views Compatibility for nMOSHV Transistor Parameters
+.. list-table:: Schematic and LVS views Compatibility for nMOSHV Transistor Parameters
    :header-rows: 1
    :stub-columns: 1
 
    * - Parameter
      - Description
-     - Xschem-View
+     - Schematic-View
      - LVS-View
+     - LVS-Comparison
    * - w
      - Transistor width
+     - ✅
      - ✅
      - ✅
    * - l
      - Transistor channel length
      - ✅
      - ✅
+     - ✅
    * - m
      - Number of transistors (multiplicity)
      - ✅
      - ✅
+     - ✅
    * - ng
-     - Number of transistor gates
+     - Number of gates
+     - ✅
      - ✅
      - ✅
 
@@ -152,28 +162,33 @@ pmos
 
 **Parameters Information**
 
-.. list-table:: Xschem and LVS views Compatibility for pMOS Transistor Parameters
+.. list-table:: Schematic and LVS views Compatibility for pMOS Transistor Parameters
    :header-rows: 1
    :stub-columns: 1
 
    * - Parameter
      - Description
-     - Xschem-View
+     - Schematic-View
      - LVS-View
+     - LVS-Comparison
    * - w
      - Transistor width
+     - ✅
      - ✅
      - ✅
    * - l
      - Transistor channel length
      - ✅
      - ✅
+     - ✅
    * - m
      - Number of transistors (multiplicity)
      - ✅
      - ✅
+     - ✅
    * - ng
-     - Number of transistor gates
+     - Number of gates
+     - ✅
      - ✅
      - ✅
 
@@ -214,30 +229,36 @@ pmosHV
 
 **Parameters Information**
 
-.. list-table:: Xschem and LVS views Compatibility for pMOSHV Transistor Parameters
+.. list-table:: Schematic and LVS views Compatibility for pMOSHV Transistor Parameters
    :header-rows: 1
    :stub-columns: 1
 
    * - Parameter
      - Description
-     - Xschem-View
+     - Schematic-View
      - LVS-View
+     - LVS-Comparison
    * - w
      - Transistor width
+     - ✅
      - ✅
      - ✅
    * - l
      - Transistor channel length
      - ✅
      - ✅
+     - ✅
    * - m
      - Number of transistors (multiplicity)
      - ✅
      - ✅
+     - ✅
    * - ng
-     - Number of transistor gates
+     - Number of gates
      - ✅
      - ✅
+     - ✅
+
 
 **Layout Information** (Refer to :ref:`layout layers`)
 

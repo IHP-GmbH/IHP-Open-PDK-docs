@@ -25,49 +25,46 @@ rhigh
    * - Additional Notes
      - Resistor body is defined by SalBlock drawing layer. 
    * -
-     - Sheet resistance of 1360 Ω/.
+     - Sheet resistance of 1360 Ω/sq.
    * -
      - nSD only within Rhigh resistor device (pSD and nSD are identical).
 
 **Parameters Information**
 
-.. list-table:: Xschem and LVS views Compatibility for rhigh Parameters
+.. list-table:: Schematic and LVS views Compatibility for rhigh Parameters
    :header-rows: 1
    :stub-columns: 1
 
    * - Parameter
      - Description
-     - Xschem-View
+     - Schematic-View
      - LVS-View
+     - LVS-Comparison
    * - W
      - PolyRes Width
+     - ✅
      - ✅
      - ✅
    * - L
      - PolyRes Length
      - ✅
      - ✅
-   * - ps
-     - pSD enclosure of GatPoly
-     - ❌
      - ✅
    * - R
      - Resistance Value
      - ❌
      - ✅
+     - ✅
    * - m
      - Number of resistors (multiplicity)
      - ✅
      - ✅
-   * - Imax
-     - Maximum Current
      - ✅
-     - ❌
 
 **Layout Information** (Refer to :ref:`layout layers`)
 
 .. image:: images/rhigh_layout.png
-    :width: 300
+    :width: 200
     :align: center
     :alt: rhigh device - layout
 
@@ -96,46 +93,43 @@ rppd
    * - Layout Cell Name
      - sg13g2_pr - rppd
    * - Parameters
-     - w, l, R, m, ps, Imax
+     - w, l, R, m
    * - Additional Notes
      - Resistor body is defined by SalBlock drawing layer. 
    * -
-     - Sheet resistance of 7 Ω/.
+     - Sheet resistance of 7 Ω/sq.
 
 **Parameters Information**
 
-.. list-table:: Xschem and LVS views Compatibility for rppd Parameters
+.. list-table:: Schematic and LVS views Compatibility for rppd Parameters
    :header-rows: 1
    :stub-columns: 1
 
    * - Parameter
      - Description
-     - Xschem-View
+     - Schematic-View
      - LVS-View
+     - LVS-Comparison
    * - W
      - PolyRes Width
+     - ✅
      - ✅
      - ✅
    * - L
      - PolyRes Length
      - ✅
      - ✅
-   * - ps
-     - pSD enclosure of GatPoly
-     - ❌
      - ✅
    * - R
      - Resistance Value
      - ❌
      - ✅
+     - ✅
    * - m
      - Number of resistors (multiplicity)
      - ✅
      - ✅
-   * - Imax
-     - Maximum Current
      - ✅
-     - ❌
 
 **Layout Information** (Refer to :ref:`layout layers`)
 
@@ -169,46 +163,43 @@ rsil
    * - Layout Cell Name
      - sg13g2_pr - rsil
    * - Parameters
-     - w, l, R, m, ps, Imax
+     - w, l, R, m
    * - Additional Notes
      - Resistor body is defined by SalBlock drawing layer. 
    * -
-     - Sheet resistance of 7 Ω/.
+     - Sheet resistance of 7 Ω/sq.
 
 **Parameters Information**
 
-.. list-table:: Xschem and LVS views Compatibility for rsil Parameters
+.. list-table:: Schematic and LVS views Compatibility for rsil Parameters
    :header-rows: 1
    :stub-columns: 1
 
    * - Parameter
      - Description
-     - Xschem-View
+     - Schematic-View
      - LVS-View
+     - LVS-Comparison
    * - W
      - PolyRes Width
+     - ✅
      - ✅
      - ✅
    * - L
      - PolyRes Length
      - ✅
      - ✅
-   * - ps
-     - pSD enclosure of GatPoly
-     - ❌
      - ✅
    * - R
      - Resistance Value
      - ❌
      - ✅
+     - ✅
    * - m
      - Number of resistors (multiplicity)
      - ✅
      - ✅
-   * - Imax
-     - Maximum Current
      - ✅
-     - ❌
 
 **Layout Information** (Refer to :ref:`layout layers`)
 
@@ -242,35 +233,44 @@ lvsres
    * - Layout Cell Name
      - sg13g2_pr - lvsres
    * - Parameters
-     - w, l, R
+     - width, length, R
 
 **Parameters Information**
 
-.. list-table:: Xschem and LVS views Compatibility for lvsres Parameters
+.. list-table:: Schematic and LVS views Compatibility for lvsres Parameters
    :header-rows: 1
    :stub-columns: 1
 
    * - Parameter
      - Description
-     - Xschem-View
+     - Schematic-View
      - LVS-View
-   * - W
+     - LVS-Comparison
+   * - width
      - RES Width
      - ❌
      - ✅
-   * - L
+     - ✅
+   * - length
      - RES Length
      - ❌
+     - ✅
      - ✅
    * - R
      - Resistance Value
      - ❌
      - ✅
+     - ✅
+   * - m
+     - Number of resistors (multiplicity)
+     - ❌
+     - ✅
+     - ✅
 
 **Layout Information** (Refer to :ref:`layout layers`)
 
 .. image:: images/lvsres_layout.png
-    :width: 300
+    :width: 150
     :align: center
     :alt: lvsres device - layout
 

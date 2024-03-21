@@ -27,29 +27,34 @@ inductor2
 
 **Parameters Information**
 
-.. list-table:: Xschem and LVS views Compatibility for inductor2 Parameters
+.. list-table:: Schematic and LVS views Compatibility for inductor2 Parameters
    :header-rows: 1
    :stub-columns: 1
 
    * - Parameter
      - Description
-     - Xschem-View
+     - Schematic-View
      - LVS-View
+     - LVS-Comparison
    * - W
      - Width of inductor metal lines
      - ❌
+     - ✅
      - ✅
    * - S
      - Spacing between metal lines of inductor
      - ❌
      - ✅
+     - ✅
    * - D
      - Diameter of the inductor
      - ❌
      - ✅
+     - ✅
    * - nr_r
      -  Number of turns
      - ❌
+     - ✅
      - ✅
 
 **Layout Information** (Refer to :ref:`layout layers`)
@@ -90,29 +95,34 @@ inductor3
 
 **Parameters Information**
 
-.. list-table:: Xschem and LVS views Compatibility for Inductor3 Parameters
+.. list-table:: Schematic and LVS views Compatibility for Inductor3 Parameters
    :header-rows: 1
    :stub-columns: 1
 
    * - Parameter
      - Description
-     - Xschem-View
+     - Schematic-View
      - LVS-View
+     - LVS-Comparison
    * - W
      - Width of inductor metal lines
      - ❌
+     - ✅
      - ✅
    * - S
      - Spacing between metal lines of inductor
      - ❌
      - ✅
+     - ✅
    * - D
      - Diameter of the inductor
      - ❌
      - ✅
+     - ✅
    * - nr_r
      -  Number of turns
      - ❌
+     - ✅
      - ✅
 
 **Layout Information** (Refer to :ref:`layout layers`)

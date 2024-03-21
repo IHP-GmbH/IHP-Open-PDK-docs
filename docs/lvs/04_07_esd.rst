@@ -27,17 +27,19 @@ diodevdd_2k
 
 **Parameters Information**
 
-.. list-table:: Xschem and LVS views Compatibility for diodevdd_2k Parameters
+.. list-table:: Schematic and LVS views Compatibility for diodevdd_2k Parameters
    :header-rows: 1
    :stub-columns: 1
 
    * - Parameter
      - Description
-     - Xschem-View
+     - Schematic-View
      - LVS-View
+     - LVS-Comparison
    * - m
-     - Number of ESD diodevdd_2k device (multiplicity)
+     - Number of diodevdd_2k devices (multiplicity)
      - ❌
+     - ✅
      - ✅
 
 **Layout Information** (Refer to :ref:`layout layers`)
@@ -78,17 +80,19 @@ diodevdd_4k
 
 **Parameters Information**
 
-.. list-table:: Xschem and LVS views Compatibility for diodevdd_4k Parameters
+.. list-table:: Schematic and LVS views Compatibility for diodevdd_4k Parameters
    :header-rows: 1
    :stub-columns: 1
 
    * - Parameter
      - Description
-     - Xschem-View
+     - Schematic-View
      - LVS-View
+     - LVS-Comparison
    * - m
-     - Number of ESD diodevdd_4k device (multiplicity)
+     - Number of diodevdd_4k devices (multiplicity)
      - ❌
+     - ✅
      - ✅
 
 **Layout Information** (Refer to :ref:`layout layers`)
@@ -102,107 +106,6 @@ diodevdd_4k
 
     Figure 4.7.2 Layout for diodevdd_4kv ESD device
 
-
-idiodevdd_2k
-------------
-
-**Device Information**
-
-.. list-table:: Isolated VDD diode - 2k
-   :header-rows: 1
-   :stub-columns: 1
-
-   * - Property
-     - Value
-   * - Description
-     - Isolated VDD diode. One p+ stripe in n-well.
-   * - Device Recognition
-     - Activ, pSD, Nwell, Recog.esd, nBuLay, PWell.blk
-   * - Model Name
-     - idiodevdd_2kv
-   * - Layout Cell Name
-     - sg13g2_pr - idiodevdd_2kv
-   * - Parameters
-     - m
-   * - Additional Notes
-     - Junction area = 27.78 x 1.26 (x1) um2. 
-
-**Parameters Information**
-
-.. list-table:: Xschem and LVS views Compatibility for idiodevdd_2k Parameters
-   :header-rows: 1
-   :stub-columns: 1
-
-   * - Parameter
-     - Description
-     - Xschem-View
-     - LVS-View
-   * - m
-     - Number of ESD idiodevdd_2k device (multiplicity)
-     - ❌
-     - ✅
-
-**Layout Information** (Refer to :ref:`layout layers`)
-
-.. image:: images/idiodevdd_2k_layout.png
-    :width: 300
-    :align: center
-    :alt: idiodevdd_2k device - layout
-
-.. rst-class:: center
-
-    Figure 4.7.3 Layout for idiodevdd_2k ESD device
-
-
-idiodevdd_4k
-------------
-
-**Device Information**
-
-.. list-table:: Isolated VDD diode - 4k
-   :header-rows: 1
-   :stub-columns: 1
-
-   * - Property
-     - Value
-   * - Description
-     - Isolated VDD diode. Two p+ stripe in n-well.
-   * - Device Recognition
-     - Activ, pSD, Nwell, Recog.esd
-   * - Model Name
-     - idiodevdd_4kv
-   * - Layout Cell Name
-     - sg13g2_pr - idiodevdd_4kv
-   * - Parameters
-     - m
-   * - Additional Notes
-     - Junction area = 27.78 x 1.26 (x2) um2. 
-
-**Parameters Information**
-
-.. list-table:: Xschem and LVS views Compatibility for idiodevdd_4k Parameters
-   :header-rows: 1
-   :stub-columns: 1
-
-   * - Parameter
-     - Description
-     - Xschem-View
-     - LVS-View
-   * - m
-     - Number of ESD idiodevdd_4k device (multiplicity)
-     - ❌
-     - ✅
-
-**Layout Information** (Refer to :ref:`layout layers`)
-
-.. image:: images/idiodevdd_4k_layout.png
-    :width: 300
-    :align: center
-    :alt: idiodevdd_4kv device - layout
-
-.. rst-class:: center
-
-    Figure 4.7.4 Layout for idiodevdd_4kv ESD device
 
 diodevss_2k
 -----------
@@ -230,17 +133,19 @@ diodevss_2k
 
 **Parameters Information**
 
-.. list-table:: Xschem and LVS views Compatibility for diodevss_2k Parameters
+.. list-table:: Schematic and LVS views Compatibility for diodevss_2k Parameters
    :header-rows: 1
    :stub-columns: 1
 
    * - Parameter
      - Description
-     - Xschem-View
+     - Schematic-View
      - LVS-View
+     - LVS-Comparison
    * - m
-     - Number of ESD diodevss_2k device (multiplicity)
+     - Number of diodevss_2k devices (multiplicity)
      - ❌
+     - ✅
      - ✅
 
 **Layout Information** (Refer to :ref:`layout layers`)
@@ -252,7 +157,7 @@ diodevss_2k
 
 .. rst-class:: center
 
-    Figure 4.7.5 Layout for diodevss_2k ESD device
+    Figure 4.7.3 Layout for diodevss_2k ESD device
 
 
 diodevss_4k
@@ -281,17 +186,19 @@ diodevss_4k
 
 **Parameters Information**
 
-.. list-table:: Xschem and LVS views Compatibility for diodevss_4k Parameters
+.. list-table:: Schematic and LVS views Compatibility for diodevss_4k Parameters
    :header-rows: 1
    :stub-columns: 1
 
    * - Parameter
      - Description
-     - Xschem-View
+     - Schematic-View
      - LVS-View
+     - LVS-Comparison
    * - m
-     - Number of ESD diodevss_4k device (multiplicity)
+     - Number of diodevss_4k devices (multiplicity)
      - ❌
+     - ✅
      - ✅
 
 **Layout Information** (Refer to :ref:`layout layers`)
@@ -303,7 +210,112 @@ diodevss_4k
 
 .. rst-class:: center
 
-    Figure 4.7.6 Layout for diodevss_4kv ESD device
+    Figure 4.7.4 Layout for diodevss_4kv ESD device
+
+idiodevdd_2k
+------------
+
+**Device Information**
+
+.. list-table:: Isolated VDD diode - 2k
+   :header-rows: 1
+   :stub-columns: 1
+
+   * - Property
+     - Value
+   * - Description
+     - Isolated VDD diode. One p+ stripe in n-well.
+   * - Device Recognition
+     - Activ, pSD, Nwell, Recog.esd, nBuLay, PWell.blk
+   * - Model Name
+     - idiodevdd_2kv
+   * - Layout Cell Name
+     - sg13g2_pr - idiodevdd_2kv
+   * - Parameters
+     - m
+   * - Additional Notes
+     - Junction area = 27.78 x 1.26 (x1) um2. 
+
+**Parameters Information**
+
+.. list-table:: Schematic and LVS views Compatibility for idiodevdd_2k Parameters
+   :header-rows: 1
+   :stub-columns: 1
+
+   * - Parameter
+     - Description
+     - Schematic-View
+     - LVS-View
+     - LVS-Comparison
+   * - m
+     - Number of idiodevdd_2k devices (multiplicity)
+     - ❌
+     - ✅
+     - ✅
+
+**Layout Information** (Refer to :ref:`layout layers`)
+
+.. image:: images/idiodevdd_2k_layout.png
+    :width: 300
+    :align: center
+    :alt: idiodevdd_2k device - layout
+
+.. rst-class:: center
+
+    Figure 4.7.5 Layout for idiodevdd_2k ESD device
+
+
+idiodevdd_4k
+------------
+
+**Device Information**
+
+.. list-table:: Isolated VDD diode - 4k
+   :header-rows: 1
+   :stub-columns: 1
+
+   * - Property
+     - Value
+   * - Description
+     - Isolated VDD diode. Two p+ stripe in n-well.
+   * - Device Recognition
+     - Activ, pSD, Nwell, Recog.esd
+   * - Model Name
+     - idiodevdd_4kv
+   * - Layout Cell Name
+     - sg13g2_pr - idiodevdd_4kv
+   * - Parameters
+     - m
+   * - Additional Notes
+     - Junction area = 27.78 x 1.26 (x2) um2. 
+
+**Parameters Information**
+
+.. list-table:: Schematic and LVS views Compatibility for idiodevdd_4k Parameters
+   :header-rows: 1
+   :stub-columns: 1
+
+   * - Parameter
+     - Description
+     - Schematic-View
+     - LVS-View
+     - LVS-Comparison
+   * - m
+     - Number of idiodevdd_4k devices (multiplicity)
+     - ❌
+     - ✅
+     - ✅
+
+**Layout Information** (Refer to :ref:`layout layers`)
+
+.. image:: images/idiodevdd_4k_layout.png
+    :width: 300
+    :align: center
+    :alt: idiodevdd_4kv device - layout
+
+.. rst-class:: center
+
+    Figure 4.7.6 Layout for idiodevdd_4kv ESD device
 
 idiodevss_2k
 ------------
@@ -331,17 +343,19 @@ idiodevss_2k
 
 **Parameters Information**
 
-.. list-table:: Xschem and LVS views Compatibility for idiodevss_2k Parameters
+.. list-table:: Schematic and LVS views Compatibility for idiodevss_2k Parameters
    :header-rows: 1
    :stub-columns: 1
 
    * - Parameter
      - Description
-     - Xschem-View
+     - Schematic-View
      - LVS-View
+     - LVS-Comparison
    * - m
-     - Number of ESD idiodevss_2k device (multiplicity)
+     - Number of idiodevss_2k devices (multiplicity)
      - ❌
+     - ✅
      - ✅
 
 **Layout Information** (Refer to :ref:`layout layers`)
@@ -382,17 +396,19 @@ idiodevss_4k
 
 **Parameters Information**
 
-.. list-table:: Xschem and LVS views Compatibility for idiodevss_4k Parameters
+.. list-table:: Schematic and LVS views Compatibility for idiodevss_4k Parameters
    :header-rows: 1
    :stub-columns: 1
 
    * - Parameter
      - Description
-     - Xschem-View
+     - Schematic-View
      - LVS-View
+     - LVS-Comparison
    * - m
-     - Number of ESD idiodevss_4k device (multiplicity)
+     - Number of idiodevss_4k devices (multiplicity)
      - ❌
+     - ✅
      - ✅
 
 **Layout Information** (Refer to :ref:`layout layers`)
@@ -436,17 +452,19 @@ nmoscl_2
 
 **Parameters Information**
 
-.. list-table:: Xschem and LVS views Compatibility for nmoscl_2 Parameters
+.. list-table:: Schematic and LVS views Compatibility for nmoscl_2 Parameters
    :header-rows: 1
    :stub-columns: 1
 
    * - Parameter
      - Description
-     - Xschem-View
+     - Schematic-View
      - LVS-View
+     - LVS-Comparison
    * - m
-     - Number of ESD nmoscl_2 device (multiplicity)
+     - Number of nmoscl_2 devices (multiplicity)
      - ❌
+     - ✅
      - ✅
 
 **Layout Information** (Refer to :ref:`layout layers`)
@@ -491,17 +509,19 @@ nmoscl_4
 
 **Parameters Information**
 
-.. list-table:: Xschem and LVS views Compatibility for nmoscl_4 Parameters
+.. list-table:: Schematic and LVS views Compatibility for nmoscl_4 Parameters
    :header-rows: 1
    :stub-columns: 1
 
    * - Parameter
      - Description
-     - Xschem-View
+     - Schematic-View
      - LVS-View
+     - LVS-Comparison
    * - m
-     - Number of ESD nmoscl_4 device (multiplicity)
+     - Number of nmoscl_4 devices (multiplicity)
      - ❌
+     - ✅
      - ✅
 
 **Layout Information** (Refer to :ref:`layout layers`)
@@ -518,6 +538,9 @@ nmoscl_4
 
 scr1
 ----
+
+.. note:: 
+    This device is currently a **work in progress**.
 
 **Device Information**
 
@@ -540,23 +563,25 @@ scr1
 
 **Parameters Information**
 
-.. list-table:: Xschem and LVS views Compatibility for scr1 Parameters
+.. list-table:: Schematic and LVS views Compatibility for scr1 Parameters
    :header-rows: 1
    :stub-columns: 1
 
    * - Parameter
      - Description
-     - Xschem-View
+     - Schematic-View
      - LVS-View
+     - LVS-Comparison
    * - m
      - Number of ESD scr1 device (multiplicity)
      - ❌
+     - ✅
      - ✅
 
 **Layout Information** (Refer to :ref:`layout layers`)
 
 .. image:: images/scr1_layout.png
-    :width: 500
+    :width: 300
     :align: center
     :alt: scr1 device - layout
 

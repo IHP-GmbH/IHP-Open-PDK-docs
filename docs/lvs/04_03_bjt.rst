@@ -25,40 +25,46 @@ npn13G2
 
 **Parameters Information**
 
-.. list-table:: Xschem and LVS views Compatibility for npn13G2 Parameters
+.. list-table:: Schematic and LVS views Compatibility for npn13G2 Parameters
    :header-rows: 1
    :stub-columns: 1
 
    * - Parameter
      - Description
-     - Xschem-View
+     - Schematic-View
      - LVS-View
+     - LVS-Comparison
    * - we
-     - Emitter width
+     - Emitter width (Fixed)
      - ❌
      - ✅
+     - ❌
    * - le
-     - Emitter length
+     - Emitter length (Fixed)
      - ❌
      - ✅
+     - ❌
    * - m
      - Number of BJTs (multiplicity)
      - ❌
+     - ✅
      - ✅
    * - Nx
      - Number of BJTs in x-axis
      - ✅
      - ✅
+     - ❌
    * - Ny
      - Number of BJTs in y-axis
      - ❌
      - ✅
+     - ❌
 
 
 **Layout Information** (Refer to :ref:`layout layers`)
 
 .. image:: images/npn13G2_layout.png
-    :width: 600
+    :width: 500
     :align: center
     :alt: npn13G2 device - layout
 
@@ -91,40 +97,45 @@ npn13G2L
 
 **Parameters Information**
 
-.. list-table:: Xschem and LVS views Compatibility for npn13G2L Parameters
+.. list-table:: Schematic and LVS views Compatibility for npn13G2L Parameters
    :header-rows: 1
    :stub-columns: 1
 
    * - Parameter
      - Description
-     - Xschem-View
+     - Schematic-View
      - LVS-View
+     - LVS-Comparison
    * - we
-     - Emitter width
+     - Emitter width (Fixed)
      - ❌
      - ✅
+     - ❌
    * - le
      - Emitter length
      - ❌
+     - ✅
      - ✅
    * - m
      - Number of BJTs (multiplicity)
      - ❌
      - ✅
+     - ✅
    * - Nx
      - Number of BJTs in x-axis
      - ✅
      - ✅
+     - ❌
    * - Ny
      - Number of BJTs in y-axis
      - ❌
      - ✅
-
+     - ❌
 
 **Layout Information** (Refer to :ref:`layout layers`)
 
 .. image:: images/npn13G2L_layout.png
-    :width: 600
+    :width: 500
     :align: center
     :alt: npn13G2L device - layout
 
@@ -155,40 +166,46 @@ npn13G2V
 
 **Parameters Information**
 
-.. list-table:: Xschem and LVS views Compatibility for npn13G2V Parameters
+.. list-table:: Schematic and LVS views Compatibility for npn13G2V Parameters
    :header-rows: 1
    :stub-columns: 1
 
    * - Parameter
      - Description
-     - Xschem-View
+     - Schematic-View
      - LVS-View
+     - LVS-Comparison
    * - we
-     - Emitter width
+     - Emitter width (Fixed)
      - ❌
      - ✅
+     - ❌
    * - le
      - Emitter length
      - ❌
+     - ✅
      - ✅
    * - m
      - Number of BJTs (multiplicity)
      - ❌
      - ✅
+     - ✅
    * - Nx
      - Number of BJTs in x-axis
      - ✅
      - ✅
+     - ❌
    * - Ny
      - Number of BJTs in y-axis
      - ❌
      - ✅
+     - ❌
 
 
 **Layout Information** (Refer to :ref:`layout layers`)
 
 .. image:: images/npn13G2V_layout.png
-    :width: 700
+    :width: 500
     :align: center
     :alt: npn13G2V device - layout
 
@@ -221,40 +238,46 @@ pnpMPA
 
 **Parameters Information**
 
-.. list-table:: Xschem and LVS views Compatibility for pnpMPA Parameters
+.. list-table:: Schematic and LVS views Compatibility for pnpMPA Parameters
    :header-rows: 1
    :stub-columns: 1
 
    * - Parameter
      - Description
-     - Xschem-View
+     - Schematic-View
      - LVS-View
+     - LVS-Comparison
    * - W
      - Emitter width
      - ✅
      - ✅
+     - ❌
    * - L
      - Emitter length 
      - ✅
      - ✅
+     - ❌
    * - A
      - Emitter area 
      - ❌
+     - ✅
      - ✅
    * - P
      - Emitter perimeter
      - ❌
      - ✅
+     - ✅
    * - m
      - Number of BJTs (multiplicity)
      - ❌
+     - ✅
      - ✅
 
 
 **Layout Information** (Refer to :ref:`layout layers`)
 
 .. image:: images/pnpMPA_layout.png
-    :width: 600
+    :width: 500
     :align: center
     :alt: pnpMPA device - layout
 

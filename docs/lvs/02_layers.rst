@@ -15,10 +15,20 @@ Layout Layers
     The illustration below is a helpful guide to understanding the layering system used in layout design. Each layer is assigned a unique color, making it visually clear and easier to visualize LVS devices.
 
 .. image:: images/layers_key.png
-    :width: 500
+    :width: 200
     :align: center
     :alt: Layout layers
 
 .. rst-class:: center
 
-    Figure 2.2 Layer Color Coding Reference for Layout Devices
+    Figure 2.2.1 Layer Color Coding Reference for KLayout
+
+
+.. image:: images/layers_key_orig.svg
+    :width: 600
+    :align: center
+    :alt: Layout layers
+
+.. rst-class:: center
+
+    Figure 2.2.2 Layer Color Coding Reference for Layout (Original)

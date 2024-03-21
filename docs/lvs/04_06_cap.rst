@@ -29,39 +29,45 @@ cmim
 
 **Parameters Information**
 
-.. list-table:: Xschem and LVS views Compatibility for cmim Parameters
+.. list-table:: Schematic and LVS views Compatibility for cmim Parameters
    :header-rows: 1
    :stub-columns: 1
 
    * - Parameter
      - Description
-     - Xschem-View
+     - Schematic-View
      - LVS-View
+     - LVS-Comparison
    * - W
      - Capacitor Width
+     - ✅
      - ✅
      - ✅
    * - L
      - Capacitor Length
      - ✅
      - ✅
+     - ✅
    * - C
      - Capacitance Value
      - ❌
+     - ✅
      - ✅
    * - m
      - Number of capacitors (multiplicity)
      - ❌
      - ✅
+     - ✅
    * - MF
      - Number of capacitors (multiplicity)
      - ✅
+     - ❌
      - ❌
 
 **Layout Information** (Refer to :ref:`layout layers`)
 
 .. image:: images/cmim_layout.png
-    :width: 600
+    :width: 500
     :align: center
     :alt: cmim device - layout
 
@@ -94,36 +100,45 @@ rfcmim
 
 **Parameters Information**
 
-.. list-table:: Xschem and LVS views Compatibility for rfcmim Parameters
+.. list-table:: Schematic and LVS views Compatibility for rfcmim Parameters
    :header-rows: 1
    :stub-columns: 1
 
    * - Parameter
      - Description
-     - Xschem-View
+     - Schematic-View
      - LVS-View
+     - LVS-Comparison
    * - W
      - Capacitor Width
      - ❌
+     - ✅
      - ✅
    * - L
      - Capacitor Length
      - ❌
      - ✅
+     - ✅
    * - wfeed
      - Capacitor feed width
      - ❌
+     - ✅
      - ✅
    * - C
      - Capacitance Value
      - ❌
      - ✅
-
+     - ✅
+   * - m
+     - Number of capacitors (multiplicity)
+     - ❌
+     - ✅
+     - ✅
 
 **Layout Information** (Refer to :ref:`layout layers`)
 
 .. image:: images/rfcmim_layout.png
-    :width: 600
+    :width: 500
     :align: center
     :alt: rfcmim device - layout
 
@@ -158,31 +173,35 @@ SVaricap
 
 **Parameters Information**
 
-.. list-table:: Xschem and LVS views Compatibility for SVaricap Parameters
+.. list-table:: Schematic and LVS views Compatibility for SVaricap Parameters
    :header-rows: 1
    :stub-columns: 1
 
    * - Parameter
      - Description
-     - Xschem-View
+     - Schematic-View
      - LVS-View
+     - LVS-Comparison
    * - W
      - Capacitor Width
      - ❌
+     - ✅
      - ✅
    * - L
      - Capacitor Length
      - ❌
      - ✅
+     - ✅
    * - Nx
      - Capacitance Value
      - ❌
      - ✅
+     - ❌
 
 **Layout Information** (Refer to :ref:`layout layers`)
 
 .. image:: images/SVaricap_layout.png
-    :width: 300
+    :width: 250
     :align: center
     :alt: SVaricap device - layout
 

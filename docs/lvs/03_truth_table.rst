@@ -23,10 +23,10 @@ The Topological Truth Table is a design aid that helps establish the relationshi
 
     By effectively utilizing the Topological Truth Table, designers can ensure accurate and efficient layout creation within the integrated circuit design process.
 
-
 .. only:: html
 
    .. csv-table:: Truth Table for SG13G2 SiGe BiCMOS Process
+      :class: rotate-table
       :file: tables/truth_table_lvs.csv
       :header-rows: 1
       :stub-columns: 1
