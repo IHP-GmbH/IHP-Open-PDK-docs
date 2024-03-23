@@ -32,3 +32,8 @@
 .center {
 	text-align: center;
 }
+
+.rotated-header th:not(:first-child) {
+    writing-mode: vertical-lr;
+    transform: rotate(-180deg);
+}
