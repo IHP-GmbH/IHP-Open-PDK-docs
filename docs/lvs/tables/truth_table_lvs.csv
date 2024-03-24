@@ -27,7 +27,7 @@ lvsres,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,1
 cmim,x,x,x,x,x,x,x,x,x,x,x,x,1,1,1,1,x,x,x,x,x,x,x,x,x,x
 rfcmim,1,x,x,1,x,x,x,x,x,x,x,x,1,1,1,1,x,x,x,x,x,x,1,x,x,x
 Svaricap,1,1,1,1,1,0,0,x,x,0,0,0,0,0,x,x,x,1,0,x,0,x,x,0,0,x
-7- ESD,,,,,,,,,,,,,,,,,,,,,,,,,,
+7- ESD:,,,,,,,,,,,,,,,,,,,,,,,,,,
 diodevdd_2k,1,0,1,1,x,x,0,x,x,x,0,0,x,x,x,x,x,0,0,x,0,x,x,0,1,x
 diodevdd_4k,1,0,1,1,x,x,0,x,x,x,0,0,x,x,x,x,x,0,0,x,0,x,x,0,1,x
 idiodevdd_2kv,1,0,1,1,x,x,0,x,x,x,0,0,x,x,x,x,x,1,0,x,0,x,1,0,1,x
@@ -39,9 +39,9 @@ idiodevss_4kv,1,0,1,1,x,x,0,x,x,x,0,0,x,x,x,x,x,1,0,x,0,x,0,0,1,x
 nmoscl_2,1,1,1,1,1,0,0,x,x,x,1,0,x,x,x,x,x,1,0,x,0,x,x,0,1,x
 nmoscl_4,1,1,1,1,1,0,0,x,x,x,1,0,x,x,x,x,x,1,0,x,0,x,x,0,1,x
 scr1,1,1,1,1,1,0,0,x,x,0,1,0,x,x,x,x,x,1,0,x,0,1,x,0,1,x
-8- Inductors,,,,,,,,,,,,,,,,,,,,,,,,,,
+8- Inductors:,,,,,,,,,,,,,,,,,,,,,,,,,,
 inductor2,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,1,x,x,1,x,x,1,x,x,x
 inductor3,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,1,x,x,1,x,x,1,x,x,x
-9- Taps,,,,,,,,,,,,,,,,,,,,,,,,,,
+9- Taps:,,,,,,,,,,,,,,,,,,,,,,,,,,
 ptap1,1,0,0,1,x,0,0,x,x,0,0,0,0,0,x,x,x,0,0,x,0,x,0,0,0,x
 ntap1,1,0,1,0,x,0,0,x,x,0,0,0,0,0,x,x,x,1,0,x,0,0,0,0,0,x

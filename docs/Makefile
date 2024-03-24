@@ -57,6 +57,9 @@ setup:
 build:
 	@$(SPHINXBUILD) -M "html" "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
 
+latexpdf:
+	@$(SPHINXBUILD) -M "latexpdf" "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
+
 #========================
 # ---- DISPLAY DOCS -----
 #========================

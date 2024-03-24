@@ -24,8 +24,8 @@ Layout Layers
     Figure 2.2.1 Layer Color Coding Reference for KLayout
 
 
-.. image:: images/layers_key_orig.svg
-    :width: 600
+.. image:: images/layers_key_orig.png
+    :width: 300
     :align: center
     :alt: Layout layers
 

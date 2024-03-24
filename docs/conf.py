@@ -54,6 +54,7 @@ extensions = [
     "sphinx.ext.mathjax",
     "sphinx.ext.napoleon",
     "sphinx.ext.todo",
+    "sphinx.ext.extlinks"
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -170,23 +171,37 @@ man_pages = [
 ]
 
 latex_elements = {
-    "preamble": r"\DeclareUnicodeCharacter{03A9}{\ensuremath{\Omega}}"
-    + r"\DeclareUnicodeCharacter{03BC}{\ensuremath{\mu}}"
-    + r"\DeclareUnicodeCharacter{2184}{\ensuremath{\supset}}"
-    + r"\DeclareUnicodeCharacter{2295}{\ensuremath{\oplus}}"
-    + r"\DeclareUnicodeCharacter{2228}{\ensuremath{\vee}}"
-    + r"\DeclareUnicodeCharacter{22BB}{\ensuremath{\veebar}}"
-    + r"\DeclareUnicodeCharacter{01C1}{\ensuremath{\parallel}}"
-    + r"\DeclareUnicodeCharacter{2220}{\ensuremath{\angle}}"
-    + r"\DeclareUnicodeCharacter{2227}{\ensuremath{\wedge}}"
-    + r"\DeclareUnicodeCharacter{25A1}{\ensuremath{\Box}}"
-    + r"\DeclareUnicodeCharacter{F06D}{\ensuremath{\Box}}"
-    + r"\DeclareUnicodeCharacter{F057}{\ensuremath{\otimes}}"
-    # + r'''
-    #     \usepackage{graphicx}  % Required for rotating text
-    #     \usepackage{'''+ os.path.abspath('_static/custom-style.sty') + r'''}  % Include custom LaTeX style file
-    # '''
+    'preamble': r'''
+        % Define Unicode character commands
+        \DeclareUnicodeCharacter{03A9}{\ensuremath{\Omega}}
+        \DeclareUnicodeCharacter{03BC}{\ensuremath{\mu}}
+        \DeclareUnicodeCharacter{2184}{\ensuremath{\supset}}
+        \DeclareUnicodeCharacter{2295}{\ensuremath{\oplus}}
+        \DeclareUnicodeCharacter{2228}{\ensuremath{\vee}}
+        \DeclareUnicodeCharacter{22BB}{\ensuremath{\veebar}}
+        \DeclareUnicodeCharacter{01C1}{\ensuremath{\parallel}}
+        \DeclareUnicodeCharacter{2220}{\ensuremath{\angle}}
+        \DeclareUnicodeCharacter{2227}{\ensuremath{\wedge}}
+        \DeclareUnicodeCharacter{25A1}{\ensuremath{\Box}}
+        \DeclareUnicodeCharacter{F06D}{\ensuremath{\Box}}
+        \DeclareUnicodeCharacter{F057}{\ensuremath{\otimes}}
+        
+        % Define custom environment for rotated tables
+        \usepackage{lscape} % Required for landscape environment
+        \newenvironment{rotatedtable}{
+            \begin{landscape}
+            \centering
+        }{
+            \end{landscape}
+        }
+
+        % Command for rotating table headers
+        \usepackage{graphicx}
+        \usepackage{tabularx}
+        \newcommand{\rotatedHeader}[1]{\rotatebox{-90}{\fontsize{10pt}{12pt}\selectfont #1}}
+    ''',
 }
+
 
 def setup(app):
     app.add_css_file("IHP_theme.css")
