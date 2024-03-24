@@ -67,7 +67,7 @@ cmim
 **Layout Information** (Refer to :ref:`layout layers`)
 
 .. image:: images/cmim_layout.png
-    :width: 500
+    :width: 400
     :align: center
     :alt: cmim device - layout
 
@@ -138,7 +138,7 @@ rfcmim
 **Layout Information** (Refer to :ref:`layout layers`)
 
 .. image:: images/rfcmim_layout.png
-    :width: 500
+    :width: 400
     :align: center
     :alt: rfcmim device - layout
 

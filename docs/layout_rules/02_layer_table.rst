@@ -1,4 +1,4 @@
-.. _layers:
+.. _layer_table:
 
 Layer Table
 ===========

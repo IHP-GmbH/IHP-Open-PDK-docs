@@ -4,7 +4,7 @@ Layers
 Layer Table
 -----------
 
-Please refer to :ref:`layers` for more information about available layers in SG13G2 SiGe BiCMOS technology.
+Please refer to :ref:`layer_table` for more information about available layers in SG13G2 SiGe BiCMOS technology.
 
 .. _layers_key:
 
@@ -25,7 +25,7 @@ Layout Layers
 
 
 .. image:: images/layers_key_orig.png
-    :width: 300
+    :width: 250
     :align: center
     :alt: Layout layers
 

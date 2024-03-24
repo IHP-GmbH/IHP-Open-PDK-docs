@@ -29,9 +29,6 @@
 import os
 import re
 
-# import sys
-# sys.path.insert(0, os.path.abspath('.'))
-
 # -- Project information -----------------------------------------------------
 project = "IHP 130nm BiCMOS Open Source PDK"
 copyright = "2024, IHP PDK Authors"
@@ -54,7 +51,6 @@ extensions = [
     "sphinx.ext.mathjax",
     "sphinx.ext.napoleon",
     "sphinx.ext.todo",
-    "sphinx.ext.extlinks"
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -185,7 +181,11 @@ latex_elements = {
         \DeclareUnicodeCharacter{25A1}{\ensuremath{\Box}}
         \DeclareUnicodeCharacter{F06D}{\ensuremath{\Box}}
         \DeclareUnicodeCharacter{F057}{\ensuremath{\otimes}}
-        
+
+        \usepackage{newunicodechar}
+        \newunicodechar{✅}{\checkmark}
+        \DeclareUnicodeCharacter{274C}{\text{\sffamily X}}
+
         % Define custom environment for rotated tables
         \usepackage{lscape} % Required for landscape environment
         \newenvironment{rotatedtable}{
@@ -197,7 +197,7 @@ latex_elements = {
 
         % Command for rotating table headers
         \usepackage{graphicx}
-        \usepackage{tabularx}
+        \usepackage{pdfpages}
         \newcommand{\rotatedHeader}[1]{\rotatebox{-90}{\fontsize{10pt}{12pt}\selectfont #1}}
     ''',
 }
@@ -205,3 +205,4 @@ latex_elements = {
 
 def setup(app):
     app.add_css_file("IHP_theme.css")
+

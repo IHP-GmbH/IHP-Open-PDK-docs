@@ -65,7 +65,7 @@ dantenna
 **Layout Information** (Refer to :ref:`layout layers`)
 
 .. image:: images/dantenna_layout.png
-    :width: 600
+    :width: 500
     :align: center
     :alt: dantenna device - layout
 
@@ -139,7 +139,7 @@ dpantenna
 **Layout Information** (Refer to :ref:`layout layers`)
 
 .. image:: images/dpantenna_layout.png
-    :width: 600
+    :width: 500
     :align: center
     :alt: dpantenna device - layout
 
@@ -212,7 +212,7 @@ schottky_nbl1
 **Layout Information** (Refer to :ref:`layout layers`)
 
 .. image:: images/schottky_nbl1_layout.png
-    :width: 600
+    :width: 500
     :align: center
     :alt: schottky_nbl1 device - layout
 

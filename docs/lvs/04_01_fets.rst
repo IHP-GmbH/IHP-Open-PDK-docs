@@ -61,7 +61,7 @@ nmos
 **Layout Information** (Refer to :ref:`layout layers`)
 
 .. image:: images/nmos_layout.png
-    :width: 700
+    :width: 500
     :align: center
     :alt: nmos device - layout
 
@@ -129,7 +129,7 @@ nmosHV
 **Layout Information** (Refer to :ref:`layout layers`)
 
 .. image:: images/nmoshv_layout.png
-    :width: 700
+    :width: 500
     :align: center
     :alt: nmos HV device - layout
 
@@ -196,7 +196,7 @@ pmos
 **Layout Information** (Refer to :ref:`layout layers`)
 
 .. image:: images/pmos_layout.png
-    :width: 700
+    :width: 500
     :align: center
     :alt: pmos device - layout
 
@@ -263,7 +263,7 @@ pmosHV
 **Layout Information** (Refer to :ref:`layout layers`)
 
 .. image:: images/pmoshv_layout.png
-    :width: 700
+    :width: 500
     :align: center
     :alt: pmos HV device - layout
 

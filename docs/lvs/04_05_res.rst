@@ -134,7 +134,7 @@ rppd
 **Layout Information** (Refer to :ref:`layout layers`)
 
 .. image:: images/rppd_layout.png
-    :width: 300
+    :width: 200
     :align: center
     :alt: rppd device - layout
 
@@ -204,7 +204,7 @@ rsil
 **Layout Information** (Refer to :ref:`layout layers`)
 
 .. image:: images/rsil_layout.png
-    :width: 300
+    :width: 200
     :align: center
     :alt: rsil device - layout
 

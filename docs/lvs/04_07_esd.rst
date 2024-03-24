@@ -37,7 +37,7 @@ diodevdd_2k
      - LVS-View
      - LVS-Comparison
    * - m
-     - Number of diodevdd_2k devices (multiplicity)
+     - Number of devices (multiplicity)
      - ❌
      - ✅
      - ✅
@@ -45,7 +45,7 @@ diodevdd_2k
 **Layout Information** (Refer to :ref:`layout layers`)
 
 .. image:: images/diodevdd_2k_layout.png
-    :width: 300
+    :width: 250
     :align: center
     :alt: diodevdd_2k device - layout
 
@@ -90,7 +90,7 @@ diodevdd_4k
      - LVS-View
      - LVS-Comparison
    * - m
-     - Number of diodevdd_4k devices (multiplicity)
+     - Number of devices (multiplicity)
      - ❌
      - ✅
      - ✅
@@ -98,7 +98,7 @@ diodevdd_4k
 **Layout Information** (Refer to :ref:`layout layers`)
 
 .. image:: images/diodevdd_4k_layout.png
-    :width: 300
+    :width: 250
     :align: center
     :alt: diodevdd_4kv device - layout
 
@@ -143,7 +143,7 @@ diodevss_2k
      - LVS-View
      - LVS-Comparison
    * - m
-     - Number of diodevss_2k devices (multiplicity)
+     - Number of devices (multiplicity)
      - ❌
      - ✅
      - ✅
@@ -151,7 +151,7 @@ diodevss_2k
 **Layout Information** (Refer to :ref:`layout layers`)
 
 .. image:: images/diodevss_2k_layout.png
-    :width: 300
+    :width: 250
     :align: center
     :alt: diodevss_2k device - layout
 
@@ -196,7 +196,7 @@ diodevss_4k
      - LVS-View
      - LVS-Comparison
    * - m
-     - Number of diodevss_4k devices (multiplicity)
+     - Number of devices (multiplicity)
      - ❌
      - ✅
      - ✅
@@ -204,7 +204,7 @@ diodevss_4k
 **Layout Information** (Refer to :ref:`layout layers`)
 
 .. image:: images/diodevss_4k_layout.png
-    :width: 300
+    :width: 250
     :align: center
     :alt: diodevss_4kv device - layout
 
@@ -248,7 +248,7 @@ idiodevdd_2k
      - LVS-View
      - LVS-Comparison
    * - m
-     - Number of idiodevdd_2k devices (multiplicity)
+     - Number of devices (multiplicity)
      - ❌
      - ✅
      - ✅
@@ -256,7 +256,7 @@ idiodevdd_2k
 **Layout Information** (Refer to :ref:`layout layers`)
 
 .. image:: images/idiodevdd_2k_layout.png
-    :width: 300
+    :width: 250
     :align: center
     :alt: idiodevdd_2k device - layout
 
@@ -301,7 +301,7 @@ idiodevdd_4k
      - LVS-View
      - LVS-Comparison
    * - m
-     - Number of idiodevdd_4k devices (multiplicity)
+     - Number of devices (multiplicity)
      - ❌
      - ✅
      - ✅
@@ -309,7 +309,7 @@ idiodevdd_4k
 **Layout Information** (Refer to :ref:`layout layers`)
 
 .. image:: images/idiodevdd_4k_layout.png
-    :width: 300
+    :width: 250
     :align: center
     :alt: idiodevdd_4kv device - layout
 
@@ -353,7 +353,7 @@ idiodevss_2k
      - LVS-View
      - LVS-Comparison
    * - m
-     - Number of idiodevss_2k devices (multiplicity)
+     - Number of devices (multiplicity)
      - ❌
      - ✅
      - ✅
@@ -361,7 +361,7 @@ idiodevss_2k
 **Layout Information** (Refer to :ref:`layout layers`)
 
 .. image:: images/idiodevss_2k_layout.png
-    :width: 300
+    :width: 250
     :align: center
     :alt: idiodevss_2k device - layout
 
@@ -406,7 +406,7 @@ idiodevss_4k
      - LVS-View
      - LVS-Comparison
    * - m
-     - Number of idiodevss_4k devices (multiplicity)
+     - Number of devices (multiplicity)
      - ❌
      - ✅
      - ✅
@@ -414,7 +414,7 @@ idiodevss_4k
 **Layout Information** (Refer to :ref:`layout layers`)
 
 .. image:: images/idiodevss_4k_layout.png
-    :width: 300
+    :width: 250
     :align: center
     :alt: idiodevss_4kv device - layout
 
@@ -462,7 +462,7 @@ nmoscl_2
      - LVS-View
      - LVS-Comparison
    * - m
-     - Number of nmoscl_2 devices (multiplicity)
+     - Number of devices (multiplicity)
      - ❌
      - ✅
      - ✅
@@ -519,7 +519,7 @@ nmoscl_4
      - LVS-View
      - LVS-Comparison
    * - m
-     - Number of nmoscl_4 devices (multiplicity)
+     - Number of devices (multiplicity)
      - ❌
      - ✅
      - ✅
@@ -573,7 +573,7 @@ scr1
      - LVS-View
      - LVS-Comparison
    * - m
-     - Number of ESD scr1 device (multiplicity)
+     - Number of ESD device (multiplicity)
      - ❌
      - ✅
      - ✅
@@ -581,7 +581,7 @@ scr1
 **Layout Information** (Refer to :ref:`layout layers`)
 
 .. image:: images/scr1_layout.png
-    :width: 300
+    :width: 250
     :align: center
     :alt: scr1 device - layout
 

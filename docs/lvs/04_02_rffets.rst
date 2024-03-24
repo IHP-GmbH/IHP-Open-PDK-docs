@@ -61,7 +61,7 @@ rfnmos
 **Layout Information** (Refer to :ref:`layout layers`)
 
 .. image:: images/rfnmos_layout.png
-    :width: 500
+    :width: 400
     :align: center
     :alt: RF nMOS Transistor - layout
 
@@ -130,7 +130,7 @@ rfnmosHV
 **Layout Information** (Refer to :ref:`layout layers`)
 
 .. image:: images/rfnmoshv_layout.png
-    :width: 500
+    :width: 400
     :align: center
     :alt: RF nMOS HV Transistor - layout
 
@@ -199,7 +199,7 @@ rfpmos
 **Layout Information** (Refer to :ref:`layout layers`)
 
 .. image:: images/rfpmos_layout.png
-    :width: 500
+    :width: 400
     :align: center
     :alt: RF pMOS Transistor - layout
 
@@ -268,7 +268,7 @@ rfpmosHV
 **Layout Information** (Refer to :ref:`layout layers`)
 
 .. image:: images/rfpmoshv_layout.png
-    :width: 500
+    :width: 400
     :align: center
     :alt: RF pMOS HV Transistor - layout
 
