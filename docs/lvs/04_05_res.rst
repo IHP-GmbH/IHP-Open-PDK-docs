@@ -97,7 +97,7 @@ rppd
    * - Additional Notes
      - Resistor body is defined by SalBlock drawing layer. 
    * -
-     - Sheet resistance of 7 Ω/sq.
+     - Sheet resistance of 260 Ω/sq.
 
 **Parameters Information**
 
@@ -191,7 +191,7 @@ rsil
      - ✅
      - ✅
    * - R
-     - Resistance Value
+     - Total resistance Value
      - ❌
      - ✅
      - ✅
@@ -233,7 +233,7 @@ lvsres
    * - Layout Cell Name
      - sg13g2_pr - lvsres
    * - Parameters
-     - width, length, R
+     - w, l, R
 
 **Parameters Information**
 
@@ -246,12 +246,12 @@ lvsres
      - Schematic-View
      - LVS-View
      - LVS-Comparison
-   * - width
+   * - W
      - RES Width
      - ❌
      - ✅
      - ✅
-   * - length
+   * - L
      - RES Length
      - ❌
      - ✅
@@ -260,12 +260,7 @@ lvsres
      - Resistance Value
      - ❌
      - ✅
-     - ✅
-   * - m
-     - Number of resistors (multiplicity)
      - ❌
-     - ✅
-     - ✅
 
 **Layout Information** (Refer to :ref:`layout layers`)
 
