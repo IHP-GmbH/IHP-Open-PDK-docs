@@ -68,7 +68,7 @@ diodevdd_4k
    * - Description
      - VDD diode. Two p+ stripe in n-well.
    * - Device Recognition
-     - Activ + pSD + Nwell + Recog.esd
+     - Activ, pSD, Nwell, Recog.esd
    * - Model Name
      - diodevdd_4kv
    * - Layout Cell Name

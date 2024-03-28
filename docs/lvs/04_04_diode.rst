@@ -15,7 +15,7 @@ dantenna
    * - Description
      - Protection diode for MOS gates. Substrate is anode, metal is cathode.
    * - Device Recognition
-     - Activ + Recog.diode
+     - Activ, Recog.diode
    * - Model Name
      - dantenna
    * - Layout Cell Name
@@ -88,7 +88,7 @@ dpantenna
    * - Description
      - Protection diode for MOS gates. Substrate is cathode, metal is anode.
    * - Device Recognition
-     - Activ + Recog.diode + pSD
+     - Activ, Recog.diode, pSD
    * - Model Name
      - dpantenna
    * - Layout Cell Name
