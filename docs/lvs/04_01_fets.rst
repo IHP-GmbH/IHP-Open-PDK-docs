@@ -22,6 +22,8 @@ nmos
      - sg13g2_pr - nmos
    * - Parameters
      - w, l, ng, m
+   * - Netlist Syntax
+     - `MN1 D G S B sg13_lv_nmos w=150.00n l=130.00n m=1 ng=1`
    * - Additional Notes
      - Can be placed in nWell/nBuLay box for isolated nmosi device.
 
@@ -49,14 +51,16 @@ nmos
    * - m
      - Number of transistors (multiplicity)
      - ✅
-     - ✅
-     - ✅
+     - ❌
+     - ❌
    * - ng
      - Number of gates
      - ✅
-     - ✅
-     - ✅
+     - ❌
+     - ❌
 
+.. tip::
+    Both the parameters 'm' and 'ng' are implicitly calculated within the 'w' parameter. Here, the 'w' parameter denotes the total width.
 
 **Layout Information** (Refer to :ref:`layout layers`)
 
@@ -91,6 +95,8 @@ nmosHV
      - sg13g2_pr - nmosHV
    * - Parameters
      - w, l, ng, m
+   * - Netlist Syntax
+     - `MN1 D G S B sg13_hv_nmos w=0.6u l=0.45u ng=1 m=1`
    * - Additional Notes
      - Can be placed in nWell/nBuLay box for isolated nmosi device.
 
@@ -118,13 +124,16 @@ nmosHV
    * - m
      - Number of transistors (multiplicity)
      - ✅
-     - ✅
-     - ✅
+     - ❌
+     - ❌
    * - ng
      - Number of gates
      - ✅
-     - ✅
-     - ✅
+     - ❌
+     - ❌
+
+.. tip::
+    Both the parameters 'm' and 'ng' are implicitly calculated within the 'w' parameter. Here, the 'w' parameter denotes the total width.
 
 **Layout Information** (Refer to :ref:`layout layers`)
 
@@ -159,6 +168,8 @@ pmos
      - sg13g2_pr - pmos
    * - Parameters
      - w, l, ng, m
+   * - Netlist Syntax
+     - `MP1 D G S B sg13_lv_pmos w=150.00n l=130.00n ng=1 m=1`
 
 **Parameters Information**
 
@@ -184,14 +195,16 @@ pmos
    * - m
      - Number of transistors (multiplicity)
      - ✅
-     - ✅
-     - ✅
+     - ❌
+     - ❌
    * - ng
      - Number of gates
      - ✅
-     - ✅
-     - ✅
+     - ❌
+     - ❌
 
+.. tip::
+    Both the parameters 'm' and 'ng' are implicitly calculated within the 'w' parameter. Here, the 'w' parameter denotes the total width.
 
 **Layout Information** (Refer to :ref:`layout layers`)
 
@@ -226,6 +239,8 @@ pmosHV
      - sg13g2_pr - pmosHV
    * - Parameters
      - w, l, ng, m
+   * - Netlist Syntax
+     - `MP1 D G S B sg13_hv_pmos w=0.3u l=0.4u ng=1 m=1`
 
 **Parameters Information**
 
@@ -251,14 +266,16 @@ pmosHV
    * - m
      - Number of transistors (multiplicity)
      - ✅
-     - ✅
-     - ✅
+     - ❌
+     - ❌
    * - ng
      - Number of gates
      - ✅
-     - ✅
-     - ✅
+     - ❌
+     - ❌
 
+.. tip::
+    Both the parameters 'm' and 'ng' are implicitly calculated within the 'w' parameter. Here, the 'w' parameter denotes the total width.
 
 **Layout Information** (Refer to :ref:`layout layers`)
 

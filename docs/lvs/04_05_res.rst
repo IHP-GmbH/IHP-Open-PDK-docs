@@ -21,7 +21,7 @@ rhigh
    * - Layout Cell Name
      - sg13g2_pr - rhigh
    * - Parameters
-     - w, l, R, m, ps, Imax
+     - w, l, m, ps, b, R
    * - Additional Notes
      - Resistor body is defined by SalBlock drawing layer. 
    * -
@@ -50,16 +50,26 @@ rhigh
      - ✅
      - ✅
      - ✅
-   * - R
-     - Resistance Value
-     - ❌
-     - ✅
-     - ✅
    * - m
      - Number of resistors (multiplicity)
      - ✅
      - ✅
      - ✅
+   * - ps
+     - poly space between bends
+     - ❌
+     - ✅
+     - ✅
+   * - b
+     - Number of bends
+     - ❌
+     - ✅
+     - ✅
+   * - R
+     - Resistance Value
+     - ❌
+     - ❌
+     - ❌
 
 **Layout Information** (Refer to :ref:`layout layers`)
 
@@ -93,7 +103,7 @@ rppd
    * - Layout Cell Name
      - sg13g2_pr - rppd
    * - Parameters
-     - w, l, R, m
+     - w, l, m, ps, b, R
    * - Additional Notes
      - Resistor body is defined by SalBlock drawing layer. 
    * -
@@ -120,16 +130,26 @@ rppd
      - ✅
      - ✅
      - ✅
-   * - R
-     - Resistance Value
-     - ❌
-     - ✅
-     - ✅
    * - m
      - Number of resistors (multiplicity)
      - ✅
      - ✅
      - ✅
+   * - ps
+     - Poly space between bends
+     - ❌
+     - ✅
+     - ✅
+   * - b
+     - Number of bends
+     - ❌
+     - ✅
+     - ✅
+   * - R
+     - Resistance Value
+     - ❌
+     - ❌
+     - ❌
 
 **Layout Information** (Refer to :ref:`layout layers`)
 
@@ -163,7 +183,7 @@ rsil
    * - Layout Cell Name
      - sg13g2_pr - rsil
    * - Parameters
-     - w, l, R, m
+     - w, l, m, ps, b, R
    * - Additional Notes
      - Resistor body is defined by SalBlock drawing layer. 
    * -
@@ -190,16 +210,26 @@ rsil
      - ✅
      - ✅
      - ✅
-   * - R
-     - Total resistance Value
-     - ❌
-     - ✅
-     - ✅
    * - m
      - Number of resistors (multiplicity)
      - ✅
      - ✅
      - ✅
+   * - ps
+     - Poly space between bends
+     - ❌
+     - ✅
+     - ✅
+   * - b
+     - Number of bends
+     - ❌
+     - ✅
+     - ✅
+   * - R
+     - Resistance Value
+     - ❌
+     - ❌
+     - ❌
 
 **Layout Information** (Refer to :ref:`layout layers`)
 

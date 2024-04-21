@@ -1,6 +1,10 @@
 ESD-Devices
 ===========
 
+.. tip::
+  All ESD devices come in predetermined sizes, and the only parameter we keep track of is 'm', which is the number of ESD devices (multiplicity).
+
+
 diodevdd_2k
 -----------
 
@@ -22,6 +26,8 @@ diodevdd_2k
      - sg13g2_pr - diodevdd_2kv
    * - Parameters
      - m
+   * - Netlist Syntax
+     - `D1 VDD PAD VSS diodevdd_2kv m=1`
    * - Additional Notes
      - Junction area = 27.78 x 1.26 (x1) um2. 
 
@@ -37,7 +43,7 @@ diodevdd_2k
      - LVS-View
      - LVS-Comparison
    * - m
-     - Number of devices (multiplicity)
+     - Number of ESD devices (multiplicity)
      - ❌
      - ✅
      - ✅
@@ -75,6 +81,8 @@ diodevdd_4k
      - sg13g2_pr - diodevdd_4kv
    * - Parameters
      - m
+   * - Netlist Syntax
+     - `D1 VDD PAD VSS diodevdd_4kv m=1`
    * - Additional Notes
      - Junction area = 27.78 x 1.26 (x2) um2. 
 
@@ -128,6 +136,8 @@ diodevss_2k
      - sg13g2_pr - diodevss_2kv
    * - Parameters
      - m
+   * - Netlist Syntax
+     - `D1 VDD PAD VSS diodevss_2kv m=1`
    * - Additional Notes
      - Junction area = 27.78 x 1.26 (x1) um2. 
 
@@ -181,6 +191,8 @@ diodevss_4k
      - sg13g2_pr - diodevss_4kv
    * - Parameters
      - m
+   * - Netlist Syntax
+     - `D1 VDD PAD VSS diodevss_4kv m=1`
    * - Additional Notes
      - Junction area = 27.78 x 1.26 (x2) um2. 
 
@@ -233,6 +245,8 @@ idiodevdd_2k
      - sg13g2_pr - idiodevdd_2kv
    * - Parameters
      - m
+   * - Netlist Syntax
+     - `D1 VDD PAD VSS idiodevdd_2kv m=1`
    * - Additional Notes
      - Junction area = 27.78 x 1.26 (x1) um2. 
 
@@ -286,6 +300,8 @@ idiodevdd_4k
      - sg13g2_pr - idiodevdd_4kv
    * - Parameters
      - m
+   * - Netlist Syntax
+     - `D1 VDD PAD VSS idiodevdd_4kv m=1`
    * - Additional Notes
      - Junction area = 27.78 x 1.26 (x2) um2. 
 
@@ -338,6 +354,8 @@ idiodevss_2k
      - sg13g2_pr - idiodevss_2kv
    * - Parameters
      - m
+   * - Netlist Syntax
+     - `D1 VDD PAD VSS idiodevss_2kv m=1`
    * - Additional Notes
      - Junction area = 27.78 x 1.26 (x1) um2. 
 
@@ -391,6 +409,8 @@ idiodevss_4k
      - sg13g2_pr - idiodevss_4kv
    * - Parameters
      - m
+   * - Netlist Syntax
+     - `D1 VDD PAD VSS idiodevss_4kv m=1`
    * - Additional Notes
      - Junction area = 27.78 x 1.26 (x2) um2. 
 
@@ -443,6 +463,8 @@ nmoscl_2
      - sg13g2_pr - nmoscl_2
    * - Parameters
      - m
+   * - Netlist Syntax
+     - `D1 VDD VSS nmoscl_2 m=1`
    * - Additional Notes
      - This is the grounded gate NMOS device for clamp.  
    * - 
@@ -500,6 +522,8 @@ nmoscl_4
      - sg13g2_pr - nmoscl_4
    * - Parameters
      - m
+   * - Netlist Syntax
+     - `D1 VDD VSS nmoscl_2 m=1`
    * - Additional Notes
      - This is the grounded gate NMOS device for clamp.  
    * - 
@@ -575,8 +599,8 @@ scr1
    * - m
      - Number of ESD device (multiplicity)
      - ❌
-     - ✅
-     - ✅
+     - ❌
+     - ❌
 
 **Layout Information** (Refer to :ref:`layout layers`)
 

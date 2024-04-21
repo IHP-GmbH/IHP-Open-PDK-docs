@@ -21,7 +21,9 @@ ptap1
    * - Layout Cell Name
      - sg13g2_pr - ptap1
    * - Parameters
-     - W, L, A, Perim, R
+     - W, L, A, P/Perim, R
+   * - Netlist Syntax
+     - `R1 net1 sub! ptap1 A=608.4f P=3.12u`
    * - Additional Notes
      - The resistance value is not accurate (~  262 Ω)
 
@@ -39,28 +41,28 @@ ptap1
    * - W
      - Active width
      - ❌
-     - ✅
-     - ✅
+     - ❌
+     - ❌
    * - L
      - Active length
      - ❌
-     - ✅
-     - ✅
+     - ❌
+     - ❌
    * - A
      - Active area
      - ❌
      - ✅
-     - ❌
-   * - Perim
+     - ✅
+   * - P/Perim
      - Active perimeter
      - ❌
      - ✅
-     - ❌
+     - ✅
    * - R
      - Resistance Value
      - ❌
-     - ✅
-     - ✅
+     - ❌
+     - ❌
 
 **Layout Information** (Refer to :ref:`layout layers`)
 
@@ -94,7 +96,9 @@ ntap1
    * - Layout Cell Name
      - sg13g2_pr - ntap1
    * - Parameters
-     - W, L, A, Perim, R
+     - W, L, A, P/Perim, R
+   * - Netlist Syntax
+     - `R1 net1 WELL ntap1 A=608.4f P=3.12u`
    * - Additional Notes
      - The resistance value is not accurate (~  262 Ω)
 
@@ -112,28 +116,28 @@ ntap1
    * - W
      - Active width
      - ❌
-     - ✅
-     - ✅
+     - ❌
+     - ❌
    * - L
      - Active length
      - ❌
-     - ✅
-     - ✅
+     - ❌
+     - ❌
    * - A
      - Active area
      - ❌
      - ✅
-     - ❌
-   * - Perim
+     - ✅
+   * - P/Perim
      - Active perimeter
      - ❌
      - ✅
-     - ❌
+     - ✅
    * - R
      - Resistance Value
      - ❌
-     - ✅
-     - ✅
+     - ❌
+     - ❌
 
 **Layout Information** (Refer to :ref:`layout layers`)
 

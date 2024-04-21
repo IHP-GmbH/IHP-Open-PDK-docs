@@ -22,6 +22,8 @@ dantenna
      - sg13g2_pr - dantenna
    * - Parameters
      - w, l, a, p, m
+   * - Netlist Syntax
+     - `D1 net1 GND dantenna w=780.00n l=780.00n a=608.400f p=3.12u m=1`
    * - Additional Notes
      - The anode of the diode should be connected to the ptap1 resistor.
 
@@ -39,12 +41,12 @@ dantenna
    * - W
      - Active width
      - ✅
-     - ✅
+     - ❌
      - ❌
    * - L
      - Active length
      - ✅
-     - ✅
+     - ❌
      - ❌
    * - A
      - Active area
@@ -95,6 +97,8 @@ dpantenna
      - sg13g2_pr - dpantenna
    * - Parameters
      - w, l, a, p, m
+   * - Netlist Syntax
+     - `D1 net1 GND dpantenna w=780.00n l=780.00n a=608.400f p=3.12u m=1`
    * - Additional Notes
      - The cathode of the diode should be connected to the ntap1 resistor.
 
@@ -112,12 +116,12 @@ dpantenna
    * - W
      - Active width
      - ✅
-     - ✅
+     - ❌
      - ❌
    * - L
      - Active length
      - ✅
-     - ✅
+     - ❌
      - ❌
    * - A
      - Active area
@@ -168,11 +172,16 @@ schottky_nbl1
    * - Layout Cell Name
      - sg13g2_pr - schottky_nbl1
    * - Parameters
-     - l, w, Nx, Ny, m
+     - l, w, m
+   * - Netlist Syntax
+     - `D1 PLUS1 MINUS1 sub! schottky_nbl1 m=1`
    * - Additional Notes
      - Anode is the activ & metal under SalBlock, cathode is the activ & metal inside Nwell.
 
 **Parameters Information**
+
+.. tip::
+  The schottky_nbl1 device come in predetermined sizes, and the only parameter we keep track of is 'm' (multiplicity).
 
 .. list-table:: Schematic and LVS views Compatibility for schottky_nbl1 Parameters
    :header-rows: 1
@@ -186,22 +195,12 @@ schottky_nbl1
    * - W
      - ContBar width (Fixed)
      - ❌
-     - ✅
+     - ❌
      - ❌
    * - L
      - ContBar length (Fixed)
      - ❌
-     - ✅
      - ❌
-   * - Nx
-     - Number of schottky diodes in x-axis
-     - ❌
-     - ✅
-     - ❌
-   * - Ny
-     - Number of schottky diodes in y-axis
-     - ❌
-     - ✅
      - ❌
    * - m
      - Number of schottky diodes (multiplicity)

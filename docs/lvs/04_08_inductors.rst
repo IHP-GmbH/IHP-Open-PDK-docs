@@ -23,7 +23,7 @@ inductor2
    * - Parameters
      - w s d nr_r
    * - Additional Notes
-     - Sounded by filler exclusion layer for all metals, activ and GatPoly layers.
+     - Surrounded by filler exclusion layer for all metals, activ and GatPoly layers.
 
 **Parameters Information**
 
@@ -91,7 +91,7 @@ inductor3
    * - Parameters
      - w s d nr_r
    * - Additional Notes
-     - Sounded by filler exclusion layer for all metals, activ and GatPoly layers.
+     - Surrounded by filler exclusion layer for all metals, activ and GatPoly layers.
 
 **Parameters Information**
 

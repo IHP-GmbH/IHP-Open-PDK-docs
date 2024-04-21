@@ -21,7 +21,9 @@ npn13G2
    * - Layout Cell Name
      - sg13g2_pr - npn13G2
    * - Parameters
-     - we, le, m, Nx, Ny
+     - We, le, AE, PE, m/NE
+   * - Netlist Syntax
+     - `Q1 C B E sub! npn13G2 le=900.0n we=70.00n m=1`
 
 **Parameters Information**
 
@@ -37,29 +39,32 @@ npn13G2
    * - we
      - Emitter width (Fixed)
      - ❌
-     - ✅
+     - ❌
      - ❌
    * - le
      - Emitter length (Fixed)
      - ❌
-     - ✅
      - ❌
-   * - m
-     - Number of BJTs (multiplicity)
      - ❌
-     - ✅
-     - ✅
-   * - Nx
-     - Number of BJTs in x-axis
-     - ✅
-     - ✅
-     - ❌
-   * - Ny
-     - Number of BJTs in y-axis
+   * - AE
+     - Emitter area (Fixed), will be calculated from WE/LE if not explicitly provided.
      - ❌
      - ✅
+     - ✅
+   * - PE
+     - Emitter perimeter (Fixed), will be calculated from WE/LE if not explicitly provided.
      - ❌
+     - ✅
+     - ✅
+   * - m/NE
+     - Number of BJTs/Emitters (multiplicity)
+     - ❌
+     - ✅
+     - ✅
 
+.. tip::
+  - The npn13G2 device has fixed dimensions, (WE = 0.07u & LE = 0.9u).
+  - You have the option to use either WE/LE or AE/PE in your netlist.
 
 **Layout Information** (Refer to :ref:`layout layers`)
 
@@ -93,7 +98,9 @@ npn13G2L
    * - Layout Cell Name
      - sg13g2_pr - npn13G2L
    * - Parameters
-     - we, le, m, Nx, Ny
+     - We, le, AE, PE, m/NE
+   * - Netlist Syntax
+     - `Q1 net1 net2 net3 sub! npn13G2l le=1.0u we=70.00n m=1`
 
 **Parameters Information**
 
@@ -109,28 +116,32 @@ npn13G2L
    * - we
      - Emitter width (Fixed)
      - ❌
-     - ✅
+     - ❌
      - ❌
    * - le
      - Emitter length
      - ❌
-     - ✅
-     - ✅
-   * - m
-     - Number of BJTs (multiplicity)
+     - ❌
+     - ❌
+   * - AE
+     - Emitter area, will be calculated from WE/LE if not explicitly provided.
      - ❌
      - ✅
      - ✅
-   * - Nx
-     - Number of BJTs in x-axis
-     - ✅
-     - ✅
-     - ❌
-   * - Ny
-     - Number of BJTs in y-axis
+   * - PE
+     - Emitter perimeter, will be calculated from WE/LE if not explicitly provided.
      - ❌
      - ✅
+     - ✅
+   * - m/NE
+     - Number of BJTs/Emitters (multiplicity)
      - ❌
+     - ✅
+     - ✅
+
+.. tip::
+  - The npn13G2L device has fixed width (WE = 0.07u), its length (LE) could vary from [1:2.5]u.
+  - You have the option to use either WE/LE or AE/PE in your netlist.
 
 **Layout Information** (Refer to :ref:`layout layers`)
 
@@ -162,7 +173,9 @@ npn13G2V
    * - Layout Cell Name
      - sg13g2_pr - npn13G2V
    * - Parameters
-     - we, le, m, Nx, Ny
+     - We, le, AE, PE, m/NE
+   * - Netlist Syntax
+     - `Q1 net1 net2 net3 sub! npn13G2v le=1.0u we=120.00n m=1`
 
 **Parameters Information**
 
@@ -178,29 +191,32 @@ npn13G2V
    * - we
      - Emitter width (Fixed)
      - ❌
-     - ✅
+     - ❌
      - ❌
    * - le
      - Emitter length
      - ❌
-     - ✅
-     - ✅
-   * - m
-     - Number of BJTs (multiplicity)
+     - ❌
+     - ❌
+   * - AE
+     - Emitter area, will be calculated from WE/LE if not explicitly provided.
      - ❌
      - ✅
      - ✅
-   * - Nx
-     - Number of BJTs in x-axis
-     - ✅
-     - ✅
-     - ❌
-   * - Ny
-     - Number of BJTs in y-axis
+   * - PE
+     - Emitter perimeter, will be calculated from WE/LE if not explicitly provided.
      - ❌
      - ✅
+     - ✅
+   * - m/NE
+     - Number of BJTs/Emitters (multiplicity)
      - ❌
+     - ✅
+     - ✅
 
+.. tip::
+  - The npn13G2V device has fixed width (WE = 0.12u), its length (LE) could vary from [1:2.5]u.
+  - You have the option to use either WE/LE or AE/PE in your netlist.
 
 **Layout Information** (Refer to :ref:`layout layers`)
 
@@ -234,7 +250,9 @@ pnpMPA
    * - Layout Cell Name
      - sg13g2_pr - pnpMPA
    * - Parameters
-     - l, w, a, p, m
+     - l, w, a, p, m/NE
+   * - Netlist Syntax
+     - `Q1 sub! net1 net2 pnpMPA a=1.4p p=5.4u m=1`
 
 **Parameters Information**
 
@@ -258,21 +276,24 @@ pnpMPA
      - ✅
      - ❌
    * - A
-     - Emitter area 
+     - Emitter area, will be calculated from W/L if not explicitly provided.
      - ❌
      - ✅
      - ✅
    * - P
-     - Emitter perimeter
+     - Emitter perimeter, will be calculated from W/L if not explicitly provided.
      - ❌
      - ✅
      - ✅
-   * - m
-     - Number of BJTs (multiplicity)
+   * - m/NE
+     - Number of BJTs/Emitters (multiplicity)
      - ❌
      - ✅
      - ✅
 
+.. tip::
+  - You have the option to use either W/L or A/P in your netlist.
+  - In KLayout netlist browser's display mode, the A/P parameters will be mapped to AE/PE.
 
 **Layout Information** (Refer to :ref:`layout layers`)
 

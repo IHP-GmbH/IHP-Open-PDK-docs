@@ -22,6 +22,8 @@ rfnmos
      - sg13g2_pr - rfnmos
    * - Parameters
      - w, l, ng, m
+   * - Netlist Syntax
+     - `MN1 D G S B rfnmos w=1.0u l=0.72u ng=1 m=1`
    * - Additional Notes
      - For RF purposes, you should use l = [0.13:1.0]um and w = [1:6]um (per single gate).
 
@@ -49,14 +51,16 @@ rfnmos
    * - m
      - Number of transistors (multiplicity)
      - ✅
-     - ✅
-     - ✅
+     - ❌
+     - ❌
    * - ng
      - Number of gates
      - ✅
-     - ✅
-     - ✅
+     - ❌
+     - ❌
 
+.. tip::
+    Both the parameters 'm' and 'ng' are implicitly calculated within the 'w' parameter. Here, the 'w' parameter denotes the total width.
 
 **Layout Information** (Refer to :ref:`layout layers`)
 
@@ -91,6 +95,8 @@ rfnmosHV
      - sg13g2_pr - rfnmosHV
    * - Parameters
      - w, l, ng, m
+   * - Netlist Syntax
+     - `MN1 D G S B rfnmoshv w=1.0u l=0.72u ng=1 m=1`
    * - Additional Notes
      - For RF purposes you should use l = [0.45:1.0]um and w = [1:6]um (per single gate).
 
@@ -118,14 +124,16 @@ rfnmosHV
    * - m
      - Number of transistors (multiplicity)
      - ✅
-     - ✅
-     - ✅
+     - ❌
+     - ❌
    * - ng
      - Number of gates
      - ✅
-     - ✅
-     - ✅
+     - ❌
+     - ❌
 
+.. tip::
+    Both the parameters 'm' and 'ng' are implicitly calculated within the 'w' parameter. Here, the 'w' parameter denotes the total width.
 
 **Layout Information** (Refer to :ref:`layout layers`)
 
@@ -160,6 +168,8 @@ rfpmos
      - sg13g2_pr - rfpmos
    * - Parameters
      - w, l, ng, m
+   * - Netlist Syntax
+     - `MN1 D G S B rfpmos w=1.0u l=0.72u ng=1 m=1`
    * - Additional Notes
      - For RF purposes you should use l = [0.13:1.0]um and w = [1:6]um (per single gate).
 
@@ -187,14 +197,16 @@ rfpmos
    * - m
      - Number of transistors (multiplicity)
      - ✅
-     - ✅
-     - ✅
+     - ❌
+     - ❌
    * - ng
      - Number of gates
      - ✅
-     - ✅
-     - ✅
+     - ❌
+     - ❌
 
+.. tip::
+    Both the parameters 'm' and 'ng' are implicitly calculated within the 'w' parameter. Here, the 'w' parameter denotes the total width.
 
 **Layout Information** (Refer to :ref:`layout layers`)
 
@@ -229,6 +241,8 @@ rfpmosHV
      - sg13g2_pr - rfpmosHV
    * - Parameters
      - w, l, ng, m
+   * - Netlist Syntax
+     - `MN1 D G S B rfpmoshv w=1.0u l=0.72u ng=1 m=1`
    * - Additional Notes
      - For RF purposes you should use l = [0.40:1.0]um and w = [1:6]um (per single gate).
 
@@ -256,14 +270,16 @@ rfpmosHV
    * - m
      - Number of transistors (multiplicity)
      - ✅
-     - ✅
-     - ✅
+     - ❌
+     - ❌
    * - ng
      - Number of gates
      - ✅
-     - ✅
-     - ✅
+     - ❌
+     - ❌
 
+.. tip::
+    Both the parameters 'm' and 'ng' are implicitly calculated within the 'w' parameter. Here, the 'w' parameter denotes the total width.
 
 **Layout Information** (Refer to :ref:`layout layers`)
 
