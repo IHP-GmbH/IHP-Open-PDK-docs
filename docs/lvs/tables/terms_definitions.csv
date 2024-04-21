@@ -1,0 +1,11 @@
+Term, Definition
+Description, Brief explanation or summary of the device or parameter.
+Device Recognition, Refers to the essential layers used to identify the device within a design.
+Model Name, "The specific name assigned to the device, which is recognized and used within the netlist."
+Layout Cell Name, The name given to the layout cell representing the device in the sg13g2_pr gds layout file.
+Parameters, A list of all configurable parameters that can be applied to the device.
+Netlist Syntax, "The specific syntax or format used to represent the device within a netlist, typically including the device name and its associated parameters."
+Additional Notes, Any additional information or special considerations relevant to the device.
+Schematic-View, Indicates whether the parameter is available in the schematic view.
+LVS-View, Indicates whether the parameter is available in a Layout versus Schematic (LVS) view.
+LVS-Comparison, Indicates whether the parameter is included in the comparison process during Layout versus Schematic (LVS) checking.

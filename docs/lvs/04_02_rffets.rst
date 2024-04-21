@@ -60,7 +60,14 @@ rfnmos
      - ❌
 
 .. tip::
-    Both the parameters 'm' and 'ng' are implicitly calculated within the 'w' parameter. Here, the 'w' parameter denotes the total width.
+    - The `m` parameter is implicitly calculated based on the value of the `w` parameter, which represents the total width.
+      - Example: `MN0 D G S B rfnmos w=1u l=1u m=2`, this will be recognized as `MN0 D G S B rfnmos w=2u l=1u`
+      - See Figure 4.1.1 for an explanation.
+
+    - The `ng` parameter will be ignored, as the `w` represents total width of all fingers.
+    - The finger width (WF) is defined as `w/ng`
+      - Example: `MN0 D G S B rfnmos w=1u l=1u ng=2`, this will be recognized as `MN0 D G S B rfnmos w=1u l=1u`
+      - See Figure 4.1.1 for an explanation.
 
 **Layout Information** (Refer to :ref:`layout layers`)
 
@@ -133,7 +140,14 @@ rfnmosHV
      - ❌
 
 .. tip::
-    Both the parameters 'm' and 'ng' are implicitly calculated within the 'w' parameter. Here, the 'w' parameter denotes the total width.
+    - The `m` parameter is implicitly calculated based on the value of the `w` parameter, which represents the total width.
+      - Example: `MN0 D G S B rfnmoshv w=1u l=1u m=2`, this will be recognized as `MN0 D G S B rfnmoshv w=2u l=1u`
+      - See Figure 4.1.1 for an explanation.
+
+    - The `ng` parameter will be ignored, as the `w` represents total width of all fingers.
+    - The finger width (WF) is defined as `w/ng`
+      - Example: `MN0 D G S B rfnmoshv w=1u l=1u ng=2`, this will be recognized as `MN0 D G S B rfnmoshv w=1u l=1u`
+      - See Figure 4.1.1 for an explanation.
 
 **Layout Information** (Refer to :ref:`layout layers`)
 
@@ -206,7 +220,14 @@ rfpmos
      - ❌
 
 .. tip::
-    Both the parameters 'm' and 'ng' are implicitly calculated within the 'w' parameter. Here, the 'w' parameter denotes the total width.
+    - The `m` parameter is implicitly calculated based on the value of the `w` parameter, which represents the total width.
+      - Example: `MP0 D G S B rfpmos w=1u l=1u m=2`, this will be recognized as `MP0 D G S B rfpmos w=2u l=1u`
+      - See Figure 4.1.1 for an explanation.
+
+    - The `ng` parameter will be ignored, as the `w` represents total width of all fingers.
+    - The finger width (WF) is defined as `w/ng`
+      - Example: `MP0 D G S B rfpmos w=1u l=1u ng=2`, this will be recognized as `MP0 D G S B rfpmos w=1u l=1u`
+      - See Figure 4.1.1 for an explanation.
 
 **Layout Information** (Refer to :ref:`layout layers`)
 
@@ -279,7 +300,14 @@ rfpmosHV
      - ❌
 
 .. tip::
-    Both the parameters 'm' and 'ng' are implicitly calculated within the 'w' parameter. Here, the 'w' parameter denotes the total width.
+    - The `m` parameter is implicitly calculated based on the value of the `w` parameter, which represents the total width.
+      - Example: `MP0 D G S B rfpmoshv w=1u l=1u m=2`, this will be recognized as `MP0 D G S B rfpmoshv w=2u l=1u`
+      - See Figure 4.1.1 for an explanation.
+
+    - The `ng` parameter will be ignored, as the `w` represents total width of all fingers.
+    - The finger width (WF) is defined as `w/ng`
+      - Example: `MP0 D G S B rfpmoshv w=1u l=1u ng=2`, this will be recognized as `MP0 D G S B rfpmoshv w=1u l=1u`
+      - See Figure 4.1.1 for an explanation.
 
 **Layout Information** (Refer to :ref:`layout layers`)
 

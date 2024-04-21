@@ -13,16 +13,20 @@ rhigh
    * - Property
      - Value
    * - Description
-     - High-ohmic poly-Si resistor. It represents an unsalicided partial compensated low n-doped GatPoly resistor.
+     - High-ohmic poly-Si resistor.
    * - Device Recognition
      - GatPoly, nSD, pSD, SalBlock, HeatRes, ExtBlock, PolyRes
    * - Model Name
-     - rhigh
+     - res_rhigh
    * - Layout Cell Name
      - sg13g2_pr - rhigh
    * - Parameters
      - w, l, m, ps, b, R
+   * - Netlist Syntax
+     - `R0 net1 net2 res_rhigh w=0.5u l=1.2u ps=0.18u b=2 m=1`
    * - Additional Notes
+     - It represents an unsalicided partial compensated low n-doped GatPoly resistor.
+   * -
      - Resistor body is defined by SalBlock drawing layer. 
    * -
      - Sheet resistance of 1360 Ω/sq.
@@ -67,7 +71,7 @@ rhigh
      - ✅
    * - R
      - Resistance Value
-     - ❌
+     - ✅
      - ❌
      - ❌
 
@@ -95,16 +99,20 @@ rppd
    * - Property
      - Value
    * - Description
-     - Medium resistance poly-Si resistor. It represents the unsalicided p+ doped GatPoly resistor.
+     - Medium resistance poly-Si resistor.
    * - Device Recognition
      - GatPoly, pSD, SalBlock, HeatRes, ExtBlock, PolyRes
    * - Model Name
-     - rppd
+     - res_rppd
    * - Layout Cell Name
      - sg13g2_pr - rppd
    * - Parameters
      - w, l, m, ps, b, R
+   * - Netlist Syntax
+     - `R0 net1 net2 res_rppd w=0.5u l=1.2u ps=0.18u b=2 m=1`
    * - Additional Notes
+     - It represents the unsalicided p+ doped GatPoly resistor.
+   * -
      - Resistor body is defined by SalBlock drawing layer. 
    * -
      - Sheet resistance of 260 Ω/sq.
@@ -147,7 +155,7 @@ rppd
      - ✅
    * - R
      - Resistance Value
-     - ❌
+     - ✅
      - ❌
      - ❌
 
@@ -175,16 +183,20 @@ rsil
    * - Property
      - Value
    * - Description
-     - Salicided poly-Si resistor (low-ohmic). It represents the salicided n+ doped GatPoly resistor.
+     - Salicided poly-Si resistor (low-ohmic).
    * - Device Recognition
      - GGatPoly, RES, HeatRes, ExtBlock, PolyRes
    * - Model Name
-     - rsil
+     - res_rsil
    * - Layout Cell Name
      - sg13g2_pr - rsil
    * - Parameters
      - w, l, m, ps, b, R
+   * - Netlist Syntax
+     - `R0 net1 net2 res_rsil w=0.5u l=1.2u ps=0.18u b=2 m=1`
    * - Additional Notes
+     - It represents the salicided n+ doped GatPoly resistor.
+   * -
      - Resistor body is defined by SalBlock drawing layer. 
    * -
      - Sheet resistance of 7 Ω/sq.
@@ -227,7 +239,7 @@ rsil
      - ✅
    * - R
      - Resistance Value
-     - ❌
+     - ✅
      - ❌
      - ❌
 
@@ -289,7 +301,7 @@ lvsres
    * - R
      - Resistance Value
      - ❌
-     - ✅
+     - ❌
      - ❌
 
 **Layout Information** (Refer to :ref:`layout layers`)

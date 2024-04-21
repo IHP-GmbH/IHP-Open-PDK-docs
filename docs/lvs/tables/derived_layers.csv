@@ -1,0 +1,10 @@
+Layer name, Definition
+PWell, NOT (NWell OR PWell:block) OR PWell:drawing
+nSD, NOT (pSD OR nSD:block) OR nSD:drawing
+NWell_tie, (Activ AND nSD) inside NWell
+NWell_holes, HOLES NWell_tie
+substrate_tie (ptap), (Activ AND pSD) inside PWell
+ptap_holes, HOLES substrate_tie
+ntap, (Activ AND nSD) inside NWell
+ntap_holes, HOLES ntap
+ContBar, Any Cont shape not being a square shape is considered a ContBar.
