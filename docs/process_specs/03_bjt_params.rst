@@ -4,7 +4,7 @@ Bipolar Parameters
 .. note::
     For process control monitoring minimum devices are used.
 
-npn13g2-specs
+npn13g2-Specs
 -------------
 
 .. csv-table:: npn13g2 - Process Control Parameters
@@ -13,7 +13,7 @@ npn13g2-specs
     :file: tables/npn13g2_params.csv
     :widths: 200, 150, 100, 100, 100, 100, 100, 300
 
-npn13g2l-specs
+npn13g2l-Specs
 --------------
 
 .. csv-table:: npn13g2l - Process Control Parameters
@@ -22,7 +22,7 @@ npn13g2l-specs
     :file: tables/npn13g2l_params.csv
     :widths: 200, 150, 100, 100, 100, 100, 100, 300
 
-npn13g2v-specs
+npn13g2v-Specs
 --------------
 
 .. csv-table:: npn13g2v - Process Control Parameters

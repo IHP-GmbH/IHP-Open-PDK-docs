@@ -76,13 +76,13 @@ The Topological Truth Table is a design aid that helps establish the relationshi
         \hline
         dantenna & 1 & 0 & 0 & 1 & 0 & 0 & 1 & 0 & 0 & x & x & x & 0 & x & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & x & x & x & 0 & 0 & x & 0 & 1 & 0 & 0 & 0 & 0 & x \\ \hline
         dpantenna & 1 & 0 & 0 & 1 & 0 & 0 & 0 & x & 1 & x & x & x & 0 & x & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & x & x & x & 0 & 0 & x & 0 & 1 & 0 & 0 & 0 & 0 & x \\ \hline
-        schottky_nbl1 & 1 & 0 & 1 & 0 & 1 & 0 & 1 & 1 & 0 & 1 & 1 & x & 1 & 1 & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & x & x & x & 0 & 0 & x & 0 & 1 & 0 & 0 & 0 & 0 & x \\ \hline
+        schottky\_nbl1 & 1 & 0 & 1 & 0 & 1 & 0 & 1 & 1 & 0 & 1 & 1 & x & 1 & 1 & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & x & x & x & 0 & 0 & x & 0 & 1 & 0 & 0 & 0 & 0 & x \\ \hline
         \rowcolor{blue!20}
         \multicolumn{36}{|l|}{\textbf{5- Resistors}} \\
         \hline
-        res_rhigh & 0 & 1 & 0 & 1 & 0 & 1 & 1 & 0 & 1 & x & x & x & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 1 & 1 & 0 & x & x & x & 1 & 0 & x & 0 & 0 & 0 & 0 & 0 & 0 & x \\ \hline
-        res_rppd & 0 & 1 & 0 & 1 & 0 & 0 & 1 & 0 & 1 & x & x & x & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 1 & 1 & 0 & x & x & x & 1 & 0 & x & 0 & 0 & 0 & 0 & 0 & 0 & x \\ \hline
-        res_rsil & 0 & 1 & 0 & 1 & 0 & 0 & 1 & 0 & 0 & x & x & x & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 1 & 0 & x & x & x & 1 & 1 & x & 0 & 0 & 0 & 0 & 0 & 0 & x \\ \hline
+        res\_rhigh & 0 & 1 & 0 & 1 & 0 & 1 & 1 & 0 & 1 & x & x & x & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 1 & 1 & 0 & x & x & x & 1 & 0 & x & 0 & 0 & 0 & 0 & 0 & 0 & x \\ \hline
+        res\_rppd & 0 & 1 & 0 & 1 & 0 & 0 & 1 & 0 & 1 & x & x & x & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 1 & 1 & 0 & x & x & x & 1 & 0 & x & 0 & 0 & 0 & 0 & 0 & 0 & x \\ \hline
+        res\_rsil & 0 & 1 & 0 & 1 & 0 & 0 & 1 & 0 & 0 & x & x & x & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 1 & 0 & x & x & x & 1 & 1 & x & 0 & 0 & 0 & 0 & 0 & 0 & x \\ \hline
         lvsres & x & x & x & x & x & x & x & x & x & x & x & x & x & x & x & x & x & x & x & x & x & x & x & x & x & x & x & 1 & x & x & x & 0 & 0 & 0 & x \\ \hline
         \rowcolor{blue!20}
         \multicolumn{36}{|l|}{\textbf{6- Capacitors}} \\
@@ -90,7 +90,6 @@ The Topological Truth Table is a design aid that helps establish the relationshi
         cmim & x & 0 & x & 1 & 0 & 0 & 1 & 0 & 0 & x & 0 & x & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 1 & 1 & x & 0 & 0 & x & 0 & 0 & 0 & 0 & 0 & 0 & x \\ \hline
         rfcmim & x & 0 & x & 0 & 1 & 0 & 1 & 0 & 0 & x & 1 & x & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 1 & 1 & x & 0 & 0 & x & 0 & 0 & 0 & 0 & 0 & 0 & x \\ \hline
         Svaricap & 1 & 1 & 1 & 0 & x & 0 & 1 & 0 & 0 & x & x & x & 1 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & x & x & x & 0 & 0 & x & 0 & 0 & 0 & 0 & 0 & 0 & x \\ \hline
-        \hline
         \end{tabular}
         \end{rotatedtable}
 
@@ -103,16 +102,16 @@ The Topological Truth Table is a design aid that helps establish the relationshi
         \rowcolor{blue!20}
         \multicolumn{36}{|l|}{\textbf{7- ESD}} \\
         \hline
-        diodevdd_2k & 1 & 0 & 1 & 1 & 0 & 0 & 1 & 0 & 1 & x & 1 & x & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & x & x & x & 0 & 0 & x & 0 & 0 & 1 & 0 & 0 & 0 & x \\ \hline
-        diodevdd_4k & 1 & 0 & 1 & 1 & 0 & 0 & 1 & 0 & 1 & x & 1 & x & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & x & x & x & 0 & 0 & x & 0 & 0 & 1 & 0 & 0 & 0 & x \\ \hline
-        diodevss_2k & 1 & 0 & 1 & 1 & 0 & 0 & 1 & 0 & 1 & 1 & 1 & x & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & x & x & x & 0 & 0 & x & 0 & 0 & 1 & 0 & 0 & 0 & x \\ \hline
-        diodevss_4k & 1 & 0 & 1 & 1 & 0 & 0 & 1 & 0 & 1 & 1 & 1 & x & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & x & x & x & 0 & 0 & x & 0 & 0 & 1 & 0 & 0 & 0 & x \\ \hline
-        idiodevdd_2kv & 1 & 0 & 1 & 1 & 1 & 0 & 1 & 0 & 1 & x & 1 & x & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & x & x & x & 0 & 0 & x & 0 & 0 & 1 & 0 & 0 & 0 & x \\ \hline
-        idiodevdd_4kv & 1 & 0 & 1 & 1 & 1 & 0 & 1 & 0 & 1 & x & 1 & x & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & x & x & x & 0 & 0 & x & 0 & 0 & 1 & 0 & 0 & 0 & x \\ \hline
-        idiodevss_2kv & 1 & 0 & 1 & 1 & 0 & 0 & 1 & 0 & 1 & 1 & 1 & x & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & x & x & x & 0 & 0 & x & 0 & 0 & 1 & 0 & 0 & 0 & x \\ \hline
-        idiodevss_4kv & 1 & 0 & 1 & 1 & 0 & 0 & 1 & 0 & 1 & 1 & 1 & x & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & x & x & x & 0 & 0 & x & 0 & 0 & 1 & 0 & 0 & 0 & x \\ \hline
-        nmoscl_2 & 1 & 1 & 1 & 1 & 0 & 0 & 1 & 0 & 1 & 1 & x & x & 1 & 1 & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & x & x & x & 0 & 0 & x & 0 & 0 & 1 & 0 & 0 & 0 & 1 \\ \hline
-        nmoscl_4 & 1 & 1 & 1 & 1 & 0 & 0 & 1 & 0 & 1 & 1 & x & x & 1 & 1 & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & x & x & x & 0 & 0 & x & 0 & 0 & 1 & 0 & 0 & 0 & 1 \\ \hline
+        diodevdd\_2k & 1 & 0 & 1 & 1 & 0 & 0 & 1 & 0 & 1 & x & 1 & x & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & x & x & x & 0 & 0 & x & 0 & 0 & 1 & 0 & 0 & 0 & x \\ \hline
+        diodevdd\_4k & 1 & 0 & 1 & 1 & 0 & 0 & 1 & 0 & 1 & x & 1 & x & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & x & x & x & 0 & 0 & x & 0 & 0 & 1 & 0 & 0 & 0 & x \\ \hline
+        diodevss\_2k & 1 & 0 & 1 & 1 & 0 & 0 & 1 & 0 & 1 & 1 & 1 & x & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & x & x & x & 0 & 0 & x & 0 & 0 & 1 & 0 & 0 & 0 & x \\ \hline
+        diodevss\_4k & 1 & 0 & 1 & 1 & 0 & 0 & 1 & 0 & 1 & 1 & 1 & x & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & x & x & x & 0 & 0 & x & 0 & 0 & 1 & 0 & 0 & 0 & x \\ \hline
+        idiodevdd\_2kv & 1 & 0 & 1 & 1 & 1 & 0 & 1 & 0 & 1 & x & 1 & x & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & x & x & x & 0 & 0 & x & 0 & 0 & 1 & 0 & 0 & 0 & x \\ \hline
+        idiodevdd\_4kv & 1 & 0 & 1 & 1 & 1 & 0 & 1 & 0 & 1 & x & 1 & x & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & x & x & x & 0 & 0 & x & 0 & 0 & 1 & 0 & 0 & 0 & x \\ \hline
+        idiodevss\_2kv & 1 & 0 & 1 & 1 & 0 & 0 & 1 & 0 & 1 & 1 & 1 & x & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & x & x & x & 0 & 0 & x & 0 & 0 & 1 & 0 & 0 & 0 & x \\ \hline
+        idiodevss\_4kv & 1 & 0 & 1 & 1 & 0 & 0 & 1 & 0 & 1 & 1 & 1 & x & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & x & x & x & 0 & 0 & x & 0 & 0 & 1 & 0 & 0 & 0 & x \\ \hline
+        nmoscl\_2 & 1 & 1 & 1 & 1 & 0 & 0 & 1 & 0 & 1 & 1 & x & x & 1 & 1 & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & x & x & x & 0 & 0 & x & 0 & 0 & 1 & 0 & 0 & 0 & 1 \\ \hline
+        nmoscl\_4 & 1 & 1 & 1 & 1 & 0 & 0 & 1 & 0 & 1 & 1 & x & x & 1 & 1 & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & x & x & x & 0 & 0 & x & 0 & 0 & 1 & 0 & 0 & 0 & 1 \\ \hline
         scr1 & 1 & 1 & 1 & 1 & 0 & 0 & 1 & 1 & 1 & 1 & x & x & 1 & 1 & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & x & x & x & 0 & 0 & x & 0 & 0 & 1 & 0 & 0 & 0 & 1 \\ \hline
         \rowcolor{blue!20}
         \multicolumn{36}{|l|}{\textbf{8- Inductors}} \\
@@ -124,6 +123,5 @@ The Topological Truth Table is a design aid that helps establish the relationshi
         \hline
         ptap1 & 1 & 0 & 0 & 1 & 0 & 0 & 0 & x & 1 & x & x & x & 0 & x & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & x & x & x & 0 & 0 & x & 0 & 0 & 0 & 0 & 0 & 1 & x \\ \hline
         ntap1 & 1 & 0 & 1 & 0 & x & 0 & 1 & 0 & 0 & x & x & x & 1 & x & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & x & x & x & 0 & 0 & x & 0 & 0 & 0 & 0 & 0 & 0 & x \\ \hline
-        \hline
         \end{tabular}
         \end{rotatedtable}

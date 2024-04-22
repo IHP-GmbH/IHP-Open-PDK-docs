@@ -1,8 +1,8 @@
 Layers
 ======
 
-Table of Layers
----------------
+Layers Definition
+-----------------
 
 Please refer to the :ref:`layer_table` section in the layout rules for more information about the available layers in SG13G2 SiGe BiCMOS technology.
 
