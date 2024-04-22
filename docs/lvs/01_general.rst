@@ -13,13 +13,13 @@ Abbreviations
 Please refer to the :ref:`list_of_abbreviations` in the layout rules section for further details.
 
 
-Special Layer Configuration
----------------------------
+Derived Layers
+--------------
 
 .. note::
     Various rule definitions require derived layers instead of the original layers. The generation rules for the derived layers are described below.
 
-.. csv-table:: Special Layer Configuration
+.. csv-table:: Derived Layers
     :file: tables/derived_layers.csv
     :header-rows: 1
     :stub-columns: 1

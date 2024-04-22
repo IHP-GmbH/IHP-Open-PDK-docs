@@ -1,12 +1,12 @@
 inductor-Devices
 ================
 
-inductor2
----------
+inductor
+--------
 
 **Device Information**
 
-.. list-table:: Inductor2
+.. list-table:: Inductor
    :header-rows: 1
    :stub-columns: 1
 
@@ -17,11 +17,13 @@ inductor2
    * - Device Recognition
      - IND, TopMetal2, PWell.blk, nfl
    * - Model Name
-     - inductor2
+     - inductor
    * - Layout Cell Name
      - sg13g2_pr - inductor2
    * - Parameters
      - w s d nr_r
+   * - Netlist Syntax
+     - `L1 LA LB sub! inductor w=2u s=2.1u d=25.35u nr_r=1`
    * - Additional Notes
      - Surrounded by filler exclusion layer for all metals, activ and GatPoly layers.
 
@@ -90,6 +92,8 @@ inductor3
      - sg13g2_pr - inductor3
    * - Parameters
      - w s d nr_r
+   * - Netlist Syntax
+     - `L1 LA LC LB sub! inductor3 w=2u s=2.1u d=25.35u nr_r=2`
    * - Additional Notes
      - Surrounded by filler exclusion layer for all metals, activ and GatPoly layers.
 
