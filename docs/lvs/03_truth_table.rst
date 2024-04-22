@@ -46,7 +46,7 @@ The Topological Truth Table is a design aid that helps establish the relationshi
 
         \begin{rotatedtable}
         \centering
-        \begin{tabular}{|p{0.2cm}|*{35}{l|}}  % Define table with vertical lines
+        \begin{tabular}{|p{1.5cm}|*{35}{p{0.1cm}|}}
         \hline
         \rotatedHeader{Device/Layer} & \rotatedHeader{Activ} & \rotatedHeader{GatPoly} & \rotatedHeader{Nwell} & \rotatedHeader{Pwell} & \rotatedHeader{Pwell.block} & \rotatedHeader{nsD.drw} & \rotatedHeader{nsD} & \rotatedHeader{nsD.block} & \rotatedHeader{pSD} & \rotatedHeader{Nwell\_holes} & \rotatedHeader{ptap\_holes} & \rotatedHeader{ntap\_holes} & \rotatedHeader{nBuLay} & \rotatedHeader{ThickGateOx} & \rotatedHeader{HeatTrans} & \rotatedHeader{TRANS} & \rotatedHeader{EmWind} & \rotatedHeader{EmWiHV} & \rotatedHeader{HeatRes} & \rotatedHeader{SalBlock} & \rotatedHeader{PolyRes} & \rotatedHeader{MIM} & \rotatedHeader{Metal5} & \rotatedHeader{TopMetal1} & \rotatedHeader{TopMetal2} & \rotatedHeader{EXTBlock} & \rotatedHeader{RES} & \rotatedHeader{Metal1.res} & \rotatedHeader{Activ.mask} & \rotatedHeader{Recog.diode} & \rotatedHeader{Recog.esd} & \rotatedHeader{IND} & \rotatedHeader{IND.pin} & \rotatedHeader{substrate} & \rotatedHeader{text} \\
         \hline
@@ -96,7 +96,7 @@ The Topological Truth Table is a design aid that helps establish the relationshi
 
         \begin{rotatedtable}
         \centering
-        \begin{tabular}{|p{0.2cm}|*{35}{l|}}  % Define table with vertical lines
+        \begin{tabular}{|p{1.5cm}|*{35}{p{0.1cm}|}}
         \hline
         \rotatedHeader{Device/Layer} & \rotatedHeader{Activ} & \rotatedHeader{GatPoly} & \rotatedHeader{Nwell} & \rotatedHeader{Pwell} & \rotatedHeader{Pwell.block} & \rotatedHeader{nsD.drw} & \rotatedHeader{nsD} & \rotatedHeader{nsD.block} & \rotatedHeader{pSD} & \rotatedHeader{Nwell\_holes} & \rotatedHeader{ptap\_holes} & \rotatedHeader{ntap\_holes} & \rotatedHeader{nBuLay} & \rotatedHeader{ThickGateOx} & \rotatedHeader{HeatTrans} & \rotatedHeader{TRANS} & \rotatedHeader{EmWind} & \rotatedHeader{EmWiHV} & \rotatedHeader{HeatRes} & \rotatedHeader{SalBlock} & \rotatedHeader{PolyRes} & \rotatedHeader{MIM} & \rotatedHeader{Metal5} & \rotatedHeader{TopMetal1} & \rotatedHeader{TopMetal2} & \rotatedHeader{EXTBlock} & \rotatedHeader{RES} & \rotatedHeader{Metal1.res} & \rotatedHeader{Activ.mask} & \rotatedHeader{Recog.diode} & \rotatedHeader{Recog.esd} & \rotatedHeader{IND} & \rotatedHeader{IND.pin} & \rotatedHeader{substrate} & \rotatedHeader{text} \\
         \hline

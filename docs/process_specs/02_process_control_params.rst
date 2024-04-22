@@ -34,7 +34,6 @@ PMOS
     :file: tables/pmos_params.csv
     :widths: 200, 150, 100, 100, 100, 100, 100, 300
 
-
 iNMOS
 -----
 

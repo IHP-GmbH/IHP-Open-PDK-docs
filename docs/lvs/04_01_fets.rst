@@ -73,10 +73,11 @@ nmos
 
       - See Figure 4.1.1 for an explanation.
 
+
 **Layout Information** (Refer to :ref:`layout layers`)
 
 .. image:: images/nmos_layout.png
-    :width: 700
+    :width: 750
     :align: center
     :alt: nmos device - layout
 

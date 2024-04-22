@@ -6,12 +6,10 @@ Purpose
 
 This document describes layout devices for IHPs SG13G2 SiGe BiCMOS technology.
 
-
 Abbreviations
 -------------
 
 Please refer to the :ref:`list_of_abbreviations` in the layout rules section for further details.
-
 
 Derived Layers
 --------------
