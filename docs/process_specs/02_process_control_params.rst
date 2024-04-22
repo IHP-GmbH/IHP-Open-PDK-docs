@@ -10,8 +10,8 @@ Process Control Parameters
 .. role:: ital
    :class: blue-text2
 
-NMOS
-----
+NMOS-Specs
+----------
 
 .. tip::
     `VGS ≤ 1.65 V @ 125°C`
@@ -22,8 +22,8 @@ NMOS
     :file: tables/nmos_params.csv
     :widths: 200, 150, 100, 100, 100, 100, 100, 300
 
-PMOS
-----
+PMOS-Specs
+----------
 
 .. tip::
     `VGS ≤ 1.65 V @ 125°C`
@@ -34,8 +34,8 @@ PMOS
     :file: tables/pmos_params.csv
     :widths: 200, 150, 100, 100, 100, 100, 100, 300
 
-iNMOS
------
+iNMOS-Specs
+-----------
 
 .. tip::
     `VGS ≤ 1.65 V @ 125°C`
@@ -47,8 +47,8 @@ iNMOS
     :widths: 200, 150, 100, 100, 100, 100, 100, 300
 
 
-HV-NMOS
--------
+HV-NMOS-Specs
+-------------
 
 .. tip::
     `VGS ≤ 3.3V (Maximum) @ 27°C for LG ≥ 0.6 µm`
@@ -60,8 +60,8 @@ HV-NMOS
     :widths: 200, 150, 100, 100, 100, 100, 100, 300
 
 
-HV-PMOS
--------
+HV-PMOS-Specs
+-------------
 
 .. tip::
     `VGS ≤ 3.3V (Maximum) @ 27°C for LG ≥ 0.5 µm`
@@ -73,8 +73,8 @@ HV-PMOS
     :widths: 200, 150, 100, 100, 100, 100, 100, 300
 
 
-HV-iNMOS
---------
+HV-iNMOS-Specs
+--------------
 
 .. tip::
     `VGS ≤ 3.3V (Maximum) @ 27°C for LG ≥ 0.6 µm`
@@ -86,8 +86,8 @@ HV-iNMOS
     :widths: 200, 150, 100, 100, 100, 100, 100, 300
 
 
-Rsil
-----
+Rsil-Specs
+----------
 
 .. tip::
     Rsil utilizes **salicided, n-doped gate polysilicon** as resistor material.
@@ -99,8 +99,8 @@ Rsil
     :widths: 200, 150, 150, 100, 100, 100, 100, 300
 
 
-Rppd
-----
+Rppd-Specs
+----------
 
 .. tip::
     Rppd utilizes **unsalicided, p-doped gate polysilicon** as resistor material. For realizing precision resistors, a line width of 2µm or higher is recommended.
@@ -112,8 +112,8 @@ Rppd
     :widths: 200, 150, 150, 100, 100, 100, 100, 300
 
 
-Rhigh
------
+Rhigh-Specs
+-----------
 
 .. tip::
     Rhigh utilizes **unsalicided, partially compensated gate polysilicon** as resistor material.
@@ -125,8 +125,8 @@ Rhigh
     :widths: 200, 150, 150, 100, 100, 100, 100, 300
 
 
-Schottky_nbl1
--------------
+Schottky_nbl1-Specs
+-------------------
 
 .. tip::
     This Schottky barrier diode utilizes **Nbulay** as cathode.
@@ -138,8 +138,8 @@ Schottky_nbl1
     :widths: 200, 150, 150, 100, 100, 100, 100, 300
 
 
-S-Varicap
----------
+S-Varicap-Specs
+---------------
 
 .. tip::
     Thick Gate Oxide
@@ -151,8 +151,8 @@ S-Varicap
     :widths: 200, 150, 150, 100, 100, 100, 100, 300
 
 
-MIM Capacitor
--------------
+MIM Capacitor-Specs
+-------------------
 
 .. csv-table:: MIM Capacitor - Process Control Parameters
     :header: "Parameter", "Name", "Unit", "Min", "Target", "Max", "Meas.Cond.", "Comment"
