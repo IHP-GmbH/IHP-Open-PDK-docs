@@ -1,8 +1,9 @@
 Layer name, Definition
 PWell, NOT (NWell OR PWell:block) OR PWell:drawing
+Pwell.block_holes, HOLES PWell:block
 nSD, NOT (pSD OR nSD:block) OR nSD:drawing
 NWell_tie, (Activ AND nSD) inside NWell
-NWell_holes, HOLES NWell_tie
+NWell_holes, (HOLES NWell_tie) Not NWell
 substrate_tie (ptap), (Activ AND pSD) inside PWell
 ptap_holes, HOLES substrate_tie
 ntap, (Activ AND nSD) inside NWell
