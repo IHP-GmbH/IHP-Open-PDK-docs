@@ -1,7 +1,5 @@
-.. _drc_general:
-
-General
-================
+Overview
+========
 
 Scope
 -----
