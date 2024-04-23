@@ -16,7 +16,7 @@ LVS Devices
     :numbered:
     :caption: Contents
 
-    01_general
+    01_general_lvs
     02_layers
     03_truth_table
     04_lvs_devices
