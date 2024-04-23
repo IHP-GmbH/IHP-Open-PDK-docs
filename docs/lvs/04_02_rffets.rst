@@ -60,7 +60,7 @@ rfnmos
      - ❌
 
 .. tip::
-    - The `m` parameter is implicitly calculated based on the value of the `w` parameter, which represents the total width.
+    - The `m` parameter is implicitly calculated in the layout extracted netlist within the value of the `w` parameter, which represents the total width.
 
       - Example: :ital:`MN0 D G S B rfnmos w=1u l=1u m=2`, this will be recognized as :ital:`MN0 D G S B rfnmos w=2u l=1u`
 
@@ -145,7 +145,7 @@ rfnmosHV
      - ❌
 
 .. tip::
-    - The `m` parameter is implicitly calculated based on the value of the `w` parameter, which represents the total width.
+    - The `m` parameter is implicitly calculated in the layout extracted netlist within the value of the `w` parameter, which represents the total width.
 
       - Example: :ital:`MN0 D G S B rfnmoshv w=1u l=1u m=2`, this will be recognized as :ital:`MN0 D G S B rfnmoshv w=2u l=1u`
 
@@ -229,7 +229,7 @@ rfpmos
      - ❌
 
 .. tip::
-    - The `m` parameter is implicitly calculated based on the value of the `w` parameter, which represents the total width.
+    - The `m` parameter is implicitly calculated in the layout extracted netlist within the value of the `w` parameter, which represents the total width.
 
       - Example: :ital:`MP0 D G S B rfpmos w=1u l=1u m=2`, this will be recognized as :ital:`MP0 D G S B rfpmos w=2u l=1u`
 
@@ -313,7 +313,7 @@ rfpmosHV
      - ❌
 
 .. tip::
-    - The `m` parameter is implicitly calculated based on the value of the `w` parameter, which represents the total width.
+    - The `m` parameter is implicitly calculated in the layout extracted netlist within the value of the `w` parameter, which represents the total width.
 
       - Example: :ital:`MP0 D G S B rfpmoshv w=1u l=1u m=2`, this will be recognized as :ital:`MP0 D G S B rfpmoshv w=2u l=1u`
 

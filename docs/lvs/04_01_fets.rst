@@ -60,7 +60,7 @@ nmos
      - ❌
 
 .. tip::
-    - The `m` parameter is implicitly extracted in the output netlist within the value of the `w` parameter, which represents the total width.
+    - The `m` parameter is implicitly calculated in the layout extracted netlist within the value of the `w` parameter, which represents the total width.
 
       - Example: :ital:`MN0 D G S B sg13_lv_nmos w=1u l=1u m=2`, this will be recognized as :ital:`MN0 D G S B sg13_lv_nmos w=2u l=1u`
 
@@ -145,7 +145,7 @@ nmosHV
      - ❌
 
 .. tip::
-    - The `m` parameter is implicitly extracted in the output netlist within the value of the `w` parameter, which represents the total width.
+    - The `m` parameter is implicitly calculated in the layout extracted netlist within the value of the `w` parameter, which represents the total width.
 
       - Example: :ital:`MN0 D G S B sg13_hv_nmos w=1u l=1u m=2`, this will be recognized as :ital:`MN0 D G S B sg13_hv_nmos w=2u l=1u`
 
@@ -227,7 +227,7 @@ pmos
      - ❌
 
 .. tip::
-    - The `m` parameter is implicitly calculated based on the value of the `w` parameter, which represents the total width.
+    - The `m` parameter is implicitly calculated in the layout extracted netlist within the value of the `w` parameter, which represents the total width.
 
       - Example: :ital:`MP0 D G S B sg13_lv_pmos w=1u l=1u m=2`, this will be recognized as :ital:`MP0 D G S B sg13_lv_pmos w=2u l=1u`
 
@@ -309,7 +309,7 @@ pmosHV
      - ❌
 
 .. tip::
-    - The `m` parameter is implicitly calculated based on the value of the `w` parameter, which represents the total width.
+    - The `m` parameter is implicitly calculated in the layout extracted netlist within the value of the `w` parameter, which represents the total width.
 
       - Example: :ital:`MP0 D G S B sg13_hv_pmos w=1u l=1u m=2`, this will be recognized as :ital:`MP0 D G S B sg13_hv_pmos w=2u l=1u`
 

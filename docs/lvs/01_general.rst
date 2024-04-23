@@ -1,5 +1,5 @@
-General-LVS
-===========
+General
+=======
 
 Purpose
 -------
@@ -15,7 +15,7 @@ Derived Layers
 --------------
 
 .. note::
-    Various rule definitions require derived layers instead of the original layers. The generation rules for the derived layers are described below.
+    Various device definitions require derived layers instead of the original layers. The generation rules for the derived layers are described below.
 
 .. csv-table:: Derived Layers
     :file: tables/derived_layers.csv
