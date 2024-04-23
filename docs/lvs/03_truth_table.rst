@@ -34,7 +34,7 @@ The Topological Truth Table is a design aid that helps establish the relationshi
     .. rst-class:: rotated-header
 
     .. csv-table:: Truth Table for SG13G2 SiGe BiCMOS Process
-        :class: longtable, align-default, docutils
+        :class: longtable
         :file: tables/truth_table_lvs.csv
         :header-rows: 1
         :stub-columns: 1
