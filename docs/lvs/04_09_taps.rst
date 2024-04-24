@@ -25,7 +25,7 @@ ptap1
    * - Netlist Syntax
      - `R1 net1 sub! ptap1 A=608.4f P=3.12u`
    * - Additional Notes
-     - :ital:`Used in analog designs.` 
+     - :red:`Used in analog designs.` 
    * - 
      - The resistance value is not accurate (~  262 Ω).
    * - 
@@ -104,7 +104,7 @@ ntap1
    * - Netlist Syntax
      - `R1 net1 WELL ntap1 A=608.4f P=3.12u`
    * - Additional Notes
-     - :ital:`Used in analog designs.`
+     - :red:`Used in analog designs.`
    * - 
      - The resistance value is not accurate (~  262 Ω)
    * - 
