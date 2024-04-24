@@ -1,4 +1,4 @@
-Capacitor-Devices
+Capacitor Devices
 =================
 
 cmim

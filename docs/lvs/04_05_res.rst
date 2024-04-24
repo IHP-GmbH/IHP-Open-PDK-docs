@@ -1,4 +1,4 @@
-Resistor-Devices
+Resistor Devices
 ================
 
 rhigh

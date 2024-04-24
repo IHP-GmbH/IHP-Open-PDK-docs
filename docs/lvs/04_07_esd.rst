@@ -1,4 +1,4 @@
-ESD-Devices
+ESD Devices
 ===========
 
 .. tip::

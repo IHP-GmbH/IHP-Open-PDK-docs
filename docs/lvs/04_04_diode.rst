@@ -1,4 +1,4 @@
-Diode-Devices
+Diode Devices
 =============
 
 dantenna

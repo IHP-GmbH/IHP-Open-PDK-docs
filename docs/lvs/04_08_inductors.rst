@@ -1,4 +1,4 @@
-inductor-Devices
+Inductor Devices
 ================
 
 inductor
@@ -15,13 +15,13 @@ inductor
    * - Description
      - 2-Terminal inductor (Single output)
    * - Device Recognition
-     - IND, TopMetal2, PWell.blk, nfl
+     - IND, TopMetal2, PWell.blk
    * - Model Name
      - inductor
    * - Layout Cell Name
      - sg13g2_pr - inductor2
    * - Parameters
-     - w s d nr_r
+     - w, s, d, nr_r
    * - Netlist Syntax
      - `L1 LA LB sub! inductor w=2u s=2.1u d=25.35u nr_r=1`
    * - Additional Notes
@@ -91,7 +91,7 @@ inductor3
    * - Layout Cell Name
      - sg13g2_pr - inductor3
    * - Parameters
-     - w s d nr_r
+     - w, s, d, nr_r
    * - Netlist Syntax
      - `L1 LA LC LB sub! inductor3 w=2u s=2.1u d=25.35u nr_r=2`
    * - Additional Notes

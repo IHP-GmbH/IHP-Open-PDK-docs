@@ -1,4 +1,4 @@
-BJT-Devices
+BJT Devices
 ===========
 
 npn13G2

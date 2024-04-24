@@ -1,4 +1,4 @@
-Tap-Devices
+Tap Devices
 ===========
 
 ptap1
@@ -25,9 +25,11 @@ ptap1
    * - Netlist Syntax
      - `R1 net1 sub! ptap1 A=608.4f P=3.12u`
    * - Additional Notes
-     - Used in analog designs. 
+     - :ital:`Used in analog designs.` 
    * - 
      - The resistance value is not accurate (~  262 Ω).
+   * - 
+     - The regular ptap is not recognized as a device.
 
 **Parameters Information**
 
@@ -102,9 +104,11 @@ ntap1
    * - Netlist Syntax
      - `R1 net1 WELL ntap1 A=608.4f P=3.12u`
    * - Additional Notes
-     - Used in analog designs. 
+     - :ital:`Used in analog designs.`
    * - 
      - The resistance value is not accurate (~  262 Ω)
+   * - 
+     - The regular ntap is not recognized as a device.
 
 **Parameters Information**
 
