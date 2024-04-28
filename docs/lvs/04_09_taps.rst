@@ -68,6 +68,9 @@ ptap1
      - ❌
      - ❌
 
+.. tip::
+  - You have the option to use either W/L or A/P in your netlist.
+
 **Layout Information** (Refer to :ref:`layout layers`)
 
 .. image:: images/ptap1_layout.png
@@ -146,6 +149,9 @@ ntap1
      - ❌
      - ❌
      - ❌
+
+.. tip::
+  - You have the option to use either W/L or A/P in your netlist.
 
 **Layout Information** (Refer to :ref:`layout layers`)
 

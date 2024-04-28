@@ -64,6 +64,9 @@ dantenna
      - ✅
      - ✅
 
+.. tip::
+  - You have the option to use either W/L or A/P in your netlist.
+
 **Layout Information** (Refer to :ref:`layout layers`)
 
 .. image:: images/dantenna_layout.png
@@ -139,6 +142,8 @@ dpantenna
      - ✅
      - ✅
 
+.. tip::
+  - You have the option to use either W/L or A/P in your netlist.
 
 **Layout Information** (Refer to :ref:`layout layers`)
 
