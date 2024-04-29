@@ -23,7 +23,7 @@ dantenna
    * - Parameters
      - w, l, a, p, m
    * - Netlist Syntax
-     - `D1 net1 GND dantenna w=780.00n l=780.00n a=608.400f p=3.12u m=1`
+     - `D1 GND net1 dantenna w=780.00n l=780.00n a=608.400f p=3.12u m=1`
    * - Additional Notes
      - The anode of the diode should be connected to the ptap1 resistor.
 
@@ -101,7 +101,7 @@ dpantenna
    * - Parameters
      - w, l, a, p, m
    * - Netlist Syntax
-     - `D1 net1 GND dpantenna w=780.00n l=780.00n a=608.400f p=3.12u m=1`
+     - `D1 GND net1 dpantenna w=780.00n l=780.00n a=608.400f p=3.12u m=1`
    * - Additional Notes
      - The cathode of the diode should be connected to the ntap1 resistor.
 
