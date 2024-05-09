@@ -15,7 +15,7 @@ rhigh
    * - Description
      - High-ohmic poly-Si resistor.
    * - Device Recognition
-     - GatPoly, nSD, pSD, SalBlock, HeatRes, ExtBlock, PolyRes
+     - GatPoly, nSD, pSD, SalBlock, ExtBlock, PolyRes
    * - Model Name
      - res_rhigh
    * - Layout Cell Name
@@ -101,7 +101,7 @@ rppd
    * - Description
      - Medium resistance poly-Si resistor.
    * - Device Recognition
-     - GatPoly, pSD, SalBlock, HeatRes, ExtBlock, PolyRes
+     - GatPoly, pSD, SalBlock, ExtBlock, PolyRes
    * - Model Name
      - res_rppd
    * - Layout Cell Name
@@ -185,7 +185,7 @@ rsil
    * - Description
      - Salicided poly-Si resistor (low-ohmic).
    * - Device Recognition
-     - GGatPoly, RES, HeatRes, ExtBlock, PolyRes
+     - GGatPoly, RES, ExtBlock, PolyRes
    * - Model Name
      - res_rsil
    * - Layout Cell Name

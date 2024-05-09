@@ -15,7 +15,7 @@ nmos
    * - Description
      - n-channel enhancement MOS transistor - Low Voltage (LV)
    * - Device Recognition
-     - Activ, GatPoly, HeatTrans
+     - Activ, GatPoly
    * - Model Name
      - sg13_lv_nmos
    * - Layout Cell Name
@@ -100,7 +100,7 @@ nmosHV
    * - Description
      - n-channel enhancement MOS transistor with max SD voltage of 3.3V - High Voltage (HV)
    * - Device Recognition
-     - Activ, GatPoly, HeatTrans, ThickGateOx
+     - Activ, GatPoly, ThickGateOx
    * - Model Name
      - sg13_hv_nmos
    * - Layout Cell Name
@@ -184,7 +184,7 @@ pmos
    * - Description
      - p-channel enhancement MOS transistor - Low Voltage (LV)
    * - Device Recognition
-     - Activ, GatPoly, pSD, Nwell, HeatTrans, Substrate
+     - Activ, GatPoly, pSD, Nwell
    * - Model Name
      - sg13_lv_pmos
    * - Layout Cell Name
@@ -266,7 +266,7 @@ pmosHV
    * - Description
      - p-channel enhancement MOS transistor with max SD voltage of 3.3V - High Voltage (HV)
    * - Device Recognition
-     - Activ, GatPoly, pSD, Nwell, HeatTrans, ThickGateOx, Substrate
+     - Activ, GatPoly, pSD, Nwell, ThickGateOx
    * - Model Name
      - sg13_hv_pmos
    * - Layout Cell Name

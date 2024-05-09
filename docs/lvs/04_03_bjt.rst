@@ -15,7 +15,7 @@ npn13G2
    * - Description
      - npn SiGe:C HBT high performance device, 300 GHz fT. Layout configuration BEC
    * - Device Recognition
-     - Activ, nSD.blk, HeatTrans, TRANS, EmWind, ptab (pSD + Activ.mask)
+     - Activ, nSD.blk, TRANS, EmWind, ptab (pSD + Activ.mask)
    * - Model Name
      - npn13G2
    * - Layout Cell Name
@@ -92,7 +92,7 @@ npn13G2L
    * - Description
      - npn SiGe:C scalable HBT high performance device, 280 GHz fT. Layout configuration BEC
    * - Device Recognition
-     - Activ, HeatTrans, TRANS, EmWind, ptab (pSD + Activ.mask)
+     - Activ, TRANS, EmWind, ptab (pSD + Activ.mask)
    * - Model Name
      - npn13G2l
    * - Layout Cell Name
@@ -167,7 +167,7 @@ npn13G2V
    * - Description
      - npn SiGe:C scalable HBT high voltage device, 90 GHz fT. Layout configuration BEC
    * - Device Recognition
-     - Activ, HeatTrans, TRANS, EmWiHV, ptab (pSD + Activ.mask)
+     - Activ, TRANS, EmWiHV, ptab (pSD + Activ.mask)
    * - Model Name
      - npn13G2v
    * - Layout Cell Name
