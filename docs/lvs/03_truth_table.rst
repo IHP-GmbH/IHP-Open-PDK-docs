@@ -77,8 +77,8 @@ The Topological Truth Table is a design aid that helps establish the relationshi
         \rowcolor{blue!20}
         \multicolumn{35}{|l|}{\textbf{4- Diodes}} \\
         \hline
-        dantenna & 1 & 0 & 0 & 1 & 0 & 0 & 1 & 0 & 0 & x & x & x & 0 & x & 0 & 0 & 0 & 0 & 0 & x & x & x & x & 0 & 0 & x & 0 & x & 1 & 0 & 0 & 0 & 0 & x \\ \hline
-        dpantenna & 1 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 1 & x & x & x & 0 & x & 0 & 0 & 0 & 0 & 0 & x & x & x & x & 0 & 0 & x & 0 & x & 1 & 0 & 0 & 0 & 0 & x \\ \hline
+        dantenna & 1 & 0 & 0 & 1 & 0 & 0 & 1 & 0 & 0 & x & x & x & x & x & 0 & 0 & 0 & 0 & 0 & x & x & x & x & 0 & 0 & x & 0 & x & 1 & 0 & 0 & 0 & 0 & x \\ \hline
+        dpantenna & 1 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 1 & x & x & x & x & x & 0 & 0 & 0 & 0 & 0 & x & x & x & x & 0 & 0 & x & 0 & x & 1 & 0 & 0 & 0 & 0 & x \\ \hline
         schottky\_nbl1 & 1 & 0 & 0 & 0 & 1 & 0 & 1 & 1 & 0 & 1 & 1 & x & 1 & 1 & 0 & 0 & 0 & 1 & 0 & x & x & x & x & 0 & 0 & x & 0 & 1 & 1 & 0 & 0 & 0 & 0 & x \\ \hline
         \rowcolor{blue!20}
         \multicolumn{35}{|l|}{\textbf{5- Resistors}} \\
