@@ -26,12 +26,6 @@ The Topological Truth Table is a design aid that helps establish the relationshi
 .. role:: blue
    :class: blue-text
 
-.. role:: ital
-   :class: blue-text2
-
-.. role:: red
-   :class: .red-text
-
 .. only:: html
 
     .. rst-class:: rotated-header

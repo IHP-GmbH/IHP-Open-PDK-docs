@@ -1,6 +1,9 @@
 RFMOSFET Devices
 ================
 
+.. role:: ital
+   :class: blue-text2
+
 rfnmos
 ------
 

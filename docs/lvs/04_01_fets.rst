@@ -1,6 +1,9 @@
 MOSFET Devices
 ==============
 
+.. role:: ital
+   :class: blue-text2
+
 nmos
 ----
 

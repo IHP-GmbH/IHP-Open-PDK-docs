@@ -1,6 +1,9 @@
 Tap Devices
 ===========
 
+.. role:: red
+   :class: red-text
+
 ptap1
 -----
 
