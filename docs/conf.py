@@ -182,8 +182,16 @@ latex_elements = {
         \DeclareUnicodeCharacter{F06D}{\ensuremath{\Box}}
         \DeclareUnicodeCharacter{F057}{\ensuremath{\otimes}}
 
+        % Define some char
+        \usepackage{fontawesome5}
         \usepackage{newunicodechar}
+
         \newunicodechar{✅}{\checkmark}
+        \newunicodechar{📁}{\faFolder}
+        \newunicodechar{📜}{\textScroll}
+        \newunicodechar{┣}{\textSFTH}
+        \newunicodechar{┗}{\textSFTE}
+
         \DeclareUnicodeCharacter{274C}{\text{\sffamily X}}
 
         % Define custom environment for rotated tables
