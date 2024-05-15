@@ -29,8 +29,8 @@ Process Specifications
         05_change_history
         06_known_issues
 
-.. only:: latex
+.. .. only:: latex
 
-    .. raw:: latex
+..     .. raw:: latex
 
-        \includepdf[pages=-]{/home/docs/checkouts/readthedocs.org/user_builds/ihp-ihp-open-pdk-docs/checkouts/latest/docs/_static/SG13G2_os_process_spec.pdf}
+..         \includepdf[pages=-]{/home/docs/checkouts/readthedocs.org/user_builds/ihp-ihp-open-pdk-docs/checkouts/latest/docs/_static/SG13G2_os_process_spec.pdf}
