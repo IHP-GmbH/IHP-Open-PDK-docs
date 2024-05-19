@@ -118,7 +118,8 @@ The Topological Truth Table is a design aid that helps establish the relationshi
         \rowcolor{blue!20}
         \multicolumn{35}{|l|}{\textbf{9- Taps}} \\
         \hline
-        ptap1 & 1 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 1 & x & x & x & 0 & x & 0 & 0 & 0 & 0 & 0 & x & x & x & x & 0 & 0 & x & 0 & x & 0 & 0 & 0 & 0 & 1 & x \\ \hline
-        ntap1 & 1 & 0 & 1 & 0 & x & 0 & 1 & 0 & 0 & 0 & x & x & 1 & x & 0 & 0 & 0 & 0 & 0 & x & x & x & x & 0 & 0 & x & 0 & x & 0 & 0 & 0 & 0 & 0 & x \\ \hline
+        ptap1 & 1 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 1 & x & x & x & x & x & 0 & 0 & 0 & 0 & 0 & x & x & x & x & 0 & 0 & x & 0 & x & 0 & 0 & 0 & 0 & 1 & 1 \\ \hline
+        ntap1 & 1 & 0 & 1 & 0 & x & 0 & 1 & 0 & 0 & 0 & x & x & x & x & 0 & 0 & 0 & 0 & 0 & x & x & x & x & 0 & 0 & x & 0 & x & 0 & 0 & 0 & 0 & 0 & 1 \\ \hline
+
         \end{tabular}
         \end{rotatedtable}
