@@ -18,7 +18,7 @@ rfnmos
    * - Description
      - nMOS device with ptap surrounding and special RF model.
    * - Device Recognition
-     - Activ, GatPoly, psD (For ptap)
+     - Activ, GatPoly, psD (For ptap), text (`rfnmos`)
    * - Model Name
      - rfnmos
    * - Layout Cell Name
@@ -103,7 +103,7 @@ rfnmosHV
    * - Description
      - nmosHV device with ptap surrounding and special RF model.
    * - Device Recognition
-     - Activ, GatPoly, ThickGateOx, psD (For ptap)
+     - Activ, GatPoly, ThickGateOx, psD (For ptap), text (`rfnmosHV`)
    * - Model Name
      - rfnmosHV
    * - Layout Cell Name
@@ -187,7 +187,7 @@ rfpmos
    * - Description
      - pMOS device with ntap surrounding and special RF model.
    * - Device Recognition
-     - Activ, GatPoly, pSD, Nwell 
+     - Activ, GatPoly, pSD, Nwell, text (`rfpmos`)
    * - Model Name
      - rfpmos
    * - Layout Cell Name
@@ -271,7 +271,7 @@ rfpmosHV
    * - Description
      - pmosHV device with ntap surrounding and special RF model.
    * - Device Recognition
-     - Activ, GatPoly, pSD, Nwell, ThickGateOx
+     - Activ, GatPoly, pSD, Nwell, ThickGateOx, text (`rfpmosHV`)
    * - Model Name
      - rfpmosHV
    * - Layout Cell Name
