@@ -28,7 +28,7 @@ DOCS_DIR := $(dir $(lastword $(MAKEFILE_LIST)))
 
 # You can set these variables from the command line, and also
 # from the environment for the first two.
-SPHINXOPTS     ?= -j auto
+SPHINXOPTS     ?= -j auto -w build.log
 SPHINXBUILD     = sphinx-build
 SPHINXAUTOBUILD = sphinx-autobuild
 SPHINXPROJ      = IHP-Open-Source-PDK

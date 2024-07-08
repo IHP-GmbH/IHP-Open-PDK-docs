@@ -7,10 +7,15 @@ Welcome to 130nm BiCMOS Open Source PDK documentation!
 
 .. toctree::
     :hidden:
-
-    layout_rules/rules_man
-    lvs/lvs_man
+    
+    contents
     process_specs/process_specs
+    layout_rules/rules_man
+    analog
+    digital
+    verification
+    contributing
+    references
 
 .. warning::
     This documentation is currently a **work in progress**.
@@ -18,7 +23,7 @@ Welcome to 130nm BiCMOS Open Source PDK documentation!
 .. image:: _static/IHP_logo.png
     :align: center
     :alt: IHP Logo Image.
-    :width: 600
+    :width: 400
 
 
 Current Status -- |current-status|
