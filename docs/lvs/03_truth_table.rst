@@ -113,8 +113,8 @@ The Topological Truth Table is a design aid that helps establish the relationshi
         \rowcolor{blue!20}
         \multicolumn{35}{|l|}{\textbf{8- Inductors}} \\
         \hline
-        inductor & x & 0 & x & 0 & 1 & 0 & x & x & x & x & x & x & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & x & x & 1 & 0 & 0 & x & 0 & x & 0 & 0 & 1 & 1 & 0 & x \\ \hline
-        inductor3 & x & 0 & x & 0 & 1 & 0 & x & x & x & x & x & x & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & x & x & 1 & 0 & 0 & x & 0 & x & 0 & 0 & 1 & 1 & 0 & x \\ \hline
+        inductor & x & 0 & x & 0 & 1 & 0 & x & x & x & x & x & x & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & x & x & 1 & 0 & 0 & x & 0 & x & 0 & 0 & 1 & 1 & 0 & 1 \\ \hline
+        inductor3 & x & 0 & x & 0 & 1 & 0 & x & x & x & x & x & x & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & x & x & 1 & 0 & 0 & x & 0 & x & 0 & 0 & 1 & 1 & 0 & 1 \\ \hline
         \rowcolor{blue!20}
         \multicolumn{35}{|l|}{\textbf{9- Taps}} \\
         \hline

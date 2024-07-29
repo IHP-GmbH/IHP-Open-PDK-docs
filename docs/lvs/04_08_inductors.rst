@@ -15,7 +15,7 @@ inductor
    * - Description
      - 2-Terminal inductor (Single output)
    * - Device Recognition
-     - IND, TopMetal2, PWell.blk
+     - IND, TopMetal2, PWell.blk, text
    * - Model Name
      - inductor
    * - Layout Cell Name
@@ -85,7 +85,7 @@ inductor3
    * - Description
      - 3-Terminal inductor (Differential output)
    * - Device Recognition
-     - IND, TopMetal2, PWell.blk
+     - IND, TopMetal2, PWell.blk, text
    * - Model Name
      - inductor3
    * - Layout Cell Name
