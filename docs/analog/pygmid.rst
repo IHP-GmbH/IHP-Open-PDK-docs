@@ -4,7 +4,8 @@ Designing using pygmid tool
 pygmid installation and configuration
 -------------------------------------
 pygmid is a Python 3 version of the gm/ID starter kit by Prof. Boris Murmann of Stanford University. 
-The package also offers some scripts from the Paul Jesper's book entitled *"Systematic Design of Analog CMOS Circuits with Lookup Tables"*
+The package also offers some scripts from the Paul Jesper's and Boris Murmann's book entitled:
+*"Systematic Design of Analog CMOS Circuits: Using Pre-Computed Lookup Tables"*
 To be used with IHP-Open-PDK it latest release hosted on 
 `github <https://github.com/dreoilin/pygmid>`_.
 

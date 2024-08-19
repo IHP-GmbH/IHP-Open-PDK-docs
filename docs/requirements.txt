@@ -6,3 +6,4 @@ sphinx-autobuild
 sphinxcontrib-wavedrom
 sphinxcontrib-svg2pdfconverter
 sphinx-material
+sphinxcontrib-bibtex
