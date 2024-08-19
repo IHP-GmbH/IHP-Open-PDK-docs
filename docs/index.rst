@@ -9,6 +9,7 @@ Welcome to 130nm BiCMOS Open Source PDK documentation!
     :hidden:
     
     contents
+    install
     process_specs/process_specs
     layout_rules/rules_man
     analog

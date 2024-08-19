@@ -1,7 +1,7 @@
-Simulation using NGSPICE
+Simulation using Xyce
 ========================
 
-.. _ngspice_configuration_lbl:
+.. _xyce_configuration_lbl:
 NGSPICE installation 
 --------------------
 

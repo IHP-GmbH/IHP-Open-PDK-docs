@@ -10,9 +10,3 @@ Physical & Design Verification
     Parasitic Extraction (PEX) <verification/pex>
 
 
-.. todo::
-TODO: MAGIC Decks
------------------
-
-Put stuff here.
-

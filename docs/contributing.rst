@@ -39,6 +39,6 @@ Community Guidelines
 --------------------
 
 This project follows `Google's Open Source Community
-Guidelines <https://github.com/IHP-GmbH/IHP-Open-PDK/blob/main/CODE_OF_CONDUCT.md>`__.
+Guidelines <https://github.com/IHP-GmbH/IHP-Open-PDK/blob/main/CODE_OF_CONDUCT.md>`_.
 
 

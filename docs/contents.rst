@@ -3,7 +3,7 @@ PDK Contents
 
 .. toctree::
     :name: pdk-contents
+    :numbered:
     :maxdepth: 4
 
- #   Libraries <contents/libraries>
- #   File Types <contents/file_types>
+    Libraries <contents/index>
