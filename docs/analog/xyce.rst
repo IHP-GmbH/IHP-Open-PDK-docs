@@ -14,7 +14,7 @@ Apart the bulid requirements listed in the `building guide <https://xyce.sandia.
 #. installation of Xyce
 
 
-Trilinos installatinon
+Trilinos installation
 ------------------------
 
 First of all one have to obtain the **exact** version of trilinos **12.12.1**
@@ -154,96 +154,85 @@ In order to install ngspice the recomended method is the following:
     cd ..
     rm -rf ngspice-ngspice
 
-NGSPICE basic testcases
-------------------------
-A basic spice level netlist, which simulates operating point of a npn13G2 HBT transistor, is shown below:
+Xyce basic example
+===================
+A basic spice level netlist, which simulates dc sweep resistors, is shown below:
 
 .. code-block:: spicelang
 
-    **.subckt dc_hbt_13g2
-    Vce net3 GND 1.2
-    I0 GND net1 1u
-    Vc net3 net2 0
-    .save i(vc)
-    XQ1 net2 net1 GND GND npn13G2l Nx=1 le=1.0e-6
+  **.subckt dc_res_temp
+  Vres Vcc GND 1.5
+  Vsil Vcc net1 0
+  Vppd Vcc net2 0
+  Vrh Vcc net3 0
+  XR1 GND net1 rsil w=0.5e-6 l=1.5e-6 m=1 b=0
+  XR2 GND net2 rppd w=0.5e-6 l=0.5e-6 m=1 b=0
+  XR3 GND net3 rhigh w=0.5e-6 l=0.5e-6 m=1 b=0
+  **** begin user architecture code
 
-    .lib cornerHBT.lib hbt_typ
+  .include /home/your_user/your_path_to_pdk/IHP-Open-PDK/ihp-sg13g2/libs.tech/xyce/models/resistors.lib
 
-    .param temp=27
-    .control
-    save all
-    op
-    print I(Vc)
-    .endc
+  .dc Vres 0 1.5 0.01
+  .PRINT  dc format=raw file=dc_res_temp.raw  I(Vsil) I(Vppd)  I(Vrh)
 
-    .GLOBAL GND
-    .end  
+  **** end user architecture code
+  **.ends
+  .GLOBAL GND
+  .end
 
 The netlist can be saved as dc_hbt_13g2.spice and simulated calling the following command:
 
 .. code-block:: bash
     
-  ngspice -b dc_hbt_13g2.spice
+  Xyce  dc_res_temp.spice
 
 The user should get the following output:
 
 .. code-block:: bash
     
-
-  Note: Compatibility modes selected: hs a
-
-
-  Circuit: 
-
-  Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
-
-  Using SPARSE 1.3 as Direct Linear Solver
-
-  No. of Data Rows : 1
-  i(vc) = 6.492800e-04
-  Note: Simulation executed from .control section 
+  ***** Solution Summary *****
+          Number Successful Steps Taken:          151
+          Number Failed Steps Attempted:          0
+          Number Jacobians Evaluated:             57543
+          Number Linear Solves:                   57543
+          Number Failed Linear Solves:            0
+          Number Residual Evaluations:            58868
+          Number Nonlinear Convergence Failures:  0
+          Total Residual Load Time:               0.0881166 seconds
+          Total Jacobian Load Time:               0.04089 seconds
+          Total Linear Solution Time:             0.196041 seconds
 
 
-.. code-block:: spicelang
+  ***** Total Simulation Solvers Run Time: 1.46115 seconds
+  ***** Total Elapsed Run Time:            1.46848 seconds
+  *****
+  ***** End of Xyce(TM) Simulation
+  *****
 
-  * mostest.spice
-  .lib cornerMOSlv.lib mos_tt
-  Vgs net1 GND 0.4
-  Vds net3 GND 1.0
-  Vd net3 net2 0
-  .param temp=27
-  XM1 net2 net1 GND GND sg13_lv_nmos w=1.0u l=0.13u ng=1 m=1
-  .control
-  save all
-  op
-  let Id = @n.xm1.nsg13_lv_nmos[ids] 
-  print Id
-  .endc
-  .GLOBAL GND
-  .end
+  Timing summary of 1 processor
+                   Stats                   Count       CPU Time              Wall Time
+  ---------------------------------------- ----- --------------------- ---------------------
+  Xyce                                         1        1.612 (100.0%)        1.471 (100.0%)
+    Analysis                                   1        1.548 (96.08%)        1.461 (99.33%)
+      DC Sweep                                 1        1.548 (96.08%)        1.461 (99.33%)
+        Solve                                151        1.546 (95.91%)        1.460 (99.24%)
+          Residual                         58868        0.167 (10.39%)        0.152 (10.33%)
+          Jacobian                         57543        0.114 ( 7.08%)        0.099 ( 6.75%)
+          Linear Solve                     57543        0.283 (17.57%)        0.258 (17.55%)
+        Successful Step                      151        0.001 ( 0.05%)        0.001 ( 0.04%)
+    Netlist Import                             1        0.017 ( 1.07%)        0.003 ( 0.21%)
+      Parse Context                            1        0.009 ( 0.58%)        0.001 ( 0.06%)
+      Distribute Devices                       1        0.000 ( 0.00%)        0.001 ( 0.07%)
+      Verify Devices                           1        0.000 ( 0.00%)        0.000 (<0.01%)
+      Instantiate                              1        0.000 ( 0.00%)        0.000 (<0.01%)
+    Late Initialization                        1        0.012 ( 0.73%)        0.003 ( 0.20%)
+      Global Indices                           1        0.000 ( 0.00%)        0.001 ( 0.08%)
+    Setup Matrix Structure                     1        0.002 ( 0.13%)        0.000 ( 0.02%)
 
-The netlist can be saved as mostest.spice and simulated calling the following command:
+The netlist was generated using `xschem` configured to use `Xyce` as a simulator
 
-.. code-block:: bash
-    
-  ngspice -b mostest.spice
+.. image:: ../_static/dc_res_temp.png
+    :width: 800
+    :align: center
+    :alt: Xyce DC sweep of resistors
 
-The following output should be observed
-
-.. code-block:: bash
-
-
-  Note: Compatibility modes selected: hs a
-
-  Warning: m=xx on .subckt line will override multiplier m hierarchy!
-
-
-  Circuit: mostest
-
-  Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
-
-  Using SPARSE 1.3 as Direct Linear Solver
-
-  No. of Data Rows : 1
-  id = 1.145621e-06
-  Note: Simulation executed from .control section 
