@@ -1,5 +1,5 @@
 Libraries
-==========
+***********
 
 Reference Libraries
 ===================
@@ -64,7 +64,7 @@ Each library type is organized using similar directory sturcture shown below:
 
 
 Technology Libraries
-===================
+====================
 
 
 

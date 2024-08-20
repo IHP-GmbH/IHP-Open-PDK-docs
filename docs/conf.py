@@ -146,19 +146,36 @@ html_logo = "_static/IHP_logo.png"
 # https://sphinx-symbiflow-theme.readthedocs.io/en/latest/customization.html
 html_theme_options = {
     "nav_title": "130nm BiCMOS Open Source PDK",
-    "color_primary": "red",
-    "color_accent": "teal",
+    #   "color_primary": "red",
+    #"color_accent": "teal",
     # Set the repo location to get a badge with stats
-    "github_url": "https://github.com/IHP-GmbH/IHP-Open-PDK-docs",
+    #"github_url": "https://github.com/IHP-GmbH/IHP-Open-PDK-docs",
     "repo_name": " IHP-Open-PDK-docs",
     "repo_type": "github",
     "globaltoc_depth": 0,
     "globaltoc_collapse": True,
     # Hide the symbiflow links
     "hide_symbiflow_links": True,
-    "license_url": "https://www.apache.org/licenses/LICENSE-2.0",
+    #"license_url": "https://www.apache.org/licenses/LICENSE-2.0",
 }
 
+# html_theme_options = {
+#     'analytics_id': 'G-XXXXXXXXXX',  #  Provided by Google in your dashboard
+#     'analytics_anonymize_ip': False,
+#     'logo_only': False,
+#     'display_version': True,
+#     'prev_next_buttons_location': 'bottom',
+#     'style_external_links': False,
+#     'vcs_pageview_mode': '',
+#     'style_nav_header_background': 'white',
+#     # Toc options
+#     'collapse_navigation': True,
+#     'sticky_navigation': True,
+#     'navigation_depth': 4,
+#     'includehidden': True,
+#     'titles_only': False
+# }
+#
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".

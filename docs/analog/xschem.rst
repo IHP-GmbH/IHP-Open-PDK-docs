@@ -2,6 +2,7 @@ Schematic capture using XSCHEM
 ===============================
 
 .. _xschem_configuration_lbl:
+
 XSCHEM installation and configuration
 -------------------------------------
 

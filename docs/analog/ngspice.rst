@@ -2,6 +2,7 @@ Simulation using NGSPICE
 ========================
 
 .. _ngspice_configuration_lbl:
+
 NGSPICE installation 
 --------------------
 
@@ -69,9 +70,8 @@ The user should get the following output:
   Note: Simulation executed from .control section 
 
 
-.. code-block:: spicelang
+.. code-block:: bash
 
-  * mostest.spice
   .lib cornerMOSlv.lib mos_tt
   Vgs net1 GND 0.4
   Vds net3 GND 1.0

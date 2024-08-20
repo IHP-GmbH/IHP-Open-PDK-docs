@@ -2,7 +2,8 @@ Designing using pygmid tool
 ===========================
 
 .. _pygmid_configuration_lbl:
-pygmid installation and configuration
+
+Pygmid installation and configuration
 -------------------------------------
 pygmid is a Python 3 version of the gm/ID starter kit by Prof. Boris Murmann of Stanford University. 
 The package also offers some scripts from the Paul Jesper's and Boris Murmann's book entitled:
