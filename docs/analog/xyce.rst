@@ -96,6 +96,7 @@ ADMS installation
 
 After successfull installation one can procees installing ADMS. The installation process 
 is strightforward and well described on the `ASMS github repository <https://github.com/Qucs/ADMS>`_.
+Use ``cmake`` based build
 
 XYCE installation
 -----------------

@@ -6,5 +6,6 @@ Installation
     :numbered:
     :name: install
 
-    Installation   <install/installation>
+    Dependencies   <install/dependencies.rst>
+    Installation   <install/installation.rst>
 
