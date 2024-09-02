@@ -60,3 +60,4 @@ venv.bak/
 *.osdi
 .DS_Store
 *.pyc
+*.log
