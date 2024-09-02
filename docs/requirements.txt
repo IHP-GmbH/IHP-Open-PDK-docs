@@ -2,7 +2,9 @@ git+https://github.com/f4pga/sphinx_f4pga_theme#egg=sphinx-symbiflow-theme
 
 docutils
 sphinx
+sphinx-rtd-theme
 sphinx-autobuild
 sphinxcontrib-wavedrom
 sphinxcontrib-svg2pdfconverter
 sphinx-material
+sphinxcontrib-bibtex

@@ -56,7 +56,9 @@ venv.bak/
 # others
 .vscode/
 *.raw
+*.log
 *.spice
 *.osdi
 .DS_Store
 *.pyc
+*.log
