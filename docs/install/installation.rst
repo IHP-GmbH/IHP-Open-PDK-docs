@@ -19,7 +19,7 @@ In order to get the PDK you should clone it from github using the following comm
 .. code-block:: bash
  
   cd your_directory
-  git clone https://github.com/IHP-GmbH/IHP-Open-PDK.git
+  git clone --recursive https://github.com/IHP-GmbH/IHP-Open-PDK.git
   
 .. tip::
     The PDK has two branches ``main`` and ``dev``. The general rule is that the ``dev`` branch is ahead of ``main`` and contains the recent changes. 
