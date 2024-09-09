@@ -5,6 +5,9 @@ IHP 130nm BiCMOS Open Source PDK documentation
    :alt: GitHub license - Apache 2.0
    :target: https://github.com/IHP-GmbH/IHP-Open-PDK
 
+.. image:: https://readthedocs.org/projects/ihp-open-pdk-docs/badge/?version=latest&style=flat
+   :alt: ReadTheDocs Badge - https://ihp-open-pdk-docs.readthedocs.io
+   :target: https://ihp-open-pdk-docs.readthedocs.io
 
 IHP Open Source PDK project goal is to provide a fully open source Process Design Kit and related data, which can be used to create manufacturable designs at IHP's facility.
 
