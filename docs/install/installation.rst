@@ -20,6 +20,9 @@ In order to get the PDK you should clone it from github using the following comm
  
   cd your_directory
   git clone --recursive https://github.com/IHP-GmbH/IHP-Open-PDK.git
+
+.. note::
+    ``--recursive`` option is needed to populate recursively submodules that are included in our PDK repository. 
   
 .. tip::
     The PDK has two branches ``main`` and ``dev``. The general rule is that the ``dev`` branch is ahead of ``main`` and contains the recent changes. 
