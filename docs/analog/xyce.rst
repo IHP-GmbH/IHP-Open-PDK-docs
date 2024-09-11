@@ -157,7 +157,7 @@ In order to install ngspice the recomended method is the following:
 
 Xyce basic example
 ===================
-A basic spice level netlist, which simulates dc sweep resistors, is shown below:
+A basic spice level netlist, which simulates DC sweep resistors, is shown below:
 
 .. code-block:: spicelang
 
@@ -181,11 +181,11 @@ A basic spice level netlist, which simulates dc sweep resistors, is shown below:
   .GLOBAL GND
   .end
 
-The netlist can be saved as dc_hbt_13g2.spice and simulated calling the following command:
+The netlist can be saved as ``dc_res_temp.spice`` and simulated calling the following command:
 
 .. code-block:: bash
     
-  Xyce  dc_res_temp.spice
+  Xyce dc_res_temp.spice
 
 The user should get the following output:
 

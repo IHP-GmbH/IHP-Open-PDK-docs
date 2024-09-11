@@ -60,7 +60,7 @@ The vast majority can be build form sources however some of them require manual 
   suoo apt-get install -y libsuitesparse-dev gfortran swig libspdlog-dev libeigen3-dev liblemon-dev
 
 
-On ubuntu 24.04 bulid ``gpref`` from `this page <gnu.org/software/gpref>`_.
+On Ubuntu 24.04 build ``gperf`` from `this page <https://www.gnu.org/software/gperf>`_.
 
 # sudo pip install PDKMaster
 # sudo pip install h5py
