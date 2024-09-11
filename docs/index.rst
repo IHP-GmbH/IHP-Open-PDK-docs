@@ -1,6 +1,6 @@
 
 ******************************************************
-Welcome to 130nm BiCMOS Open Source PDK documentation!
+Welcome to IHP 130nm BiCMOS Open Source PDK documentation!
 ******************************************************
 
 .. include:: common.inc
