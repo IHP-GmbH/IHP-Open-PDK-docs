@@ -35,10 +35,10 @@ environment variables (add it to your ``.bashrc`` file):
 
 .. code-block:: bash
     
-  echo "export PDK_ROOT=/home/\$USER/your_directory/IHP-Open-PDK" >> ~/.bashrc
+  echo "export PDK_ROOT=\$HOME/your_directory/IHP-Open-PDK" >> ~/.bashrc
   echo "export PDK=ihp-sg13g2" >> ~/.bashrc
-  echo "export KLAYOUT_PATH=\"/home/\$USER/.klayout:\$PDK_ROOT/\$PDK/libs.tech/klayout\"" >> ~/.bashrc
-  echo "export KLAYOUT_HOME=/home/\$USER/.klayout" >> ~/.bashrc
+  echo "export KLAYOUT_PATH=\"\$HOME/.klayout:\$PDK_ROOT/\$PDK/libs.tech/klayout\"" >> ~/.bashrc
+  echo "export KLAYOUT_HOME=\$HOME/.klayout" >> ~/.bashrc
   source ~/.bashrc
 
 .. note::
