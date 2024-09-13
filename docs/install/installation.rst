@@ -30,15 +30,15 @@ In order to get the PDK you should clone it from github using the following comm
 General configuration
 ---------------------
 Similarly to the before mentioned PDK's one of the crucial and mandatory part of the configuration is exporting of some
-environmental variables (add it to your ``.bashrc`` file):
+environment variables (add it to your ``.bashrc`` file):
   
 
 .. code-block:: bash
     
-  echo "export PDK_ROOT=/home/$USER/your_directory/IHP-Open-PDK" >> ~/.bashrc
+  echo "export PDK_ROOT=/home/\$USER/your_directory/IHP-Open-PDK" >> ~/.bashrc
   echo "export PDK=ihp-sg13g2" >> ~/.bashrc
-  echo "export KLAYOUT_PATH="/home/$USER/.klayout:$PDK_ROOT/$PDK/libs.tech/klayout"" >> ~/.bashrc
-  echo "export KLAYOUT_HOME=/home/$USER/.klayout" >> ~/.bashrc
+  echo "export KLAYOUT_PATH=\"/home/\$USER/.klayout:\$PDK_ROOT/\$PDK/libs.tech/klayout\"" >> ~/.bashrc
+  echo "export KLAYOUT_HOME=/home/\$USER/.klayout" >> ~/.bashrc
   source ~/.bashrc
 
 .. note::
