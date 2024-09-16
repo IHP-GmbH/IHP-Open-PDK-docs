@@ -27,8 +27,7 @@ Current Status -- |current-status|
 
 .. current_status_text
 
-.. warning::
-   IHP Open Source PDK are currently treating the current content as an **experimental preview** / **alpha release**.
+⚠ **Warning**: IHP Open Source PDK are currently treating the current content as an **experimental preview** / **alpha release**.
 
 While the SG13G2 process node and the PDK from which this open source release was derived have been 
 used to create many designs that have been successfully manufactured in significant quantities, 
@@ -57,7 +56,9 @@ At a minimum:
 On Ubuntu, simply
 ------------------
 
-``apt install -y build-essential virtualenv python3``
+.. code:: bash
+
+  apt install -y build-essential virtualenv python3
 
 Building the documentation
 ==========================
@@ -93,9 +94,9 @@ custom foundry technologies can be emailed to \<openpdk@ihp-microelectronics.com
 License
 =======
 
-The IHP Open Source PDK is released under the [Apache 2.0 license](LICENSE).
+The IHP Open Source PDK is released under the `Apache 2.0 license <LICENSE>`_.
 
-The copyright details are:
+The copyright details are::
     
     Copyright 2024 IHP PDK Authors
 
