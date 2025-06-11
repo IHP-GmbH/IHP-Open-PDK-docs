@@ -1,2 +1,2 @@
-:red:`Seal.l`,No structures outside sealring boundary allowed
-:red:`Seal.n`,Sealring must be enclosed by an unbroken Passiv ring
+Seal.l,No structures outside sealring boundary allowed
+Seal.n,Sealring must be enclosed by an unbroken Passiv ring

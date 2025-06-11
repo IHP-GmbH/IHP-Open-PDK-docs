@@ -1,4 +1,4 @@
-:red:`Padb.a`,Min. SBumpPad size
-:red:`Padb.b`,Min. SBumpPad space
-:red:`Padb.c`,Min. TopMetal2 (within dfpad) enclosure of SBumpPad
-:red:`Padb.f`,Allowed passivation opening shape
+Padb.a,Min. SBumpPad size
+Padb.b,Min. SBumpPad space
+Padb.c,Min. TopMetal2 (within dfpad) enclosure of SBumpPad
+Padb.f,Allowed passivation opening shape

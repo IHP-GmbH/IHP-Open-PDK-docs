@@ -1,6 +1,6 @@
-*****************
-KLayout DRC Rules
-*****************
+*********
+DRC Rules
+*********
 
 .. rst-class:: center
 
@@ -19,3 +19,5 @@ KLayout DRC Rules
     01_minimal_drc
     02_maximal_drc
     03_missing_rules
+    04_klayout_drc
+    05_magic_drc
