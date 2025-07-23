@@ -1,4 +1,4 @@
-.. _minimal_drc:
+.. _minimal_drc: 
 
 Minimal (short) DRC rules
 =========================
