@@ -3,7 +3,7 @@
 Layer Table
 ===========
 
-This chapter is a documentation of IHP layers definition which is valid in all technologies.
+This chapter is a documentation of IHP layer definitions. It is valid in all technologies.
 
 .. tip::
     Only the layers described in the following table are allowed to be used in layout designs. 
