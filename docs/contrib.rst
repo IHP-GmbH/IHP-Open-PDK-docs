@@ -1,11 +1,12 @@
 Contribution
-=============
+============
 
 .. toctree::
     :caption: Contribution
     :numbered:
     :name: contrib
 
-    ContributionModel    <contrib/contributing.rst>
-    Workflow             <contrib/workflow.rst>
+    Contribution Model                <contrib/contributing.rst>
+    Workflow (PDK)                    <contrib/workflow.rst>
+    Workflow (PDK Documentation)      <contrib/workflow-docs.rst>
 
