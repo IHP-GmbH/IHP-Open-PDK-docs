@@ -6,7 +6,7 @@ The tools supported by IHP-Open-PDK are open source and are not always distribut
 Having all the build tools installed and meeting all necessary dependencies the installation of a program is usually straightforward.
 
 
-Build tools 
+Build Tools
 -----------
 
 The first step to build a tool/program from source code is to have _build tools_ available, what means necessary compilers and make systems,
@@ -20,7 +20,7 @@ which allows the user to build the source code.
   sudo apt-get install -y ruby ruby-dev 
 
 
-Useful tools 
+Useful Tools
 ------------
 
 Before performing installation from sources it is recommended to install some tools that are useful:
@@ -30,7 +30,7 @@ Before performing installation from sources it is recommended to install some to
   sudo apt-get install -y octave liboctave-dev
 
 
-Build dependencies
+Build Dependencies
 ------------------
 
 Below we present the key dependencies which have to be installed in order to build the tools supported by our PDK.
