@@ -1,5 +1,5 @@
 Workflow Documentation
-######################
+======================
 
 The ``IHP-Open-PDK-docs`` model follows the Git-Flow model of development. We mantain two branches, namely ``main``
 (stable one for production -- not yet accomplished) and ``latest`` (experimental for development and testing).
