@@ -38,7 +38,7 @@ In order to get our PDK you should clone it from GitHub using the following comm
     The PDK has two branches ``main`` and ``dev``. The general rule is that the ``dev`` branch is ahead of ``main`` and contains the recent changes. 
 
 
-General configuration
+General Configuration
 ---------------------
 
 Similar to the before mentioned PDKs one of the crucial and mandatory part of the configuration is the export of some
@@ -57,7 +57,7 @@ environment variables (add it to your ``~/.bashrc`` file):
     The configuration set up an own clone of the PDK for a linux user. 
 
 
-Tool specific configuration
+Tool Specific Configuration
 ---------------------------
 
 Since the PDK provides support for many tools we provide these tool specific sections:
