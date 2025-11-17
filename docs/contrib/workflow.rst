@@ -1,5 +1,5 @@
 Workflow
-########
+========
 
 The ``IHP-Open-PDK`` model follows the Git-Flow model of development. We mantain two branches, namely ``main`` 
 (stable one for production) and ``dev`` (experimental for development and testing).
