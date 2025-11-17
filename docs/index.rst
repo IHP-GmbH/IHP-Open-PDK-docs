@@ -20,7 +20,7 @@ Welcome to IHP 130nm BiCMOS Open Source PDK documentation!
     references
 
 .. warning::
-    This documentation is currently a **work in progress**.
+    This documentation is **work in progress**.
 
 .. image:: _static/IHP_logo.png
     :align: right
@@ -28,8 +28,8 @@ Welcome to IHP 130nm BiCMOS Open Source PDK documentation!
     :width: 150
 
 
-Current Status -- |current-status|
-==================================
+Current Status: |current-status|
+================================
 
 .. current_status_text
 
