@@ -72,8 +72,8 @@ The IHP-Open-PDK delivers a symbol library which can be found in ``$PDK_ROOT/$PD
 +--------------+-----------------------------------------------------------------------------------------------------------------------------------------------+
 
 
-XSCHEM Testcases
-----------------
+XSCHEM Test Cases
+-----------------
 
 The top level schematic, namely IHP_testcases.sch,can be found at ``PDK_ROOT/$PDK/libs.tech/xschem/sg13g2_tests`` directory. 
 By default each test case exports the netlist to the ``simulations/`` subdirectory, where NGSpice is called in order to perform the simulation. 
