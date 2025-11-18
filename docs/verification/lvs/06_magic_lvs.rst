@@ -1,4 +1,4 @@
-Magic-LVS
-============================
+Magic LVS
+=========
 
 TODO: verification/lvs/magic
