@@ -18,8 +18,7 @@ facility.
    :align: center
    :alt: IHP Logo Image.
    :target: https://github.com/IHP-GmbH/IHP-Open-PDK/
-   :width: 70%
-
+   :width: 50%
 
 .. |current-status| replace:: **Experimental Preview**
 
@@ -71,6 +70,7 @@ Building the Documentation
 To build documentation locally, you could use the following commands:
 
 .. code:: bash
+
    # Download the repository, change into its docs/ folder
    git clone https://github.com/IHP-GmbH/IHP-Open-PDK-docs
    cd IHP-Open-PDK-docs/docs/
@@ -106,7 +106,7 @@ Requests for more information about SG13G2, other standards and custom foundry t
 License
 =======
 
-The IHP Open PDK is released under the `Apache 2.0 license <LICENSE>`_.
+The IHP Open PDK is released under the `Apache 2.0 license <https://www.apache.org/licenses/LICENSE-2.0>`_.
 
 The copyright details are::
     
