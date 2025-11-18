@@ -9,7 +9,7 @@ Having all the build tools installed and meeting all necessary dependencies the 
 Build Tools
 -----------
 
-The first step to build a tool/program from source code is to have _build tools_ available, what means necessary compilers and make systems,
+The first step to build a tool or program from source code is to have build tools available, what means necessary compilers and make systems,
 which allows the user to build the source code. 
 
 .. code-block:: bash
