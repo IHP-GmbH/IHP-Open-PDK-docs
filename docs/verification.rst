@@ -8,5 +8,3 @@ Physical & Design Verification
     Design Rule Check (DRC)                <verification/drc/drc_man>
     Layout Versus Schematic (LVS) Check    <verification/lvs/lvs_man>
     Parasitic Extraction (PEX)             <verification/pex>
-
-
