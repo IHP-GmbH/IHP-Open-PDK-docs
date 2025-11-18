@@ -1,7 +1,10 @@
+.. image:: _static/IHP_logo.png
+    :align: right
+    :alt: IHP Logo Image
+    :width: 125
 
-**********************************************************
 Welcome to IHP 130nm BiCMOS Open Source PDK documentation!
-**********************************************************
+==========================================================
 
 .. include:: common.inc
 
@@ -20,21 +23,15 @@ Welcome to IHP 130nm BiCMOS Open Source PDK documentation!
     references
 
 .. warning::
-    This documentation is **work in progress**.
 
-.. image:: _static/IHP_logo.png
-    :align: right
-    :alt: IHP Logo Image.
-    :width: 150
+    This documentation is **work in progress**.
+    The content is currently provided as an **experimental preview** / **alpha release**.
 
 
 Current Status: |current-status|
 ================================
 
 .. current_status_text
-
-.. warning::
-   IHP Open PDK is currently treating the content as an **experimental preview** / **alpha release**.
 
 While the SG13G2 process node and the PDK from which this open source release was derived have been 
 used to create many designs that have been successfully manufactured in significant quantities, 
