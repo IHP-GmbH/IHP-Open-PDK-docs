@@ -38,7 +38,7 @@ BUILDDIR        = $(DOCS_DIR)/_build
 
 .DEFAULT_GOAL := docs
 
-docs: clean setup preprocess build
+docs: clean setup preprocess build message
 
 #========================
 # ----- BUILD DOCS ------
@@ -68,6 +68,10 @@ latexpdf:
 #========================
 # ---- DISPLAY DOCS -----
 #========================
+
+.ONESHELL:
+message:
+	@echo "Type \`make display\` to launch the built documentation in web browser."
 
 .ONESHELL:
 display:
