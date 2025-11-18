@@ -6,5 +6,5 @@ PDK Contents
     :numbered:
     :maxdepth: 4
 
-    Libraries   <contents/index>
-    File Types  <contents/file_types>
+    File Types and Tools  <contents/file_types>
+    Libraries             <contents/index>
