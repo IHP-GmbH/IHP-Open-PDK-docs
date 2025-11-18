@@ -13,6 +13,7 @@ The first step to build a tool/program from source code is to have _build tools_
 which allows the user to build the source code. 
 
 .. code-block:: bash
+
   sudo apt-get install -y build-essential
   sudo apt-get install -y qtbase5-dev qttools5-dev   
   sudo apt-get install -y clang cmake libtool autoconf
@@ -26,6 +27,7 @@ Useful Tools
 Before performing installation from sources it is recommended to install some tools that are useful:
 
 .. code-block:: bash
+
   sudo apt-get install -y btop tree xterm graphviz git
   sudo apt-get install -y octave liboctave-dev
 
@@ -37,6 +39,7 @@ Below we present the key dependencies which have to be installed in order to bui
 The vast majority can be build from sources however some of them require manual compilation and install.
 
 .. code-block:: bash
+
   sudo apt-get install -y python3-sphinx python3-sphinx-autoapi python3-pandas python3-tk python3-pytest
   sudo apt-get install -y libqt5xmlpatterns5-dev qtmultimedia5-dev libqt5multimediawidgets5 libqt5svg5-dev libqt5opengl5 
   sudo apt-get install -y tcl8.6 tcl-dev tcl8.6-dev
