@@ -111,6 +111,7 @@ exclude_patterns = [
     "_build",
     "env",
     "venv",
+    "docs_env",
     "Thumbs.db",
     ".DS_Store",
 ]
