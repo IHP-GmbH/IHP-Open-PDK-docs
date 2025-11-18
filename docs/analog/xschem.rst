@@ -2,6 +2,7 @@ Schematic Capture using XSCHEM
 ==============================
 
 .. _xschem_configuration_lbl:
+
 XSCHEM Installation and Configuration
 -------------------------------------
 
@@ -12,6 +13,7 @@ recommended to install XSCHEM from sources using the latest release `hosted on G
 After successful installation you can call the following command in the ``$PDK_ROOT/$PDK/libs.tech/xschem/`` directory:
 
 .. code-block:: shell
+
     python3 install.py
 
 It will compile and install a `psp103_nqs.osdi` binary and place it in the ``$PDK_ROOT/$PDK/ngspice/openvaf/`` directory. The file is mandatory for a simulation of

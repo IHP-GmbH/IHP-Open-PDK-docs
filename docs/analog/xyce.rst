@@ -2,9 +2,8 @@ Simulation using Xyce
 *********************
 
 .. _xyce_configuration_lbl:
-
-XYCE installation on ubuntu 22.04 LTS 
-======================================
+Xyce Installation on Ubuntu 22.04 LTS
+=====================================
 
 Xyce installation is demanding due to the specific version isssues and multiple dependencies.
 Apart the bulid requirements listed in the `building guide <https://xyce.sandia.gov/documentation-tutorials/building-guide/>`_ the key parts for insallation are:
@@ -14,23 +13,20 @@ Apart the bulid requirements listed in the `building guide <https://xyce.sandia.
 #. installation of Xyce
 
 
-Trilinos installation
-------------------------
+Trilinos Installation
+---------------------
 
 First of all one have to obtain the **exact** version of trilinos **12.12.1**
 
-
 .. code-block:: bash
-    
     cd 
     git clone https://github.com/trilinos/Trilinos.git Trilinos
     cd Trilinos
     git checkout trilinos-release-12-12-1
     
-Since it is recommended to build trilinos out of the source code directory one can execute the following
+Since it is recommended to build Trilinos out of the source code directory one can execute the following:
 
 .. code-block:: bash
-    
     cd 
     mkdir trilinos_build
     cd trilinos_build
@@ -40,7 +36,6 @@ Since it is recommended to build trilinos out of the source code directory one c
 The content of the file `reconfigure.sh` is listed below:
 
 .. code-block:: bash
-    
   #!/bin/sh
   SRCDIR="$HOME/Trilinos/"
   ARCHDIR="/usr/local"
@@ -86,25 +81,25 @@ The content of the file `reconfigure.sh` is listed below:
 The installation process consists of the following commands:
 
 .. code-block:: bash
-    
     ./reconfigure.sh  
     make 
     sudo make install
 
-ADMS installation
+
+ADMS Installation
 -----------------
 
 After successfull installation one can procees installing ADMS. The installation process 
 is strightforward and well described on the `ASMS github repository <https://github.com/Qucs/ADMS>`_.
 Use ``cmake`` based build
 
-XYCE installation
+
+Xyce Installation
 -----------------
 
-The following steps of Xyce installation are similar to Trilinos
+The following steps of Xyce installation are similar to Trilinos:
 
 .. code-block:: bash
-    
     cd 
     git clone https://github.com/Xyce/Xyce.git
     cd Xyce
@@ -119,7 +114,6 @@ The following steps of Xyce installation are similar to Trilinos
 The content of the file `reconfigure.sh` is listed below:
 
 .. code-block:: bash
-    
   #!/bin/sh
   $HOME/Xyce/configure \
   CXXFLAGS="-O3 -fPIC" \
@@ -135,16 +129,17 @@ The content of the file `reconfigure.sh` is listed below:
 To finish the installation execute:
 
 .. code-block:: bash
-    
     ./reconfigure.sh  
     make 
     sudo make install
 
-===================
+
+Xyce Simulating a Spice Netlist
+-------------------------------
+
 A basic spice level netlist, which simulates DC sweep resistors, is shown below:
 
 .. code-block:: spicelang
-
   **.subckt dc_res_temp
   Vres Vcc GND 1.5
   Vsil Vcc net1 0
@@ -168,13 +163,11 @@ A basic spice level netlist, which simulates DC sweep resistors, is shown below:
 The netlist can be saved as ``dc_res_temp.spice`` and simulated calling the following command:
 
 .. code-block:: bash
-    
   Xyce dc_res_temp.spice
 
 The user should get the following output:
 
 .. code-block:: bash
-    
   ***** Solution Summary *****
           Number Successful Steps Taken:          151
           Number Failed Steps Attempted:          0
@@ -220,4 +213,3 @@ The netlist was generated using `xschem` configured to use `Xyce` as a simulator
     :width: 800
     :align: center
     :alt: Xyce DC sweep of resistors
-
