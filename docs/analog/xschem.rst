@@ -31,45 +31,45 @@ XSCHEM Symbol Library
 
 The IHP-Open-PDK delivers a symbol library which can be found in ``$PDK_ROOT/$PDK/libs.tech/xschem/sg13g2_pr`` directory and it contains the following devices.
 
-+--------------+-----------------------------------------------------------------------------------------------------------------------------------------------+--+
-| Device       | Description                                                                                                                                   |  |
-+==============+===============================================================================================================================================+==+
-| npn13g2      | HBT NPN bipolar transistor device with a Nx-number of devices parameter                                                                       |  |
-+--------------+-----------------------------------------------------------------------------------------------------------------------------------------------+--+
-| npn13g2l     | HBT NPN bipolar transistor device with a Nx-number of devices and El-emitter length parameters                                                |  |
-+--------------+-----------------------------------------------------------------------------------------------------------------------------------------------+--+
-| npn13g2v     | HBT NPN bipolar transistor device with a Nx-number of devices parameter, device for high power and lower frequency applications               |  |
-+--------------+-----------------------------------------------------------------------------------------------------------------------------------------------+--+
-| sg13_lv_nmos | N-channel, low voltage parametrizable mosfet device. W-channel width, L-channel length, ng-number of gates, m-number of devices               |  |
-+--------------+-----------------------------------------------------------------------------------------------------------------------------------------------+--+
-| sg13_hv_nmos | N-channel, high voltage parametrizable mosfet device. W-channel width, L-channel length, ng-number of gates, m-number of devices              |  |
-+--------------+-----------------------------------------------------------------------------------------------------------------------------------------------+--+
-| sg13_lv_pmos | P-channel, low voltage parametrizable mosfet device. W-channel width, L-channel length, ng-number of gates, m-number of devices               |  |
-+--------------+-----------------------------------------------------------------------------------------------------------------------------------------------+--+
-| sg13_hv_pmos | P-channel, high voltage parametrizable mosfet device. W-channel width, L-channel length, ng-number of gates, m-number of devices              |  |
-+--------------+-----------------------------------------------------------------------------------------------------------------------------------------------+--+
-| rsil         | Silicide resistor of a sheet resistance of 7 $\Omega / \square$                                                                               |  |
-+--------------+-----------------------------------------------------------------------------------------------------------------------------------------------+--+
-| rppd         | Polysilicon resistor of a sheet resistance of 7 $\Omega / \square$                                                                            |  |
-+--------------+-----------------------------------------------------------------------------------------------------------------------------------------------+--+
-| rhigh        | Polysilicon resistor of a high sheet resistance of 1360 $\Omega / \square$                                                                    |  |
-+--------------+-----------------------------------------------------------------------------------------------------------------------------------------------+--+
-| ntap1        | N-well difussion conntact resistance  of 262 $\Omega$                                                                                         |  |
-+--------------+-----------------------------------------------------------------------------------------------------------------------------------------------+--+
-| ptap1        | P-well (substrate) difussion conntact resistance  of 262 $\Omega$                                                                             |  |
-+--------------+-----------------------------------------------------------------------------------------------------------------------------------------------+--+
-| cap_cmim     | Metal-Insulator-Metal capacitor                                                                                                               |  |
-+--------------+-----------------------------------------------------------------------------------------------------------------------------------------------+--+
-| cap_cpara    | Parasitic capacitor symbol attached to a model (used only for parasitics extraction)                                                          |  |
-+--------------+-----------------------------------------------------------------------------------------------------------------------------------------------+--+
-| cap_rfcmim   | Metal-Insulator-Metal capacitor model for RF                                                                                                  |  |
-+--------------+-----------------------------------------------------------------------------------------------------------------------------------------------+--+
-| dantenna     | Antenna diode symbol. This diode is used to protect against low voltage. The anode of the diode should be connected to the ptap1 resistor.    |  |
-+--------------+-----------------------------------------------------------------------------------------------------------------------------------------------+--+
-| dpantenna    | Antenna diode symbol. This diode is used to protect against high voltage. The cathode of the diode should be connected to the ntap1 resistor. |  |
-+--------------+-----------------------------------------------------------------------------------------------------------------------------------------------+--+
-| pnpMPA       | pnp HBT used for band-gap reference circuit                                                                                                   |  |
-+--------------+-----------------------------------------------------------------------------------------------------------------------------------------------+--+
++--------------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+| Device       | Description                                                                                                                                   |
++==============+===============================================================================================================================================+
+| npn13g2      | HBT NPN bipolar transistor device with a Nx-number of devices parameter                                                                       |
++--------------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+| npn13g2l     | HBT NPN bipolar transistor device with a Nx-number of devices and El-emitter length parameters                                                |
++--------------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+| npn13g2v     | HBT NPN bipolar transistor device with a Nx-number of devices parameter, device for high power and lower frequency applications               |
++--------------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+| sg13_lv_nmos | N-channel, low voltage parametrizable mosfet device. W-channel width, L-channel length, ng-number of gates, m-number of devices               |
++--------------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+| sg13_hv_nmos | N-channel, high voltage parametrizable mosfet device. W-channel width, L-channel length, ng-number of gates, m-number of devices              |
++--------------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+| sg13_lv_pmos | P-channel, low voltage parametrizable mosfet device. W-channel width, L-channel length, ng-number of gates, m-number of devices               |
++--------------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+| sg13_hv_pmos | P-channel, high voltage parametrizable mosfet device. W-channel width, L-channel length, ng-number of gates, m-number of devices              |
++--------------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+| rsil         | Silicide resistor of a sheet resistance of 7 $\Omega / \square$                                                                               |
++--------------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+| rppd         | Polysilicon resistor of a sheet resistance of 7 $\Omega / \square$                                                                            |
++--------------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+| rhigh        | Polysilicon resistor of a high sheet resistance of 1360 $\Omega / \square$                                                                    |
++--------------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+| ntap1        | N-well difussion conntact resistance  of 262 $\Omega$                                                                                         |
++--------------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+| ptap1        | P-well (substrate) difussion conntact resistance  of 262 $\Omega$                                                                             |
++--------------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+| cap_cmim     | Metal-Insulator-Metal capacitor                                                                                                               |
++--------------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+| cap_cpara    | Parasitic capacitor symbol attached to a model (used only for parasitics extraction)                                                          |
++--------------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+| cap_rfcmim   | Metal-Insulator-Metal capacitor model for RF                                                                                                  |
++--------------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+| dantenna     | Antenna diode symbol. This diode is used to protect against low voltage. The anode of the diode should be connected to the ptap1 resistor.    |
++--------------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+| dpantenna    | Antenna diode symbol. This diode is used to protect against high voltage. The cathode of the diode should be connected to the ntap1 resistor. |
++--------------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+| pnpMPA       | pnp HBT used for band-gap reference circuit                                                                                                   |
++--------------+-----------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 XSCHEM Testcases
