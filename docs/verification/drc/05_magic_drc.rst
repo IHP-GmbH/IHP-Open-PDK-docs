@@ -1,4 +1,4 @@
-Magic DRC
+Magic-DRC
 =========
 
 TODO: verification/drc/magic
