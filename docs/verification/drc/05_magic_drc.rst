@@ -1,4 +1,4 @@
-Verification Using Magic
-========================
+Magic DRC
+=========
 
 TODO: verification/drc/magic
