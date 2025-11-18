@@ -2,6 +2,7 @@ Simulation Using Ngspice
 ========================
 
 .. _ngspice_configuration_lbl:
+
 Ngspice Installation
 --------------------
 
@@ -10,6 +11,7 @@ The tool is well documented and the user manual can be found `here <https://ngsp
 In order to install Ngspice the recomended method is the following:
 
 .. code-block:: bash
+
     git clone https://git.code.sf.net/p/ngspice/ngspice ngspice-ngspice
     cd ngspice-ngspice
     ./autogen.sh
@@ -26,6 +28,7 @@ Ngspice Basic Test Cases
 A basic spice level netlist, which simulates the operating point of a npn13G2 HBT transistor, is shown below:
 
 .. code-block:: spicelang
+
     **.subckt dc_hbt_13g2
     Vce net3 GND 1.2
     I0 GND net1 1u
@@ -48,11 +51,13 @@ A basic spice level netlist, which simulates the operating point of a npn13G2 HB
 The netlist can be saved as `dc_hbt_13g2.spice` and simulated calling the following command:
 
 .. code-block:: bash
+
   ngspice -b dc_hbt_13g2.spice
 
 The user should get the following output:
 
 .. code-block:: bash
+
   Note: No compatibility mode selected!
 
 
@@ -67,6 +72,7 @@ The user should get the following output:
   Note: Simulation executed from .control section 
 
 .. code-block:: bash
+
   .lib cornerMOSlv.lib mos_tt
   Vgs net1 GND 0.4
   Vds net3 GND 1.0
@@ -85,11 +91,13 @@ The user should get the following output:
 The netlist can be saved as `mostest.spice` and simulated calling the following command:
 
 .. code-block:: bash
+
   ngspice -b mostest.spice
 
 The following output should be observed:
 
 .. code-block:: bash
+
   Note: No compatibility mode selected!
 
   Warning: m=xx on .subckt line will override multiplier m hierarchy!
