@@ -1,23 +1,22 @@
 IHP 130nm BiCMOS Open Source PDK Documentation
 ==============================================
 
-.. image:: https://img.shields.io/github/license/IHP-GmbH/IHP-Open-PDK
+.. image:: https://img.shields.io/github/license/IHP-GmbH/IHP-Open-PDK-docs
    :alt: GitHub license - Apache 2.0
-   :target: https://github.com/IHP-GmbH/IHP-Open-PDK
+   :target: https://github.com/IHP-GmbH/IHP-Open-PDK-docs
 
 .. image:: https://readthedocs.org/projects/ihp-open-pdk-docs/badge/?version=latest&style=flat
    :alt: ReadTheDocs Badge - https://ihp-open-pdk-docs.readthedocs.io
    :target: https://ihp-open-pdk-docs.readthedocs.io
 
-IHP Open PDK project goal is to provide a fully open source Process Design Kit and related data, which can be used to create manufacturable designs at IHP's
-facility.
-
-.. The IHP 130nm BiCMOS documentation can be found at <>.
+The goal of the `IHP-Open-PDK <https://github.com/IHP-GmbH/IHP-Open-PDK/>`_ project is to provide a fully open source Process Design Kit and related data which can
+be used to create manufacturable designs at IHP's facility. In addition, the goal of this `IHP-Open-PDK-docs` project is to provide comprehensive in-detail
+documentation for the before-mentioned PDK, under the same free software license: `Apache License, Version 2.0 <https://www.apache.org/licenses/LICENSE-2.0>`_
 
 .. image:: docs/_static/IHP_logo.png
    :align: center
-   :alt: IHP Logo Image.
-   :target: https://github.com/IHP-GmbH/IHP-Open-PDK/
+   :alt: IHP Logo Image
+   :target: https://github.com/IHP-GmbH/IHP-Open-PDK-docs/
    :width: 50%
 
 .. |current-status| replace:: **Experimental Preview**
@@ -28,13 +27,18 @@ Current Status: |current-status|
 
 .. current_status_text
 
-⚠ **Warning**: IHP Open PDK is currently treating the content as an **experimental preview** / **alpha release**.
+.. warning::
+
+    This documentation is **work in progress**.
+    The content is currently provided as an **experimental preview** / **alpha release**.
 
 While the SG13G2 process node and the PDK from which this open source release was derived have been 
 used to create many designs that have been successfully manufactured in significant quantities, 
 the open source PDK is not intended to be used for production at this moment.
 
-The PDK will be tagged with a production version when ready to do production design.
+.. note::
+
+    The PDK will be tagged with a production version when ready to do production design.
 
 
 SG13G2 Process Node
@@ -61,7 +65,8 @@ On Ubuntu, simply
 -----------------
 
 .. code:: bash
-  apt install -y build-essential virtualenv python3
+
+    apt install -y build-essential virtualenv python3
 
 
 Building the Documentation
@@ -111,7 +116,9 @@ License
 
 The IHP Open PDK is released under the `Apache 2.0 license <https://www.apache.org/licenses/LICENSE-2.0>`_.
 
-The copyright details are::
+The copyright details are:
+
+.. code-block:: none
     
     Copyright 2024 IHP PDK Authors
 
