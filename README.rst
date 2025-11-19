@@ -82,7 +82,7 @@ To build documentation locally, you could use the following commands:
    # Build the documentation
    make docs
 
-   # Launch HTML Documentation in Web Browser
+   # Launch HTML documentation in web browser
    make display
 
 
