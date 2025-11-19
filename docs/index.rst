@@ -3,7 +3,7 @@
     :alt: IHP Logo Image
     :width: 125
 
-Welcome to IHP 130nm BiCMOS Open Source PDK documentation!
+Welcome to IHP 130nm BiCMOS Open Source PDK Documentation!
 ==========================================================
 
 .. include:: common.inc
