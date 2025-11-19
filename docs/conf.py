@@ -30,7 +30,7 @@ import os
 import re
 
 # -- Project information -----------------------------------------------------
-project = "IHP 130nm BiCMOS Open Source PDK"
+project = "IHP 130nm BiCMOS Open Source PDK Documentation"
 copyright = "2024, IHP PDK Authors"
 author = "IHP PDK Authors"
 
@@ -182,7 +182,7 @@ html_static_path = ["_static"]
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    ("IHP-Open-PDK", "130nm BiCMOS Open Source PDK Documentation", [author], 1)
+    ("IHP-Open-PDK-docs", "130nm BiCMOS Open Source PDK Documentation", [author], 1)
 ]
 
 latex_elements = {
