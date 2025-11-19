@@ -9,7 +9,7 @@ In order to contribute to the PDK the following procedure is recommended:
 #. Create your own GitHub account (only if you do not have one already).
 #. Make a fork of our repository (be sure that not only main branch is forked).
 #. Clone the PDK from your own account.
-#. Checkout to the development branch ``git checkout latest``
+#. Checkout to the development branch ``git checkout --track origin/latest``
 #. Create a new feature branch ``git branch feature_name``
 #. Do your regular development and commit the changes with `-s` flag ``git commit -s -m "your message"``
 #. Checkout to the development branch ``git checkout latest``
