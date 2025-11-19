@@ -42,7 +42,9 @@ While the SG13G2 process node and the PDK from which this open source release wa
 used to create many designs that have been successfully manufactured in significant quantities, 
 the open source PDK is not intended to be used for production at this moment.
 
-The PDK will be tagged with a production version when ready to do production design.
+.. note::
+
+    The PDK will be tagged with a production version when ready to do production design.
 
 
 SG13G2 Process Node
