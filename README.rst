@@ -1,4 +1,4 @@
-IHP 130nm BiCMOS Open Source PDK documentation
+IHP 130nm BiCMOS Open Source PDK Documentation
 ==============================================
 
 .. image:: https://img.shields.io/github/license/IHP-GmbH/IHP-Open-PDK
