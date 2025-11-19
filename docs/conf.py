@@ -125,7 +125,7 @@ pygments_style = None
 # a colon. For example, index:Introduction for a section called Introduction
 # that appears in document index.rst. Useful for avoiding ambiguity when the
 # same section heading appears in different documents.
-# autosectionlabel_prefix_document = True
+autosectionlabel_prefix_document = True
 
 # -- Options for HTML output -------------------------------------------------
 
