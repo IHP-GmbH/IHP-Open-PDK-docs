@@ -30,7 +30,7 @@ import os
 import re
 
 # -- Project information -----------------------------------------------------
-# Unfortunately, the Sphinx documentation builder automatically appends 'documentation':
+# Unfortunately, the Sphinx documentation builder 'singlehtml' automatically appends 'documentation':
 project = "IHP 130nm BiCMOS Open Source PDK Documentation"
 # Multiline copyright statements are not supported:
 copyright = "2024, IHP PDK Authors"
