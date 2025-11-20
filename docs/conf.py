@@ -129,8 +129,6 @@ pygments_style = None
 # same section heading appears in different documents.
 autosectionlabel_prefix_document = True
 
-# -- Options for HTML output -------------------------------------------------
-
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
@@ -138,6 +136,7 @@ autosectionlabel_prefix_document = True
 html_theme = "sphinx_rtd_theme"
 
 html_logo = "_static/IHP_logo.png"
+html_favicon = "_static/IHP_logo.ico"
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
