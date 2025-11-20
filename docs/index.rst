@@ -7,8 +7,8 @@
 .. |current-status| replace:: **Experimental Preview**
 
 
-Welcome!
-========
+IHP 130nm BiCMOS Open Source PDK Documentation
+==============================================
 
 .. image:: https://img.shields.io/github/license/IHP-GmbH/IHP-Open-PDK-docs
    :alt: GitHub license - Apache 2.0
@@ -19,8 +19,9 @@ Welcome!
    :target: https://ihp-open-pdk-docs.readthedocs.io
 
 The goal of the `IHP-Open-PDK <https://github.com/IHP-GmbH/IHP-Open-PDK/>`_ project is to provide a fully open source Process Design Kit and related data which can
-be used to create manufacturable designs at IHP's facility. In addition, the goal of this `IHP-Open-PDK-docs` project is to provide comprehensive in-detail
-documentation for the before-mentioned PDK, under the same free software license: `Apache License, Version 2.0 <https://www.apache.org/licenses/LICENSE-2.0>`_
+be used to create manufacturable designs at IHP's facility. In addition, the goal of this `IHP-Open-PDK-docs <https://github.com/IHP-GmbH/IHP-Open-PDK-docs/>`_
+project is to provide comprehensive in-detail documentation for the before-mentioned PDK, under the same free software license: `Apache License, Version 2.0
+<https://www.apache.org/licenses/LICENSE-2.0>`_
 
 According to the `Free Software Foundation (FSF) <https://www.fsf.org/>`_, the `Apache License, Version 2.0` is the best choice of software licenses *where a
 strong copyleft license cannot be used*. However, if you are interested in giving your project a strong `Copyleft <https://www.gnu.org/licenses/copyleft.en.html>`_
