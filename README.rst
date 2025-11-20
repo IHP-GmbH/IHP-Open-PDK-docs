@@ -114,7 +114,7 @@ Requests for more information about SG13G2, other standards and custom foundry t
 License
 =======
 
-The IHP Open PDK is released under the `Apache 2.0 license <https://www.apache.org/licenses/LICENSE-2.0>`_.
+The `IHP-Open-PDK-docs` project is released under the `Apache 2.0 license <https://www.apache.org/licenses/LICENSE-2.0>`_.
 
 The copyright details are:
 
