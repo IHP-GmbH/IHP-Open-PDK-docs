@@ -61,8 +61,8 @@ Prerequisites
 
 At a minimum:
 
--  Git 2.35+
--  Python 3.6+
+- Git 2.35+
+- Python 3.6+
 
 
 On Ubuntu, simply
@@ -70,7 +70,7 @@ On Ubuntu, simply
 
 .. code:: bash
 
-  apt install -y build-essential virtualenv python3
+    apt install -y build-essential virtualenv python3
 
 
 Building the Documentation
@@ -80,19 +80,19 @@ To build documentation locally, you could use the following commands:
 
 .. code:: bash
 
-   # Download the repository, change into its docs/ folder
-   git clone https://github.com/IHP-GmbH/IHP-Open-PDK-docs
-   cd IHP-Open-PDK-docs/docs/
+    # Download the repository, change into its docs/ folder
+    git clone https://github.com/IHP-GmbH/IHP-Open-PDK-docs
+    cd IHP-Open-PDK-docs/docs/
 
-   # Create a Python virtual environment and install requirements into it.
-   virtualenv docs_env --python=python3
-   source docs_env/bin/activate
+    # Create a Python virtual environment and install requirements into it.
+    virtualenv docs_env --python=python3
+    source docs_env/bin/activate
 
-   # Build the documentation
-   make docs
+    # Build the documentation
+    make docs
 
-   # Launch HTML documentation in web browser
-   make display
+    # Launch HTML documentation in web browser
+    make display
 
 
 About IHP
@@ -140,7 +140,7 @@ The copyright details are:
 
 
 Table of Content Tree
-======================
+=====================
 
 .. toctree::
     
