@@ -1,5 +1,5 @@
-Installation for LVS
-====================
+Installation
+============
 
 To install the required Python packages, execute the following command in the LVS directory:
 
