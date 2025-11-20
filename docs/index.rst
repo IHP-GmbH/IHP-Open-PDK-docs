@@ -7,8 +7,8 @@
 .. |current-status| replace:: **Experimental Preview**
 
 
-IHP 130nm BiCMOS Open Source PDK Documentation
-==============================================
+Welcome!
+========
 
 .. image:: https://img.shields.io/github/license/IHP-GmbH/IHP-Open-PDK-docs
    :alt: GitHub license - Apache 2.0
