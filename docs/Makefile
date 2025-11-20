@@ -31,7 +31,7 @@ DOCS_DIR := $(dir $(lastword $(MAKEFILE_LIST)))
 SPHINXOPTS     ?= -j auto -w build.log
 SPHINXBUILD     = sphinx-build
 SPHINXAUTOBUILD = sphinx-autobuild
-SPHINXPROJ      = IHP-Open-Source-PDK
+SPHINXPROJ      = IHP-Open-PDK-docs
 SOURCEDIR       = $(DOCS_DIR)
 BUILDDIR        = $(DOCS_DIR)/_build
 
