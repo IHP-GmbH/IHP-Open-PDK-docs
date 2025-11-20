@@ -28,15 +28,13 @@ License you will be happy to hear that the `Apache License, Version 2.0` is `con
 with the `GNU General Public License, Version 3 (GPLv3) <https://www.gnu.org/licenses/gpl-3.0.en.html>`_.
 
 
-Current Status: |current-status|
-================================
-
-.. current_status_text
+Current Status
+==============
 
 .. warning::
 
     This documentation is **work in progress**.
-    The content is currently provided as an **experimental preview** / **alpha release**.
+    The content is currently provided as: |current-status|
 
 While the SG13G2 process node and the PDK from which this open source release was derived have been 
 used to create many designs that have been successfully manufactured in significant quantities, 
