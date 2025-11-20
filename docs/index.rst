@@ -33,8 +33,8 @@ Current Status
 
 .. warning::
 
-    This documentation is **work in progress**.
-    The content is currently provided as: |current-status|
+    | This documentation is **work in progress**.
+    | The content is currently provided as: |current-status|
 
 While the SG13G2 process node and the PDK from which this open source release was derived have been 
 used to create many designs that have been successfully manufactured in significant quantities, 
