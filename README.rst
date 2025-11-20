@@ -27,8 +27,8 @@ Current Status
 
 .. warning::
 
-    This documentation is **work in progress**.
-    The content is currently provided as: |current-status|
+    | This documentation is **work in progress**.
+    | The content is currently provided as: |current-status|
 
 While the SG13G2 process node and the PDK from which this open source release was derived have been 
 used to create many designs that have been successfully manufactured in significant quantities, 
@@ -55,8 +55,8 @@ Prerequisites
 
 At a minimum:
 
--  Git 2.35+
--  Python 3.6+
+- Git 2.35+
+- Python 3.6+
 
 
 On Ubuntu, simply
@@ -74,19 +74,19 @@ To build documentation locally, you could use the following commands:
 
 .. code:: bash
 
-   # Download the repository, change into its docs/ folder
-   git clone https://github.com/IHP-GmbH/IHP-Open-PDK-docs
-   cd IHP-Open-PDK-docs/docs/
+    # Download the repository, change into its docs/ folder
+    git clone https://github.com/IHP-GmbH/IHP-Open-PDK-docs
+    cd IHP-Open-PDK-docs/docs/
 
-   # Create a Python virtual environment and install requirements into it.
-   virtualenv docs_env --python=python3
-   . docs_env/bin/activate
+    # Create a Python virtual environment and install requirements into it.
+    virtualenv docs_env --python=python3
+    source docs_env/bin/activate
 
-   # Build the documentation
-   make docs
+    # Build the documentation
+    make docs
 
-   # Launch HTML documentation in web browser
-   make display
+    # Launch HTML documentation in web browser
+    make display
 
 
 About IHP
