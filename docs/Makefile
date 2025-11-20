@@ -38,7 +38,7 @@ BUILDDIR        = $(DOCS_DIR)/_build
 
 .DEFAULT_GOAL := docs
 
-docs: clean setup preprocess build message
+docs: clean setup preprocess build singlehtml message
 
 #========================
 # ----- BUILD DOCS ------
@@ -79,4 +79,9 @@ message:
 .ONESHELL:
 display:
 	@cd _build/html
+	@xdg-open index.html
+
+.ONESHELL:
+display-singlehtml:
+	@cd _build/singlehtml
 	@xdg-open index.html
