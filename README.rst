@@ -22,15 +22,13 @@ documentation for the before-mentioned PDK, under the same free software license
 .. |current-status| replace:: **Experimental Preview**
 
 
-Current Status: |current-status|
-================================
-
-.. current_status_text
+Current Status
+==============
 
 .. warning::
 
     This documentation is **work in progress**.
-    The content is currently provided as an **experimental preview** / **alpha release**.
+    The content is currently provided as: |current-status|
 
 While the SG13G2 process node and the PDK from which this open source release was derived have been 
 used to create many designs that have been successfully manufactured in significant quantities, 
