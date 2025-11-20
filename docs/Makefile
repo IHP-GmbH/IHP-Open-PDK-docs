@@ -38,7 +38,7 @@ BUILDDIR        = $(DOCS_DIR)/_build
 
 .DEFAULT_GOAL := docs
 
-docs: clean setup preprocess build singlehtml message
+docs: clean setup preprocess singlehtml build message
 
 #========================
 # ----- BUILD DOCS ------
