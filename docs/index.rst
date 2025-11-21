@@ -121,7 +121,9 @@ License
 
 The `IHP-Open-PDK-docs` project is released under the `Apache License, Version 2.0 <https://www.apache.org/licenses/LICENSE-2.0>`_.
 
-The copyright details are:
+
+Copyright Notice
+================
 
 .. code-block:: none
 
