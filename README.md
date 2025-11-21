@@ -57,7 +57,7 @@ To build documentation locally, you could use the following commands:
         cd IHP-Open-PDK-docs/docs/
 
         # Create a Python virtual environment and install requirements into it.
-        virtualenv docs_env --python=python3
+        virtualenv docs_env/ --python=python3
         source docs_env/bin/activate
 
         # Build the documentation
