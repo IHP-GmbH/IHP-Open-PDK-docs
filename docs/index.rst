@@ -29,6 +29,17 @@ License you will be happy to hear that the `Apache License, Version 2.0` is `con
 with the `GNU General Public License, Version 3 (GPLv3) <https://www.gnu.org/licenses/gpl-3.0.en.html>`_.
 
 
+SG13G2 Process Node
+===================
+
+SG13G2 is a high performance BiCMOS technology with a 0.13 μm CMOS process. It contains bipolar
+devices based on SiGe:C npn-HBTs with up to 350 GHz transient frequency (f_T) and 450 GHz oscillation
+frequency (f_{max}). This process provides 2 gate oxides: A thin gate oxide for the 1.2 V digital logic and a thick
+oxide for a 3.3 V supply voltage. For both modules NMOS, PMOS and isolated NMOS transistors are
+offered. Further passive components like poly silicon resistors and MIM capacitors are available. The
+backend option offers 5 thin metal layers, two thick metal layers (2 and 3 μm thick) and a MIM layer.
+
+
 Current Status
 ==============
 
@@ -44,17 +55,6 @@ the open source PDK is not intended to be used for production at this moment.
 .. note::
 
     The PDK will be tagged with a production version when ready to do production design.
-
-
-SG13G2 Process Node
-===================
-
-SG13G2 is a high performance BiCMOS technology with a 0.13 μm CMOS process. It contains bipolar
-devices based on SiGe:C npn-HBTs with up to 350 GHz transient frequency (f_T) and 450 GHz oscillation
-frequency (f_{max}). This process provides 2 gate oxides: A thin gate oxide for the 1.2 V digital logic and a thick
-oxide for a 3.3 V supply voltage. For both modules NMOS, PMOS and isolated NMOS transistors are
-offered. Further passive components like poly silicon resistors and MIM capacitors are available. The
-backend option offers 5 thin metal layers, two thick metal layers (2 and 3 μm thick) and a MIM layer.
 
 
 Prerequisites
