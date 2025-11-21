@@ -74,6 +74,24 @@ On Ubuntu, simply
     apt install -y build-essential virtualenv python3
 
 
+Get the Sources
+===============
+
+Run ``git clone`` to get the sources:
+
+.. code:: bash
+
+    # Download the repository, change into root of project
+    git clone https://github.com/IHP-GmbH/IHP-Open-PDK-docs
+    cd IHP-Open-PDK-docs/
+
+    # See copying information
+    less COPYING
+
+    # Display README to get started
+    less README.md
+
+
 Building the Documentation
 ==========================
 
@@ -86,16 +104,15 @@ To build documentation locally, use the following commands:
 
 .. code:: bash
 
-    # Download the repository, change into its docs/ folder
-    git clone https://github.com/IHP-GmbH/IHP-Open-PDK-docs
-    cd IHP-Open-PDK-docs/docs/
+    # Change into project's docs/ folder
+    cd docs/
 
-    # Create a Python virtual environment and install requirements into it.
+    # Create a Python virtual environment and install requirements into it
     virtualenv docs_env/ --python=python3
     source docs_env/bin/activate
 
     # Build the documentation
-    make docs
+    make
 
     # Launch HTML documentation in web browser
     make display
