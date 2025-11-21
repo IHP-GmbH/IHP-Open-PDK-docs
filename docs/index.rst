@@ -117,6 +117,8 @@ To build documentation locally, use the following commands:
     # Launch HTML documentation in web browser
     make display
 
+To leave the virtual environment, type ``exit`` to close the terminal.
+
 
 About IHP
 =========
