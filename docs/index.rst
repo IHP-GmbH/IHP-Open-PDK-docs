@@ -77,7 +77,7 @@ On Ubuntu, simply
 Building the Documentation
 ==========================
 
-To build documentation locally, you could use the following commands:
+To build documentation locally, use the following commands:
 
 .. code:: bash
 
@@ -94,6 +94,11 @@ To build documentation locally, you could use the following commands:
 
     # Launch HTML documentation in web browser
     make display
+
+.. note::
+
+    The build is made of files in the ``docs/`` folder, files located in the root of the project are not accessible from the generated table of content!
+    (e.g.: `../README.md` and `../COPYING`)
 
 
 About IHP
