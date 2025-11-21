@@ -8,6 +8,11 @@ be used to create manufacturable designs at IHP's facility. In addition, the goa
 project is to provide comprehensive in-detail documentation for the before-mentioned PDK, under the same free software license:
 [Apache License, Version 2.0](<https://www.apache.org/licenses/LICENSE-2.0>)
 
+According to the [Free Software Foundation (FSF)](<https://www.fsf.org/>), the `Apache License, Version 2.0` is the best choice of software licenses *where a
+strong copyleft license cannot be used*. However, if you are interested in giving your project a strong [Copyleft](<https://www.gnu.org/licenses/copyleft.en.html>)
+License you will be happy to hear that the `Apache License, Version 2.0` is [considered to be compatible](<https://www.gnu.org/licenses/license-list.html#apache2>)
+with the [GNU General Public License, Version 3 (GPLv3)](<https://www.gnu.org/licenses/gpl-3.0.en.html>).
+
 
 Current Status
 ==============
@@ -64,7 +69,10 @@ Run `git clone` to get the sources:
 
 
 Building the Documentation
---------------------------
+==========================
+
+**Note**: The build is made of files in the `docs/` folder, files located in the root of the project are not accessible from the generated table of content!
+(e.g.: `./README.md` and `./COPYING`)
 
 To build documentation locally, use the following commands:
 
@@ -108,8 +116,7 @@ Requests for more information about SG13G2, other standards and custom foundry t
 License
 =======
 
-The *IHP-Open-PDK-docs* project is released under the [Apache License, Version 2.0](<https://www.apache.org/licenses/LICENSE-2.0>).  
-See [COPYING](./COPYING) located in the root of this project.  
+The *IHP-Open-PDK-docs* project is released under the [Apache License, Version 2.0](<https://www.apache.org/licenses/LICENSE-2.0>).
 
 
 Copyright Notice
