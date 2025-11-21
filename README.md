@@ -1,3 +1,5 @@
+![IHP_logo_small](./docs/_static/IHP_logo_small.png)
+
 IHP 130nm BiCMOS Open Source PDK Documentation
 ==============================================
 
