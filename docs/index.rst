@@ -118,7 +118,8 @@ space, Industry 4.0 or Agriculture 4.0 and mobility.
 Contacting IHP
 --------------
 
-Requests for more information about SG13G2, other standards and custom foundry technologies can be emailed to \<openpdk@ihp-microelectronics.com\>.
+Requests for more information about SG13G2, other standards and custom foundry technologies can be emailed to
+`openpdk@ihp-micoelectronis.com <mailto:openpdk@ihp-microelectronics.com>`_.
 
 
 License
