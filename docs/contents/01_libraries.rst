@@ -3,7 +3,7 @@ Reference Libraries
 
 Reference libraries in the **IHP-Open-PDK** are named using the following scheme:
 
-  `<Process name>` _ `<Library Type Abbreviation>` _ `<Library Name>`
+  `<Process name>`\_\ `<Library Type Abbreviation>`\_\ `<Library Name>`
 
 All sections are **lower case** and separated by an **underscore**. The sections are;
 
