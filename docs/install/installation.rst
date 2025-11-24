@@ -5,9 +5,9 @@ Requirements
 ------------
 
 Since our PDK is developed on `Ubuntu Linux LTS` it is recommended to use that distribution. To get the PDK one will need a git client. Also in order to compile
-the ``Verilog-A`` models for the Ngspice simulator the `openvaf <https://openvaf.semimod.de/download/>`_ tool will be necessary. In case the user would like to use
-the Xyce simulator the ``Verilog-A`` models have to be compiled using the `ADMS <https://github.com/Qucs/ADMS>`_ tool. The list of supported tools is listed
-`here <https://github.com/IHP-GmbH/IHP-Open-PDK/blob/main/README.md>`_ and the tools should be installed by the user following the installation guides provided by
+the ``Verilog-A`` models for the Ngspice simulator the `openvaf <https://openvaf.semimod.de/download/>`__ tool will be necessary. In case the user would like to use
+the Xyce simulator the ``Verilog-A`` models have to be compiled using the `ADMS <https://github.com/Qucs/ADMS>`__ tool. The list of supported tools is listed
+`here <https://github.com/IHP-GmbH/IHP-Open-PDK/blob/main/README.md>`__ and the tools should be installed by the user following the installation guides provided by
 the developers. It is recommended to use up to date tool versions.
 
 
