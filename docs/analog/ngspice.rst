@@ -6,8 +6,8 @@ Simulation Using Ngspice
 Ngspice Installation
 --------------------
 
-Ngspice is an open source simulator `hosted at SourceForge <https://sourceforge.net/p/ngspice/ngspice/ci/master/tree/>`_.
-The tool is well documented and the user manual can be found `here <https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml>`_.
+Ngspice is an open source simulator `hosted at SourceForge <https://sourceforge.net/p/ngspice/ngspice/ci/master/tree/>`__.
+The tool is well documented and the user manual can be found `here <https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml>`__.
 In order to install Ngspice the recomended method is the following:
 
 .. code-block:: bash
