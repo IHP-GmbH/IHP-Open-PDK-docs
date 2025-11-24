@@ -7,7 +7,7 @@ Xyce Installation on Ubuntu 22.04 LTS
 =====================================
 
 Xyce installation is demanding due to the specific version isssues and multiple dependencies.
-Apart the bulid requirements listed in the `building guide <https://xyce.sandia.gov/documentation-tutorials/building-guide/>`_ the key parts for insallation are:
+Apart the bulid requirements listed in the `building guide <https://xyce.sandia.gov/documentation-tutorials/building-guide/>`__ the key parts for insallation are:
 
 #. installation of trilinos 
 #. installation of ADMS
@@ -95,7 +95,7 @@ ADMS Installation
 -----------------
 
 After successfull installation one can procees installing ADMS. The installation process 
-is strightforward and well described on the `ASMS github repository <https://github.com/Qucs/ADMS>`_.
+is strightforward and well described on the `ASMS github repository <https://github.com/Qucs/ADMS>`__.
 Use ``cmake`` based build
 
 
