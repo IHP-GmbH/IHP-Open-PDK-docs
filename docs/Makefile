@@ -79,10 +79,10 @@ message:
 
 .ONESHELL:
 display:
-	@cd _build/html
+	@cd $(BUILDDIR)/html
 	xdg-open index.html 2>/dev/null
 
 .ONESHELL:
 display-singlehtml:
-	@cd _build/singlehtml
+	@cd $(BUILDDIR)/singlehtml
 	xdg-open index.html 2>/dev/null
