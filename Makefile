@@ -42,8 +42,10 @@ authors:
 			)\
 		)\
 		&& echo "Copyright (c) $${years[@]}  $${i/\§/\+}  " | sed -r -e's/#/ /g;' >> AUTHORS.md\
-	; done;
-
+	; done\
+	&& rm -rf candidates.txt\
+	&& rm -rf all-entries.txt\
+	;
 
 clean:
 	-rm -rf AUTHORS.md
