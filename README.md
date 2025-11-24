@@ -81,10 +81,10 @@ Basically, run `git clone` to get the sources, change into the newly created pro
         git clone https://github.com/IHP-GmbH/IHP-Open-PDK-docs
         cd IHP-Open-PDK-docs/
 
-        # Verify the License
-        less Copying
+        # See copying information (Type `q' to quit)
+        less COPYING
 
-        # Display README to get started
+        # Display README to get started (Type `q' to quit)
         less README.md
 
 
@@ -93,8 +93,17 @@ Building the Documentation
 
 To build the documentation for the *IHP-Open-PDK-docs* project, type:
 
+        # Generate simple documentation
         markdown README.md > README.html
         xdg-open README.html
+
+        # Display list of contributors, reconstructed from `git log` output (might be incomplete)
+        make
+
+To clean up, type:
+
+	# Clean-up
+	make clean
 
 
 Building the Documentation for the *IHP-Open-PDK* Project
