@@ -41,7 +41,6 @@ authors:
 					-\
 			)\
 		)\
-		&& echo "Copyright (c) $${years[@]}  $${i/§/\+}  " | sed -r -e's/#/ /g;'\
 		&& echo "Copyright (c) $${years[@]}  $${i/\§/\+}  " | sed -r -e's/#/ /g;' >> AUTHORS.md\
 	; done;
 
