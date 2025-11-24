@@ -6,9 +6,9 @@ Schematic Capture using XSCHEM
 XSCHEM Installation and Configuration
 -------------------------------------
 
-XSCHEM is an open source schematic capture tool `hosted on SourceForge <https://xschem.sourceforge.io/stefan/index.html>`_.
+XSCHEM is an open source schematic capture tool `hosted on SourceForge <https://xschem.sourceforge.io/stefan/index.html>`__.
 It is capable to stream a customizable netlist, to interoperate with simulators and to post process simulation results. If used with IHP-Open-PDK it is strongly
-recommended to install XSCHEM from sources using the latest release `hosted on GitHub <https://github.com/StefanSchippers/xschem>`_.
+recommended to install XSCHEM from sources using the latest release `hosted on GitHub <https://github.com/StefanSchippers/xschem>`__.
 
 After successful installation you can call the following command in the ``$PDK_ROOT/$PDK/libs.tech/xschem/`` directory:
 
