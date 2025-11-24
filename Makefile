@@ -14,3 +14,17 @@
 #   See the License for the specific language governing permissions and
 #   limitations under the License.
 
+SHELL=/bin/sh
+
+.SUFFIXES:
+
+.DEFAULT_GOAL: authors
+
+authors:
+	echo "IHP-Open-PDK-docs -- Provide documentation for the IHP-Open-PDK project" > AUTHORS.md
+	echo >> AUTHORS.md
+	git log --date=format:'%Y' --pretty=format:'Copyright (c) %ad  %an <%ae>' | uniq >> AUTHORS.md
+
+clean:
+	-rm -rf AUTHORS.md
+
