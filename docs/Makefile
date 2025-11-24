@@ -80,9 +80,9 @@ message:
 .ONESHELL:
 display:
 	@cd _build/html
-	xdg-open index.html
+	xdg-open index.html 2>/dev/null
 
 .ONESHELL:
 display-singlehtml:
 	@cd _build/singlehtml
-	xdg-open index.html
+	xdg-open index.html 2>/dev/null
