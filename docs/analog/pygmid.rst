@@ -10,7 +10,7 @@ Pygmid is a Python 3 version of the *gm/ID starter kit* by Prof. Boris Murmann o
 The package also offers some scripts from the Paul Jesper's and Boris Murmann's book entitled:
 *"Systematic Design of Analog CMOS Circuits: Using Pre-Computed Lookup Tables"*
 
-To be used with IHP-Open-PDK is its latest release `hosted on GitHub <https://github.com/dreoilin/pygmid>`_.
+To be used with IHP-Open-PDK is its latest release `hosted on GitHub <https://github.com/dreoilin/pygmid>`__.
 
 After successful cloning of the repository you can execute:
 
