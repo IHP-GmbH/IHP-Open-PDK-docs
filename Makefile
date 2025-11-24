@@ -1,6 +1,4 @@
-#   IHP-Open-PDK-docs -- Provide documentation for the IHP-Open-PDK project
-#
-#   Copyright (c) 2025  K. Mertens <mertens@ihp-microelectronics.com>
+#   Copyright 2025 K. Mertens <mertens@ihp-microelectronics.com>
 #
 #   Licensed under the Apache License, Version 2.0 (the "License");
 #   you may not use this file except in compliance with the License.
@@ -21,6 +19,22 @@ SHELL=/bin/bash
 .DEFAULT_GOAL: authors
 
 .PHOMY: authors
+
+# tools
+GIT=git
+SED=sed
+SED_FLAGS=-E
+SORT=sort
+UNIQ=uniq
+ECHO=echo
+RM=rm
+RM_FLAGS=-f
+CAT=cat
+
+# tool check
+TOOLS=$(GIT) $(SED) $(SORT) $(UNIQ) $(ECHO) $(RM) $(CAT)
+CHECK=$(if $(strip $(shell command -v $(tool))),,$(error no such tool - $(tool)))
+$(foreach tool,$(TOOLS),$(CHECK))
 
 
 authors:
