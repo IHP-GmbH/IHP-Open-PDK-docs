@@ -18,8 +18,6 @@ SHELL=/bin/bash
 
 .DEFAULT_GOAL: authors
 
-.PHOMY: authors
-
 # tools
 GIT=git
 SED=sed
@@ -36,32 +34,32 @@ TOOLS=$(GIT) $(SED) $(SORT) $(UNIQ) $(ECHO) $(RM) $(CAT)
 CHECK=$(if $(strip $(shell command -v $(tool))),,$(error no such tool - $(tool)))
 $(foreach tool,$(TOOLS),$(CHECK))
 
-
+.PHOMY: authors
 authors:
-	echo > AUTHORS.md\
-	&& git log --date=format:'%Y' --pretty=format:'%ad##%an#<%ae>' | sed -r -e's, ,#,g;' -e's,\+,§,g;' | sort | uniq > all-entries.txt\
-	&& git log --pretty=format:'%an#<%ae>' | sed -r -e's/ /#/g;' -e's,\+,§,g;' | sort | uniq > candidates.txt\
-	&& candidates=($$(cat candidates.txt))\
+	$(ECHO) > AUTHORS.md\
+	&& $(GIT) log --date=format:'%Y' --pretty=format:'%ad##%an#<%ae>' | $(SED) $(SED_FLAGS) -e's, ,#,g;' -e's,\+,§,g;' | $(SORT) | $(UNIQ) > all-entries.txt\
+	&& $(GIT) log --pretty=format:'%an#<%ae>' | $(SED) $(SED_FLAGS) -e's/ /#/g;' -e's,\+,§,g;' | $(SORT) | $(UNIQ) > candidates.txt\
+	&& candidates=($$($(CAT) candidates.txt))\
 	&& for i in $${candidates[@]}\
 	; do\
 		years=(\
 			$$(\
-				cat all-entries.txt\
-				| sed -r -e"/$${i}/!d;"\
-				| sed -r -e's,^(....)(.*$$),\1,;'\
-				| sort\
-				| sed -r -e's/$$/,/g;'\
-				| sed -r -e'$$s/,//g;'\
+				$(CAT) all-entries.txt\
+				| $(SED) $(SED_FLAGS) -e"/$${i}/!d;"\
+				| $(SED) $(SED_FLAGS) -e's,^(....)(.*$$),\1,;'\
+				| $(SORT)\
+				| $(SED) $(SED_FLAGS) -e's/$$/,/g;'\
+				| $(SED) $(SED_FLAGS) -e'$$s/,//g;'\
 					-\
 			)\
 		)\
-		&& echo "Copyright (c) $${years[@]}  $${i/\§/\+}  " | sed -r -e's/#/ /g;' >> AUTHORS.md\
+		&& $(ECHO) "Copyright (c) $${years[@]}  $${i/\§/\+}  " | $(SED) $(SED_FLAGS) -e's/#/ /g;' >> AUTHORS.md\
 	; done\
-	&& rm -rf candidates.txt\
-	&& rm -rf all-entries.txt\
+	&& $(RM) $(RM_FLAGS) -r candidates.txt\
+	&& $(RM) $(RM_FLAGS) -r all-entries.txt\
 	;
 
 clean:
-	-rm -rf AUTHORS.md
+	-$(RM) $(RM_FLAGS) -r AUTHORS.md
 
 
