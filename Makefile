@@ -28,34 +28,40 @@ ECHO=echo
 RM=rm
 RM_FLAGS=-f
 CAT=cat
+MKTEMP=mktemp
+MKTEMP_FLAGS=
 
 # tool check
-TOOLS=$(GIT) $(SED) $(SORT) $(UNIQ) $(ECHO) $(RM) $(CAT)
+TOOLS=$(GIT) $(SED) $(SORT) $(UNIQ) $(ECHO) $(RM) $(CAT) $(MKTEMP)
 CHECK=$(if $(strip $(shell command -v $(tool))),,$(error no such tool - $(tool)))
 $(foreach tool,$(TOOLS),$(CHECK))
 
 .PHOMY: authors
 authors: clean
-	@$(GIT) log --date=format:'%Y' --pretty=format:'%ad##%an#<%ae>' | $(SED) $(SED_FLAGS) -e's, ,#,g;' -e's,\+,§,g;' | $(SORT) | $(UNIQ) > all-entries.txt\
-	&& $(GIT) log --pretty=format:'%an#<%ae>' | $(SED) $(SED_FLAGS) -e's/ /#/g;' -e's,\+,§,g;' | $(SORT) | $(UNIQ) > candidates.txt\
-	&& candidates=($$($(CAT) candidates.txt))\
-	&& for i in $${candidates[@]}\
-	; do\
-		years=(\
-			$$(\
-				$(CAT) all-entries.txt\
-				| $(SED) $(SED_FLAGS) -e"/$${i}/!d;"\
-				| $(SED) $(SED_FLAGS) -e's,^(....)(.*$$),\1,;'\
-				| $(SORT)\
-				| $(SED) $(SED_FLAGS) -e's/$$/,/g;'\
-				| $(SED) $(SED_FLAGS) -e'$$s/,//g;'\
-					-\
-			)\
-		)\
-		&& $(ECHO) "Copyright (c) $${years[@]}  $${i/\§/\+}  " | $(SED) $(SED_FLAGS) -e's/#/ /g;' >> AUTHORS.md\
-	; done\
-	&& $(RM) $(RM_FLAGS) -r candidates.txt\
-	&& $(RM) $(RM_FLAGS) -r all-entries.txt\
+	@tmp1=`$(MKTEMP) $(MKTEMP_FLAGS) -q file.XXXXX` && {\
+		$(GIT) log --date=format:'%Y' --pretty=format:'%ad##%an#<%ae>' | $(SED) $(SED_FLAGS) -e's, ,#,g;' -e's,\+,§,g;' | $(SORT) | $(UNIQ) > $${tmp1}\
+		&& tmp2=`$(MKTEMP) $(MKTEMP_FLAGS) -q file.XXXXX` && {\
+			$(GIT) log --pretty=format:'%an#<%ae>' | $(SED) $(SED_FLAGS) -e's/ /#/g;' -e's,\+,§,g;' | $(SORT) | $(UNIQ) > $${tmp2}\
+			&& candidates=($$($(CAT) $${tmp2}))\
+			&& for i in $${candidates[@]}\
+			; do\
+				years=(\
+					$$(\
+						$(CAT) $${tmp1}\
+						| $(SED) $(SED_FLAGS) -e"/$${i}/!d;"\
+						| $(SED) $(SED_FLAGS) -e's,^(....)(.*$$),\1,;'\
+						| $(SORT)\
+						| $(SED) $(SED_FLAGS) -e's/$$/,/g;'\
+						| $(SED) $(SED_FLAGS) -e'$$s/,//g;'\
+							-\
+					)\
+				)\
+				&& $(ECHO) "Copyright (c) $${years[@]}  $${i/\§/\+}  " | $(SED) $(SED_FLAGS) -e's/#/ /g;' >> AUTHORS.md\
+			; done\
+			&& $(RM) $(RM_FLAGS) -r $${tmp2}\
+		;}\
+		&& $(RM) $(RM_FLAGS) -r $${tmp1}\
+	;}\
 	&& $(CAT) AUTHORS.md\
 	;
 
