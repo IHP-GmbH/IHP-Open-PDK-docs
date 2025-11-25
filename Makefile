@@ -63,7 +63,7 @@ authors:
 							-\
 					)\
 				)\
-				&& $(ECHO) "Copyright (c) $${years[@]}  $${i/\§/\+}  " | $(SED) $(SED_FLAGS) -e's/#/ /g;' >> $(NOTICES)\
+				&& $(ECHO) "Contribution made in $${years[@]} by $${i/\§/\+}  " | $(SED) $(SED_FLAGS) -e's/#/ /g;' >> $(NOTICES)\
 			; done\
 			&& $(RM) $(RM_FLAGS) -r $${tmp2}\
 		;}\
