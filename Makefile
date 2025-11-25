@@ -35,9 +35,8 @@ CHECK=$(if $(strip $(shell command -v $(tool))),,$(error no such tool - $(tool))
 $(foreach tool,$(TOOLS),$(CHECK))
 
 .PHOMY: authors
-authors:
-	$(ECHO) > AUTHORS.md\
-	&& $(GIT) log --date=format:'%Y' --pretty=format:'%ad##%an#<%ae>' | $(SED) $(SED_FLAGS) -e's, ,#,g;' -e's,\+,§,g;' | $(SORT) | $(UNIQ) > all-entries.txt\
+authors: clean
+	@$(GIT) log --date=format:'%Y' --pretty=format:'%ad##%an#<%ae>' | $(SED) $(SED_FLAGS) -e's, ,#,g;' -e's,\+,§,g;' | $(SORT) | $(UNIQ) > all-entries.txt\
 	&& $(GIT) log --pretty=format:'%an#<%ae>' | $(SED) $(SED_FLAGS) -e's/ /#/g;' -e's,\+,§,g;' | $(SORT) | $(UNIQ) > candidates.txt\
 	&& candidates=($$($(CAT) candidates.txt))\
 	&& for i in $${candidates[@]}\
@@ -57,9 +56,11 @@ authors:
 	; done\
 	&& $(RM) $(RM_FLAGS) -r candidates.txt\
 	&& $(RM) $(RM_FLAGS) -r all-entries.txt\
+	&& $(CAT) AUTHORS.md\
 	;
 
+.PHONY: clean
 clean:
-	-$(RM) $(RM_FLAGS) -r AUTHORS.md
+	-@$(RM) $(RM_FLAGS) -r AUTHORS.md
 
 
