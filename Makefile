@@ -36,8 +36,15 @@ TOOLS=$(GIT) $(SED) $(SORT) $(UNIQ) $(ECHO) $(RM) $(CAT) $(MKTEMP)
 CHECK=$(if $(strip $(shell command -v $(tool))),,$(error no such tool - $(tool)))
 $(foreach tool,$(TOOLS),$(CHECK))
 
+# files
+NOTICES=NOTICES.generated
+
+# goals
+.PHONY: all
+all: clean authors display
+
 .PHOMY: authors
-authors: clean
+authors:
 	@tmp1=`$(MKTEMP) $(MKTEMP_FLAGS) -q file.XXXXX` && {\
 		$(GIT) log --date=format:'%Y' --pretty=format:'%ad##%an#<%ae>' | $(SED) $(SED_FLAGS) -e's, ,#,g;' -e's,\+,§,g;' | $(SORT) | $(UNIQ) > $${tmp1}\
 		&& tmp2=`$(MKTEMP) $(MKTEMP_FLAGS) -q file.XXXXX` && {\
@@ -56,17 +63,19 @@ authors: clean
 							-\
 					)\
 				)\
-				&& $(ECHO) "Copyright (c) $${years[@]}  $${i/\§/\+}  " | $(SED) $(SED_FLAGS) -e's/#/ /g;' >> AUTHORS.md\
+				&& $(ECHO) "Copyright (c) $${years[@]}  $${i/\§/\+}  " | $(SED) $(SED_FLAGS) -e's/#/ /g;' >> $(NOTICES)\
 			; done\
 			&& $(RM) $(RM_FLAGS) -r $${tmp2}\
 		;}\
 		&& $(RM) $(RM_FLAGS) -r $${tmp1}\
-	;}\
-	&& $(CAT) AUTHORS.md\
-	;
+	;}
+
+.PHONY: display
+display:
+	@$(CAT) $(NOTICES)
 
 .PHONY: clean
 clean:
-	-@$(RM) $(RM_FLAGS) -r AUTHORS.md
+	-@$(RM) $(RM_FLAGS) -r $(NOTICES)
 
 
