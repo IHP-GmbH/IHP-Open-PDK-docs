@@ -46,9 +46,9 @@ all: clean authors display
 .PHOMY: authors
 authors:
 	@tmp1=`$(MKTEMP) $(MKTEMP_FLAGS) -q file.XXXXX` && {\
-		$(GIT) log --date=format:'%Y' --pretty=format:'%ad##%an#<%ae>' | $(SED) $(SED_FLAGS) -e's, ,#,g;' -e's,\+,§,g;' | $(SORT) | $(UNIQ) > $${tmp1}\
+		$(GIT) log --date=format:'%Y' --pretty=format:'%ad##%aN#<%aE>' | $(SED) $(SED_FLAGS) -e's, ,#,g;' -e's,\+,§,g;' | $(SORT) -uf > $${tmp1}\
 		&& tmp2=`$(MKTEMP) $(MKTEMP_FLAGS) -q file.XXXXX` && {\
-			$(GIT) log --pretty=format:'%an#<%ae>' | $(SED) $(SED_FLAGS) -e's/ /#/g;' -e's,\+,§,g;' | $(SORT) | $(UNIQ) > $${tmp2}\
+			$(GIT) log --pretty=format:'%aN#<%aE>' | $(SED) $(SED_FLAGS) -e's/ /#/g;' -e's,\+,§,g;' | $(SORT) -uf > $${tmp2}\
 			&& candidates=($$($(CAT) $${tmp2}))\
 			&& for i in $${candidates[@]}\
 			; do\
