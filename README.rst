@@ -16,7 +16,7 @@
 .. image:: docs/_static/IHP_logo.png
    :align: center
    :alt: IHP Logo Image
-   :width: 70%
+   :width: 50%
 
 
 IHP-Open-PDK-docs Project
