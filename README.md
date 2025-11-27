@@ -15,7 +15,7 @@
 -->
 
 
-<img src="docs/_static/IHP_logo.png" alt="IHP Logo Image" width="50%">
+<img src="docs/_static/IHP_logo.png" alt="IHP Logo Image" width="150px">
 
 
 IHP-Open-PDK-docs Project
