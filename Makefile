@@ -48,7 +48,7 @@ all: clean display-notices display
 .PHONY: display
 display: README.md
 	@$(MARKDOWN_PY) $< > ./README.html\
-	&& xdg-open ./README.html;
+	&& xdg-open ./README.html 2> /dev/null;
 
 .PHOMY: notices
 notices:
