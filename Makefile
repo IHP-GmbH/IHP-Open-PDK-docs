@@ -38,8 +38,9 @@ TOOLS=$(GIT) $(SED) $(SORT) $(UNIQ) $(ECHO) $(RM) $(CAT) $(MKTEMP) $(MARKDOWN_PY
 CHECK=$(if $(strip $(shell command -v $(tool))),,$(error no such tool - $(tool)))
 $(foreach tool,$(TOOLS),$(CHECK))
 
-# files
-NOTICES=NOTICES.generated
+# out files
+NOTICES=./NOTICES.generated
+README=./README.html
 
 # goals
 .PHONY: all
@@ -47,8 +48,8 @@ all: clean display-notices display
 
 .PHONY: display
 display: README.md
-	@$(MARKDOWN_PY) $< > ./README.html\
-	&& xdg-open ./README.html 2> /dev/null;
+	@$(MARKDOWN_PY) $< > $(README)\
+	&& xdg-open $(README) 2> /dev/null;
 
 .PHOMY: notices
 notices:
@@ -83,6 +84,6 @@ display-notices: notices
 
 .PHONY: clean
 clean:
-	-@$(RM) $(RM_FLAGS) -r $(NOTICES) ./README.html
+	-@$(RM) $(RM_FLAGS) -r $(NOTICES) $(README)
 
 
