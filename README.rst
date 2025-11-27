@@ -34,7 +34,7 @@ The `IHP-Open-PDK-docs` project ships in-detail documentation for the `IHP-Open-
 used to create manufacturable micro chip designs at IHP's facility.
 
 The documentation for the PDK is shipped *as a payload*, located in the `docs/` folder.
-If interested to read the documentation for the IHP-Open-PDK-docs project itself, you are right there: It is provided with this README.
+If interested to read the documentation for the `IHP-Open-PDK-docs` project itself, you are right there: It is provided with this README.
 
 
 Prerequisites
