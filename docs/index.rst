@@ -73,6 +73,9 @@ License of the *IHP-Open-PDK* Project
 
 The IHP Open Source PDK is released under the `Apache 2.0 license <LICENSE>`_.
 
+.. note:: For in-detail copyright information, check the source files for their license headers.
+
+
 The copyright details are:
 
 .. code:: none
