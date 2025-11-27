@@ -73,7 +73,9 @@ License
 
 The IHP Open Source PDK is released under the `Apache 2.0 license <LICENSE>`_.
 
-The copyright details are::
+The copyright details are:
+
+.. code:: none
 
     Copyright 2024 IHP PDK Authors
 
