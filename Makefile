@@ -44,7 +44,7 @@ README=./README.html
 
 # goals
 .PHONY: all
-all: clean display-notices display
+all: display-notices display
 
 .PHONY: display
 display: README.md
