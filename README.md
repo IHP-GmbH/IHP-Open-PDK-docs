@@ -91,14 +91,13 @@ Basically, run `git clone` to get the sources, change into the newly created pro
 Building the Documentation
 ==========================
 
-To build the documentation for the *IHP-Open-PDK-docs* project, type:
+To build and launch the documentation for the *IHP-Open-PDK-docs* project, type:
 
-        # Generate simple documentation
-        markdown README.md > README.html
-        xdg-open README.html
+        # Generate and launch simple HTML documentation
+	make display
 
-        # Display list of contributors, reconstructed from `git log` output (might be incomplete)
-        make
+        # Display a list of contributors, reconstructed from `git log` output (might be incomplete)
+        make display-notices
 
 To clean up, type:
 
