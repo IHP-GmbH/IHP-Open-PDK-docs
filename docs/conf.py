@@ -37,14 +37,19 @@ project = "IHP 130nm BiCMOS Open Source PDK Documentation"
 # What about external contributions to the IHP-Open-PDK-docs project??
 # Shouldn't it be `copyright = "2024, 2025 Authors of the IHP-Open-PDK-docs project"`?
 # Remind, the documentation sources for IHP-Open-PDK are shipped with IHP-Open-PDK-docs!
+# However, this latter statement is as well not fully satisfying, as it might get wrong when a new contributor just contributes to files outside the docs/ folder.
+# As a result, the string value should be: `copyright = "2024, 2025 Authors of the IHP-Open-PDK-docs/docs/ folder content."`
 #copyright = "2024, IHP PDK Authors"
-copyright = "2024, 2025 Authors of the IHP-Open-PDK-docs project"
+#copyright = "2024, 2025 Authors of the IHP-Open-PDK-docs project"
+copyright = "2024, 2025 Authors of the IHP-Open-PDK-docs/docs folder content"
 
 # FIXME:
 # What about external contributions to the IHP-Open-PDK-docs project??
 # Shouldn't it be `author = "Authors of the IHP-Open-PDK-docs project"`?
+# Or shouldn't it finally be `author = "Authors of the IHP-Open-PDK-docs/docs/ folder content."`
 #author = "IHP PDK Authors"
-author = "Authors of the IHP-Open-PDK-docs project"
+#author = "Authors of the IHP-Open-PDK-docs project"
+author = "2024, 2025 Authors of the IHP-Open-PDK-docs/docs folder content"
 
 # The short X.Y version
 version = ""
