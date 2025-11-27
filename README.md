@@ -18,17 +18,17 @@
 <img src="docs/_static/IHP_logo.png" alt="IHP Logo Image" width="150px">
 
 
-IHP-Open-PDK-docs Project
-=========================
+Welcome to the *IHP-Open-PDK-docs* Project
+==========================================
 
 <a href="https://github.com/IHP-GmbH/IHP-Open-PDK-docs"><img src="https://img.shields.io/github/license/IHP-GmbH/IHP-Open-PDK-docs" alt="GitHub license - Apache 2.0"></a>
 <a href="https://ihp-open-pdk-docs.readthedocs.io"><img src="https://readthedocs.org/projects/ihp-open-pdk-docs/badge/?version=latest&style=flat" alt="ReadTheDocs Badge - https://ihp-open-pdk-docs.readthedocs.io"></a>
 
-The `IHP-Open-PDK-docs` project ships in-detail documentation for the `IHP-Open-PDK` project, a fully open source Process Design Kit and related data, which can be
+The *IHP-Open-PDK-docs* project ships in-detail documentation for the *IHP-Open-PDK* project, a fully open source Process Design Kit and related data, which can be
 used to create manufacturable micro chip designs at IHP's facility.
 
-The documentation for the PDK is shipped *as a payload*, located in the `docs/` folder.
-If interested to read the documentation for the `IHP-Open-PDK-docs` project itself, you are right there: It is provided with this README.
+The documentation for the PDK is shipped *as a payload*, located in the `docs/` folder.  
+If interested to read the documentation for the *IHP-Open-PDK-docs* project itself, you are right there: It is provided with this README.
 
 
 Prerequisites
@@ -36,20 +36,30 @@ Prerequisites
 
 At a minimum:
 
--  Git 2.35+
--  Python 3.6+
+- Git 2.35+
+- Python 3.6+
+- markdown
 
 
 On Ubuntu, simply
 -----------------
 
-        apt install -y build-essential virtualenv python3
+        apt install -y build-essential virtualenv python3 markdown
 
 
-Building the Documentation for the IHP-Open-PDK Project
-=======================================================
+Building the Documentation
+==========================
 
-To build documentation locally, use the following commands:
+To build the documentation for the *IHP-Open-PDK-docs* project, type:
+
+        markdown README.md > README.html
+        xdg-open README.html
+
+
+Building the Documentation for the *IHP-Open-PDK* Project
+=========================================================
+
+To build the documentation for the *IHP-Open-PDK* project, use the following commands:
 
          # Download the repository
          git clone https://github.com/IHP-GmbH/IHP-Open-PDK-docs
@@ -87,5 +97,5 @@ Requests for more information about SG13G2 and other standard and custom foundry
 License
 =======
 
-The `IHP-Open-PDK-docs` project is released under the `Apache License, Version 2.0`.  
+The *IHP-Open-PDK-docs* project is released under the *Apache License, Version 2.0*.  
 See file [LICENSE](LICENSE) for details.
