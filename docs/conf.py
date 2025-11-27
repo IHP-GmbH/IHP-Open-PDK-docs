@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 # Copyright 2024 IHP PDK Authors
+# Copyright 2025 K. Mertens <mertens@ihp-microelectronics.com>
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -107,15 +108,12 @@ language = "en"
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This pattern also affects html_static_path and html_extra_path.
-exclude_patterns = []
-
-# List of patterns, relative to source directory, that match files and
-# directories to ignore when looking for source files.
-# This pattern also affects html_static_path and html_extra_path.
+#exclude_patterns = []
 exclude_patterns = [
     "_build",
     "env",
     "venv",
+    "docs_env",
     "Thumbs.db",
     ".DS_Store",
 ]
@@ -129,9 +127,7 @@ pygments_style = None
 # a colon. For example, index:Introduction for a section called Introduction
 # that appears in document index.rst. Useful for avoiding ambiguity when the
 # same section heading appears in different documents.
-# autosectionlabel_prefix_document = True
-
-# -- Options for HTML output -------------------------------------------------
+autosectionlabel_prefix_document = True
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
@@ -146,14 +142,14 @@ html_logo = "_static/IHP_logo.png"
 # documentation.
 # https://sphinx-symbiflow-theme.readthedocs.io/en/latest/customization.html
 html_theme_options = {
-    #    "nav_title": "130nm BiCMOS Open Source PDK",
-    #   "color_primary": "red",
+    #"nav_title": "130nm BiCMOS Open Source PDK",
+    #"color_primary": "red",
     #"color_accent": "teal",
     # Set the repo location to get a badge with stats
     #"github_url": "https://github.com/IHP-GmbH/IHP-Open-PDK-docs",
-    #   "repo_name": " IHP-Open-PDK-docs",
+    #"repo_name": "IHP-Open-PDK-docs",
     #"repo_type": "github",
-    # "globaltoc_depth": 0,
+    #"globaltoc_depth": 0,
     "globaltoc_collapse": True,
     # Hide the symbiflow links
     #"hide_symbiflow_links": True,
