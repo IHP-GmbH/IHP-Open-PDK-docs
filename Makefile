@@ -30,9 +30,11 @@ RM_FLAGS=-f
 CAT=cat
 MKTEMP=mktemp
 MKTEMP_FLAGS=
+MARKDOWN=markdown
+MARKDOWN_PY=markdown_py
 
 # tool check
-TOOLS=$(GIT) $(SED) $(SORT) $(UNIQ) $(ECHO) $(RM) $(CAT) $(MKTEMP)
+TOOLS=$(GIT) $(SED) $(SORT) $(UNIQ) $(ECHO) $(RM) $(CAT) $(MKTEMP) $(MARKDOWN_PY)
 CHECK=$(if $(strip $(shell command -v $(tool))),,$(error no such tool - $(tool)))
 $(foreach tool,$(TOOLS),$(CHECK))
 
@@ -41,7 +43,12 @@ NOTICES=NOTICES.generated
 
 # goals
 .PHONY: all
-all: clean notices display
+all: clean display-notices display
+
+.PHONY: display
+display: README.md
+	@$(MARKDOWN_PY) $< > ./README.html\
+	&& xdg-open ./README.html;
 
 .PHOMY: notices
 notices:
@@ -70,12 +77,12 @@ notices:
 		&& $(RM) $(RM_FLAGS) -r $${tmp1}\
 	;}
 
-.PHONY: display
-display:
+.PHONY: display-notices
+display-notices: notices
 	@$(CAT) $(NOTICES)
 
 .PHONY: clean
 clean:
-	-@$(RM) $(RM_FLAGS) -r $(NOTICES)
+	-@$(RM) $(RM_FLAGS) -r $(NOTICES) ./README.html
 
 
