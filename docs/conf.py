@@ -89,7 +89,7 @@ if not on_rtd:
         "display_github": True,  # Integrate GitHub
         "github_user": "IHP-GmbH",  # Username
         "github_repo": "IHP-Open-PDK-docs",  # Repo name
-        "github_version": "main",  # Version
+        "github_version": "latest",  # Version
         "conf_py_path": "/docs/",
     }
 else:
