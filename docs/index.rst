@@ -12,6 +12,11 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
+.. image:: _static/IHP_logo.png
+    :align: right
+    :alt: IHP Logo Image
+    :width: 125px
+
 
 **********************************************************
 Welcome to IHP 130nm BiCMOS Open Source PDK Documentation!
@@ -19,27 +24,8 @@ Welcome to IHP 130nm BiCMOS Open Source PDK Documentation!
 
 .. include:: common.inc
 
-.. toctree::
-    :hidden:
-    
-    contents
-    install
-    process_specs/process_specs
-    layout_rules/rules_man
-    analog
-    digital
-    finishing
-    verification
-    contrib
-    references
-
 .. warning::
     This documentation is currently a **work in progress**.
-
-.. image:: _static/IHP_logo.png
-    :align: center
-    :alt: IHP Logo Image.
-    :width: 400
 
 
 SG13G2 Process Node
@@ -92,3 +78,20 @@ The copyright details are:
     limitations under the License.
 
 .. important:: For *in-detail* copyright information, check the source files for their license headers!
+
+
+Full Table of Contents
+======================
+
+.. toctree::
+
+    contents
+    install
+    process_specs/process_specs
+    layout_rules/rules_man
+    analog
+    digital
+    finishing
+    verification
+    contrib
+    references
