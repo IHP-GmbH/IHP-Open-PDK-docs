@@ -31,10 +31,9 @@ CAT=cat
 MKTEMP=mktemp
 MKTEMP_FLAGS=
 MARKDOWN=markdown
-MARKDOWN_PY=markdown_py
 
 # tool check
-TOOLS=$(GIT) $(SED) $(SORT) $(UNIQ) $(ECHO) $(RM) $(CAT) $(MKTEMP) $(MARKDOWN_PY)
+TOOLS=$(GIT) $(SED) $(SORT) $(UNIQ) $(ECHO) $(RM) $(CAT) $(MKTEMP) $(MARKDOWN)
 CHECK=$(if $(strip $(shell command -v $(tool))),,$(error no such tool - $(tool)))
 $(foreach tool,$(TOOLS),$(CHECK))
 
@@ -48,7 +47,7 @@ all: display-notices display
 
 .PHONY: display
 display: README.md
-	@$(MARKDOWN_PY) $< > $(README)\
+	@$(MARKDOWN) $< > $(README)\
 	&& xdg-open $(README) 2> /dev/null;
 
 .PHOMY: notices
