@@ -32,9 +32,16 @@ import re
 
 # -- Project information -----------------------------------------------------
 project = "IHP 130nm BiCMOS Open Source PDK Documentation"
-#FIXME: What about external contributors to the IHP-Open-PDK-docs project??
+
+# FIXME:
+# What about external contributions to the IHP-Open-PDK-docs project??
+# Shouldn't it be `copyright = "2024, 2025 Authors of the IHP-Open-PDK-docs project"`?
+# Remind, the documentation sources for IHP-Open-PDK are shipped with IHP-Open-PDK-docs!
 copyright = "2024, IHP PDK Authors"
-#FIXME: What about external contributors to the IHP-Open-PDF-docs project??
+
+# FIXME:
+# What about external contributions to the IHP-Open-PDK-docs project??
+# Shouldn't it be `author = "Authors of the IHP-Open-PDK-docs project"`?
 author = "IHP PDK Authors"
 
 # The short X.Y version
