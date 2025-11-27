@@ -135,16 +135,16 @@ The ``IHP-Open-PDK-docs`` model follows the Git-Flow model of development. We ma
 
 In order to contribute to the project, it is recommended to use branch ``latest`` along with these steps:
 
-#. Create your own GitHub account (only if you do not have one already).
-#. Make a fork of our repository (be sure that not only main branch is forked).
-#. Clone the project from your own account.
-#. Checkout to the development branch ``git checkout --track origin/latest``
-#. Create a new feature branch ``git branch feature-name``
-#. Do your regular development and commit the changes with `-s` flag: ``git commit -s -m "your message"``
-#. Checkout to the development branch ``git checkout latest``
-#. Merge the changes developed in the feature branch ``git merge feature-name``
-#. Push the changes to your GitHub fork ``git push origin latest``
-#. Create a `Pull Request` on the GitHub web interface.
+1. Create your own GitHub account (only if you do not have one already).
+2. Make a fork of our repository (be sure that not only main branch is forked).
+3. Clone the project from your own account.
+4. Checkout to the development branch ``git checkout --track origin/latest``
+5. Create a new feature branch ``git branch feature-name``
+6. Do your regular development and commit the changes with `-s` flag: ``git commit -s -m "your message"``
+7. Checkout to the development branch ``git checkout latest``
+8. Merge the changes developed in the feature branch ``git merge feature-name``
+9. Push the changes to your GitHub fork ``git push origin latest``
+10. Create a `Pull Request` on the GitHub web interface.
 
 Alternatively, you might use the `gh` *GitHub CLI* instead of the web interface.
 
