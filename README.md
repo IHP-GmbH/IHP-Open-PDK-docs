@@ -47,6 +47,22 @@ On Ubuntu, simply
         apt install -y build-essential virtualenv python3 markdown
 
 
+Get the Sources
+===============
+
+Basically, run `git clone` to get the sources, change into the newly created project folder, and get started with first documents:
+
+        # Download the repository
+        git clone https://github.com/IHP-GmbH/IHP-Open-PDK-docs
+        cd IHP-Open-PDK-docs/
+
+        # Verify the License
+        less License
+
+        # Read the README
+        less README.md
+
+
 Building the Documentation
 ==========================
 
@@ -61,16 +77,15 @@ Building the Documentation for the *IHP-Open-PDK* Project
 
 To build the documentation for the *IHP-Open-PDK* project, use the following commands:
 
-         # Download the repository
-         git clone https://github.com/IHP-GmbH/IHP-Open-PDK-docs
-         cd IHP-Open-PDK-docs/docs/
+        # Change into the docs/ folder
+        cd docs/
 
-         # Create a Python virtual environment and install requirements into it
-         virtualenv docs_env/ --python=python3
-         source docs_env/bin/activate
+        # Create a Python virtual environment and install requirements into it
+        virtualenv docs_env/ --python=python3
+        source docs_env/bin/activate
 
-         # Build the documentation for IHP-Open-PDK
-         make docs
+        # Build the documentation for IHP-Open-PDK
+        make docs
 
 
 About IHP
