@@ -17,15 +17,15 @@
     :alt: IHP Logo Image
     :width: 125px
 
+.. include:: common.inc
+
 
 **********************************************************
 Welcome to IHP 130nm BiCMOS Open Source PDK Documentation!
 **********************************************************
 
-.. include:: common.inc
 
 .. warning::
-    This documentation is currently a **work in progress**.
 
 
 SG13G2 Process Node
@@ -39,19 +39,19 @@ offered. Further passive components like poly silicon resistors and MIM capacito
 backend option offers 5 thin metal layers, two thick metal layers (2 and 3 μm thick) and a MIM layer.
 
 
-Current Status -- |current-status|
-==================================
-
-.. current_status_text
+Current Status
+==============
 
 .. warning::
-    IHP Open Source PDK are currently treating the current content as an **experimental preview** / **alpha release**.
+    | This documentation is currently a **Work in Progress**.
+    | The IHP Open Source PDK is treating the content as: |current-status|
 
 While the SG13G2 process node and the PDK from which this open source release was derived have been 
 used to create many designs that have been successfully manufactured in significant quantities, 
 the open source PDK is not intended to be used for production at this moment.
 
-The PDK will be tagged with a production version when ready to do production design.
+.. note::
+    The PDK will be tagged with a production version when ready to do production design.
 
 
 License of the *IHP-Open-PDK* Project
