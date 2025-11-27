@@ -1,17 +1,17 @@
-Simulation using NGSPICE
+Simulation Using Ngspice
 ========================
 
 .. _ngspice_configuration_lbl:
 
-NGSPICE installation 
+Ngspice Installation
 --------------------
 
-Ngspice is an open source simulator hosted at `this <https://sourceforge.net/p/ngspice/ngspice/ci/master/tree/>`_ page.
+Ngspice is an open source simulator `hosted at SourceForge <https://sourceforge.net/p/ngspice/ngspice/ci/master/tree/>`_.
 The tool is well documented and the user manual can be found `here <https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml>`_.
-In order to install ngspice the recomended method is the following:
+In order to install Ngspice the recomended method is the following:
 
 .. code-block:: bash
-    
+
     git clone https://git.code.sf.net/p/ngspice/ngspice ngspice-ngspice
     cd ngspice-ngspice
     ./autogen.sh
@@ -21,9 +21,11 @@ In order to install ngspice the recomended method is the following:
     cd ..
     rm -rf ngspice-ngspice
 
-NGSPICE basic testcases
+
+Ngspice Basic Test Cases
 ------------------------
-A basic spice level netlist, which simulates operating point of a npn13G2 HBT transistor, is shown below:
+
+A basic spice level netlist, which simulates the operating point of a npn13G2 HBT transistor, is shown below:
 
 .. code-block:: spicelang
 
@@ -46,18 +48,17 @@ A basic spice level netlist, which simulates operating point of a npn13G2 HBT tr
     .GLOBAL GND
     .end  
 
-The netlist can be saved as dc_hbt_13g2.spice and simulated calling the following command:
+The netlist can be saved as `dc_hbt_13g2.spice` and simulated calling the following command:
 
 .. code-block:: bash
-    
+
   ngspice -b dc_hbt_13g2.spice
 
 The user should get the following output:
 
 .. code-block:: bash
-    
 
-  Note: Compatibility modes selected: hs a
+  Note: No compatibility mode selected!
 
 
   Circuit: 
@@ -69,7 +70,6 @@ The user should get the following output:
   No. of Data Rows : 1
   i(vc) = 6.492800e-04
   Note: Simulation executed from .control section 
-
 
 .. code-block:: bash
 
@@ -88,18 +88,17 @@ The user should get the following output:
   .GLOBAL GND
   .end
 
-The netlist can be saved as mostest.spice and simulated calling the following command:
+The netlist can be saved as `mostest.spice` and simulated calling the following command:
 
 .. code-block:: bash
-    
+
   ngspice -b mostest.spice
 
-The following output should be observed
+The following output should be observed:
 
 .. code-block:: bash
 
-
-  Note: Compatibility modes selected: hs a
+  Note: No compatibility mode selected!
 
   Warning: m=xx on .subckt line will override multiplier m hierarchy!
 

@@ -1,4 +1,5 @@
 # Copyright 2024 IHP PDK Authors
+# Copyright 2025 K. Mertens <mertens@ihp-microelectronics.com>
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -31,14 +32,14 @@ DOCS_DIR := $(dir $(lastword $(MAKEFILE_LIST)))
 SPHINXOPTS     ?= -j auto -w build.log
 SPHINXBUILD     = sphinx-build
 SPHINXAUTOBUILD = sphinx-autobuild
-SPHINXPROJ      = IHP-Open-Source-PDK
+SPHINXPROJ      = IHP-Open-PDK-docs
 SOURCEDIR       = $(DOCS_DIR)
 BUILDDIR        = $(DOCS_DIR)/_build
 
 
 .DEFAULT_GOAL := docs
 
-docs: clean setup preprocess build display
+docs: clean setup preprocess singlehtml build message
 
 #========================
 # ----- BUILD DOCS ------
@@ -55,12 +56,15 @@ setup:
 .ONESHELL:
 preprocess:
 	@echo "Counting precheck DRC rules..."
-	@python3 scripts/count_precheck_drc_rules.py
+	python3 scripts/count_precheck_drc_rules.py
 
 # Catch-all target: route all unknown targets to Sphinx using the new
 # "make mode" option.  $(O) is meant as a shortcut for $(SPHINXOPTS).
 build:
 	@$(SPHINXBUILD) -M "html" "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
+
+singlehtml:
+	@$(SPHINXBUILD) -M "singlehtml" "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
 
 latexpdf:
 	@$(SPHINXBUILD) -M "latexpdf" "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
@@ -70,6 +74,15 @@ latexpdf:
 #========================
 
 .ONESHELL:
+message:
+	@echo "Type \`make display\` to launch the built documentation in web browser."
+
+.ONESHELL:
 display:
 	@cd _build/html
-	@xdg-open index.html
+	xdg-open index.html
+
+.ONESHELL:
+display-singlehtml:
+	@cd _build/singlehtml
+	xdg-open index.html

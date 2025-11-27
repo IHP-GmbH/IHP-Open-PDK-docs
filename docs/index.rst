@@ -1,4 +1,4 @@
-..  Copyright (c)  K. Mertens <mertens@ihp-microelectronics.com>
+..  Copyright 2025 K. Mertens <mertens@ihp-microelectronics.com>
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -17,15 +17,16 @@
     :alt: IHP Logo Image
     :width: 125px
 
-.. include:: common.inc
+.. |current-status| replace:: **Experimental Preview**
 
 
 **********************************************************
 Welcome to IHP 130nm BiCMOS Open Source PDK Documentation!
 **********************************************************
 
-
-.. warning::
+.. image:: https://img.shields.io/github/license/IHP-GmbH/IHP-Open-PDK-docs
+   :alt: GitHub license - Apache 2.0
+   :target: https://github.com/IHP-GmbH/IHP-Open-PDK-docs
 
 
 SG13G2 Process Node
@@ -43,7 +44,8 @@ Current Status
 ==============
 
 .. warning::
-    | This documentation is currently provided as: |current-status|
+    | This documentation is **Work in Progress**.
+    | The content is currently provided as: |current-status|
 
 While the SG13G2 process node and the PDK from which this open source release was derived have been 
 used to create many designs that have been successfully manufactured in significant quantities, 
@@ -56,7 +58,7 @@ the open source PDK is not intended to be used for production at this moment.
 License of the *IHP-Open-PDK* Project
 =====================================
 
-The IHP Open Source PDK is released under the `Apache 2.0 license <LICENSE>`_.
+The IHP Open Source PDK is released under the `Apache License, Version 2.0 <https://www.apache.org/licenses/LICENSE-2.0>`__.
 
 The copyright details are:
 

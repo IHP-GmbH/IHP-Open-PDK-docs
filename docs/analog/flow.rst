@@ -1,7 +1,7 @@
-Analog/Mixed/RF flow 
+Analog/Mixed/RF Flow
 ====================
 
-The proposal of the flow is shown on the following image.
+The proposal of the flow is shown on the following image:
 
 .. image:: ../_static/analog_flow_horizontal_ihp-OpenPDK-600.png
     :align: center
@@ -14,13 +14,13 @@ design are variations of the presented flow.
 
 The principal steps in the analog design are the following:
 
-#. Schematic capture
+#. Schematic Capture
 #. Simulation 
-#. Layout editing 
-#. Physical verification (DRC/LVS)
-#. Parasitics extraction
-#. Post-layout simulation
-#. GDS streaming
+#. Layout Editing
+#. Physical Verification (DRC/LVS)
+#. Parasitics Extraction
+#. Post-layout Simulation
+#. GDS Streaming
 
 IHP-Open-PDK delivers libraries, configuration files and examples for the tools used in the proposed flow. 
 The tools pull the configuration using an environmental variable ``PDK_ROOT``
@@ -28,5 +28,3 @@ The tools pull the configuration using an environmental variable ``PDK_ROOT``
 .. code-block:: shell
 
    export PDK_ROOT=<your_path>/IHP-Open-PDK
-
-

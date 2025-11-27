@@ -142,21 +142,21 @@ After completing a DRC regression run, a summary log is generated that provides 
 +---------------------+---------------------------------------------------------------------------------------------------------------------------+
 | Column Name         | Description                                                                                                               |
 +=====================+===========================================================================================================================+
-| ``table_name``      | The name of the rule group or category (e.g., activ, gatepoly, metal1, etc.).                                            |
+| ``table_name``      | The name of the rule group or category (e.g., activ, gatepoly, metal1, etc.).                                             |
 +---------------------+---------------------------------------------------------------------------------------------------------------------------+
-| ``rule_name``       | The specific name of the DRC rule being tested, as defined in the design rule manual.                                   |
+| ``rule_name``       | The specific name of the DRC rule being tested, as defined in the design rule manual.                                     |
 +---------------------+---------------------------------------------------------------------------------------------------------------------------+
-| ``viol_not_golden`` | Count of violations found in the actual test result but not present in the golden reference (false positives).           |
+| ``viol_not_golden`` | Count of violations found in the actual test result but not present in the golden reference (false positives).            |
 +---------------------+---------------------------------------------------------------------------------------------------------------------------+
-| ``golden_not_viol`` | Count of violations found in the golden reference but missing from the actual result (false negatives).                  |
+| ``golden_not_viol`` | Count of violations found in the golden reference but missing from the actual result (false negatives).                   |
 +---------------------+---------------------------------------------------------------------------------------------------------------------------+
-| ``in_tests``        | Indicates whether the rule exists in the unit test files (1 = present, 0 = missing).                                     |
+| ``in_tests``        | Indicates whether the rule exists in the unit test files (1 = present, 0 = missing).                                      |
 +---------------------+---------------------------------------------------------------------------------------------------------------------------+
-| ``in_rule_deck``    | Indicates whether the rule is implemented in the current rule deck (1 = present, 0 = missing).                           |
+| ``in_rule_deck``    | Indicates whether the rule is implemented in the current rule deck (1 = present, 0 = missing).                            |
 +---------------------+---------------------------------------------------------------------------------------------------------------------------+
-| ``run_status``      | Status of the individual test run (``completed``, ``not run``, or other diagnostic states).                              |
+| ``run_status``      | Status of the individual test run (``completed``, ``not run``, or other diagnostic states).                               |
 +---------------------+---------------------------------------------------------------------------------------------------------------------------+
-| ``rule_status``     | Final regression result for this rule (``Passed`` if matched expected results, otherwise ``Failed``).                    |
+| ``rule_status``     | Final regression result for this rule (``Passed`` if matched expected results, otherwise ``Failed``).                     |
 +---------------------+---------------------------------------------------------------------------------------------------------------------------+
 
 ✅ Summary Insights

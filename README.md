@@ -24,11 +24,36 @@ Welcome to the *IHP-Open-PDK-docs* Project
 <a href="https://github.com/IHP-GmbH/IHP-Open-PDK-docs"><img src="https://img.shields.io/github/license/IHP-GmbH/IHP-Open-PDK-docs" alt="GitHub license - Apache 2.0"></a>
 <a href="https://ihp-open-pdk-docs.readthedocs.io"><img src="https://readthedocs.org/projects/ihp-open-pdk-docs/badge/?version=latest&style=flat" alt="ReadTheDocs Badge - https://ihp-open-pdk-docs.readthedocs.io"></a>
 
-The *IHP-Open-PDK-docs* project ships in-detail documentation for the *IHP-Open-PDK* project, a fully open source Process Design Kit and related data, which can be
-used to create manufacturable micro chip designs at IHP's facility.
+This *IHP-Open-PDK-docs* project ships in-detail documentation for the [IHP-Open-PDK][] project.  
+The documentation for the PDK is shipped *as a payload*, located in the `docs/` folder, and provided as *IHP 130nm BiCMOS Open Source PDK Documentation*.  
+If interested to read the documentation for the *IHP-Open-PDK-docs* project *itself*, you are right there: It is provided with this README.
 
-The documentation for the PDK is shipped *as a payload*, located in the `docs/` folder.  
-If interested to read the documentation for the *IHP-Open-PDK-docs* project itself, you are right there: It is provided with this README.
+[IHP-Open-PDK]:     https://github.com/IHP-GmbH/IHP-Open-PDK/
+
+
+IHP 130nm BiCMOS Open Source PDK Documentation
+==============================================
+
+The goal of the [IHP-Open-PDK](<https://github.com/IHP-GmbH/IHP-Open-PDK/>) project is to provide a fully open source Process Design Kit and related data which can
+be used to create manufacturable micro chip designs at IHP's facility. In addition, the goal of this [IHP-Open-PDK-docs](<https://github.com/IHP-GmbH/IHP-Open-PDK-docs/>)
+project is to provide comprehensive in-detail documentation for the before-mentioned PDK, under the same free software license:
+[Apache License, Version 2.0](<https://www.apache.org/licenses/LICENSE-2.0>)
+
+According to the [Free Software Foundation (FSF)](<https://www.fsf.org/>), the *Apache License, Version 2.0* is the best choice of software licenses *where a
+strong copyleft license cannot be used*. However, if you are interested in giving your project a strong [Copyleft](<https://www.gnu.org/licenses/copyleft.en.html>)
+License you will be happy to hear that the *Apache License, Version 2.0* is [considered to be compatible](<https://www.gnu.org/licenses/license-list.html#apache2>)
+with the [GNU General Public License, Version 3 (GPLv3)](<https://www.gnu.org/licenses/gpl-3.0.en.html>).
+
+
+SG13G2 Process Node
+===================
+
+SG13G2 is a high performance BiCMOS technology with a 0.13 μm CMOS process. It contains bipolar
+devices based on SiGe:C npn-HBTs with up to 350 GHz transient frequency (f<sub>T</sub>) and 450 GHz oscillation
+frequency (f<sub>{max}</sub>). This process provides 2 gate oxides: A thin gate oxide for the 1.2 V digital logic and a thick
+oxide for a 3.3 V supply voltage. For both modules NMOS, PMOS and isolated NMOS transistors are
+offered. Further passive components like poly silicon resistors and MIM capacitors are available. The
+backend option offers 5 thin metal layers, two thick metal layers (2 and 3 μm thick) and a MIM layer.
 
 
 Prerequisites
@@ -52,14 +77,14 @@ Get the Sources
 
 Basically, run `git clone` to get the sources, change into the newly created project folder, and get started with first documents:
 
-        # Download the repository
+        # Download the repository, change into root of project
         git clone https://github.com/IHP-GmbH/IHP-Open-PDK-docs
         cd IHP-Open-PDK-docs/
 
         # Verify the License
-        less License
+        less Copying
 
-        # Read the README
+        # Display README to get started
         less README.md
 
 
@@ -75,7 +100,7 @@ To build the documentation for the *IHP-Open-PDK-docs* project, type:
 Building the Documentation for the *IHP-Open-PDK* Project
 =========================================================
 
-To build the documentation for the *IHP-Open-PDK* project, use the following commands:
+To build the documentation for the *IHP-Open-PDK* project (i.e. *IHP 130nm BiCMOS Open Source PDK Documentation*), use the following commands:
 
         # Change into the docs/ folder
         cd docs/
@@ -85,7 +110,34 @@ To build the documentation for the *IHP-Open-PDK* project, use the following com
         source docs_env/bin/activate
 
         # Build the documentation for IHP-Open-PDK
-        make docs
+        make
+
+        # Launch HTML documentation in web browser
+        make display
+
+To leave the virtual environment, type `exit` to close the terminal.
+
+
+Contributing
+============
+
+The ``IHP-Open-PDK-docs`` model follows the Git-Flow model of development. We mantain two branches, namely ``main``
+(stable one for production) and ``latest`` (experimental for development and testing).
+
+In order to contribute to the project, it is recommended to use branch ``latest`` along with these steps:
+
+#. Create your own GitHub account (only if you do not have one already).
+#. Make a fork of our repository (be sure that not only main branch is forked).
+#. Clone the project from your own account.
+#. Checkout to the development branch ``git checkout --track origin/latest``
+#. Create a new feature branch ``git branch feature-name``
+#. Do your regular development and commit the changes with `-s` flag: ``git commit -s -m "your message"``
+#. Checkout to the development branch ``git checkout latest``
+#. Merge the changes developed in the feature branch ``git merge feature-name``
+#. Push the changes to your GitHub fork ``git push origin latest``
+#. Create a `Pull Request` on the GitHub web interface.
+
+Alternatively, you might use the `gh` *GitHub CLI* instead of the web interface.
 
 
 About IHP
@@ -105,12 +157,12 @@ space, Industry 4.0 or Agriculture 4.0 and mobility.
 Contacting IHP
 --------------
 
-Requests for more information about SG13G2 and other standard and custom foundry technologies can be emailed to
-[openpdk@ihp-microelectronics.com](mailto:openpdk@ihp-microelectronics.com).
+Requests for more information about SG13G2, other standards and custom foundry technologies can be emailed to:
+[openpdk@ihp-microelectronics.com](mailto:openpdk@ihp-microelectronis.com)
 
 
-License
+Copying
 =======
 
 The *IHP-Open-PDK-docs* project is released under the *Apache License, Version 2.0*.  
-See file [LICENSE](LICENSE) for details.
+See file [COPYING](COPYING) for details.

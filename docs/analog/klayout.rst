@@ -1,19 +1,18 @@
-Analog Design using Klayout tool
-================================
+Analog Design Using Klayout
+===========================
 
-
-Klayout can be easily installed using debian package manager ``dpkg`` using the following scheme (please choose the OS and the version acc
-ording to your requirements). For the exact location refer to the official `Klayout website <https://www.klayout.de>`_.
+Klayout can be easily installed per debian package manager ``dpkg`` using the following scheme (please choose the OS and the version
+according to your requirements). For the exact location refer to the official `Klayout website <https://www.klayout.de>`_.
 
 .. code-block:: bash
-  
+
   wget  https://www.klayout.org/downloads/Ubuntu-24/klayout_version.deb
   sudo dpkg - klayout_version.deb
 
 The basic configuration of Klayout includes setting the environmental variables in your ``/home/$USER/.bashrc`` file as follows:
 
 .. code-block:: bash
-    
+
   export KLAYOUT_PATH="/home/$USER/.klayout:$PDK_ROOT/$PDK/libs.tech/klayout"
   export KLAYOUT_HOME=/home/$USER/.klayout 
 
@@ -21,20 +20,19 @@ The basic configuration of Klayout includes setting the environmental variables 
 
   Please note that the ``PDK_ROOT`` and ``PDK`` variables have to be exported earlier
 
-Klayout configuration is stored in ``/home/$USER/.klayout/klayoutrc`` file. Here we provide some useful sections the user can 
-add to its own configuration. 
+Klayout configuration is stored in the ``/home/$USER/.klayout/klayoutrc`` file. Here we provide some useful sections the user can
+add to its own configuration.
 
-
-Grid configuration (minimal grid size 5 nm)
+Grid configuration (minimal grid size 5 nm):
 
 .. code-block:: xml
-    
+
   <default-grids>0.1,0.05,0.025,0.01,0.005</default-grids>
 
 Key bindings:
 
 .. code-block:: xml
-  
+
   <key-bindings>
   '@secrets.duplicate_interactive':C;
   '@secrets.paste_interactive':H;

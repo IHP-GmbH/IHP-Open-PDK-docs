@@ -8,13 +8,15 @@ This document describes the design rules for IHP SG13G2 SiGe BiCMOS technology.
 
 .. _list_of_abbreviations:
 
-List of abbreviations
+List of Abbreviations
 ---------------------
 
-.. csv-table:: List of abbreviations
+.. csv-table:: List of Abbreviations
+
     :header: "Abbreviation", "Explanation"
     :widths: 100, 200
     :file: tables/list_abbrev.csv
+
 
 Layout Information
 ------------------
@@ -29,7 +31,8 @@ Layout Information
 
     1.4 Unless specified otherwise, all dimensions provided herein are considered to be minimum requirements.
 
-Reference documents
+
+Reference Documents
 -------------------
 
 [RD 1] IHP SG13G2 Process specification Rev. 1.2

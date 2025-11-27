@@ -31,6 +31,7 @@ import os
 import re
 
 # -- Project information -----------------------------------------------------
+# Unfortunately, the Sphinx documentation builder 'singlehtml' automatically appends 'documentation':
 project = "IHP 130nm BiCMOS Open Source PDK Documentation"
 
 # FIXME:
@@ -41,6 +42,7 @@ project = "IHP 130nm BiCMOS Open Source PDK Documentation"
 # As a result, the string value should be: `copyright = "2024, 2025 Authors of the IHP-Open-PDK-docs/docs/ folder content."`
 # Well, this sounds weird, doesn't it?? Maybe this is better and correct: `copyright = "2024, 2025 Authors of <project>"`
 # The range of copyright must get updated once a year.
+# Multiline copyright statements are not supported.
 #copyright = "2024, IHP PDK Authors"
 #copyright = "2024, 2025 Authors of the IHP-Open-PDK-docs project"
 #copyright = "2024, 2025 Authors of the IHP-Open-PDK-docs/docs folder content"
@@ -157,6 +159,7 @@ autosectionlabel_prefix_document = True
 html_theme = "sphinx_rtd_theme"
 
 html_logo = "_static/IHP_logo.png"
+html_favicon = "_static/IHP_logo.ico"
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
@@ -253,4 +256,3 @@ latex_elements = {
 
 def setup(app):
     app.add_css_file("IHP_theme.css")
-

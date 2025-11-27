@@ -1,6 +1,10 @@
-File Types
-==========
+File Types and Tools
+====================
 
+.. note::
+
+    | This table might be outdated.
+    | It is provided here to avoid it to be hidden from the build output.
 
 +------------------------------+-------------------------------------------+---------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------+
 | File Type                    | What does it do?                          |                            Open Tooling Options                     |                                    Closed Tooling Options                                              |

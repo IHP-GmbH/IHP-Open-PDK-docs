@@ -1,5 +1,5 @@
 Installation
-=============
+============
 
 .. toctree::
     :caption: Installation

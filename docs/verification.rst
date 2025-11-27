@@ -5,8 +5,6 @@ Physical & Design Verification
     :caption: Physical & Design Verification
     :name: verification
 
-    Design Rule Checking (DRC) <verification/drc/drc_man>
-    Layout Versus Schematic (LVS) Checking <verification/lvs/lvs_man>
-    Parasitic Extraction (PEX) <verification/pex>
-
-
+    Design Rule Check (DRC)                <verification/drc/drc_man>
+    Layout Versus Schematic (LVS) Check    <verification/lvs/lvs_man>
+    Parasitic Extraction (PEX)             <verification/pex>

@@ -8,7 +8,7 @@ Klayout-LVS
 .. _LVS: https://github.com/IHP-GmbH/IHP-Open-PDK/tree/dev/ihp-sg13g2/libs.tech/klayout/tech/lvs
 
 .. toctree::
-    :name: Klayout-LVS 
+    :name: Klayout-LVS
     :glob:
 
     05_01_folder_struct

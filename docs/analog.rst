@@ -6,11 +6,11 @@ Analog Design
     :numbered:
     :name: analog
 
-    Analog/Mixed/RF flow   <analog/flow>
-    Schematic capture with XSCHEM <analog/xschem>
-    Schematic capture with QUCS-S <analog/qucs>
-    Simulations using ngspice     <analog/ngspice>
-    Simulations using Xyce        <analog/xyce>
-    Analog design using pygmid tool     <analog/pygmid>
-    Analog design Klayout tool          <analog/klayout>
+    Analog/Mixed/RF Flow                <analog/flow>
+    Schematic Capture with XSCHEM       <analog/xschem>
+    Schematic Capture with QUCS-S       <analog/qucs>
+    Simulations using Ngspice           <analog/ngspice>
+    Simulations using Xyce              <analog/xyce>
+    Analog Design using pygmid Tool     <analog/pygmid>
+    Analog Design using Klayout         <analog/klayout>
 
