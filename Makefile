@@ -41,10 +41,10 @@ NOTICES=NOTICES.generated
 
 # goals
 .PHONY: all
-all: clean authors display
+all: clean notices display
 
-.PHOMY: authors
-authors:
+.PHOMY: notices
+notices:
 	@tmp1=`$(MKTEMP) $(MKTEMP_FLAGS) -q file.XXXXX` && {\
 		$(GIT) log --date=format:'%Y' --pretty=format:'%ad##%aN#<%aE>' | $(SED) $(SED_FLAGS) -e's, ,#,g;' -e's,\+,§,g;' | $(SORT) -uf > $${tmp1}\
 		&& tmp2=`$(MKTEMP) $(MKTEMP_FLAGS) -q file.XXXXX` && {\
