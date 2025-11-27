@@ -68,8 +68,8 @@ the open source PDK is not intended to be used for production at this moment.
 The PDK will be tagged with a production version when ready to do production design.
 
 
-License
-=======
+License of the *IHP-Open-PDK* Project
+=====================================
 
 The IHP Open Source PDK is released under the `Apache 2.0 license <LICENSE>`_.
 
