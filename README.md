@@ -94,15 +94,15 @@ Building the Documentation
 To build and launch the documentation for the *IHP-Open-PDK-docs* project, type:
 
         # Generate and launch simple HTML documentation
-	make display
+        make display
 
         # Display a list of contributors, reconstructed from `git log` output (might be incomplete)
         make display-notices
 
 To clean up, type:
 
-	# Clean-up
-	make clean
+        # Clean-up
+        make clean
 
 
 Building the Documentation for the *IHP-Open-PDK* Project
