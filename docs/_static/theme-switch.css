@@ -1,0 +1,69 @@
+/* Theme button next to search */
+.theme-search-cell {
+    white-space: nowrap;
+}
+
+.theme-search-cell .md-search {
+    display: inline-block;
+    vertical-align: top;
+}
+
+#theme-toggle.theme-toggle-header {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: inherit;
+    vertical-align: top;
+}
+
+#theme-toggle.theme-toggle-header .md-icon {
+    font-size: 1.2rem;
+}
+
+/* Dark theme */
+[data-theme="dark"] body {
+    background: #121212;
+    color: #e8e8e8;
+}
+
+[data-theme="dark"] .wy-nav-content {
+    background: #1a1a1a;
+    color: #e8e8e8;
+}
+
+[data-theme="dark"] .wy-nav-side,
+[data-theme="dark"] .wy-side-scroll {
+    background: #202020;
+}
+
+[data-theme="dark"] .wy-menu-vertical a {
+    color: #dddddd;
+}
+
+[data-theme="dark"] .wy-menu-vertical a:hover {
+    background: #2d2d2d;
+}
+
+[data-theme="dark"] h1,
+[data-theme="dark"] h2,
+[data-theme="dark"] h3,
+[data-theme="dark"] h4 {
+    color: #ffffff;
+}
+
+[data-theme="dark"] pre,
+[data-theme="dark"] code,
+[data-theme="dark"] .highlight {
+    background: #2b2b2b;
+    color: #f0f0f0;
+}
+
+[data-theme="dark"] a {
+    color: #7bb3ff;
+}
+
+[data-theme="dark"] .md-header a,
+[data-theme="dark"] .md-tabs__link,
+[data-theme="dark"] #theme-toggle {
+    color: white;
+}
