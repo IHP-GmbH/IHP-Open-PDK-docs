@@ -1,0 +1,16 @@
+{%- extends "basic/search.html" %}
+
+  {% block body %}
+    <h1 id="search-documentation">{{ _('Search') }}</h1>
+
+    <noscript>
+      <div class="admonition warning">
+        <p>
+          {% trans %}Please activate JavaScript to enable the search
+          functionality.{% endtrans %}
+        </p>
+      </div>
+    </noscript>
+
+    <div id="search-results"></div>
+  {% endblock %}
