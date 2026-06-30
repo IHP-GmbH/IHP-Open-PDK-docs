@@ -1,3 +1,13 @@
+<div class="header-top-bar">
+  <div class="top-bar-wrapper">
+    <div class="top-bar-logo">
+      <a href="https://www.ihp-microelectronics.com/">
+        <img src="{{ pathto('_static/IHP-Logo-ohne-claim.svg', 1) }}" alt="IHP - Leibniz Institute for High Performance Microelectronics">
+        <span>Leibniz Institute<br>for High Performance Microelectronics</span>
+      </a>
+    </div>
+  </div>
+</div>
 <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid">
     <div class="md-flex navheader">
@@ -7,7 +17,7 @@
           {% if theme_logo_icon|e %}
             <i class="md-icon">{{ theme_logo_icon }}</i>
           {% elif logo %}
-              <img src="{{ pathto('_static/' ~ logo, 1) }}" height="26"
+              <img src="{{ pathto('_static/' ~ logo, 1) }}" height="32"
                    alt="{{ shorttitle|striptags|e }} logo">
           {% else %}
             &nbsp;
@@ -19,7 +29,9 @@
       </div>
       <div class="md-flex__cell md-flex__cell--stretch">
         <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
-          <span class="md-header-nav__topic">{{ theme_nav_title or shorttitle }}</span>
+        <!--  <span class="md-header-nav__topic">
+            <img src="{{ pathto('_static/IHP-Logo-ohne-claim.svg', 1) }}" alt="IHP" height="32" style="vertical-align:middle; margin-right:8px">{{ theme_nav_title or shorttitle }}
+          </span> -->
           <span class="md-header-nav__topic"> {{ title|striptags|e }} </span>
         </div>
       </div>

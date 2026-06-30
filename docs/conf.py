@@ -155,7 +155,7 @@ pygments_style = None
 #
 html_theme = "sphinx_symbiflow_theme"
 
-html_logo = "_static/IHP_logo.png"
+html_logo = "_static/IHP-Logo-ohne-claim.svg"
 
 # Set link name generated in the top bar.
 html_title = f"IHP OpenPDK {release} documentation"
@@ -168,8 +168,9 @@ html_theme_options = {
     # Set the name of the project to appear in the navigation.
     "nav_title": "IHP 130nm BiCMOS Open Source PDK",
     
+    "touch_icon": "IHP-Logo-ohne-claim.svg",
     # Set the color and the accent color
-    "color_primary": "red",
+    "color_primary": "#00508b",
     "color_accent": "teal",
      
     # Set the repo location to get a badge with stats
@@ -265,5 +266,6 @@ latex_elements = {
 def setup(app):
     app.add_css_file("IHP_theme.css")
     app.add_css_file("theme-switch.css")
+    app.add_css_file("style.css")
     app.add_js_file("theme-switch.js")
 

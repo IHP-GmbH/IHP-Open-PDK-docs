@@ -1,0 +1,129 @@
+/* =============================================================
+   IHP Custom Header Styles — angelehnt an ihp-microelectronics.com
+   ============================================================= */
+
+/* 1) Logo-Balken: exakt wie IHP-Website */
+.header-top-bar {
+  background: #f0f0f1;
+  color: #6d7072;
+
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 301;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.top-bar-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  padding: 0 16px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.top-bar-logo {
+  height: 120px;
+}
+
+.top-bar-logo a {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-end;
+  text-decoration: none;
+  color: #6d7072;
+}
+
+.top-bar-logo a img {
+  max-height: 100%;
+  width: auto;
+  height: 100%;
+}
+
+.top-bar-logo a span {
+  display: inline-block;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  color: #6d7072;
+  font-size: 19px;
+  line-height: 1.4em;
+  font-family: "Officina", "ITC Officina Sans", Arial, sans-serif;
+}
+
+.top-bar-options {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-bottom: 12px;
+  gap: 16px;
+}
+
+.top-bar-contact {
+  color: #444444;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.top-bar-contact:hover {
+  color: #00508b;
+}
+
+/* 2) Blauer Nav-Balken */
+header.md-header {
+  background-color: #003366 !important;
+  color: #ffffff !important;
+  position: sticky !important;
+  top: 140px !important;
+  z-index: 300 !important;
+}
+
+/* Farben in der Nav */
+header.md-header a,
+header.md-header .md-header-nav__button,
+header.md-header .md-icon {
+  color: #ffffff !important;
+}
+
+/* Nav-Titel */
+header.md-header .md-header-nav__title {
+  color: #ffffff !important;
+}
+
+/* Weißen Balken zwischen Header und Tabs entfernen */
+.md-container {
+  padding-top: 0 !important;
+}
+
+/* Dark Mode: Top-Bar */
+[data-theme="dark"] .header-top-bar {
+  background: #000000;
+  color: #cccccc;
+}
+
+[data-theme="dark"] .top-bar-logo a {
+  color: #cccccc;
+}
+
+[data-theme="dark"] .top-bar-logo a span {
+  color: #cccccc;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .top-bar-logo {
+    height: 72px;
+  }
+  .top-bar-logo a span {
+    font-size: 11px;
+  }
+  header.md-header {
+    top: 92px !important;
+  }
+}
+

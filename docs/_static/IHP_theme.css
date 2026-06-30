@@ -14,18 +14,46 @@
 # SPDX-License-Identifier: Apache-2.0
 # */
 
+@font-face {
+  font-family: "Officina";
+  font-style: normal;
+  font-weight: 400;
+  src: local("ITC OfficinaSans LT Book"),
+       local("OfficinaSans"),
+       url("fonts/ITC-OfficinaSans-LT-Book.ttf") format("truetype"),
+       url("/_static/fonts/Officina-Regular.woff2") format("woff2"),
+       url("/_static/fonts/Officina-Regular.woff") format("woff");
+  font-display: swap;
+}
+
+/* Officina als globale Schriftart */
+body,
+input,
+button,
+select,
+textarea,
+h1, h2, h3, h4, h5, h6,
+.md-header,
+.md-nav,
+.md-content,
+.md-footer,
+.md-tabs {
+  font-family: "Officina", "ITC Officina Sans", Arial, sans-serif !important;
+}
+
+
 .red-text {
     color: red;
 	font-weight: bold;
 }
 
 .blue-text {
-    color: blue;
+    color: #00508b;
 	font-weight: bold;
 }
 
 .blue-text2 {
-    color: blue;
+    color: #00508b;
     font-style: italic;
 }
 
