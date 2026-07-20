@@ -32,4 +32,4 @@ Layout Information
 Reference documents
 -------------------
 
-[RD 1] IHP SG13G2 Process specification Rev. 1.2
+[RD 1] `IHP SG13G2 Process specification Rev. 1.2 <https://raw.githubusercontent.com/IHP-GmbH/IHP-Open-PDK/main/ihp-sg13g2/libs.doc/doc/SG13G2_os_process_spec.pdf>`_
