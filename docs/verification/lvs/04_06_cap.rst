@@ -151,6 +151,130 @@ rfcmim
     Figure 4.6.2 Layout for rfcmim capacitor device
 
 
+MOSCAP
+------
+
+The MOSCAP devices are two-terminal MOS capacitors. The gate forms one
+terminal and the source, drain, and body or well are shorted internally to
+form the second terminal. The N-type and P-type devices use different body
+connections and are documented separately below.
+
+moscap_n
+~~~~~~~~
+
+**Device Information**
+
+.. list-table:: N-type MOS capacitor
+   :header-rows: 1
+   :stub-columns: 1
+
+   * - Property
+     - Value
+   * - Description
+     - N-type MOS capacitor with gate terminal and substrate terminal.
+   * - Device Recognition
+     - GatPoly, Activ, device label
+   * - Model Name
+     - sg13_moscap_n
+   * - Layout Cell Name
+     - moscap_n
+   * - Parameters
+     - w, l, m
+   * - Netlist Syntax
+     - ``C1 G SUB sg13_moscap_n w=5u l=1u``
+   * - Additional Notes
+     - | The source, drain, and body are connected to ``SUB`` in the two-terminal model.
+       | The ``w`` and ``l`` dimensions for MOSCAP follow the MOS convention: ``w`` is the y-axis dimension and ``l`` is the x-axis dimension.
+
+**Parameters Information**
+
+.. list-table:: Schematic and LVS views Compatibility for moscap_n Parameters
+   :header-rows: 1
+   :stub-columns: 1
+
+   * - Parameter
+     - Description
+     - Schematic-View
+     - LVS-View
+     - LVS-Comparison
+   * - W
+     - Capacitor width
+     - ✅
+     - ✅
+     - ✅
+   * - L
+     - Capacitor length
+     - ✅
+     - ✅
+     - ✅
+   * - m
+     - Schematic multiplicity
+     - ✅
+     - ❌
+     - ❌
+
+**Layout View** (Refer to :ref:`layout layers`)
+
+
+
+moscap_p
+~~~~~~~~
+
+**Device Information**
+
+.. list-table:: P-type MOS capacitor
+   :header-rows: 1
+   :stub-columns: 1
+
+   * - Property
+     - Value
+   * - Description
+     - P-type MOS capacitor with gate terminal and N-well terminal.
+   * - Device Recognition
+     - GatPoly, Activ, pSD, Nwell, device label
+   * - Model Name
+     - sg13_moscap_p
+   * - Layout Cell Name
+     - moscap_p
+   * - Parameters
+     - w, l, m
+   * - Netlist Syntax
+     - ``C1 G NW sg13_moscap_p w=5u l=1u``
+   * - Additional Notes
+     - | The source, drain, and body are connected to ``NW`` in the two-terminal model.
+       | The ``w`` and ``l`` dimensions for MOSCAP follow the MOS convention: ``w`` is the y-axis dimension and ``l`` is the x-axis dimension.
+
+**Parameters Information**
+
+.. list-table:: Schematic and LVS views Compatibility for moscap_p Parameters
+   :header-rows: 1
+   :stub-columns: 1
+
+   * - Parameter
+     - Description
+     - Schematic-View
+     - LVS-View
+     - LVS-Comparison
+   * - W
+     - Capacitor width
+     - ✅
+     - ✅
+     - ✅
+   * - L
+     - Capacitor length
+     - ✅
+     - ✅
+     - ✅
+   * - m
+     - Schematic multiplicity
+     - ✅
+     - ❌
+     - ❌
+
+**Layout View** (Refer to :ref:`layout layers`)
+
+
+
 SVaricap
 --------
 
