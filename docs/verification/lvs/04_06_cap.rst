@@ -215,6 +215,15 @@ moscap_n
 
 **Layout View** (Refer to :ref:`layout layers`)
 
+.. image:: images/moscap_n_layout.png
+    :width: 400
+    :align: center
+    :alt: moscap_n device - layout
+
+.. rst-class:: center
+
+    Figure 4.6.3 Layout for moscap_n capacitor device
+
 
 
 moscap_p
@@ -272,6 +281,15 @@ moscap_p
      - ❌
 
 **Layout View** (Refer to :ref:`layout layers`)
+
+.. image:: images/moscap_p_layout.png
+    :width: 400
+    :align: center
+    :alt: moscap_p device - layout
+
+.. rst-class:: center
+
+    Figure 4.6.4 Layout for moscap_p capacitor device
 
 
 
@@ -332,4 +350,4 @@ SVaricap
 
 .. rst-class:: center
 
-    Figure 4.6.3 Layout for SVaricap capacitor device
+    Figure 4.6.5 Layout for SVaricap capacitor device
