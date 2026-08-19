@@ -50,6 +50,7 @@ Examples of delivered files include:
 The ``doc/sg13g2_stdcell.celllist`` file and timing PDFs document the available
 cells and the corner-specific timing views.
 
+.. _stdcell_detailed_cell_list:
 Detailed Cell List
 ------------------
 
