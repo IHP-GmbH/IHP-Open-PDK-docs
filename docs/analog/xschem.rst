@@ -85,7 +85,24 @@ The ``scripts/`` folder contains python scripts, which are used for CSV data pos
 
 XSCHEM standard cell library
 -----------------------------
-To be developed
+The XSCHEM symbols for the standard cells are provided in
+``$PDK_ROOT/$PDK/libs.ref/sg13g2_stdcell/sym/xschem``. The corresponding
+schematic views are available in
+``$PDK_ROOT/$PDK/libs.ref/sg13g2_stdcell/sch/xschem``.
+
+By default, the symbols use the ``subcircuit`` type and XSCHEM descends into
+the matching schematic. To change this behavior, open
+``IHP -> Select stdcell hierarchy`` and select ``Subcircuit schematic``,
+``Primitive (no hierarchy)``, or ``Custom schematic``. Primitive mode changes
+the symbol type to ``primitive`` and emits the cell inline using its
+``format`` string; the top-level design must provide the required cell
+definitions, typically through ``.include``. Custom mode uses
+``<cell>_custom.sch`` from
+``$PDK_ROOT/$PDK/libs.ref/sg13g2_stdcell/sch/xschem`` if present and
+otherwise falls back to the default schematic.
+
+For the complete cell list, see
+:ref:`Section 2.1.4: Detailed Cell List <stdcell_detailed_cell_list>`.
 
 XSCHEM IO cell library
 -----------------------------
