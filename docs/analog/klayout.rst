@@ -26,6 +26,14 @@ The basic configuration of Klayout includes setting the environmental variables 
 
   Please note that the ``PDK_ROOT`` and ``PDK`` variables have to be exported earlier
 
+.. important::
+
+  Set the KLayout layout background to **black** before using the IHP Open PDK. The
+  supplied layer colors are designed for a black background, so this is a
+  requirement for layers to be displayed clearly and with the intended color
+  contrast. In KLayout, select ``File -> Setup -> Display -> Background`` and
+  choose black.
+
 Klayout configuration is stored in ``/home/$USER/.klayout/klayoutrc`` file. Here we provide some useful sections the user can 
 add to its own configuration. 
 
