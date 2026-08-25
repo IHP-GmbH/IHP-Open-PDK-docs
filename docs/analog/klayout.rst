@@ -1,5 +1,5 @@
-Analog design using KLayout tool
-================================
+Analog design using KLayout
+===========================
 
 `KLayout <https://www.klayout.de/>`_ is an open source layout viewer and editor. It provides a graphical interface for creating and editing GDSII and OASIS layout files.
 

@@ -1,5 +1,5 @@
-Designing using pygmid tool
-===========================
+Designing using pygmid
+======================
 
 .. _pygmid_configuration_lbl:
 
