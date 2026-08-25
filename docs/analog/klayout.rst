@@ -59,7 +59,7 @@ Key bindings:
   edit_menu.mode_menu.partial:S;
   edit_menu.mode_menu.path:P;
   edit_menu.mode_menu.polygon:'Shift+P';
-  edit_menu.mode_menu.ruler:R;
+  edit_menu.mode_menu.ruler:K;
   edit_menu.mode_menu.text:X;
   edit_menu.redo:'Ctrl+Z';
   edit_menu.select_menu.select_all:'Ctrl+Shift+A';
