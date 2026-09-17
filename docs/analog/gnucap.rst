@@ -3,122 +3,150 @@ Simulation using Gnucap
 
 .. _gnucap_configuration_lbl:
 
-Introduction to Gnucap 
+Introduction to Gnucap
 ======================
 
 Gnucap circuit simulator is an open-source modern circuit simulator with support for
-VerilogAMS. It is hosted at several mirrors but the most up to dater is the one on 
-`codeberg <https://codeberg.org/gnucap/gnucap>`_. The documentation is fragmented 
+VerilogAMS. It is hosted at several mirrors but the most up to dater is the one on
+`codeberg <https://codeberg.org/gnucap/gnucap>`_. The documentation is fragmented
 and the adoption in open source EDA tools is limited. However, gnucap is a powerful
 tool especially for mixed signal simulation.
 
 
-Gnucap and gnucap-modelgen-verilog installation on ubuntu 22.04 LTS 
+Gnucap and gnucap-modelgen-verilog installation on ubuntu 22.04 LTS
 ====================================================================
 
-Due to gnucap's modular architecture the installation process consists of two basics steps: 
+Due to gnucap's modular architecture the installation process consists of two basic steps:
 
 #. installation of gnucap - main application
 #. installation of gnucap-modelgen-verilog - Verilog-AMS model generator/compiler
 
 
-The gnucap installation is straightforward. 
+The gnucap installation is straightforward.
 The source code can be obtained from `this repository <https://codeberg.org/gnucap/gnucap>`_.
 In order to install gnucap the following commands should be executed:
 
 .. code-block:: bash
-    
-    cd 
+
+    cd
     git clone https://codeberg.org/gnucap/gnucap.git gnucap
     cd gnucap
-    ./configure 
+    mkdir build
+    cd build
+    ../configure
     make
     sudo make install
 
-The same method applies to the gnucap-modelgen-verilog tool, 
+The same method applies to the gnucap-modelgen-verilog tool,
 which can be obtained from `this website <https://codeberg.org/gnucap/gnucap-modelgen-verilog>`_.
-It is used to compile Verilog-AMS models to be included in gnucap simulation engine. 
+It is used to compile Verilog-AMS models to be included in gnucap simulation engine.
 
 .. code-block:: bash
-    
-    cd 
+
+    cd
     git clone https://codeberg.org/gnucap/gnucap-modelgen-verilog.git gnucap-modelgen-verilog
     cd gnucap-modelgen-verilog
-    ./configure 
+    mkdir build
+    cd build
+    ../configure
     make
     sudo make install
 
+Gnucap PDK settings
+===================
+
+The Verilog-A models for gnucap have to be compiled using the make build system after
+cloning the PDK. The detailed instructions are in the main README file under
+``$PDK_ROOT/$PDK/libs.tech/gnucap``. The last part is to export environmental
+variables by adding them to your ``.bashrc`` following the example:
+
+.. code-block:: bash
+
+    export GNUCAP_PLUGPATH="$PDK_ROOT/$PDK/libs.tech/gnucap/plugins/models:/usr/local/lib/gnucap"
+    export GNUCAP_INCLUDEPATH="$PDK_ROOT/$PDK/libs.tech/gnucap/models:/usr/local/include/gnucap"
+
 Gnucap basic example
-==========================
+====================
 
-There are not many basic/medium level examples in the public space on how to simulate 
-circuits with gnucap. Nevertheless both repositories contain not only sources but also an
-extensive test suites, where many examples can be found. 
-
-This document presents a basic examples of usage of gnucap using IHP SG13G2 PDK devices.
+There are not many basic or medium-level examples in the public space showing how to
+simulate circuits with gnucap. This section presents a basic example using an IHP SG13G2
+low-voltage NMOS device. The example performs a nested DC sweep of the drain-source
+voltage for several gate-source voltages.
 
 .. note::
 
-  Gnucap is interactive and has a unique feature, where you can switch between netlist formats at runtime.
-  Currently it supports Spice, Verilog-AMS and spectre formats.
+   Gnucap is interactive and has a unique feature, where you can switch between netlist formats at runtime.
+   Currently it supports Spice, Verilog-AMS and spectre formats.
+
+The following netlist can be saved as ``nmos.gc``. It uses the PDK-generated parameter
+set plugin and Verilog-A module files. These files are available after building the
+Gnucap models as described in :ref:`gnucap_configuration_lbl`.
 
 .. code-block:: verilog
 
-    // Verilog
+    // Verilog mode
     verilog
     load mgsim
     load vams/vpulse.so
-    load ../../plugins/psp103_nqs.so
-    load ../../plugins/cornerMOSlv_tt.so
+    load sg13g2_moslv_paramset.so
+    include sg13g2_moslv_module.va
     options log
 
-    // Circuit
-    // verilog style
+    // Circuit in Verilog-AMS style
     ground gnd;
-    sg13_lv_nmos #(.w(1.0e-6), .l(0.13e-6), .ng(1)) XM1(nd, ng, gnd, gnd);
+    include cornerMOSlv.va
+    moslv_tt corner_moslv();
 
-    // spice style
+    sg13_lv_nmos #(.w(1.0e-6), .l(0.13e-6), .ng(1), .mm_ok(0)) XM1(nd, ng, gnd, gnd);
+
+    // Voltage sources in Spice style
     spice
     Vgs ng gnd 0.4
     Vds nd gnd 1.2
 
-    // simulation setup spice-like
-    .print dc ids(XM1.M1) v(nodes)
-    .dc Vds 0 1.2 0.01 Vgs 0.0 0.8 0.05 > gnucap.txt
+    // Simulation setup in Spice style
+    .print dc ids(XM1.*) v(nodes)
+    .dc Vds 0 1.2 0.01 Vgs 0.0 0.8 0.05 > dcnmos.txt
 
 Gnucap uses C/C++ style comments (//) for verilog mode and spice style comments (// and \*) for spice mode.
 The ``verilog`` keyword switches gnucap to verilog-ams mode, while the ``spice`` keyword switches gnucap to spice mode.
-The ``load`` command is used to load the required plugins for the simulation. In particular the ```vams/vpulse.so``` plugin is 
-required for pulse sources and it was generated form a Verilog-AMS description using the gnucap-modelgen-verilog tool.
-The psp103_nqs.so and cornerMOSlv_tt.so plugins are required for IHP SG13G2 PDK devices and are generated using the PDK libraries and 
-gnucap-modelgen-verilog tool as well. The ``options log`` command enables logging of the simulation progress.
+The ``load`` command loads the required plugins. The ``sg13g2_moslv_paramset.so`` plugin
+and the ``sg13g2_moslv_module.va`` module provide the PDK MOS model, while
+``cornerMOSlv.va`` and ``moslv_tt`` select the typical low-voltage model corner.
+The ``options log`` command enables logging of the simulation progress.
 
-The next section of the circuit describes the circuit itself. In this case a single NMOS transistor is instantiated using Verilog-AMS style.
-The ground command introduces the ground node. The transistor is instantiated using the ``sg13_lv_nmos`` module with parameters for width, 
-length and number of gates. The transistor terminals are connected to nodes ``nd`` (drain), ``ng`` (gate) and ``gnd`` (source and bulk).
-The next section of the netlist describes the voltage sources using spice style. Two voltage sources are defined: ``Vgs`` for gate-source voltage
-and ``Vds`` for drain-source voltage. The simulation setup section defines the output to be printed and the nested DC sweep analysis redirected 
-to a file named ``gnucap.txt``. The file contains columns of data for the drain current and node voltages for each combination of Vds and Vgs values.
-
+The circuit contains one ``sg13_lv_nmos`` transistor. Its drain is connected to ``nd``,
+its gate to ``ng``, and its source and bulk to ``gnd``. ``Vgs`` and ``Vds`` are the two
+voltage sources used by the nested DC sweep. The result is written to ``dcnmos.txt``.
+The simulation can be run and plotted with:
 
 .. code-block:: bash
-        
-     #          ids(XM1.M1) v(gnd)     v(nd)      v(ng)     
-     0.         0.         0.         0.         0.        
-     0.01       1.74E-12   0.         0.01       0.        
-     0.02       3.003E-12  0.         0.02       0.        
-     0.03       3.921E-12  0.         0.03       0.        
 
-One of the easiest way to plot the data is to use either python matplotlib or gnuplot. The following example shows a gnuplot script, which plots
-the drain current vs Vds for different Vgs values.
+    gnucap nmos.gc
+    gnuplot nmos.gp
+
+The first lines of ``dcnmos.txt`` are:
+
+.. code-block:: text
+
+    #           ids(XM1.Nsg13_lv_nmos) v(gnd)     v(nd)      v(ng)
+     0.         0.         0.         0.         0.
+     0.01       1.74E-12   0.         0.01       0.
+     0.02       3.003E-12  0.         0.02       0.
+     0.03       3.921E-12  0.         0.03       0.
+
+One of the easiest ways to plot the data is to use either Python matplotlib or gnuplot.
+The following script plots the drain current versus ``Vds`` for different ``Vgs`` values.
+The supplied ``nmos.gp`` script generates a PDF; the SVG settings below can be enabled
+instead when an SVG output is needed.
 
 .. code-block:: gnuplot
-        
+
     # For PDF output
     #set terminal pdfcairo size 800,600
     #set output "sg13_lv_nmos.pdf"
     # For SVG output
-    set terminal svg size 800,600 
+    set terminal svg size 800,600
     set output "sg13_lv_nmos.svg"
 
     set multiplot layout 1,1 title "Drain current of low voltage nmos transistor sg13\\_lv\\_nmos"
@@ -127,13 +155,12 @@ the drain current vs Vds for different Vgs values.
     set ylabel "I_{ds} (A)"
     set xlabel "V_{ds} (V)"
     unset key
-    plot "gnucap.txt"  using 1:2 with points pt 3 ps 0.3
+    plot "dcnmos.txt" using 1:2 with points pt 3 ps 0.3
 
     unset multiplot
     set output
 
-
-The SVG output of the plot is shown below:
+The resulting plot is shown below:
 
 .. image:: ../_static/sg13_lv_nmos.svg
     :align: center
@@ -143,179 +170,273 @@ The SVG output of the plot is shown below:
 Compiling a Verilog-A model to be used in a simulation
 ======================================================
 
-The gnucap-modelgen-verilog tool is used to compile Verilog-A models to be used in gnucap simulations.  
-This step can be executed using the following one-liner command:
+The ``gnucap-modelgen-verilog`` tool compiles Verilog-A and Verilog-AMS models into
+shared objects that can be loaded by Gnucap. The transmission-gate example contains
+three models:
 
+* ``elect_to_logic.vams`` converts an electrical signal to a logic signal.
+* ``logic_to_elect.vams`` converts a logic signal to an electrical signal.
+* ``tgate.va`` implements a CMOS transmission gate using IHP SG13G2 devices.
+
+The following ``build.sh`` script compiles all three models. The ``GNUGCAP_INC`` and
+``GNUGCAP_VAMS`` variables can be used to select a non-default Gnucap installation.
 
 .. code-block:: bash
-        
-    gnucap-mg-vams --cc model.vams   | g++ -xc++ `gnucap-conf --cppflags` -fPIC -shared - -o model.so
 
-In this example the Verilog-AMS model is contained in the ``model.vams`` file and the output shared object file is ``model.so`` and can 
-be loaded in gnucap using the ``load`` command as shown in the previous example.
+    #!/bin/sh
+    set -e
 
-The following code shows a basic Verilog-A models of a 2 input NAND gate and a D-type flip-flop.
+    GNUGCAP_INC="${GNUGCAP_INC:-/usr/local/include/gnucap}"
+    GNUGCAP_VAMS=${GNUGCAP_VAMS:-gnucap-mg-vams}
+
+    build_model() {
+        src="$1"
+        out="$2"
+        "$GNUGCAP_VAMS" -I "$GNUGCAP_INC" --cc "$src" |
+            g++ -xc++ -I"$GNUGCAP_INC" -DNDEBUG -O2 -fPIC -shared - -o "$out"
+    }
+
+    build_model elect_to_logic.vams elect_to_logic.so
+    build_model logic_to_elect.vams logic_to_elect.so
+    build_model tgate.va tgate.so
+
+The electrical-to-logic connectmodule uses the thresholds from the Gnucap logic model
+to convert the electrical input into a logic state:
 
 .. code-block:: verilog
-
 
     `include "disciplines.vams"
 
-    module anand (out, in1, in2);
+    // Electrical-to-logic connectmodule.
+    connectmodule elect_to_logic(el, cm);
+        input el;
+        output cm;
+        logic cm;
+        electrical el;
+        reg state;
+        logic state;
 
-    input in1, in2; 
-    output out; 
-    electrical out;
-    electrical in1, in2;
-    parameter real vh = 1.2;			// output electrical in high state
-    parameter real vl = 0;			// output electrical in low state
-    parameter real vth = (vh + vl)/2;	// threshold electrical at inputs
-    parameter real td = 0 from [0:inf);	// delay to start of output transition
-    parameter real tt = 0 from [0:inf);	// transition time of output signals
+        initial state = 0;
+        always @(above(V(el) - 0.85)) state = 1;
+        always @(above(0.25 - V(el))) state = 0;
+        assign cm = state;
+    endconnectmodule
 
-    analog begin
-        @(cross(V(in1) - vth) or cross(V(in2) - vth));
-
-        V(out) <+ transition( !((V(in1) > vth) && (V(in2) > vth)) ? vh : vl, td, tt );
-    end
-    endmodule
-
-    module dff1 (q, qb, clk, d);
-
-    output q; 
-    electrical q;	// Q output
-    output qb; 
-    electrical qb;	// Q bar output
-    input clk; 
-    electrical clk;	// Clock input (edge triggered)
-    input d; 
-    electrical d;	// D input
-    parameter real td = 0 from [0:inf);	// delay from clock to q
-    parameter real tt = 0 from [0:inf);	// transition time of output signals
-    parameter real vh = 1.2;			// output voltage in high state
-    parameter real vl = 0;			// output voltage in low state
-    parameter real vth = (vh + vl)/2;	// threshold voltage at inputs
-    parameter integer dir = +1 from [-1:+1] exclude 0;
-                // if dir=+1, rising clock edge triggers flip flop 
-                // if dir=-1, falling clock edge triggers flip flop 
-    real state;
-
-    analog begin
-        @(cross(V(clk) - vth, dir))
-        state = (V(d) > vth);
-
-        V(q) <+ transition( state ? vh : vl, td, tt );
-        V(qb) <+ transition( state ? vl : vh, td, tt );
-    end
-    endmodule
-
-
-After compilation the model was included in the following framework of the simulation:
+The logic-to-electrical connectmodule generates a voltage transition for each logic edge:
 
 .. code-block:: verilog
 
-    load mgsim
-    load ./gates.so
+    `include "disciplines.vams"
+
+    // Logic-to-electrical connectmodule.
+    connectmodule logic_to_elect(cm, el);
+        parameter real v0 = 0.0;
+        parameter real v1 = 1.2;
+        parameter real tr = 10p;
+        parameter real tf = 10p;
+        input cm;
+        output el;
+        logic cm;
+        electrical el;
+        (* _state="yes", desc="outval" *) real out_val;
+
+        analog initial out_val = v0;
+        always @(posedge(cm)) out_val = v1;
+        always @(negedge(cm)) out_val = v0;
+
+        analog begin
+            V(el) <+ transition(out_val, 0, tr, tf);
+        end
+    endconnectmodule
+
+The transmission-gate model combines complementary low-voltage NMOS and PMOS devices.
+The clock signals are converted to electrical controls before driving the MOS gates.
+The resistor provides a load from the output to ``vss``.
+
+.. code-block:: verilog
+
+    `include "disciplines.vams"
+
+    // Basic complementary transmission gate for the IHP SG13G2 process.
+    module tgate(vdd, vss, in, out, clk, nclk);
+        inout vdd, vss, in, out;
+        input clk, nclk;
+        logic clk, nclk;
+        electrical vdd, vss, in, out, clk_e, nclk_e;
+
+        logic_to_elect #(.v0(0.0), .v1(1.2), .tr(10p), .tf(10p))
+            clk_converter(clk, clk_e);
+        logic_to_elect #(.v0(0.0), .v1(1.2), .tr(10p), .tf(10p))
+            nclk_converter(nclk, nclk_e);
+
+        // The complementary gates keep the switch conducting across the full
+        // signal range from vss to vdd.
+        sg13_lv_nmos #(.w(1u), .l(0.13u), .ng(1), .mm_ok(0)) MN(in, clk_e, out, vss);
+        sg13_lv_pmos #(.w(2u), .l(0.13u), .ng(1), .mm_ok(0)) MP(out, nclk_e, in, vdd);
+
+        resistor #(.r(10k)) r1(out, vss);
+    endmodule
+
+The generated schematic of the transmission gate is shown below:
+
+.. image:: ../_static/tgate-schematic.svg
+    :align: center
+    :alt: Schematic of the complementary CMOS transmission gate
+
+The testbench instantiates the transmission gate, supplies a constant 1 V input, and
+generates complementary clock phases. The electrical clock sources are converted to
+logic signals before they are connected to the transmission-gate model.
+
+.. code-block:: verilog
+
+    // Load model plugins.
+    load sg13g2_moslv_paramset.so
     load vams/vpulse.so
-    load ../../plugins/psp103_nqs.so
-    load ../../plugins/cornerMOSlv_tt.so
-    load ../../plugins/capacitor.so
-    // options log
+    load ./elect_to_logic.so
+    load ./logic_to_elect.so
+    load ./tgate.so
+
+    include sg13g2_moslv_module.va
+
+    module tb_tgate(in, out, clk, nclk);
+        inout in, out;
+        output clk, nclk;
+        logic clk, nclk;
+        ground gnd;
+        electrical vdd, vss, out, in, clk_drive, nclk_drive;
+
+        tgate tg(vdd, vss, in, out, clk, nclk);
+        vsource #(.dc(1.2)) vdd1(vdd, gnd);
+        vsource #(.dc(0.0)) vss1(vss, gnd);
+        vpulse #(.val0(0.0), .val1(1.2), .rise(10p), .fall(10p), .width(25n), .period(50n)) clk_source(clk_drive, gnd);
+        vpulse #(.val0(1.2), .val1(0.0), .rise(10p), .fall(10p), .width(25n), .period(50n)) nclk_source(nclk_drive, gnd);
+        elect_to_logic clk_converter(clk_drive, clk);
+        elect_to_logic nclk_converter(nclk_drive, nclk);
+        vsource #(.dc(1.0)) vin(in, gnd);
+    endmodule
+
+The Gnucap control file loads the simulator plugins, selects the model corners, and
+performs a 400 ns transient analysis. It also writes a VCD file named ``tgate.vcd``
+and a tabular output file named ``tgate-tran.txt``.
+
+.. code-block:: text
+
+    // Functional testbench for the complementary transmission gate.
+    load mgsim
+    options abstol=1n
+    options trtol=2.0
+    options gmin=1n
+    options itl6=250
+    options method=gear
+    options noincmode
     verilog
-    ground gnd;  
-    anand xnand(nand, i1, i2);
-    dff1 xdff(q, qb ,clk, nand);
+    load logic/gnucap-logic.so
+    load plugins/out/outputvcd.so
 
-    sg13_lv_nmos #(.w(1.0e-6), .l(0.13e-6), .ng(1)) XM1(xout, nand, vss, vss);
-    sg13_lv_pmos #(.w(1.0e-6), .l(0.13e-6), .ng(1)) XM2(xout, nand, vdd, vdd);
-    sp_capacitor #(.capacitance(1e-14)) C1(xout, gnd);
-    sp_capacitor #(.capacitance(1e-14)) C2(q, gnd);
-    sp_capacitor #(.capacitance(1e-14)) C3(qb, gnd);
+    include ./tb_tgate.va
 
-    spice
-    Vdd1 vdd gnd 1.2
-    Vss1 vss gnd 0.0
-    V1 i1 gnd pulse(0, 1.2, 0, 1n, 1n, 5u, 10u)
-    V2 i2 gnd pulse(0, 1.2, 0, 1n, 1n, 3u, 10u)
-    Vclk clk gnd pulse(0, 1.2, 200n, 1n, 1n, 500n, 1u)
+    include cornerRES.va
+    include cornerMOSlv.va
+    include cornerCAP.va
 
-    .print tran   v(i1) v(i2) v(nand) v(xout) v(clk) v(q)
-    .tran  10u  > tran.txt trace off quiet
-    .status 
- 
-Gnucap will redirect the transient simulation output into ``tran.txt`` file. 
+    res_typ corner_res();
+    cap_typ corner_cap();
+    moslv_tt corner_moslv();
 
+    .model logic logic delay=100p rise=10p fall=10p vmax=1.2 vmin=0.0 thh=0.85 thl=0.25
+    tb_tgate tb(in, out, clk, nclk);
+    print tran v(in) v(out) l(clk) l(nclk) iter(0)
+    outputvcd tgate 100ps
+    tran 100p 400n > tgate-tran.txt
+    status notime
 
+The example can be built and run with:
 
-The additional measurements are stored added to a file ``file``, which
-stores the voltages at specific time instants.
+.. code-block:: bash
 
-.. warning::
+    ./run.sh
+    gnuplot tgate.gp
 
-  In order to make the measurements work properly the ``store tran v(*)`` command is required to store all node voltages.
+The first lines of ``tgate-tran.txt`` are:
 
-The associated gnuplot script to plot the transient response is shown below:
+.. code-block:: text
 
-.. code-block:: gnuplot 
+    #Time       v(in)      v(out)     l(clk)     l(nclk)    iter(0)
+     0.         1.         0.86161    0.         0.         9.
+     100.E-12   1.         0.86161    1.         0.         38.
+     200.E-12   1.         0.86167    3.         0.         32.
+     300.E-12   1.         0.86173    3.         0.         4.
 
-    
-    # For PDF output
-    #set terminal pdfcairo size 800,600
-    #set output "gates.pdf"
-    # For SVG output
-    set terminal svg size 800,600 
-    set output "gates.svg"
-    set multiplot layout 6,1 title "AMS circuit transient results"
+The ``tgate.gp`` script plots the complementary clock phases and the transmission-gate
+output. It writes both PDF and SVG versions of the figure.
+
+.. code-block:: text
+
+    # Plot the complementary clock phases and transmission-gate output.
+    set datafile commentschars "#"
+    set xrange [0:400]
+    set yrange [0:1.3]
     set grid
-    set yrange [-0.1:1.3]
-    set style line 1 lc rgb "blue"  lw 2
-    set style line 2 lc rgb "red"   lw 2
-    set style line 3 lc rgb "black" lw 2
 
-    set ylabel "V(i1) (V)"
-    plot "tran.txt" using 1:2 with lines ls 1 title "V(i1)"
+    set terminal pdfcairo enhanced color size 8in,4.5in
+    set output "tgate.pdf"
+    set multiplot layout 2,1 margins 0.11,0.97,0.10,0.91 spacing 0.08,0.10
+    set ylabel "Clock (V)"
+    set format x ""
+    set key bottom right
+    set title "Complementary clock phases"
+    plot "tgate-tran.txt" using ($1*1e9):($4 > 0 ? 1.2 : 0) with steps lw 1.2 title "clk", \
+         "tgate-tran.txt" using ($1*1e9):($5 > 0 ? 1.2 : 0) with steps lw 1.2 title "nclk"
 
-    set ylabel "V(i2) (V)"
-    plot "tran.txt" using 1:3 with lines ls 1 title "V(i2)"
+    set xlabel "Time (ns)"
+    set ylabel "V(out) (V)"
+    set format x "%g"
+    unset key
+    set title "Transmission-gate output for a constant 1 V input"
+    plot "tgate-tran.txt" using ($1*1e9):3 with lines lw 1.5 title "V(out)"
 
-    set ylabel "V(nand) (V)"
-    plot "tran.txt" using 1:4 with lines ls 2 title "NAND output V(nand)"
+    unset multiplot
 
-    set ylabel "V(xout) (V)"
-    plot "tran.txt" using 1:5 with lines ls 2 title "Inverted NAND V(xout)"
+    set terminal svg enhanced size 1000,560 dynamic
+    set output "tgate.svg"
+    set multiplot layout 2,1 margins 0.11,0.97,0.10,0.91 spacing 0.08,0.10
+    set ylabel "Clock (V)"
+    set format x ""
+    set key bottom right
+    set title "Complementary clock phases"
+    plot "tgate-tran.txt" using ($1*1e9):($4 > 0 ? 1.2 : 0) with steps lw 1.2 title "clk", \
+         "tgate-tran.txt" using ($1*1e9):($5 > 0 ? 1.2 : 0) with steps lw 1.2 title "nclk"
 
-    set ylabel "V(clk) (V)"
-    plot "tran.txt" using 1:6 with lines ls 3 title "Clock signal V(clk)"
-
-    set ylabel "V(q) (V)"
-    plot "tran.txt" using 1:7 with lines ls 3 title "Flip-Flop output V(q)"
-
+    set xlabel "Time (ns)"
+    set ylabel "V(out) (V)"
+    set format x "%g"
+    unset key
+    set title "Transmission-gate output"
+    plot "tgate-tran.txt" using ($1*1e9):3 with lines lw 1.5 title "V(out)"
     unset multiplot
 
     set output
 
-The SVG output of the plot is shown below:
+The SVG output of the transient simulation is shown below:
 
-.. image:: ../_static/gates.svg
+.. image:: ../_static/tgate.svg
     :align: center
-    :alt: Gnucap transient analysis of gates
+    :alt: Complementary clock phases and transmission-gate transient output
 
-As shown on the plot the NAND gate output follows the expected truth table and the flip-flop captures the NAND gate output at the rising edge of the clock signal.
-Additionally the inverted made out of primitive low voltage complementary devices inverts the input signal correctly. The inverter output contains 
-some artefacts characteristic for analog simulation, which are not present at other nodes due to the applied model. 
+When ``clk`` is high and ``nclk`` is low, the complementary MOS devices conduct and
+the input is transferred to the output. When the clock phases are reversed, the gate
+is off and the output is pulled toward ``vss`` by the 10 kOhm resistor. The simulated
+high level is below 1 V because of the device models and the resistive load.
 
 .. note:: Conclusions
 
-  The presented circuit mixes different levels of Verilog-A modelling styles. The NAND gate is modelled using 
-  behavioral approach neglecting underlying device level of hierarchy as well as the flip-flop. 
-  In the testbench the testand module was defined instantiating the NAND gate, the flip-flop and associated voltage 
-  sources for generating stimuli. 
-  The transient analysis was defined using the ``tran`` command and the results were stored in a file named ``tran.txt``.
-  This approach is suitable for fast digital simulations, where the focus is on the logic functionality. 
-
+   This example demonstrates a mixed-signal Verilog-AMS hierarchy in Gnucap. The
+   connectmodules bridge logic and electrical signals, while the transmission gate
+   itself is built from SG13G2 transistor models and a resistor. The testbench uses
+   a transient analysis and exports both tabular data and a VCD waveform file.
 
 References
-================
+==========
 
 You can find some more resources here:
 
@@ -334,4 +455,3 @@ You can find some more resources here:
 .. _IGER2023: https://www.youtube.com/watch?v=nacG9UwvoLw
 .. _IEEE2023: https://ieeexplore.ieee.org/document/1225766
 .. _IEEE2022: https://ieeexplore.ieee.org/abstract/document/1291068/
-
