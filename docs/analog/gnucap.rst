@@ -298,9 +298,9 @@ logic signals before they are connected to the transmission-gate model.
 
     include sg13g2_moslv_module.va
 
-    module tb_tgate(in, out, clk, nclk);
+    module tb_tgate(in, out, clk_drive, nclk_drive);
         inout in, out;
-        output clk, nclk;
+        output clk_drive, nclk_drive;
         logic clk, nclk;
         ground gnd;
         electrical vdd, vss, out, in, clk_drive, nclk_drive;
@@ -316,7 +316,7 @@ logic signals before they are connected to the transmission-gate model.
     endmodule
 
 The Gnucap control file loads the simulator plugins, selects the model corners, and
-performs a 400 ns transient analysis. It also writes a VCD file named ``tgate.vcd``
+performs a 400 ns transient analysis. It also writes a VCD file named ``tgate.vcd`` (using an experimental plugin)
 and a tabular output file named ``tgate-tran.txt``.
 
 .. code-block:: text
@@ -345,7 +345,7 @@ and a tabular output file named ``tgate-tran.txt``.
 
     .model logic logic delay=100p rise=10p fall=10p vmax=1.2 vmin=0.0 thh=0.85 thl=0.25
     tb_tgate tb(in, out, clk, nclk);
-    print tran v(in) v(out) l(clk) l(nclk) iter(0)
+    print tran v(in) v(out) v(clk) v(nclk) iter(0)
     outputvcd tgate 100ps
     tran 100p 400n > tgate-tran.txt
     status notime
@@ -361,7 +361,7 @@ The first lines of ``tgate-tran.txt`` are:
 
 .. code-block:: text
 
-    #Time       v(in)      v(out)     l(clk)     l(nclk)    iter(0)
+    #Time       v(in)      v(out)     v(clk)     v(nclk)    iter(0)
      0.         1.         0.86161    0.         0.         9.
      100.E-12   1.         0.86161    1.         0.         38.
      200.E-12   1.         0.86167    3.         0.         32.
