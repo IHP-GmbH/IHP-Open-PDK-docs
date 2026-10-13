@@ -12,10 +12,11 @@ Precheck (Minimal) DRC rules
 
     .. code-block:: bash
 
-        python3 run_drc.py --path=<your_design>.gds --precheck_drc
+        python3 run_drc.py --path=<your_design>.gds --minimum_drc
 
-    ``--precheck_drc`` implies ``--disable_extra_rules``, ``--no_offgrid`` and ``--no_angle``, and antenna
-    rules are not run. See :ref:`CLI Usage` for the other options.
+    ``--minimum_drc`` implies ``--disable_extra_rules``, ``--no_offgrid`` and ``--no_angle``, and antenna
+    rules are not run. ``--precheck_drc`` still works as a deprecated alias of ``--minimum_drc`` and will be
+    removed in a future release. See the :doc:`DRC usage page <04_04_usage>` for the other options.
 
 Activ (not in BEOL)
 -------------------
@@ -289,7 +290,7 @@ Forbidden layers
 SG13CMOS5L
 ----------
 
-SG13CMOS5L uses the same precheck rule set, run with the ``--precheck_drc`` option of its own
+SG13CMOS5L uses the same precheck rule set, run with the ``--minimum_drc`` option of its own
 ``run_drc.py`` (``ihp-sg13cmos5l/libs.tech/klayout/tech/drc``), with two differences: the rules for
 layers that SG13CMOS5L does not have are not checked, and the layers it does not have are checked as
 forbidden.
