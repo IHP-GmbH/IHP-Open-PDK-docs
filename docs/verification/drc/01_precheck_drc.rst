@@ -14,9 +14,10 @@ Precheck (Minimal) DRC rules
 
         python3 run_drc.py --path=<your_design>.gds --minimum_drc
 
-    ``--minimum_drc`` implies ``--disable_extra_rules``, ``--no_offgrid`` and ``--no_angle``, and antenna
-    rules are not run. ``--precheck_drc`` still works as a deprecated alias of ``--minimum_drc`` and will be
-    removed in a future release. See the :doc:`DRC usage page <04_04_usage>` for the other options.
+    ``--minimum_drc`` (short form ``--min_drc``) implies ``--disable_extra_rules``, ``--no_offgrid`` and
+    ``--no_angle``, and antenna rules are not run. ``--precheck_drc`` still works as a deprecated alias of
+    ``--minimum_drc`` and will be removed in a future release. See the :doc:`DRC usage page <04_04_usage>`
+    for the other options.
 
 Activ (not in BEOL)
 -------------------

@@ -19,7 +19,7 @@ The `run_drc.py` script takes your gds to run DRC rule decks with switches to se
           [--topcell=<topcell_name>] [--run_mode=<mode>] [--drc_json=<json_path>]
           [--disable_extra_rules] [--no_feol] [--no_beol] [--density_sanity] [--no_density]
           [--density_thr=<density_threads>] [--density_only] [--antenna]
-          [--antenna_only] [--no_offgrid] [--no_angle] [--no_recommended] [--minimum_drc]
+          [--antenna_only] [--no_offgrid] [--no_angle] [--no_recommended] [--minimum_drc | --min_drc]
 
 **Options:**
 
@@ -47,7 +47,8 @@ The `run_drc.py` script takes your gds to run DRC rule decks with switches to se
     `--no_offgrid`          Disable offgrid rule checks.
     `--no_angle`            Disable angle rule checks.
     `--no_recommended`      Disable recommended rule checks.
-    `--minimum_drc`         Run only the precheck rule set. Implies `--disable_extra_rules`, `--no_offgrid`
+    `--minimum_drc, --min_drc`
+                            Run only the precheck rule set. Implies `--disable_extra_rules`, `--no_offgrid`
                             and `--no_angle`; antenna rules are not run.
     `--precheck_drc`        Deprecated alias of `--minimum_drc`, to be removed in a future release.
 
@@ -55,7 +56,7 @@ The `run_drc.py` script takes your gds to run DRC rule decks with switches to se
    
    By default, the **main DRC rule set** will be executed, which includes **density rules**.  
    To disable density checks, use the ``--no_density`` switch.
-   To run only the :ref:`precheck rule set <precheck_drc>`, use the ``--minimum_drc`` switch.
+   To run only the :ref:`precheck rule set <precheck_drc>`, use the ``--minimum_drc`` switch (short form ``--min_drc``).
 
 .. tip::
 
