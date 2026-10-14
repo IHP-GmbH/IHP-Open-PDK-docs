@@ -36,6 +36,7 @@ pip-delete-this-directory.txt
 # Sphinx documentation
 docs/_build/
 docs/verification/drc/tables/_precheck_drc_rule_count.rst
+docs/verification/drc/tables/_cmos5l_precheck_rule_count.rst
 
 # Jupyter Notebook
 .ipynb_checkpoints

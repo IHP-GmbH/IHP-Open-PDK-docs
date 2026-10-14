@@ -19,6 +19,6 @@ M4Fil.k,Max. Metal4 and Metal4:filler coverage ratio for any 800 x 800 µm² chi
 M5Fil.h,Min. Metal5 and Metal5:filler coverage ratio for any 800 x 800 µm² chip area [%],25
 M5Fil.k,Max. Metal5 and Metal5:filler coverage ratio for any 800 x 800 µm² chip area [%],75
 TM1.c,Min. global TopMetal1 density [%],25
-TM1.d,Max. global TopMetal1 density [%],75
+TM1.d,Max. global TopMetal1 density [%],70
 TM2.c,Min. global TopMetal2 density [%],25
-TM2.d,Max. global TopMetal2 density [%],75
+TM2.d,Max. global TopMetal2 density [%],70

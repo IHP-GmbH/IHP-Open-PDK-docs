@@ -1,3 +1,4 @@
 Padb.a,Min. SBumpPad size,60
 Padb.b,Min. SBumpPad space,70
 Padb.c,Min. TopMetal2 (within dfpad) enclosure of SBumpPad,10
+Padb.f,"Allowed passivation opening shape (Octagon, Circle)",-

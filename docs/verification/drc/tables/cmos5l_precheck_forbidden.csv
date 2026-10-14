@@ -1,0 +1,10 @@
+CMOS5L.FORB.Metal5,Metal5 is forbidden in SG13CMOS5L designs (M1-M4-TM1 stack).,-
+CMOS5L.FORB.Metal5.filler,Metal5:filler is forbidden in SG13CMOS5L designs (M1-M4-TM1 stack).,-
+CMOS5L.FORB.Via4,Via4 is forbidden in SG13CMOS5L designs (M1-M4-TM1 stack).,-
+CMOS5L.FORB.TopMetal2,TopMetal2 is forbidden in SG13CMOS5L designs (M1-M4-TM1 stack).,-
+CMOS5L.FORB.TopMetal2.filler,TopMetal2:filler is forbidden in SG13CMOS5L designs (M1-M4-TM1 stack).,-
+CMOS5L.FORB.TopVia2,TopVia2 is forbidden in SG13CMOS5L designs (M1-M4-TM1 stack).,-
+CMOS5L.FORB.TRANS,TRANS (HBT) is forbidden in SG13CMOS5L designs (M1-M4-TM1 stack).,-
+CMOS5L.FORB.nBuLay,nBuLay (HBT buried layer) is forbidden in SG13CMOS5L designs (M1-M4-TM1 stack).,-
+CMOS5L.FORB.MIM,MIM is forbidden in SG13CMOS5L designs (M1-M4-TM1 stack).,-
+CMOS5L.FORB.Vmim,Vmim is forbidden in SG13CMOS5L designs (M1-M4-TM1 stack).,-

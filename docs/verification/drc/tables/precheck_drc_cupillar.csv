@@ -1,3 +1,4 @@
 Padc.a,Min. CuPillarPad size,35
 Padc.b,Min. CuPillarPad space,40
 Padc.c,Min. TopMetal2 (within dfpad) enclosure of CuPillarPad,7.5
+Padc.f,Allowed passivation opening shape (Circle),-

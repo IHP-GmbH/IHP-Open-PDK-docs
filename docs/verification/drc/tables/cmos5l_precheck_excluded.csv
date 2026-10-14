@@ -1,0 +1,26 @@
+M5.a,Min. Metal5 width,0.2
+M5.b,Min. Metal5 space or notch,0.21
+M5Fil.c,M5Fil.c Min. Metal5:filler space to Metal5,0.42
+V4.a,Min. and max. Via4 width,0.19
+V4.b,Min. Via4 space,0.22
+TV2.a,Min. and max. TopVia2 width,0.9
+TV2.b,Min. TopVia2 space,1.06
+TM2.a,Min. TopMetal2 width,2
+TM2.b,Min. TopMetal2 space or notch,2
+TM2Fil.c,5.26.  TM2Fil.c Min. TopMetal2:filler space to TopMetal2,3
+M5.j,Min. global Metal5 density [%],35
+M5.k,Max. global Metal5 density [%],60
+M5Fil.h,Min. Metal5 and Metal5:filler coverage ratio for any 800 x 800 µm² chip area [%],25
+M5Fil.k,Max. Metal5 and Metal5:filler coverage ratio for any 800 x 800 µm² chip area [%],75
+TM2.c,Min. global TopMetal2 density [%],25
+TM2.d,Max. global TopMetal2 density [%],70
+Padb.a,Min. SBumpPad size,60
+Padb.b,Min. SBumpPad space,70
+Padb.c,Min. TopMetal2 (within dfpad) enclosure of SBumpPad,10
+Padb.f,"Allowed passivation opening shape (Octagon, Circle)",-
+Padc.a,Min. CuPillarPad size,35
+Padc.b,Min. CuPillarPad space,40
+Padc.c,Min. TopMetal2 (within dfpad) enclosure of CuPillarPad,7.5
+Padc.f,Allowed passivation opening shape (Circle),-
+Pin.f.M5,Min. Metal5 enclosure of Metal5:pin,0
+Pin.h,Min. TopMetal2 enclosure of TopMetal2:pin,0

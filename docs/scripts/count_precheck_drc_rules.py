@@ -20,3 +20,19 @@ for path in csv_files:
 output_path = csv_dir / "_precheck_drc_rule_count.rst"
 with output_path.open("w", encoding="utf-8") as out:
     out.write(f"Total: **{total}**\n")
+
+
+# SG13CMOS5L: the SG13G2 set without the excluded rules, plus its forbidden layers
+def count_rows(name):
+    with (csv_dir / name).open(encoding="utf-8") as f:
+        return len(list(csv.reader(f)))
+
+
+cmos5l_total = (
+    total
+    - count_rows("cmos5l_precheck_excluded.csv")
+    + count_rows("cmos5l_precheck_forbidden.csv")
+)
+output_path = csv_dir / "_cmos5l_precheck_rule_count.rst"
+with output_path.open("w", encoding="utf-8") as out:
+    out.write(f"SG13CMOS5L total: **{cmos5l_total}**\n")

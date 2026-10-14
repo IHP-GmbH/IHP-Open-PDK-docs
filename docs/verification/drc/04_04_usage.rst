@@ -4,7 +4,7 @@ Usage
 .. note::
     You have the option to execute the SG13G2-DRC through either a Python script via the command-line interface (CLI) or by the Klayout graphical user interface (GUI), as detailed in the subsequent usage sections.
 
-.. _CLI Usage:
+.. _drc_cli_usage:
 
 CLI
 ---
@@ -17,9 +17,9 @@ The `run_drc.py` script takes your gds to run DRC rule decks with switches to se
   run_drc.py --path=<file_path>
           [--table=<table_name>]... [--mp=<num_cores>] [--run_dir=<run_dir_path>]
           [--topcell=<topcell_name>] [--run_mode=<mode>] [--drc_json=<json_path>]
-          [--disable_extra_rules] [--no_feol] [--no_beol] [--no_density]
+          [--disable_extra_rules] [--no_feol] [--no_beol] [--density_sanity] [--no_density]
           [--density_thr=<density_threads>] [--density_only] [--antenna]
-          [--antenna_only] [--no_offgrid] [--macro_gen]
+          [--antenna_only] [--no_offgrid] [--no_angle] [--no_recommended] [--minimum_drc | --min_drc]
 
 **Options:**
 
@@ -38,18 +38,25 @@ The `run_drc.py` script takes your gds to run DRC rule decks with switches to se
     `--drc_json DRC_JSON`   Path to a JSON file that defines rule values to use.
     `--no_feol`             Disable all FEOL-related DRC checks.
     `--no_beol`             Disable all BEOL-related DRC checks.
-    `--disable_extra_rules` Distable the remaining DRC rules from the full rule set (may be slower).
+    `--disable_extra_rules` Disable the remaining DRC rules from the full rule set (may be slower).
     `--no_density`          Disable density rule checks.
+    `--density_sanity`      Enable optional density boundary sanity markers (default: disabled).
     `--density_only`        Run only density rules.
     `--antenna`             Enable antenna rule checks.
     `--antenna_only`        Run only antenna rules.
     `--no_offgrid`          Disable offgrid rule checks.
-    `--macro_gen`           Only generate the DRC rule deck without running.
+    `--no_angle`            Disable angle rule checks.
+    `--no_recommended`      Disable recommended rule checks.
+    `--minimum_drc, --min_drc`
+                            Run only the precheck rule set. Implies `--disable_extra_rules`, `--no_offgrid`
+                            and `--no_angle`; antenna rules are not run.
+    `--precheck_drc`        Deprecated alias of `--minimum_drc`, to be removed in a future release.
 
 .. note::
    
    By default, the **main DRC rule set** will be executed, which includes **density rules**.  
    To disable density checks, use the ``--no_density`` switch.
+   To run only the :ref:`precheck rule set <precheck_drc>`, use the ``--minimum_drc`` switch (short form ``--min_drc``).
 
 .. tip::
 
@@ -58,7 +65,7 @@ The `run_drc.py` script takes your gds to run DRC rule decks with switches to se
    - 1. Attempt to load the **SG13G2 technology JSON file**:  
      `SG13G2 tech JSON <https://github.com/IHP-GmbH/IHP-Open-PDK/tree/dev/ihp-sg13g2/libs.tech/klayout/python/sg13g2_pycell_lib/sg13g2_tech_mod.json>`_ file.
    - 2. Fall back to **default DRC values**:  
-     `default tech DRC values <https://github.com/IHP-GmbH/IHP-Open-PDK/tree/dev/ihp-sg13g2/libs.tech/klayout/tech/drc/rule_decks/default_drc_rules.json>`_ file.
+     `default tech DRC values <https://github.com/IHP-GmbH/IHP-Open-PDK/tree/dev/ihp-sg13g2/libs.tech/klayout/tech/drc/rule_decks/sg13g2_tech_default.json>`_ file.
 
 **Example:**
 
@@ -164,7 +171,7 @@ Then, you will get the DRC menus for SG13G2, you could set your desired options 
 
     Figure 4.4.7 Setting up DRC Options-GUI - 3
 
-For additional details on GUI options, please refer to the :ref:`CLI Usage`.
+For additional details on GUI options, please refer to the :ref:`CLI Usage <drc_cli_usage>`.
 
 Finally, after setting your option, you could execute the DRC using `Run Klayout DRC` from the dropdown menu.
 
