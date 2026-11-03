@@ -19,6 +19,49 @@ More details about Qucs-S XML devices can be found
 `here <https://github.com/ra3xdh/qucs_s/tree/dev/xml_devices/qucs/components/xml/README.md>`_.
 
 
+.. _qucs_configuration_lbl:
+
+Qucs-S installation
+-------------------
+
+The XML device support required by IHP-Open-PDK is not yet part of an official Qucs-S release.
+Qucs-S has to be built from source using the ``dev/xml_devices`` branch, either from the
+`upstream Qucs-S repository <https://github.com/ra3xdh/qucs_s/tree/dev/xml_devices>`_ or from the
+`IHP fork <https://github.com/IHP-GmbH/qucs_s/tree/dev/xml_devices>`_.
+
+.. warning::
+    Qucs-S packages from distribution repositories or official release binaries do not contain
+    the XML device support and cannot load the IHP-Open-PDK symbols.
+
+Install the build dependencies (Ubuntu/Debian):
+
+.. code-block:: bash
+
+    sudo apt-get install ngspice build-essential git cmake flex bison gperf dos2unix xsdcxx libxerces-c-dev
+    sudo apt-get install qt6-base-dev qt6-tools-dev qt6-tools-dev-tools libglx-dev linguist-qt6
+    sudo apt-get install qt6-l10n-tools libqt6svg6-dev libgl1-mesa-dev qt6-charts-dev libqt6opengl6-dev
+
+Clone the ``dev/xml_devices`` branch and build Qucs-S:
+
+.. code-block:: bash
+
+    git clone --branch dev/xml_devices https://github.com/ra3xdh/qucs_s.git
+    # or the IHP fork:
+    # git clone --branch dev/xml_devices https://github.com/IHP-GmbH/qucs_s.git
+    cd qucs_s
+    git submodule init
+    git submodule update
+    mkdir builddir
+    cd builddir
+    cmake .. -DCMAKE_INSTALL_PREFIX=$HOME/qucs-s
+    make
+    make install
+
+.. note::
+    If ``CMAKE_INSTALL_PREFIX`` is omitted, Qucs-S is installed to ``/usr/local``, which requires
+    ``sudo make install``. When installing to ``$HOME/qucs-s``, add ``$HOME/qucs-s/bin`` to your ``PATH``.
+
+
 Adding a new library and objects to Qucs-S via XML interface
 -----------
 

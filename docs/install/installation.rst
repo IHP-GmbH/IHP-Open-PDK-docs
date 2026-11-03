@@ -79,6 +79,7 @@ Tool specific configuration
 Since the PDK provides support of many tools we provide this configuration at tool specific section like:
 
 #. :ref:`xschem_configuration_lbl`.
+#. :ref:`qucs_configuration_lbl`.
 #. :ref:`ngspice_configuration_lbl`.
 #. :ref:`xyce_configuration_lbl`.
 #. :ref:`pygmid_configuration_lbl`.
