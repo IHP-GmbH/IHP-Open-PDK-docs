@@ -37,7 +37,7 @@ Install the build dependencies (Ubuntu/Debian):
 
 .. code-block:: bash
 
-    sudo apt-get install ngspice build-essential git cmake flex bison gperf dos2unix xsdcxx libxerces-c-dev
+    sudo apt-get install ngspice build-essential git cmake flex bison gperf dos2unix xsdcxx libxerces-c-dev libmuparser-dev
     sudo apt-get install qt6-base-dev qt6-tools-dev qt6-tools-dev-tools libglx-dev linguist-qt6
     sudo apt-get install qt6-l10n-tools libqt6svg6-dev libgl1-mesa-dev qt6-charts-dev libqt6opengl6-dev
 
