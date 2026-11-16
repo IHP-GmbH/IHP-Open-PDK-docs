@@ -161,6 +161,19 @@ MIM Capacitor-Specs
     :widths: 200, 150, 150, 100, 100, 100, 100, 300
 
 
+MOSCAP-Specs
+------------
+
+.. note::
+    Process control parameters for the MOSCAP devices (``moscap_n``, ``moscap_p``) are not yet available. Values are marked TBD and will be added in a future revision.
+
+.. csv-table:: MOSCAP - Process Control Parameters
+    :header: "Parameter", "Name", "Unit", "Min", "Target", "Max", "Meas.Cond.", "Comment"
+    :stub-columns: 0
+    :file: tables/moscap_params.csv
+    :widths: 200, 150, 150, 100, 100, 100, 100, 300
+
+
 Resistances, Line Width Deltas, Temperature Coefficients
 --------------------------------------------------------
 

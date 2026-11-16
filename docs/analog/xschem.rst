@@ -66,6 +66,10 @@ The IHP-Open-PDK delivers a symbol library which can be found in ``$PDK_ROOT/$PD
 +--------------+-----------------------------------------------------------------------------------------------------------------------------------------------+--+
 | cap_rfcmim   | Metal-Insulator-Metal capacitor model for RF                                                                                                  |  |
 +--------------+-----------------------------------------------------------------------------------------------------------------------------------------------+--+
+| moscap_n     | N-type MOS capacitor (G, SUB; w, l; m)                                                                                                        |  |
++--------------+-----------------------------------------------------------------------------------------------------------------------------------------------+--+
+| moscap_p     | P-type MOS capacitor (G, NW; w, l; m)                                                                                                         |  |
++--------------+-----------------------------------------------------------------------------------------------------------------------------------------------+--+
 | dantenna     | Antenna diode symbol. This diode is used to protect against low voltage. The anode of the diode should be connected to the ptap1 resistor.    |  |
 +--------------+-----------------------------------------------------------------------------------------------------------------------------------------------+--+
 | dpantenna    | Antenna diode symbol. This diode is used to protect against high voltage. The cathode of the diode should be connected to the ntap1 resistor. |  |
